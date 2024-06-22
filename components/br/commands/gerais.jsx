@@ -1,5 +1,7 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
 
+const nameCatCommand =  "gerais"
+
 export default function GeneralsCommands() {
     return (
         <>
@@ -81,11 +83,11 @@ export default function GeneralsCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/gerais/avatar1.webp" alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                                 <br />
 
-                                <img style={{ width: "60%" }} src="/images/commands/gerais/avatar2.webp" alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -149,7 +151,7 @@ export default function GeneralsCommands() {
                                     Imagem do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/gerais/botinfo.webp" alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -235,7 +237,7 @@ export default function GeneralsCommands() {
                                     Imagem do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/gerais/serverinfo.webp" alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -300,7 +302,7 @@ export default function GeneralsCommands() {
                                     Imagem do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/gerais/ping.webp" alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -365,7 +367,7 @@ export default function GeneralsCommands() {
                                     Imagem do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/gerais/links.webp" alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -440,7 +442,7 @@ export default function GeneralsCommands() {
                                     Imagem do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/gerais/tabuada.webp" alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -515,7 +517,7 @@ export default function GeneralsCommands() {
                                     Imagem do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/gerais/userinfo.webp" alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 

@@ -38,7 +38,7 @@ export default function Footer() {
                         <p className="PFooter">suporte</p>
                     </Link>
 
-                    <Link href="/br/comandos/todos">
+                    <Link href="/br/commands/all">
                         <p className="PFooter">Comandos</p>
                     </Link>
 

@@ -1,5 +1,7 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
 
+const nameCatCommand = "roleplay"
+
 export default function RolePlayCommands() {
     return (
         <>
@@ -85,7 +87,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -174,7 +176,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -263,7 +265,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -352,7 +354,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -441,7 +443,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -530,7 +532,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -619,7 +621,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -708,7 +710,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -787,7 +789,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -876,7 +878,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -965,7 +967,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -1054,7 +1056,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -1143,7 +1145,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -1232,7 +1234,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -1321,7 +1323,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -1410,7 +1412,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -1499,7 +1501,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -1588,7 +1590,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -1677,7 +1679,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -1766,7 +1768,7 @@ export default function RolePlayCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/roleplay/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 

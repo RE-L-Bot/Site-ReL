@@ -1137,7 +1137,6 @@ body {
 @media only screen and (max-width: 600px) {
 
   .AsideSelectCommands {
-    display: none;
     overflow: auto;
     transition-duration: 0.5s;
     position: inherit;

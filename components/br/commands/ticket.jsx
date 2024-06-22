@@ -1,5 +1,7 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
 
+const nameCatCommand = "ticket"
+
 export default function TicketCommands() {
     return (
         <>
@@ -61,9 +63,10 @@ export default function TicketCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/ticket/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
-                                <img style={{ width: "60%" }} src="/images/commands/ticket/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
+
                             </div>
 
                         </div>
@@ -127,7 +130,7 @@ export default function TicketCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/ticket/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 

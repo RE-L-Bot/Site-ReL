@@ -1,5 +1,7 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
 
+const nameCatCommand = "registro"
+
 export default function RegisterCommands() {
     return (
         <>
@@ -73,7 +75,7 @@ export default function RegisterCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/registro/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -149,7 +151,7 @@ export default function RegisterCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/registro/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -223,7 +225,7 @@ export default function RegisterCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/registro/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -297,15 +299,15 @@ export default function RegisterCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/registro/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
-                                <img style={{ width: "60%" }} src="/images/commands/registro/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
-                                <img style={{ width: "60%" }} src="/images/commands/registro/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
-                                <img style={{ width: "60%" }} src="/images/commands/registro/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
-                                <img style={{ width: "60%" }} src="/images/commands/registro/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -380,7 +382,7 @@ export default function RegisterCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="/images/commands/registro/pt/." alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 

@@ -40,7 +40,7 @@ export function GetGuildsDash() {
                 fetch(
                     "/api/getguildsdash",
                     {
-                        method: "POST",
+                        method: "GET",
                         headers: {
                             token_type: "Bearer",
                             access_token: decrypt4x(getCookie("RELOG"))

@@ -83,8 +83,10 @@ class RequesterManager {
         this.headers = obj["headers"] || null
         this.endpoint = obj["endpoint"] || ""
         this.method = (obj["method"]) ? obj["method"].toUpperCase() : "GET"
-        this.APIENDPOINT = obj["APIENDPOINT"] || process.env.APIENDPOINT
+        this.APIENDPOINT = obj["APIENDPOINT"] || obj["APIENDPOINTS"]["thisAPI"]
         this.body = obj["body"] || null
+
+        console.log(this)
 
         if (this.endpoints[this.endpoint]) {
 
@@ -264,7 +266,7 @@ export default class RequestApi {
     }
 
     /**
-     * @param {"this" | "ApiCentral"} apiEndPoint
+     * @param {"thisAPI" | "ApiCentral"} apiEndPoint
      */
     setApiEndPoint(apiEndPoint) {
 
@@ -287,8 +289,11 @@ export default class RequestApi {
 
     async request() {
 
+        console.log(this)
+
         return await new RequesterManager(this)
             .request()
+
     }
 
 }

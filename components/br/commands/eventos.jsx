@@ -1,5 +1,7 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
 
+const nameCatCommand = "event"
+
 export default function EventsCommands() {
     return (
         <>
@@ -70,7 +72,7 @@ export default function EventsCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgtUyBLsCfq9_VEzR2L080_9s4TxErnbdDzQ&usqp=CAU" alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -145,7 +147,7 @@ export default function EventsCommands() {
                                     Imagem do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgtUyBLsCfq9_VEzR2L080_9s4TxErnbdDzQ&usqp=CAU" alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -219,7 +221,7 @@ export default function EventsCommands() {
                                     Imagem do comando:
                                 </h4>
 
-                                <img style={{ width: "60%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgtUyBLsCfq9_VEzR2L080_9s4TxErnbdDzQ&usqp=CAU" alt="" />
+                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 

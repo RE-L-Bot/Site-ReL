@@ -4,6 +4,7 @@ import { getCookie } from "./getters";
 import axios from "axios";
 import { usePathname } from "next/navigation";
 import { redirectLogDash } from "./redirects";
+import RequestApi from "./ManagerRequest";
 /** @type {import('@/configDev.js')} */
 export const configData = await import(`../config${process.env.NEXT_PUBLIC_TYPE}.js`)
 
@@ -34,20 +35,25 @@ export default async function Login() {
 
                 }
 
-                await fetch("/api/login", {
-                    method: "POST",
-                    body: JSON.stringify({
+                new RequestApi()
+                    .setBody({
                         code: code,
                         redirect_uri: configData["REDIRECT_URI"]
                             .replace("{lang}", langP)
                     })
-                })
-                    .then((response) => response.json())
+                    .setEndPoint("login")
+                    .request()
                     .then((data) => {
 
-                        document.cookie = `RELOG=${encrypt4x(data.response.access_token)}; path=/`
+                        if (data.response.access_token) {
 
-                        window.location = `/${langP}/dashboard`
+                            document.cookie = `RELOG=${encrypt4x(data.response.access_token)}; path=/`
+
+                            return window.location = `/${langP}/dashboard`
+
+                        }
+
+                        redirectLogDash()
 
                     })
 
@@ -85,11 +91,11 @@ export default async function Login() {
                             img.style.display = "block"
 
                         }
+
                     })
                     .catch(e => {
 
                         if (window.location.href.indexOf("dashboard") >= 0) {
-
                             redirectLogDash()
                         }
 
