@@ -92,19 +92,19 @@ export default function ModerationCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/br/banir/img1.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                                 <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/br/banir/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                                 <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/br/banir/img3.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                                 <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/br/banir/img4.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -193,7 +193,7 @@ export default function ModerationCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/br/clear/img1.png`} alt="imageCommand" style={{ width: "60%" }} />
 
 
                             </div>
