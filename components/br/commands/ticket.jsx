@@ -63,9 +63,9 @@ export default function TicketCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
-                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -130,7 +130,7 @@ export default function TicketCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/br/`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
