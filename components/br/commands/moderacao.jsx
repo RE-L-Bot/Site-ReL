@@ -92,19 +92,19 @@ export default function ModerationCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/banir/img1.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img1.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                                 <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/banir/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                                 <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/banir/img3.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img3.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                                 <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/banir/img4.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img4.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -429,9 +429,11 @@ export default function ModerationCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}//img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/kick/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}//img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/kick/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/kick/img3.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -509,7 +511,9 @@ export default function ModerationCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}//img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/mmd/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/mmd/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -585,7 +589,7 @@ export default function ModerationCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}//img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/setlang/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -662,7 +666,9 @@ export default function ModerationCommands() {
                                     Imagens do comando:
                                 </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}//img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/setlog/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/setlog/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 

@@ -86,8 +86,6 @@ class RequesterManager {
         this.APIENDPOINT = obj["APIENDPOINT"] || obj["APIENDPOINTS"]["thisAPI"]
         this.body = obj["body"] || null
 
-        console.log(this)
-
         if (this.endpoints[this.endpoint]) {
 
             this.method = this.endpoints[this.endpoint]["method"]
@@ -163,7 +161,6 @@ class RequesterManager {
                 returnedResponse = response
             })
             .catch((error) => {
-                console.log(error)
                 returnedResponse = { status: error.response.data.status, response: error.response.data.error}
             })
 
@@ -288,8 +285,6 @@ export default class RequestApi {
     }
 
     async request() {
-
-        console.log(this)
 
         return await new RequesterManager(this)
             .request()

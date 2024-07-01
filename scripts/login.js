@@ -20,22 +20,18 @@ export default async function Login() {
 
                 const urlParams = new URLSearchParams(location.search);
 
-                const [code, state, guild] = [urlParams.get('code'), urlParams.get('state'), urlParams.get('guild')];
+                const [code, state, guild] = [urlParams.get('code'), urlParams.get('state'), urlParams.get('guild_id')];
 
-                console.log(code, state, guild, localStorage.getItem('oauth-state'))
+                if (
+                    state && !localStorage.getItem('oauth-state') || state
+                    && state != localStorage.getItem('oauth-state')
+                ) {
 
-                if (!localStorage.getItem('oauth-state') || state != localStorage.getItem('oauth-state')) {
-
-                    const randomString = generateRandomString();
-
-                    localStorage.setItem('oauth-state', randomString);
-
-                    return window.location.href = `${configData["linkRedirectDiscord"]
-                        .replace("{lang}", langP)}&state=${btoa(randomString)}`
+                    redirectLogDash()
 
                 }
 
-                new RequestApi()
+                await new RequestApi()
                     .setBody({
                         code: code,
                         redirect_uri: configData["REDIRECT_URI"]
@@ -48,6 +44,9 @@ export default async function Login() {
                         if (data.response.access_token) {
 
                             document.cookie = `RELOG=${encrypt4x(data.response.access_token)}; path=/`
+
+                            if (guild)
+                                return window.location = `/${langP}/dashboard/guild/${guild}/configure`
 
                             return window.location = `/${langP}/dashboard`
 
@@ -110,7 +109,6 @@ export default async function Login() {
                 }
 
             }
-
 
         })()
 

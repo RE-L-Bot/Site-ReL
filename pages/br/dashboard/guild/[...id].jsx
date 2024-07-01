@@ -6,10 +6,16 @@ import Config from "@/components/br/pages/dashboard/guild/config";
 import Ticket from "@/components/br/pages/dashboard/guild/ticket";
 import Logs from "@/components/br/pages/dashboard/guild/logs";
 import Error404 from "@/components/br/error404";
+import { checkGuildPermissions } from "@/scripts/checks";
+import { dashGuildClick } from "@/scripts/redirects";
+
+let val = 0
 
 export default function DashBoardId() {
 
   let id = usePathname()
+
+  checkGuildPermissions()
 
   const dataSet = {
     configure: <Config />,
@@ -19,7 +25,9 @@ export default function DashBoardId() {
   }
 
   if (id) {
+
     id = id.split("/")
+
     if (dataSet[id[id.length - 1]]) return (
       <>
         <Header />

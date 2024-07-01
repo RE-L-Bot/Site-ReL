@@ -1,6 +1,6 @@
 const ends = ""
 const url = `http://localhost${ends}`
-const CLIENT_ID = "1018958083764002919"
+const CLIENT_ID = "1064938979406921738"
 const REDIRECT_URI = `${url}/{lang}/dashboard`
 const API_ENDPOINT = "https://discord.com/api/v10"
 const linkRedirectDiscord = `https://discord.com/oauth2/authorize?client_id=${CLIENT_ID}&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%2F{lang}%2Fdashboard&scope=guilds+identify+email`

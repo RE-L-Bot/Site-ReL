@@ -2,8 +2,6 @@ import RequestApi from "@/scripts/ManagerRequest"
 
 export default async function handler(req, res) {
 
-    console.log("123")
-
     if (req.method !== "POST")
         return res.status(405).send({ error: "Method Errado", status: 405 })
 

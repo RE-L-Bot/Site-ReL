@@ -11,19 +11,23 @@ export function redirectInfos() {
 }
 
 export function redirectInvite(guildID) {
+
     const langP = window.location.pathname.split("/")[1]
-    window.location.href = configData[`linkRedirectAddBot`]
+
+    window.location.href = `${configData[`linkRedirectAddBot`]
         .replace("{guildID}", guildID)
-        .replace("{lang}", langP)
+        .replace("{lang}", langP)}`
 }
 
-export function redirectStore(){
+export function redirectStore() {
     const langP = window.location.pathname.split("/")[1]
     window.open(`/${langP}/store`, "_blanck")
 }
 
 export function dashGuildClick(c) {
+
     try {
+
         fetch("/api/verifyinguild",
             {
                 method: "POST",
@@ -34,12 +38,17 @@ export function dashGuildClick(c) {
         )
             .then(x => x.json())
             .then(response => {
-                console.log(response)
+
                 if (response.response.code == 10004) {
+
                     return redirectInvite(c.target.id)
+
                 }
+
                 const langP = window.location.pathname.split("/")[1]
+                
                 location.href = `/${langP}/dashboard/guild/${c.target.id}/configure`
+
             })
 
     } catch (e) {
@@ -57,6 +66,7 @@ export function redirectLogDash() {
         return window.location.href = `${window.location.protocol}//${window.location.host}/${langP}/dashboard`
 
     const randomString = generateRandomString();
+
     localStorage.setItem('oauth-state', randomString);
 
     window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
