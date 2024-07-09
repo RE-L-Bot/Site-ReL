@@ -43,7 +43,7 @@ export default function EventsCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandadicionar_ponto_evento">
+                        <div className="InformationsCommand" id="InformationsCommandadicionar_ponto_evento">
 
                             <div>
 
@@ -118,7 +118,7 @@ export default function EventsCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandremover_pontos_evento">
+                        <div className="InformationsCommand" id="InformationsCommandremover_pontos_evento">
 
                             <div>
 
@@ -147,7 +147,7 @@ export default function EventsCommands() {
                                     Imagem do comando:
                                 </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}//img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -193,7 +193,7 @@ export default function EventsCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandver_pontos_evento">
+                        <div className="InformationsCommand" id="InformationsCommandver_pontos_evento">
 
                             <div>
 

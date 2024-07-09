@@ -48,7 +48,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandabraçar">
+                        <div className="InformationsCommand" id="InformationsCommandabraçar">
 
                             <div>
 
@@ -137,7 +137,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandacenar">
+                        <div className="InformationsCommand" id="InformationsCommandacenar">
 
                             <div>
 
@@ -226,7 +226,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandaplaudir">
+                        <div className="InformationsCommand" id="InformationsCommandaplaudir">
 
                             <div>
 
@@ -315,7 +315,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandatirar">
+                        <div className="InformationsCommand" id="InformationsCommandatirar">
 
                             <div>
 
@@ -404,7 +404,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandbeijar">
+                        <div className="InformationsCommand" id="InformationsCommandbeijar">
 
                             <div>
 
@@ -493,7 +493,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandbrindar">
+                        <div className="InformationsCommand" id="InformationsCommandbrindar">
 
                             <div>
 
@@ -582,7 +582,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandcafuné">
+                        <div className="InformationsCommand" id="InformationsCommandcafuné">
 
                             <div>
 
@@ -671,7 +671,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandcutucar">
+                        <div className="InformationsCommand" id="InformationsCommandcutucar">
 
                             <div>
 
@@ -760,7 +760,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommanddançar">
+                        <div className="InformationsCommand" id="InformationsCommanddançar">
 
                             <div>
 
@@ -839,7 +839,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandestapear">
+                        <div className="InformationsCommand" id="InformationsCommandestapear">
 
                             <div>
 
@@ -928,7 +928,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandgritar">
+                        <div className="InformationsCommand" id="InformationsCommandgritar">
 
                             <div>
 
@@ -1017,7 +1017,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandlamber">
+                        <div className="InformationsCommand" id="InformationsCommandlamber">
 
                             <div>
 
@@ -1106,7 +1106,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandmandar_beijo">
+                        <div className="InformationsCommand" id="InformationsCommandmandar_beijo">
 
                             <div>
 
@@ -1195,7 +1195,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandmorder">
+                        <div className="InformationsCommand" id="InformationsCommandmorder">
 
                             <div>
 
@@ -1284,7 +1284,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandpiscar">
+                        <div className="InformationsCommand" id="InformationsCommandpiscar">
 
                             <div>
 
@@ -1373,7 +1373,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandrir">
+                        <div className="InformationsCommand" id="InformationsCommandrir">
 
                             <div>
 
@@ -1462,7 +1462,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandsegurar_mão">
+                        <div className="InformationsCommand" id="InformationsCommandsegurar_mão">
 
                             <div>
 
@@ -1551,7 +1551,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandsocar">
+                        <div className="InformationsCommand" id="InformationsCommandsocar">
 
                             <div>
 
@@ -1640,7 +1640,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandsorrir">
+                        <div className="InformationsCommand" id="InformationsCommandsorrir">
 
                             <div>
 
@@ -1729,7 +1729,7 @@ export default function RolePlayCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandtoca_aqui">
+                        <div className="InformationsCommand" id="InformationsCommandtoca_aqui">
 
                             <div>
 

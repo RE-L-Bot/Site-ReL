@@ -45,7 +45,7 @@ export default function ModerationCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandbanir">
+                        <div className="InformationsCommand" id="InformationsCommandbanir">
 
                             <div>
 
@@ -152,7 +152,7 @@ export default function ModerationCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandclear">
+                        <div className="InformationsCommand" id="InformationsCommandclear">
 
                             <div>
 
@@ -242,7 +242,7 @@ export default function ModerationCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandforce_disconect">
+                        <div className="InformationsCommand" id="InformationsCommandforce_disconect">
 
                             <div>
 
@@ -320,7 +320,7 @@ export default function ModerationCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandforce_move">
+                        <div className="InformationsCommand" id="InformationsCommandforce_move">
 
                             <div>
 
@@ -400,7 +400,7 @@ export default function ModerationCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandkick">
+                        <div className="InformationsCommand" id="InformationsCommandkick">
 
                             <div>
 
@@ -481,7 +481,7 @@ export default function ModerationCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandmmd">
+                        <div className="InformationsCommand" id="InformationsCommandmmd">
 
                             <div>
 
@@ -561,7 +561,7 @@ export default function ModerationCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandsetLang">
+                        <div className="InformationsCommand" id="InformationsCommandsetLang">
 
                             <div>
 
@@ -637,7 +637,7 @@ export default function ModerationCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandsetsetLogs">
+                        <div className="InformationsCommand" id="InformationsCommandsetsetLogs">
 
                             <div>
 

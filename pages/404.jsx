@@ -1,7 +1,6 @@
 import Head from "next/head"
 import HEADER from "@/components/br/headers"
 import Footer from "@/components/br/footers"
-import { useEffect } from "react"
 
 export default function Error404() {
 

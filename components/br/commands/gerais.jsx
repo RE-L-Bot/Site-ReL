@@ -43,7 +43,7 @@ export default function GeneralsCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandavatar">
+                        <div className="InformationsCommand" id="InformationsCommandavatar">
 
                             <div>
 
@@ -133,7 +133,7 @@ export default function GeneralsCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandbotinfo">
+                        <div className="InformationsCommand" id="InformationsCommandbotinfo">
 
                             <div>
 
@@ -197,7 +197,7 @@ export default function GeneralsCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandserverinfo">
+                        <div className="InformationsCommand" id="InformationsCommandserverinfo">
 
                             <div>
 
@@ -283,7 +283,7 @@ export default function GeneralsCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandping">
+                        <div className="InformationsCommand" id="InformationsCommandping">
 
                             <div>
 
@@ -348,7 +348,7 @@ export default function GeneralsCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandlinks">
+                        <div className="InformationsCommand" id="InformationsCommandlinks">
 
                             <div>
 
@@ -413,7 +413,7 @@ export default function GeneralsCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandtabuada">
+                        <div className="InformationsCommand" id="InformationsCommandtabuada">
 
                             <div>
 
@@ -488,7 +488,7 @@ export default function GeneralsCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommanduserinfo">
+                        <div className="InformationsCommand" id="InformationsCommanduserinfo">
 
                             <div>
 

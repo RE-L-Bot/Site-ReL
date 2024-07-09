@@ -44,7 +44,7 @@ export default function TicketCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandaddrticket">
+                        <div className="InformationsCommand" id="InformationsCommandaddrticket">
 
                             <div>
 
@@ -111,7 +111,7 @@ export default function TicketCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandsetupTicket">
+                        <div className="InformationsCommand" id="InformationsCommandsetupTicket">
 
                             <div>
 

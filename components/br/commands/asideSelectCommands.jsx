@@ -3,7 +3,9 @@ import { CheckTipeCommand } from "@/scripts/checks"
 import Link from "next/link"
 
 export default function AsideSelectCommands() {
+
     CheckTipeCommand()
+
     return (
         <>
 

@@ -7,7 +7,6 @@ import Ticket from "@/components/br/pages/dashboard/guild/ticket";
 import Logs from "@/components/br/pages/dashboard/guild/logs";
 import Error404 from "@/components/br/error404";
 import { checkGuildPermissions } from "@/scripts/checks";
-import { dashGuildClick } from "@/scripts/redirects";
 
 let val = 0
 

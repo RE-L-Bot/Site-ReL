@@ -19,19 +19,18 @@ export function ChangeTipeCommand(e) {
 
 export function changeDisplayNoneToAndResetAll(event, id, displayType) {
 
-    const objInformations = document.getElementById(`InformarionsCommand${id}`)
+    const objInformations = document.getElementById(`InformationsCommand${id}`)
     const objExpand = document.getElementById(`expand${id}`)
     const objContent = document.getElementById(`content${id}`)
 
-    for (const o1 of document.getElementsByClassName(`InformarionsCommand`)) {
-        if (o1 && o1.id != `InformarionsCommand${id}`) {
+    for (const o1 of document.getElementsByClassName(`InformationsCommand`)) {
+        if (o1 && o1.id != `InformationsCommand${id}`) {
             o1.style.display = ""
         }
     }
 
     for (const o1 of document.getElementsByClassName(`transitionShowCommands`)) {
         if (o1 && o1.id != `expand${id}`) {
-            // o1.innerHTML = "expand_more"
             o1.className = "material-symbols-outlined transitionShowCommands expand"
         }
     }
@@ -45,13 +44,11 @@ export function changeDisplayNoneToAndResetAll(event, id, displayType) {
 
     if (objInformations.style.display == "") {
         objExpand.className = "material-symbols-outlined transitionShowCommands expand_more"
-        // objExpand.innerHTML = "expand_less"
         objInformations.style.display = displayType
         objContent.style.borderBottomLeftRadius = "0px"
         objContent.style.borderBottomRightRadius = "0px"
     } else {
         objExpand.className = "material-symbols-outlined transitionShowCommands expand"
-        // objExpand.innerHTML = "expand_more"
         objInformations.style.display = ""
         objContent.style.borderBottomLeftRadius = "10px"
         objContent.style.borderBottomRightRadius = "10px"

@@ -44,7 +44,7 @@ export default function RegisterCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandadccreg">
+                        <div className="InformationsCommand" id="InformationsCommandadccreg">
 
                             <div>
 
@@ -121,7 +121,7 @@ export default function RegisterCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandcargos_defaults">
+                        <div className="InformationsCommand" id="InformationsCommandcargos_defaults">
 
                             <div>
 
@@ -197,7 +197,7 @@ export default function RegisterCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommanddelete_categoria">
+                        <div className="InformationsCommand" id="InformationsCommanddelete_categoria">
 
                             <div>
 
@@ -271,7 +271,7 @@ export default function RegisterCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandregistrar">
+                        <div className="InformationsCommand" id="InformationsCommandregistrar">
 
                             <div>
 
@@ -353,7 +353,7 @@ export default function RegisterCommands() {
 
                     <div className="BodyInformationCommand">
 
-                        <div className="InformarionsCommand" id="InformarionsCommandremover_cargo_registro">
+                        <div className="InformationsCommand" id="InformationsCommandremover_cargo_registro">
 
                             <div>
 
