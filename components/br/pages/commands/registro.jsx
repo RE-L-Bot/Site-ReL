@@ -1,25 +1,28 @@
 import React from "react";
 import RegisterCommands from "@/components/br/commands/registro";
 import AsideSelectCommands from "@/components/br/commands/asideSelectCommands";
+import Head from "next/head";
 
 export default function Registro() {
     return (
-        <>
 
-            <main>
+        <main>
 
-                <div className="alignItens">
+            <Head>
+                <title>RE=L Bot • COmandos de Registro</title>
+            </Head>
 
-                    <AsideSelectCommands />
+            <div className="alignItens">
 
-                    <div>
-                        <RegisterCommands />
-                    </div>
+                <AsideSelectCommands />
 
+                <div>
+                    <RegisterCommands />
                 </div>
 
-            </main>
+            </div>
 
-        </>
+        </main>
+
     )
 }

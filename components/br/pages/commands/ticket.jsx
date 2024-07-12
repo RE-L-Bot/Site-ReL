@@ -1,25 +1,28 @@
 import React from "react";
 import TicketCommands from "@/components/br/commands/ticket";
 import AsideSelectCommands from "@/components/br/commands/asideSelectCommands";
+import Head from "next/head";
 
 export default function Ticket() {
     return (
-        <>
 
-            <main>
+        <main>
 
-                <div className="alignItens">
+            <Head>
+                <title>RE=L Bot • Comandos de Ticket</title>
+            </Head>
 
-                    <AsideSelectCommands />
+            <div className="alignItens">
 
-                    <div>
-                        <TicketCommands />
-                    </div>
+                <AsideSelectCommands />
 
+                <div>
+                    <TicketCommands />
                 </div>
 
-            </main>
+            </div>
 
-        </>
+        </main>
+
     )
 }

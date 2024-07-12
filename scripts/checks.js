@@ -244,7 +244,7 @@ export function checkLanguageSelect() {
             fetch("/api/getMessageSendChannelNoPerm", {
                 method: "GET",
                 headers: {
-                    guild_id: user[0]
+                    guild_id: user[user.length - 2]
                 }
             })
                 .then(response => response.json())
@@ -253,6 +253,8 @@ export function checkLanguageSelect() {
                     if (data.response) {
 
                         const textarea = document.getElementById("messageSendNoPerm")
+
+                        const blockMessage = document.getElementById("contentMessageBlock")
 
                         document.getElementsByClassName("checkMessageNoPerm")[0].checked = true
 
@@ -266,6 +268,8 @@ export function checkLanguageSelect() {
 
                         textarea.innerHTML = data.response
 
+                        blockMessage.innerText = data.response
+
                         localStorage.setItem("messageSendNoPerm", data.response)
 
                         enableDisableMessageSendInChannelNoPerm()
@@ -273,6 +277,8 @@ export function checkLanguageSelect() {
                     }
 
                 })
+                .catch(console.log)
+
         }
 
     })

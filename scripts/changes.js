@@ -92,8 +92,8 @@ export function changeMode() {
 
 export function changeLang(i) {
     const langP = i.target.id
-    const path = window.location.pathname.slice(3)
-    window.location = `/${langP}/${path}`
+    const path = window.location.pathname.slice(4)
+    window.location = `${window.location.origin}/${langP}/${path}`
 }
 
 export function ChangeV(e) {

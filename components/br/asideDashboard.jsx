@@ -58,13 +58,14 @@ export default function AsideDashboard() {
                 <h3 style={{ padding: "10px" }}>Usuario</h3>
 
                 <Link
-                    href={`/${langP}/dashboard/user/daily`}
+                    // href={`/${langP}/dashboard/user/daily`}
+                    href={"#"}
                     style={{ textDecoration: "none", color: "inherit" }}>
                     <p className="SelectTipeCommand" style={{ display: "flex", alignItems: "center", gap: "5px" }} id="daily" onClick={ChangeTipeCommand}>
                         <i className="material-symbols-outlined">
                             paid
                         </i>
-                        daily
+                        daily (Em Breve)
                     </p>
                 </Link>
 

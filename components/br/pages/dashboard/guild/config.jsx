@@ -4,6 +4,7 @@ import ToogleOff from "@/components/globals/toogleOff";
 import { ChangeEnabledNobackground, enableDisableMessageSendInChannelNoPerm } from "@/scripts/changes";
 import { checkLanguageSelect } from "@/scripts/checks";
 import TOPMENU from "../../../TopMenu";
+import Head from "next/head";
 
 function onLoadPageConfig() {
     addChannelsUseCommands()
@@ -13,6 +14,10 @@ function onLoadPageConfig() {
 export default function Config() {
     return (
         <div onLoad={onLoadPageConfig()}>
+
+            <Head>
+                <title>RE=L Bot • Configuração Geral</title>
+            </Head>
 
             <dialog id="savemodal" style={{ background: "none", color: "whitesmoke", border: "none" }}>
                 <form method="dialog" style={{ textAlign: "center" }}>

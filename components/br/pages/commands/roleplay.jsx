@@ -1,25 +1,28 @@
 import React from "react";
 import RolePlayCommands from "@/components/br/commands/roleplay";
 import AsideSelectCommands from "@/components/br/commands/asideSelectCommands";
+import Head from "next/head";
 
 export default function Roleplay() {
     return (
-        <>
 
-            <main>
+        <main>
 
-                <div className="alignItens">
+            <Head>
+                <title>RE=L Bot • Comandos De Roleplay</title>
+            </Head>
 
-                    <AsideSelectCommands />
+            <div className="alignItens">
 
-                    <div>
-                        <RolePlayCommands />
-                    </div>
+                <AsideSelectCommands />
 
+                <div>
+                    <RolePlayCommands />
                 </div>
 
-            </main>
+            </div>
 
-        </>
+        </main>
+
     )
 }

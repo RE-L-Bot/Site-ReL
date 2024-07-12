@@ -6,10 +6,15 @@ import FormEmbed from "@/components/br/formEmbed";
 import SelectMenus from "@/components/br/selectMenus";
 import TopMenu from "@/components/br/TopMenu";
 import { redirectStore } from "@/scripts/redirects";
+import Head from "next/head";
 
 export default function Ticket() {
     return (
         <div>
+
+            <Head>
+                <title>RE=L Bot • Ticket Setup</title>
+            </Head>
 
             <dialog id="premiumModal" style={{ backgroundColor: "#212121", color: "whitesmoke", width: "90%" }}>
 

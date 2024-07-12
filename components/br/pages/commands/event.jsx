@@ -1,26 +1,28 @@
 import React from "react";
 import EventsCommands from "@/components/br/commands/eventos";
 import AsideSelectCommands from "@/components/br/commands/asideSelectCommands";
+import Head from "next/head";
 
 export default function Events() {
     return (
-        <>
 
-            <main>
+        <main>
 
-                <div className="alignItens">
+            <Head>
+                <title>RE=L Bot • Comandos De Evento</title>
+            </Head>
 
-                    <AsideSelectCommands />
+            <div className="alignItens">
 
-                    <div>
-                        <EventsCommands />
-                    </div>
+                <AsideSelectCommands />
 
+                <div>
+                    <EventsCommands />
                 </div>
 
-            </main>
+            </div>
 
-        </>
+        </main>
 
     )
 }

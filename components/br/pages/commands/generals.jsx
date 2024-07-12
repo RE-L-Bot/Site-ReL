@@ -1,25 +1,28 @@
 import React from "react";
 import AsideSelectCommands from "@/components/br/commands/asideSelectCommands";
 import GeneralsCommands from "../../commands/gerais";
+import Head from "next/head";
 
 export default function Generals() {
     return (
-        <>
 
-            <main>
+        <main>
 
-                <div className="alignItens">
+            <Head>
+                <title>RE=L Bot • Comandos Gerais</title>
+            </Head>
 
-                    <AsideSelectCommands />
+            <div className="alignItens">
 
-                    <div>
-                        <GeneralsCommands />
-                    </div>
+                <AsideSelectCommands />
 
+                <div>
+                    <GeneralsCommands />
                 </div>
 
-            </main>
+            </div>
 
-        </>
+        </main>
+
     )
 }

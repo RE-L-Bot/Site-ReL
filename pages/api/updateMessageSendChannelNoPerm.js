@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
 
-    if (req.method !== "GET")
+    if (req.method !== "PATCH")
         return res.status(405).send({ error: "Method Errado", status: 405 })
 
     try {
