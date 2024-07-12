@@ -133,3 +133,4 @@ dist
 
 public/
 package-lock.json
+*.zip
