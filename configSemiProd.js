@@ -1,6 +1,6 @@
 const ends = ".squareweb.app"
 const url = `https://siteredev4${ends}`
-const CLIENT_ID = "1018958083764002919"
+const CLIENT_ID = "1064938979406921738"
 const REDIRECT_URI = `${url}/{lang}/dashboard`
 const API_ENDPOINT = "https://discord.com/api/v10"
 const linkRedirectDiscord = `https://discord.com/api/oauth2/authorize?client_id=${CLIENT_ID}&response_type=code&redirect_uri=https%3A%2F%2Fsiteredev4.squareweb.app%2F{lang}%2Fdashboard&scope=identify+guilds+email`

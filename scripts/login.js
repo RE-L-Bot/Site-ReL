@@ -23,8 +23,8 @@ export default async function Login() {
                 const [code, state, guild] = [urlParams.get('code'), urlParams.get('state'), urlParams.get('guild_id')];
 
                 if (
-                    state && !localStorage.getItem('oauth-state') || state
-                    && state != localStorage.getItem('oauth-state')
+                    state && !localStorage.getItem('oauth-state') ||
+                    state && state != localStorage.getItem('oauth-state')
                 ) {
 
                     redirectLogDash()
@@ -51,8 +51,6 @@ export default async function Login() {
                             return window.location = `/${langP}/dashboard`
 
                         }
-
-                        redirectLogDash()
 
                     })
 
