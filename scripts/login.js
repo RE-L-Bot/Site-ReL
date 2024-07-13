@@ -75,6 +75,8 @@ export default async function Login() {
                     .then(request => request.data)
                     .then(response => {
 
+                        localStorage.setItem("idUser", response.id)
+
                         for (const l of doclogin) {
 
                             l.innerHTML = response.username;

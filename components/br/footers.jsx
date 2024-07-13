@@ -42,12 +42,15 @@ export default function Footer() {
                         <p className="PFooter">Comandos</p>
                     </Link>
 
-                    <Link href="/br/donation">
+                    <Link href="/br/store">
                         <p className="PFooter">Premium</p>
                     </Link>
 
-                    <Link href="/br/dashboard/user/daily">
-                        <p className="PFooter">Daily</p>
+                    <Link 
+                    // href="/br/dashboard/user/daily"
+                    href={"#"}
+                    >
+                        <p className="PFooter">Daily (Em Breve)</p>
                     </Link>
 
                 </div>
