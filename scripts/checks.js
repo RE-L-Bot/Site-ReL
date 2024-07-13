@@ -4,6 +4,7 @@ import { useRouter } from "next/router"
 import bitfieldCalculator from 'discord-bitfield-calculator';
 import { actKey, range } from "./outhers";
 import { enableDisableMessageSendInChannelNoPerm, showDialogueBox } from "./changes";
+import dayjs from "dayjs";
 
 export function checkColor() {
 
@@ -287,6 +288,40 @@ export function checkLanguageSelect() {
 
 export function checkKeysPremium() {
 
+    let user = window.location.pathname
+    user = user.split("/")
+
+    if (user === undefined)
+        return
+
+    fetch("/api/getkeyguild",
+        {
+            headers: {
+                guild_id: user[user.length - 2]
+            }
+        }
+    )
+        .then(x => x.json())
+        .then(async (response) => {
+
+            console.log(response)
+
+            if (response.active) {
+
+                const typePremium = document.getElementById("typePremium")
+                const daysPremium = document.getElementById("daysPremium")
+
+                typePremium.innerText = response.type
+
+                daysPremium.innerHTML = (response.date == "LT") ? "Lifetime": dayjs(response.date).toDate().toLocaleDateString("America/Sao_Paulo")
+
+                document.getElementById("actvatedPremium").style.display = "block"
+
+                
+            }
+
+        })
+
     fetch("/api/getkeysuser",
         {
             headers: {
@@ -333,7 +368,7 @@ export function checkKeysPremium() {
 
                     buttonActiveKey.id = `${d.id}`
                     buttonActiveKey.className = `backgroundcColorReSite`
-                    buttonActiveKey.style = "border-radius:5px; padding:10px;"
+                    buttonActiveKey.style = "border-radius:5px; padding:10px; border: none;"
                     buttonActiveKey.onclick = actKey
                     buttonActiveKey.textContent = "Active key"
 

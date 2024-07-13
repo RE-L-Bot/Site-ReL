@@ -21,6 +21,22 @@ export default function keysPremium() {
 
                     <hr />
 
+                    <div id="actvatedPremium" style={{ display: "none" }}>
+
+                        <h1>
+                            Premium ativado
+                        </h1>
+
+                        <div className="SelectTipeCommand">
+
+                            <h3 id="typePremium" />
+
+                            <p style={{ opacity: "50%" }} id="daysPremium" />
+
+                        </div>
+
+                    </div>
+
                     <h1 style={{ opacity: "50%" }} id="notKey">Você não possui Keys Premium</h1>
 
                     <div id="divKeys">
