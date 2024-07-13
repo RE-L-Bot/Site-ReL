@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import { getCookie } from "@/scripts/getters"
 import { useRouter } from "next/router"
 import bitfieldCalculator from 'discord-bitfield-calculator';
-import { range } from "./outhers";
+import { actKey, range } from "./outhers";
 import { enableDisableMessageSendInChannelNoPerm, showDialogueBox } from "./changes";
 
 export function checkColor() {
@@ -283,4 +283,67 @@ export function checkLanguageSelect() {
 
     })
 
+}
+
+export function checkKeysPremium() {
+
+    fetch("/api/getkeysuser",
+        {
+            headers: {
+                iduser: localStorage.getItem("idUser")
+            }
+        }
+    )
+        .then(x => x.json())
+        .then(async (data) => {
+
+            if (data.response.length > 0) {
+
+                const time = {
+                    "1M": "1 Mês",
+                    "6M": "6 Meses",
+                    "12M": "12 Meses",
+                    "LT": "LifeTime"
+                }
+
+                document.getElementById("notKey").style.display = "none"
+
+                const divP = document.getElementById("divKeys")
+
+                for (const d of data.response) {
+
+                    const div = document.createElement("div")
+                    const divInfos = document.createElement("div")
+                    const divButton = document.createElement("div")
+                    const buttonActiveKey = document.createElement("button")
+                    const pKey = document.createElement("p")
+                    const ptype = document.createElement("p")
+                    const ptime = document.createElement("p")
+
+                    div.id = `keyAct${d.id}`
+                    div.style = " border-radius: 5px; margin: 10px; padding: 10px; background-color: rgba(0, 0, 0, 0.07);display:flex; justify-content: space-around; align-items: center"
+
+                    pKey.innerText = `Key: ${d.id}`
+                    ptype.innerText = `Tipo: Premium ${d.typepremium}`
+                    ptime.innerText = `Tempo: ${time[d.time]}`
+
+                    divInfos.appendChild(pKey)
+                    divInfos.appendChild(ptype)
+                    divInfos.appendChild(ptime)
+
+                    buttonActiveKey.id = `${d.id}`
+                    buttonActiveKey.className = `backgroundcColorReSite`
+                    buttonActiveKey.style = "border-radius:5px; padding:10px;"
+                    buttonActiveKey.onclick = actKey
+                    buttonActiveKey.textContent = "Active key"
+
+                    divButton.appendChild(buttonActiveKey)
+                    div.appendChild(divInfos)
+                    div.appendChild(divButton)
+
+                    divP.appendChild(div)
+
+                }
+            }
+        })
 }

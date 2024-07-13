@@ -88,9 +88,17 @@ export default function TopMenu() {
                     </p>
                 </Link>
 
+                <Link
+                    href={`${window.location.pathname.split("/")[4]}/keyspremium`}
+                    style={{ textDecoration: "none", color: "inherit" }}>
+                    <p className="SelectTipeCommand" id="keyspremium" onClick={ChangeTipeCommand}>
+                        Premium
+                    </p>
+                </Link>
+
                 <hr />
 
-                <h3 style={{padding: "10px"}}>Outros</h3>
+                <h3 style={{ padding: "10px" }}>Outros</h3>
 
                 <Link
                     href={`/${langP}/dashboard`}

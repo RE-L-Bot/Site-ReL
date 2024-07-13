@@ -5,6 +5,7 @@ import Footer from "@/components/br/footers";
 import Config from "@/components/br/pages/dashboard/guild/config";
 import Ticket from "@/components/br/pages/dashboard/guild/ticket";
 import Logs from "@/components/br/pages/dashboard/guild/logs";
+import KeysPremiumPage from "@/components/br/pages/dashboard/guild/premium";
 import Error404 from "@/components/br/error404";
 import { checkGuildPermissions } from "@/scripts/checks";
 
@@ -20,6 +21,7 @@ export default function DashBoardId() {
     configure: <Config />,
     ticket: <Ticket />,
     logs: <Logs />,
+    keyspremium: <KeysPremiumPage />,
     error404: <Error404 />
   }
 

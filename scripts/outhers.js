@@ -1,3 +1,5 @@
+import { usePathname } from "next/navigation";
+
 export function range(start, stop, step) {
 
     if (typeof stop == 'undefined') {
@@ -31,4 +33,30 @@ export function calculatePercent(value, percentage, time, sub = true) {
 
     return `${(value * time - ((value * time) * (percentage / 100))).toFixed(2)}`.replace(".", ",")
 
+}
+
+export function actKey(e) {
+
+    const idKey = e.target.id
+    const guild_id = location.pathname.match(/[0-9]+/g)
+
+    fetch(
+        "/api/activeKey",
+        {
+            method: "PATCH",
+            headers: {
+                guild_id,
+                idKey
+            }
+        }
+    )
+        .then(x => x.json())
+        .then(async (response) => {
+
+            if (response.status == 200) {
+                document.getElementById(`keyAct${idKey}`).style.display = "none"
+            }
+
+        })
+        .catch((e) => window.alert(e))
 }
