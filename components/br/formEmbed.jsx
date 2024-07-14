@@ -7,11 +7,6 @@ import {
     changeCorEmbedClick
 } from "@/scripts/embed/changeBody";
 import {
-    changeTextoFooterEmbed,
-    changeImageFooterEmbed,
-    changeDate
-} from "@/scripts/embed/changeFooter"
-import {
     changeNameAuthorEmbed,
     changeImageAuthorEmbed,
     changehrefAuthorEmbed
@@ -36,10 +31,6 @@ export default function FormEmbed(opts) {
             },
             thumbnail: {
                 url: undefined
-            },
-            footer: {
-                text: "Powered by RE=L",
-                icon_url: undefined
             },
             timestamp: undefined
         }))

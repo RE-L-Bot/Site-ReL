@@ -1,13 +1,15 @@
-export default function (c) {
+export default function (value) {
+
+    const arrayP = []
 
     let complete = "";
 
-    for (const words of c.target.value.split("\n")) {
+    for (const words of value.split("\n")) {
 
         for (const w of words.split(" ")) {
 
             const c = complete.split(/(-)(°)/g)
-            
+
             const c2 = c[c.length - 1].split("\n")
 
             if (w.match(/(<#)([0-9]\w+)(>)/g)) {
@@ -33,6 +35,8 @@ export default function (c) {
 
                 complete += "° "
 
+            } else if (w.match(/(\*\*)([A-Z 0-9]\w+)(\*\*)/gi)) {
+                arrayP.push(<strong>{w.replace(/[*]/gi, "")}</strong>)
             } else {
 
                 complete += `${w} `
@@ -41,9 +45,23 @@ export default function (c) {
 
         };
 
-        complete += "\n"
+        arrayP.push(complete)
+
+        complete = ""
 
     };
 
-    return complete
+    return (
+        <div>
+
+            {(arrayP.map((value, index) => (
+
+                <div key={index}>
+                    {value}
+                </div>
+            )))}
+
+
+        </div>
+    )
 }

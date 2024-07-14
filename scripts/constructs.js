@@ -43,6 +43,8 @@ export function constructMessageEmbed(opt) {
 
     const embed = JSON.parse(localStorage.getItem("embedObject"))
 
+    embed["footer"]["text"] = "Powered by RE=L"
+
     if (
         !embed.title &&
         !embed.description &&
