@@ -157,7 +157,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                     <h5>Image Author</h5>
 
                                     <textarea
-                                        placeholder="Escreva o nome do Author"
+                                        placeholder="Escreva a url da imagem do author"
                                         title="authorName"
                                         maxLength={256}
                                         onChange={e => handleFieldChangeFild("authorImage", e.target.value)}
@@ -174,13 +174,13 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                                 <div style={{ padding: "10px", width: "50%" }}>
 
-                                    <h5>Author Name {authorName.length}/256</h5>
+                                    <h5>Redirect</h5>
 
                                     <textarea
-                                        placeholder="Escreva o nome do Author"
+                                        placeholder="Escreva o link redirecionador do Author"
                                         title="authorName"
                                         maxLength={256}
-                                        onChange={e => handleFieldChangeFild("authorName", e.target.value)}
+                                        onChange={e => handleFieldChangeFild("authorUrl", e.target.value)}
                                         style={{
                                             resize: "vertical",
                                             width: "100%",
