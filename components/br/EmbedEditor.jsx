@@ -12,6 +12,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
     const [imageUrl, setImageUrl] = useState("")
     const [color, setColor] = useState("")
     const [thumbnailUrl, setThumbnailUrl] = useState("")
+    const [url, setUrl] = useState("")
 
     const handleFieldChangeFild = (field, value) => {
 
@@ -24,6 +25,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
             imageUrl,
             thumbnailUrl,
             color,
+            url,
             fields,
             [field]: value,
         };
@@ -39,7 +41,8 @@ const EmbedEditor = ({ onEmbedChange }) => {
                 setAuthorName(value);
                 break;
             case 'authorUrl':
-                setAuthorUrl(value);
+                if (value.indexOf("https://") == 0)
+                    setAuthorUrl(value);
                 break;
             case 'authorImage':
                 setAuthorImage(value);
@@ -53,6 +56,10 @@ const EmbedEditor = ({ onEmbedChange }) => {
             case 'color':
                 setColor(value);
                 break;
+            case "url":
+                if (value.indexOf("https://") == 0)
+                    setUrl(value)
+                break
             default:
                 break;
         }
@@ -70,28 +77,31 @@ const EmbedEditor = ({ onEmbedChange }) => {
         const newFields = fields.slice();
         newFields[index].name = name;
         setFields(newFields);
-        onEmbedChange({ title, description, authorName, authorUrl, authorImage, imageUrl, thumbnailUrl, color, fields: newFields });
+        onEmbedChange({ title, description, authorName, authorUrl, authorImage, imageUrl, thumbnailUrl, color, url, fields: newFields });
     };
 
     const handleFieldValueChange = (index, name) => {
         const newFields = fields.slice();
         newFields[index].value = name;
         setFields(newFields);
-        onEmbedChange({ title, description, authorName, authorUrl, authorImage, imageUrl, thumbnailUrl, color, fields: newFields });
+        onEmbedChange({ title, description, authorName, authorUrl, authorImage, imageUrl, thumbnailUrl, color, url, fields: newFields });
+
     };
 
     const handleFieldInlineChange = (index, inline) => {
         const newFields = fields.slice();
         newFields[index].inline = inline;
         setFields(newFields);
-        onEmbedChange({ title, description, authorName, authorUrl, authorImage, imageUrl, thumbnailUrl, color, fields: newFields });
+        onEmbedChange({ title, description, authorName, authorUrl, authorImage, imageUrl, thumbnailUrl, color, url, fields: newFields });
+
     };
 
     const handleRemoveField = (index) => {
         const newFields = fields.slice();
         newFields.splice(index, 1);
         setFields(newFields);
-        onEmbedChange({ title, description, authorName, authorUrl, authorImage, imageUrl, thumbnailUrl, color, fields: newFields });
+        onEmbedChange({ title, description, authorName, authorUrl, authorImage, imageUrl, thumbnailUrl, color, url, fields: newFields });
+
     };
 
     return (
@@ -110,7 +120,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                             </i>
 
                             <h4>
-                                Author
+                                Autor
                             </h4>
 
                         </div>
@@ -132,7 +142,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                             <div style={{ padding: "10px" }}>
 
-                                <h5>Author Name {authorName.length}/256</h5>
+                                <h5>Nome do author {authorName.length}/256</h5>
 
                                 <textarea
                                     placeholder="Escreva o nome do Author"
@@ -154,7 +164,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                                 <div style={{ padding: "10px", width: "50%" }}>
 
-                                    <h5>Image Author</h5>
+                                    <h5>Imagem do Autor</h5>
 
                                     <textarea
                                         placeholder="Escreva a url da imagem do author"
@@ -174,7 +184,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                                 <div style={{ padding: "10px", width: "50%" }}>
 
-                                    <h5>Redirect</h5>
+                                    <h5>Redirecionamento do author</h5>
 
                                     <textarea
                                         placeholder="Escreva o link redirecionador do Author"
@@ -188,6 +198,129 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                             borderRadius: "5px"
                                         }}
                                         className="textAreaeEmbed"
+                                    />
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+
+                <div style={{ width: "100%" }}>
+
+                    <div id="expandDivBody" style={{ width: "80%", padding: "10px" }} className="contentCommand" onClick={(e) => changeDisplay(e, "Body", "block")}>
+
+                        <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+
+                            <i id="expandBody" className="material-symbols-outlined transitionShowCommands expand">
+                                chevron_right
+                            </i>
+
+                            <h4>
+                                Corpo
+                            </h4>
+
+                        </div>
+
+                    </div>
+
+                    <div
+                        id="expandEmbedBody"
+                        style={{
+                            width: "80%",
+                            padding: "10px",
+                            display: "none",
+                            borderTopLeftRadius: "0px",
+                            borderTopRightRadius: "0px"
+                        }}
+                        className="contentEmbedEditor"
+                    >
+                        <div id="contentBody">
+
+                            <div style={{ padding: "10px" }}>
+
+                                <h5>Titulo {title.length}/256</h5>
+
+                                <textarea
+                                    placeholder="Escreva o titulo da embed"
+                                    title="tileEmbed"
+                                    maxLength={256}
+                                    onChange={e => handleFieldChangeFild("title", e.target.value)}
+                                    style={{
+                                        resize: "vertical",
+                                        width: "100%",
+                                        height: "35px",
+                                        borderRadius: "5px"
+                                    }}
+                                    className="textAreaeEmbed"
+                                />
+
+                            </div>
+
+                            <div style={{ padding: "10px" }}>
+
+                                <h5>Descrição {(description[0]) ? description[0].length : "0"}/4096</h5>
+
+                                <textarea
+                                    placeholder="Escreva a descrição da embed"
+                                    title="descriptionEmbed"
+                                    maxLength={4096}
+                                    onChange={e => handleFieldChangeFild("description", [e.target.value])}
+                                    style={{
+                                        resize: "vertical",
+                                        width: "100%",
+                                        height: "60px",
+                                        borderRadius: "5px"
+                                    }}
+                                    className="textAreaeEmbed"
+                                />
+
+                            </div>
+
+                            <div style={{ display: "flex", flexDirection: "row", alignItems: "stretch", gap: "5px" }}>
+
+                                <div style={{ padding: "10px", width: "50%" }}>
+
+                                    <h5>Redirecionamento do titulo</h5>
+
+                                    <input
+                                        type="url"
+                                        placeholder="Escreva a url de redirecionamento do titulo"
+                                        title="urlEmbed"
+                                        maxLength={256}
+                                        onChange={e => handleFieldChangeFild("url", e.target.value)}
+                                        style={{
+                                            resize: "none",
+                                            width: "100%",
+                                            height: "35px",
+                                            borderRadius: "5px"
+                                        }}
+                                        className="textAreaeEmbed"
+                                    />
+
+                                </div>
+
+                                <div style={{ padding: "10px", width: "50%" }}>
+
+                                    <h5>Cor</h5>
+
+                                    <input
+                                        type="color"
+                                        name="ColorEmbed"
+                                        className="ColorEmbed"
+                                        style={{
+                                            height: "41px",
+                                            width: "100%",
+                                            borderRadius: "5px",
+                                        }}
+                                        onChange={e => handleFieldChangeFild("color", e.target.value)}
                                     />
 
                                 </div>
