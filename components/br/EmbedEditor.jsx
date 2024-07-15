@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { showDialogueBox } from "@/scripts/changes";
+import { changeDisplay } from "@/scripts/changes";
 
 const EmbedEditor = ({ onEmbedChange }) => {
 
@@ -97,7 +97,112 @@ const EmbedEditor = ({ onEmbedChange }) => {
     return (
         <div className="LineFormEmbed">
 
-            <div>
+            <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+
+                <div style={{ width: "100%" }}>
+
+                    <div id="expandDivAuthor" style={{ width: "80%", padding: "10px" }} className="contentCommand" onClick={(e) => changeDisplay(e, "Author", "block")}>
+
+                        <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+
+                            <i id="expandAuthor" className="material-symbols-outlined transitionShowCommands expand">
+                                chevron_right
+                            </i>
+
+                            <h4>
+                                Author
+                            </h4>
+
+                        </div>
+
+                    </div>
+
+                    <div
+                        id="expandEmbedAuthor"
+                        style={{
+                            width: "80%",
+                            padding: "10px",
+                            display: "none",
+                            borderTopLeftRadius: "0px",
+                            borderTopRightRadius: "0px"
+                        }}
+                        className="contentEmbedEditor"
+                    >
+                        <div id="contentAuthor">
+
+                            <div style={{ padding: "10px" }}>
+
+                                <h5>Author Name {authorName.length}/256</h5>
+
+                                <textarea
+                                    placeholder="Escreva o nome do Author"
+                                    title="authorName"
+                                    maxLength={256}
+                                    onChange={e => handleFieldChangeFild("authorName", e.target.value)}
+                                    style={{
+                                        resize: "vertical",
+                                        width: "100%",
+                                        height: "35px",
+                                        borderRadius: "5px"
+                                    }}
+                                    className="textAreaeEmbed"
+                                />
+
+                            </div>
+
+                            <div style={{ display: "flex", flexDirection: "row", alignItems: "stretch", gap: "5px" }}>
+
+                                <div style={{ padding: "10px", width: "50%" }}>
+
+                                    <h5>Image Author</h5>
+
+                                    <textarea
+                                        placeholder="Escreva o nome do Author"
+                                        title="authorName"
+                                        maxLength={256}
+                                        onChange={e => handleFieldChangeFild("authorImage", e.target.value)}
+                                        style={{
+                                            resize: "vertical",
+                                            width: "100%",
+                                            height: "35px",
+                                            borderRadius: "5px"
+                                        }}
+                                        className="textAreaeEmbed"
+                                    />
+
+                                </div>
+
+                                <div style={{ padding: "10px", width: "50%" }}>
+
+                                    <h5>Author Name {authorName.length}/256</h5>
+
+                                    <textarea
+                                        placeholder="Escreva o nome do Author"
+                                        title="authorName"
+                                        maxLength={256}
+                                        onChange={e => handleFieldChangeFild("authorName", e.target.value)}
+                                        style={{
+                                            resize: "vertical",
+                                            width: "100%",
+                                            height: "35px",
+                                            borderRadius: "5px"
+                                        }}
+                                        className="textAreaeEmbed"
+                                    />
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            {/* <div>
 
                 <div>
 
@@ -354,9 +459,9 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                 </div>
 
-            </div>
+            </div> */}
 
-        </div>
+        </div >
     )
 
 }

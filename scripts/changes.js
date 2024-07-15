@@ -56,6 +56,27 @@ export function changeDisplayNoneToAndResetAll(event, id, displayType) {
 
 }
 
+export function changeDisplay(event, id, displayType) {
+
+    const objInformations = document.getElementById(`expandEmbed${id}`)
+    const objExpand = document.getElementById(`expand${id}`)
+    const expandDiv = document.getElementById(`expandDiv${id}`)
+
+    if (["", "none"].includes(objInformations.style.display)) {
+        objExpand.className = "material-symbols-outlined transitionShowCommands expand_down"
+        objInformations.style.display = displayType
+        expandDiv.style.borderBottomLeftRadius = "0px"
+        expandDiv.style.borderBottomRightRadius = "0px"
+        return
+    }
+
+    objExpand.className = "material-symbols-outlined transitionShowCommands expand"
+    objInformations.style.display = "none"
+    expandDiv.style.borderBottomLeftRadius = "10px"
+    expandDiv.style.borderBottomRightRadius = "10px"
+
+}
+
 export function changeMode() {
 
     if (window.getComputedStyle(document.body).backgroundColor == "rgb(33, 33, 33)") {

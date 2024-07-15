@@ -1,8 +1,9 @@
 import { useState } from "react";
 import EmbedEditor from "@/components/br/EmbedEditor";
 import EmbedBuilder from "@/components/br/EmbedBuilder";
+import Header from "@/components/br/headers";
 
-const App = () => {
+export default function Teste() {
 
     const [embed, setEmbed] = useState({
         title: '',
@@ -21,21 +22,25 @@ const App = () => {
     };
 
     return (
-        <div className="relative min-h-screen bg-gray-900 text-white flex flex-col items-center p-4">
-            <div className="w-full md:w-1/2 p-4 bg-gray-800 rounded-lg shadow-md custom-shadow-md card-hover">
-                <EmbedEditor onEmbedChange={handleEmbedChange} />
-            </div>
-            <EmbedBuilder embed={embed} />
-        </div>
-    );
-};
-
-export default function Teste() {
-
-    return (
         <main style={{ minHeight: "100vh", minWidth: "100vh" }}>
 
-            <App />
+            <Header />
+
+            <div id="embedBuilder">
+
+                <div id="editorEmbed">
+
+                    <EmbedEditor onEmbedChange={handleEmbedChange} />
+
+                </div>
+
+                <div id="embedPreview">
+
+                    <EmbedBuilder embed={embed} />
+
+                </div>
+
+            </div>
 
         </main>
     )
