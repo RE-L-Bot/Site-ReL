@@ -23,6 +23,7 @@ const EmbedBuilder = ({ embed }) => {
                     authorImage={embed.authorImage}
                     image={embed.imageUrl}
                     thumbnail={embed.thumbnailUrl}
+                    url={(embed.url.indexOf("https://") == 0) ? embed.url : ""}
                 >
 
                     {embed.description.map((value, index) => (
