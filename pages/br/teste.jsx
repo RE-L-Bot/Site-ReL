@@ -7,7 +7,7 @@ export default function Teste() {
 
     const [embed, setEmbed] = useState({
         title: '',
-        description: [],
+        description: [""],
         authorName: "",
         authorUrl: "",
         authorImage: "",
@@ -15,6 +15,7 @@ export default function Teste() {
         thumbnailUrl: "",
         color: '#0000ff',
         fields: [],
+        url: ""
     });
 
     const handleEmbedChange = (newEmbed) => {
