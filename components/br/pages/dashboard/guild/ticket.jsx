@@ -1,14 +1,32 @@
-import EmbedContructor from "@/components/br/embedContructor";
 import InfosTicket from "@/components/br/InfosTicket";
 import SENDMESSAGE from "@/components/br/sendMessageButton";
-import SenderMessage from "@/components/br/senderMessage";
-import FormEmbed from "@/components/br/formEmbed";
 import SelectMenus from "@/components/br/selectMenus";
 import TopMenu from "@/components/br/TopMenu";
 import { redirectStore } from "@/scripts/redirects";
 import Head from "next/head";
+import EmbedBuilder from "@/components/br/embed/EmbedBuilder";
+import EmbedEditor from "@/components/br/embed/EmbedEditor";
+import { useState } from "react";
 
 export default function Ticket() {
+
+    const [embed, setEmbed] = useState({
+        title: '',
+        description: [""],
+        authorName: "",
+        authorUrl: "",
+        authorImage: "",
+        imageUrl: "",
+        thumbnailUrl: "",
+        color: '#0000ff',
+        fields: [],
+        url: ""
+    });
+
+    const handleEmbedChange = (newEmbed) => {
+        setEmbed(newEmbed);
+    };
+
     return (
         <div>
 
@@ -103,17 +121,21 @@ export default function Ticket() {
 
                         <InfosTicket />
 
-                        <div className="bodySendTicket">
+                        <div>
 
-                            <FormEmbed qnt="1" />
+                            {/* <FormEmbed qnt="1" /> */}
+
+                            <EmbedEditor onEmbedChange={handleEmbedChange}/>
 
                             <div id="embed">
 
                                 <div>
 
-                                    <SenderMessage />
+                                    {/* <SenderMessage /> */}
 
-                                    <EmbedContructor qnt="1" />
+                                    {/* <EmbedContructor qnt="1" /> */}
+
+                                    <EmbedBuilder embed={embed} />
 
                                     <SelectMenus />
 

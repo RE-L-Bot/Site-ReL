@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { changeDisplay } from "@/scripts/changes";
+import { changeDisplay, changeDisplayField } from "@/scripts/changes";
 
 const EmbedEditor = ({ onEmbedChange }) => {
 
@@ -48,10 +48,12 @@ const EmbedEditor = ({ onEmbedChange }) => {
                 setAuthorImage(value);
                 break;
             case 'imageUrl':
-                setImageUrl(value);
+                if (value.indexOf("https://") == 0)
+                    setImageUrl(value);
                 break;
             case 'thumbnailUrl':
-                setThumbnailUrl(value);
+                if (value.indexOf("https://") == 0)
+                    setThumbnailUrl(value);
                 break;
             case 'color':
                 setColor(value);
@@ -145,7 +147,6 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                 <h5>Nome do author {authorName.length}/256</h5>
 
                                 <textarea
-                                    placeholder="Escreva o nome do Author"
                                     title="authorName"
                                     maxLength={256}
                                     onChange={e => handleFieldChangeFild("authorName", e.target.value)}
@@ -167,12 +168,11 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                     <h5>Imagem do Autor</h5>
 
                                     <textarea
-                                        placeholder="Escreva a url da imagem do author"
                                         title="authorName"
                                         maxLength={256}
                                         onChange={e => handleFieldChangeFild("authorImage", e.target.value)}
                                         style={{
-                                            resize: "vertical",
+                                            resize: "none",
                                             width: "100%",
                                             height: "35px",
                                             borderRadius: "5px"
@@ -187,12 +187,11 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                     <h5>Redirecionamento do author</h5>
 
                                     <textarea
-                                        placeholder="Escreva o link redirecionador do Author"
                                         title="authorName"
                                         maxLength={256}
                                         onChange={e => handleFieldChangeFild("authorUrl", e.target.value)}
                                         style={{
-                                            resize: "vertical",
+                                            resize: "none",
                                             width: "100%",
                                             height: "35px",
                                             borderRadius: "5px"
@@ -249,7 +248,6 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                 <h5>Titulo {title.length}/256</h5>
 
                                 <textarea
-                                    placeholder="Escreva o titulo da embed"
                                     title="tileEmbed"
                                     maxLength={256}
                                     onChange={e => handleFieldChangeFild("title", e.target.value)}
@@ -269,7 +267,6 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                 <h5>Descrição {(description[0]) ? description[0].length : "0"}/4096</h5>
 
                                 <textarea
-                                    placeholder="Escreva a descrição da embed"
                                     title="descriptionEmbed"
                                     maxLength={4096}
                                     onChange={e => handleFieldChangeFild("description", [e.target.value])}
@@ -288,11 +285,10 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                                 <div style={{ padding: "10px", width: "50%" }}>
 
-                                    <h5>Redirecionamento do titulo</h5>
+                                    <h5>Url do titulo</h5>
 
                                     <input
                                         type="url"
-                                        placeholder="Escreva a url de redirecionamento do titulo"
                                         title="urlEmbed"
                                         maxLength={256}
                                         onChange={e => handleFieldChangeFild("url", e.target.value)}
@@ -334,265 +330,188 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
             </div>
 
+            <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
 
-            {/* <div>
+                <div style={{ width: "100%" }}>
 
-                <div>
+                    <div id="expandDivCampos" style={{ width: "80%", padding: "10px" }} className="contentCommand" onClick={(e) => changeDisplay(e, "Campos", "block")}>
 
-                    <h4>Titulo</h4>
+                        <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
 
-                    <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcTitleModal")}>Adicionar</button>
+                            <i id="expandCampos" className="material-symbols-outlined transitionShowCommands expand">
+                                chevron_right
+                            </i>
 
-                    <dialog id="AdcTitleModal" >
+                            <h4>
+                                Campos
+                            </h4>
 
-                        <form method="dialog" style={{ padding: "10px", textAlign: "center" }}>
+                        </div>
 
-                            <p>Titulo da embed</p>
+                    </div>
 
-                            <textarea id={`titleHtml`} placeholder="Escreva o titulo da embed" title="titulo" maxLength={256} onChange={e => handleFieldChangeFild("title", e.target.value)} style={{ resize: "none" }} />
+                    <div
+                        id="expandEmbedCampos"
+                        style={{
+                            width: "80%",
+                            padding: "10px",
+                            display: "none",
+                            borderTopLeftRadius: "0px",
+                            borderTopRightRadius: "0px"
+                        }}
+                        className="contentEmbedEditor"
+                    >
+                        <div id="contentCampos">
 
-                            <button className="styleButton">fechar dialogo</button>
+                            <div>
 
-                        </form>
+                                <button className="styleButton" style={{ borderRadius: "5px" }} type="button" onClick={handlerFieldsAdd}>
+                                    Adicionar Campo
+                                </button>
 
-                    </dialog>
+                                {fields.map((value, index) => (
+                                    <div key={index}>
 
-                </div>
+                                        <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
 
-                <div>
+                                            <div style={{ width: "100%" }}>
 
-                    <h4>Descrição</h4>
+                                                <div id={`expandDivCampo${index}`} style={{ width: "100%", padding: "10px", alignItems: "center" }} className="contentCommand">
 
-                    <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcDescriptionModal")}>Adicionar</button>
+                                                    <div style={{ display: "flex", alignItems: "center", gap: "5px" }} onClick={(e) => changeDisplayField(e, `${index}`, "block")}>
 
-                    <dialog id="AdcDescriptionModal" >
+                                                        <i id={`expandCampo${index}`} className="material-symbols-outlined transitionShowCommands expand">
+                                                            chevron_right
+                                                        </i>
 
-                        <form method="dialog" style={{ padding: "10px", textAlign: "center" }}>
+                                                        <h4>
+                                                            Campo {index + 1}
+                                                        </h4>
 
-                            <p>Descrição da embed</p>
+                                                    </div>
 
-                            <textarea id={`descriptionHtml`} placeholder="Escreva a descrição da embed" title="descrição" maxLength={4096} onChange={e => handleFieldChangeFild("description", [e.target.value])} style={{ resize: "none" }} />
+                                                    <label>
+                                                        <input
+                                                            type="checkbox"
+                                                            checked={value.inline}
+                                                            onChange={(e) => handleFieldInlineChange(index, e.target.checked)}
+                                                            className="mr-2"
+                                                            style={{ boxSizing: "20px" }}
+                                                        />
+                                                        Alinhado
+                                                    </label>
 
-                            <button className="styleButton">fechar dialogo</button>
+                                                    <button style={{ borderRadius: "5px" }} className="styleButton" onClick={e => handleRemoveField(index)}>Remover Field</button>
 
-                        </form>
+                                                </div>
 
-                    </dialog>
+                                                <div
+                                                    id={`expandCampoInto${index}`}
+                                                    style={{
+                                                        width: "100%",
+                                                        padding: "10px",
+                                                        display: "none",
+                                                        borderTopLeftRadius: "0px",
+                                                        borderTopRightRadius: "0px"
+                                                    }}
+                                                    className="contentEmbedEditor"
+                                                >
+                                                    <div id={`contentCampo${index}`}>
 
-                </div>
+                                                        <h4>Nome {fields[index].name.length}/256</h4>
+                                                        <textarea type="text" style={{ width: "100%", height: "35px", borderRadius: "5px", resize: "vertical" }} maxLength={256} onChange={e => handleFieldNameChange(index, e.target.value)} />
 
-                <div>
+                                                        <h4>Valor {fields[index].value.length}/1024</h4>
+                                                        <textarea type="text" style={{ width: "100%", height: "60px", borderRadius: "5px", resize: "vertical" }} maxLength={1024} onChange={e => handleFieldValueChange(index, e.target.value)} />
 
-                    <h4>Thumbnail (URL)</h4>
+                                                    </div>
 
-                    <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcThumbnailModal")}>Adicionar</button>
+                                                </div>
 
-                    <dialog id="AdcThumbnailModal" >
+                                            </div>
 
-                        <form method="dialog" style={{ padding: "10px", textAlign: "center" }}>
+                                        </div>
 
-                            <p>Thumbnail da embed (URL)</p>
-
-                            <textarea id={`thumbnailHtml`} placeholder="Link da imagem da thumbnail" title="Thumbnail" onChange={e => handleFieldChangeFild("thumbnailUrl", e.target.value)} style={{ resize: "none" }} />
-
-                            <button className="styleButton">fechar dialogo</button>
-
-                        </form>
-
-                    </dialog>
-
-                </div>
-
-                <div>
-
-                    <h5>Campos</h5>
-
-                    <div>
-                        <button className="styleButton" type="button" onClick={handlerFieldsAdd}>
-                            Adicionar
-                        </button>
-                        {fields.map((value, index) => (
-                            <div key={index}>
-
-                                <h4>Name</h4>
-                                <input type="text" name="" id="" onChange={e => handleFieldNameChange(index, e.target.value)} />
-
-                                <h4>Value</h4>
-                                <input type="text" name="" id="" onChange={e => handleFieldValueChange(index, e.target.value)} />
-
-                                <label className="block mt-2 mb-2">
-                                    <input
-                                        type="checkbox"
-                                        checked={value.inline}
-                                        onChange={(e) => handleFieldInlineChange(index, e.target.checked)}
-                                        className="mr-2"
-                                    />
-                                    Alinhado
-                                </label>
-                                <button className="styleButton" onClick={e => handleRemoveField(index)}>Remover Field</button>
-
+                                    </div>
+                                ))}
                             </div>
-                        ))}
+
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
 
-            <div>
+            <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
 
-                <div>
+                <div style={{ width: "100%" }}>
 
-                    <h4>Nome do Author</h4>
+                    <div id="expandDivImages" style={{ width: "80%", padding: "10px" }} className="contentCommand" onClick={(e) => changeDisplay(e, "Images", "block")}>
 
-                    <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcNameAuthorModal")}>Adicionar</button>
+                        <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
 
-                    <dialog id="AdcNameAuthorModal" >
+                            <i id="expandImages" className="material-symbols-outlined transitionShowCommands expand">
+                                chevron_right
+                            </i>
 
-                        <form method="dialog" style={{ padding: "10px", textAlign: "center" }}>
+                            <h4>
+                                Imagens
+                            </h4>
 
-                            <p>Nome do Author</p>
+                        </div>
 
-                            <textarea id={`nameAuthorHtml`} placeholder="Nome do autor" title="Nome do Author" maxLength={256} onChange={(e) => handleFieldChangeFild("authorName", e.target.value)} style={{ resize: "none" }} />
+                    </div>
 
-                            <button className="styleButton">fechar dialogo</button>
+                    <div
+                        id="expandEmbedImages"
+                        style={{
+                            width: "80%",
+                            padding: "10px",
+                            display: "none",
+                            borderTopLeftRadius: "0px",
+                            borderTopRightRadius: "0px"
+                        }}
+                        className="contentEmbedEditor"
+                    >
+                        <div id="contentImages">
 
+                            <h5>Imagem (URL)</h5>
 
-                        </form>
+                            <textarea
+                                title="imageUrl"
+                                onChange={e => handleFieldChangeFild("imageUrl", e.target.value)}
+                                style={{
+                                    resize: "none",
+                                    width: "100%",
+                                    height: "35px",
+                                    borderRadius: "5px"
+                                }}
+                                className="textAreaeEmbed"
+                            />
 
-                    </dialog>
+                            <h5>Thumbnail (URL)</h5>
 
-                </div>
+                            <textarea
+                                title="thumbnailUrl"
+                                onChange={e => handleFieldChangeFild("thumbnailUrl", e.target.value)}
+                                style={{
+                                    resize: "none",
+                                    width: "100%",
+                                    height: "35px",
+                                    borderRadius: "5px"
+                                }}
+                                className="textAreaeEmbed"
+                            />
 
-                <div>
+                        </div>
 
-                    <h4>Img do Author (URL)</h4>
-
-                    <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcImgAuthorModal")}>Adicionar</button>
-
-                    <dialog id="AdcImgAuthorModal" >
-
-                        <form method="dialog" style={{ padding: "10px", textAlign: "center" }}>
-
-                            <p>Img do Author (URL)</p>
-
-                            <textarea id={`imageAuthorHtml`} placeholder="Link da imagem do autor" title="Imagem do autor" onChange={e => handleFieldChangeFild("authorImage", e.target.value)} style={{ resize: "none" }} />
-
-                            <button className="styleButton">fechar dialogo</button>
-
-                        </form>
-
-                    </dialog>
-
-                </div>
-
-                <div>
-
-                    <h4>Link do Author (URL)</h4>
-
-                    <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcLinkAuthorModal")}>Adicionar</button>
-
-                    <dialog id="AdcLinkAuthorModal" >
-
-                        <form method="dialog" style={{ padding: "10px", textAlign: "center" }}>
-
-                            <p>Link do Author (URL)</p>
-
-                            <textarea id={`hrefAuthorHtml`} placeholder="Link de redirecionamento do autor" title="Link de redirecionamento do autor" onChange={e => handleFieldChangeFild("authorUrl", e.target.value)} style={{ resize: "none" }} />
-
-                            <button className="styleButton">fechar dialogo</button>
-
-                        </form>
-
-                    </dialog>
+                    </div>
 
                 </div>
 
             </div>
-
-            <div>
-
-                <div>
-
-                    <h4>Img (URL)</h4>
-
-                    <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcImageModal")}>Adicionar</button>
-
-                    <dialog id="AdcImageModal" >
-
-                        <form method="dialog" style={{ padding: "10px", textAlign: "center" }}>
-
-                            <p>Img (URL)</p>
-
-                            <textarea id={`imageHtml`} placeholder="Link da imagem da embed" title="Link da imagem da embed" onChange={e => handleFieldChangeFild("imageUrl", e.target.value)} style={{ resize: "none" }} />
-
-                            <button className="styleButton">fechar dialogo</button>
-
-                        </form>
-
-                    </dialog>
-
-                </div>
-
-                <div>
-
-                    <h4>Cor</h4>
-
-                    <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcCollourModal")}>Adicionar</button>
-
-                    <dialog id="AdcCollourModal" >
-
-                        <form method="dialog" style={{ padding: "10px", textAlign: "center" }}>
-
-                            <p>Cor</p>
-
-                            <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-
-                                <div className="SelectColorPerson" id="SelectColorPerson">
-
-                                    <label htmlFor={`embedColorHtml`}>
-                                        <div style={{ width: "100%", height: "100%" }} />
-                                    </label>
-
-                                    <input type="color" className="corembedselect" id={`embedColorHtml`} onChange={e => handleFieldChangeFild("color", e.target.value)} style={{ display: "none" }} />
-
-                                </div>
-
-                                <div>
-
-                                    <div style={{ display: "flex", alignItems: "center" }}>
-
-                                        <div className="hoverColor" style={{ backgroundColor: "#ff0000" }} onClick={() => handleFieldChangeFild("color", "#ff0000")} />
-
-                                        <div className="hoverColor" style={{ backgroundColor: "#ff0059" }} onClick={() => handleFieldChangeFild("color", "#ff0059")} />
-
-                                        <div className="hoverColor" style={{ backgroundColor: "#d400ff" }} onClick={() => handleFieldChangeFild("color", "#d400ff")} />
-
-                                    </div>
-
-                                    <div style={{ display: "flex", alignItems: "center" }}>
-
-                                        <div className="hoverColor" style={{ backgroundColor: "#0000ff" }} onClick={() => handleFieldChangeFild("color", "#0000ff")} />
-
-                                        <div className="hoverColor" style={{ backgroundColor: "#00ff6e" }} onClick={() => handleFieldChangeFild("color", "#00ff6e")} />
-
-                                        <div className="hoverColor" style={{ backgroundColor: "#00fffb" }} onClick={() => handleFieldChangeFild("color", "#00fffb")} />
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <button className="styleButton">fechar dialogo</button>
-
-                        </form>
-
-                    </dialog>
-
-                </div>
-
-            </div> */}
 
         </div >
     )

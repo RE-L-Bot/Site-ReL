@@ -1,7 +1,9 @@
 import { useState } from "react";
-import EmbedEditor from "@/components/br/EmbedEditor";
-import EmbedBuilder from "@/components/br/EmbedBuilder";
+import EmbedEditor from "@/components/br/embed/EmbedEditor";
+import EmbedBuilder from "@/components/br/embed/EmbedBuilder";
 import Header from "@/components/br/headers";
+import EmbedContructor from "@/components/br/embed/embedContructor";
+import FormEmbed from "@/components/br/formEmbed";
 
 export default function Teste() {
 
@@ -23,7 +25,7 @@ export default function Teste() {
     };
 
     return (
-        <main style={{ minHeight: "100vh", minWidth: "100vh" }}>
+        <main>
 
             <Header />
 

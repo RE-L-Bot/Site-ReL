@@ -1,4 +1,4 @@
-import EmbedContructor from "./embedContructor";
+import EmbedContructor from "./embed/embedContructor";
 
 export default function senderMessage() {
     return (

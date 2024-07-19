@@ -61,7 +61,6 @@ export default function (value) {
                 </div>
             )))}
 
-
         </div>
     )
 }

@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@skyra/discord-components-core": "^3.6.1",
-    "@skyra/discord-components-react": "^4.0.0-alpha.20",
+    "@skyra/discord-components-react": "^4.0.0-alpha.23",
     "axios": "^1.6.7",
     "dayjs": "^1.11.11",
     "discord-bitfield-calculator": "^1.2.0",

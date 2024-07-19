@@ -67,14 +67,14 @@ export default function InfosTicket() {
                             <h4>
                                 Nome do WebHook
                             </h4>
-                            <input className="textNameWebhook" type="text" id="nameWebhook" maxLength={32} minLength={1} onChange={(e) => { changeWebName(e) }} />
+                            <input style={{borderRadius: "5px"}} className="textNameWebhook" type="text" id="nameWebhook" maxLength={32} minLength={1} onChange={(e) => { changeWebName(e) }} />
                         </div>
 
                         <div style={{ display: "flex", alignItems: "center", marginLeft: "10px" }}>
                             <h4>
                                 Link da imagem do webhook
                             </h4>
-                            <input className="textNameWebhook" type="text" id="imageWebhook" onChange={(e) => { changeWebImg(e) }} />
+                            <input style={{borderRadius: "5px"}} className="textNameWebhook" type="text" id="imageWebhook" onChange={(e) => { changeWebImg(e) }} />
                         </div>
 
                     </div>

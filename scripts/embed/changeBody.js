@@ -39,7 +39,7 @@ export function changeDescriptionEmbed(c, opt) {
 
     const description = document.getElementById(`descriptionEmbed${opt.qnt}`);
 
-    const complete = myMD(c)
+    const complete = myMD(c.target.value)
 
     if (c.target.value.length < 1) {
         description.style.display = "none";

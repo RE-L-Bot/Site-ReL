@@ -3,7 +3,7 @@ import { addChannelsUseCommands, addChannelInUseCommands } from "@/scripts/addCh
 import ToogleOff from "@/components/globals/toogleOff";
 import { ChangeEnabledNobackground, enableDisableMessageSendInChannelNoPerm } from "@/scripts/changes";
 import { checkLanguageSelect } from "@/scripts/checks";
-import TOPMENU from "../../../TopMenu";
+import TOPMENU from "@/components/br/TopMenu";
 import Head from "next/head";
 
 function onLoadPageConfig() {

@@ -3,16 +3,17 @@ import {
     DiscordMessage,
     DiscordMessages,
     DiscordEmbedDescription,
+    DiscordEmbedFooter,
 } from "@skyra/discord-components-react"
 import FieldsBuilder from "./FieldsBuilder"
 import myMD from "@/scripts/myMD"
 
-const EmbedBuilder = ({ embed }) => {
+const EmbedBuilder = ({ embed, ActionRow }) => {
 
     return (
-        <DiscordMessages>
+        <DiscordMessages noBackground>
 
-            <DiscordMessage>
+            <DiscordMessage author="RE=L" bot verified>
 
                 <DiscordEmbed
                     slot="embeds"
@@ -33,6 +34,12 @@ const EmbedBuilder = ({ embed }) => {
                     ))}
 
                     <FieldsBuilder fields={embed.fields} />
+
+                    <DiscordEmbedFooter slot="footer" footerImage="https://images-ext-1.discordapp.net/external/3LBc_lYPIjZbMNBSYtx0t-Tch2fMtZLoIcvzIfAVTM0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/1018958083764002919/72e160dd9dc0d2952529c3388c81715d.webp?format=webp&width=473&height=473">
+
+                        Powered by RE=L
+
+                    </DiscordEmbedFooter>
 
                 </DiscordEmbed>
 
