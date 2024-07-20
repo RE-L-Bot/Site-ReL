@@ -469,21 +469,29 @@ export function ChangeEnabled(e, r) {
 
     if (e.target.checked) {
 
-        label.style.borderBottomLeftRadius = "0px"
-        label.style.borderBottomRightRadius = "0px"
+        try {
+
+            label.style.borderBottomLeftRadius = "0px"
+            label.style.borderBottomRightRadius = "0px"
+
+        } catch { }
 
         backGround.className = "toogleOn transitionToogle";
 
         return boll.className = "bollToogleOn transitionToogle";
     }
 
+    try {
+
+        label.style.borderBottomLeftRadius = "20px"
+
+        label.style.borderBottomRightRadius = "20px"
+
+    } catch { }
+
     backGround.className = "toogleOff transitionToogle";
 
     boll.className = "bollToogleOff transitionToogle";
-
-    label.style.borderBottomLeftRadius = "20px"
-
-    label.style.borderBottomRightRadius = "20px"
 
 }
 
@@ -520,26 +528,29 @@ export function ChangeEnabledNobackground(e, r) {
 
 export function SeeTypeSend(e) {
 
-    const divMessageWeb = document.getElementById("webhookMessage")
-    const divMessageRE = document.getElementById("reMessage")
+    const messageEmbed = document.getElementById("AuthorMessage")
     const senderName = document.getElementById("SenderName")
     const divInfosWeb = document.getElementById("divInfosWeb")
 
     if (e.target.checked) {
 
-        divMessageWeb.style.display = "block"
+        messageEmbed.author = "webhook"
 
-        divMessageRE.style.display = "none"
+        messageEmbed.avatar = "https://cdn.discordapp.com/embed/avatars/0.png"
+
+        messageEmbed.verified = false
 
         senderName.innerText = "WebHook"
 
-        return divInfosWeb.style.display = "flex"
+        return divInfosWeb.style.display = "block"
 
     }
 
-    divMessageRE.style.display = "block"
+    messageEmbed.author = "RE=L"
 
-    divMessageWeb.style.display = "none"
+    messageEmbed.avatar = "https://images-ext-1.discordapp.net/external/3LBc_lYPIjZbMNBSYtx0t-Tch2fMtZLoIcvzIfAVTM0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/1018958083764002919/72e160dd9dc0d2952529c3388c81715d.webp?format=webp&width=473&height=473"
+
+    messageEmbed.verified = true
 
     senderName.innerText = "Bot"
 
@@ -581,17 +592,17 @@ export function showDialogueBox(e, id) {
 
 export function changeWebName(c) {
 
-    const nameWeb = document.getElementById("nameWebTicket");
+    const messageEmbed = document.getElementById("AuthorMessage");
 
-    nameWeb.innerText = c.target.value.toString();
+    messageEmbed.author = c.target.value.toString();
 
 }
 
 export function changeWebImg(c) {
 
-    const imageWeb = document.getElementById("imageWebTicket");
+    const messageEmbed = document.getElementById("AuthorMessage");
 
-    imageWeb.src = c.target.value.toString();
+    messageEmbed.avatar = c.target.value.toString();
 
 }
 

@@ -1,5 +1,6 @@
 import { useState } from "react"
-import { changeDisplay, changeDisplayField } from "@/scripts/changes";
+import { changeDisplay, changeDisplayField, ChangeEnabled } from "@/scripts/changes";
+import ToogleOff from "@/components/globals/toogleOff";
 
 const EmbedEditor = ({ onEmbedChange }) => {
 
@@ -95,7 +96,6 @@ const EmbedEditor = ({ onEmbedChange }) => {
         newFields[index].inline = inline;
         setFields(newFields);
         onEmbedChange({ title, description, authorName, authorUrl, authorImage, imageUrl, thumbnailUrl, color, url, fields: newFields });
-
     };
 
     const handleRemoveField = (index) => {
@@ -390,15 +390,21 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                                                     </div>
 
-                                                    <label>
+                                                    <label className="SelectTypeSender" style={{ background: "none", padding: "none", margin: "none" }} >
+
+                                                        {/* <div>
+                                                            <ToogleOff qnt={index} />
+                                                        </div> */}
+
                                                         <input
                                                             type="checkbox"
                                                             checked={value.inline}
-                                                            onChange={(e) => handleFieldInlineChange(index, e.target.checked)}
+                                                            onChange={(e) => { handleFieldInlineChange(index, e.target.checked) }}
                                                             className="mr-2"
-                                                            style={{ boxSizing: "20px" }}
                                                         />
+
                                                         Alinhado
+
                                                     </label>
 
                                                     <button style={{ borderRadius: "5px" }} className="styleButton" onClick={e => handleRemoveField(index)}>Remover Field</button>

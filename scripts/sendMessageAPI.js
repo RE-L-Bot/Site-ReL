@@ -1,7 +1,7 @@
 import { constructMessageEmbed, constructMessageComponent } from "./constructs";
 import RequestApi from "./ManagerRequest";
 
-export default async function (e, opt) {
+export default async function (e, opt, embedOption) {
 
     const langP = window.location.pathname.slice(1, 3)
 
@@ -9,9 +9,9 @@ export default async function (e, opt) {
 
     const Enviar = (document.getElementsByClassName("checkWebhookSender"))[0]?.checked;
 
-    const webName = (document.getElementById("nameWebhook"))?.value;
+    const nameWebhook = document.getElementById("nameWebhook");
 
-    const webImage = (document.getElementById("imageWebhook"))?.value;
+    const imageWebhook = document.getElementById("imageWebhook");
 
     const QntCat = (document.getElementById("SelectQnt"))?.value;
 
@@ -42,7 +42,8 @@ export default async function (e, opt) {
             defineNameWebhookSender: "Defina o nome da webhook",
             selectQuantityOfCategories: "Selecione a quantidade de Categorias",
             selectACategoryToAllTopics: "Selecione uma categoria para todos os topicos",
-            defineNameToAllSelectsMenus: "Defina um nome para todos os SelectMenus"
+            defineNameToAllSelectsMenus: "Defina um nome para todos os SelectMenus",
+            nameWebhookInvalidBylength: "O nome do Webhook é invalido, possivelmente você alterou no html para aceitar um tamanho maior"
         },
         es: {
             noPremiumBasic: "Usted no posee premium basic o superior",
@@ -53,7 +54,8 @@ export default async function (e, opt) {
             defineNameWebhookSender: "Defina el nombre del webhook",
             selectQuantityOfCategories: "Seleccione la cantidad de categorías",
             selectACategoryToAllTopics: "Seleccione una categoría para todos los temas",
-            defineNameToAllSelectsMenus: "Defina un nombre para todos los SelectMenus"
+            defineNameToAllSelectsMenus: "Defina un nombre para todos los SelectMenus",
+            nameWebhookInvalidBylength: "El nombre del webhook no es válido, posiblemente lo haya cambiado en el html para aceptar un tamaño más grande"
         },
         us: {
             noPremiumBasic: "You do not have premium basic or higher",
@@ -64,7 +66,8 @@ export default async function (e, opt) {
             defineNameWebhookSender: "Define the webhook name",
             selectQuantityOfCategories: "Select the number of categories",
             selectACategoryToAllTopics: "Select a category for all topics",
-            defineNameToAllSelectsMenus: "Define a name for all SelectMenus"
+            defineNameToAllSelectsMenus: "Define a name for all SelectMenus",
+            nameWebhookInvalidBylength: "The Webhook name is invalid, possibly you changed it in the html to accept a larger size"
         }        
     }
 
@@ -110,8 +113,11 @@ export default async function (e, opt) {
     };
 
     if (Enviar) {
-        if (webName == "") {
+        if (nameWebhook.value == "") {
             return alert(messages[langP]["defineNameWebhookSender"])
+        }
+        if (nameWebhook.value.length > 32){
+            return alert(messages[langP]["nameWebhookInvalidBylength"])
         }
     };
 
@@ -133,7 +139,7 @@ export default async function (e, opt) {
         }
     };
 
-    const embed = constructMessageEmbed(opt);
+    const embed = constructMessageEmbed(embedOption);
     const component = constructMessageComponent();
 
     if (!embed || !component) return
@@ -143,13 +149,13 @@ export default async function (e, opt) {
         .setBody({
             embeds: [embed],
             components: [component],
-            avatar_url: webImage
+            avatar_url: imageWebhook.value
         })
         .setEndPoint("messageTicket")
         .setHeaders({
             channel_id: channelId,
             quem: `${Enviar}`,
-            username: webName
+            username: nameWebhook.value
         })
         .request()
         .then((response) => {

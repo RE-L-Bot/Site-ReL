@@ -63,18 +63,28 @@ export default function InfosTicket() {
 
                     <div className="infosWebHook" id="divInfosWeb">
 
-                        <div style={{ display: "flex", alignItems: "center" }}>
-                            <h4>
-                                Nome do WebHook
-                            </h4>
-                            <input style={{borderRadius: "5px"}} className="textNameWebhook" type="text" id="nameWebhook" maxLength={32} minLength={1} onChange={(e) => { changeWebName(e) }} />
+                        <div style={{opacity: "50%"}}>
+                            <h5>
+                                Se o nome e a imagem lá na representação da mensagem mudar, não se preocupe, oq contara é oq está aqui
+                            </h5>
                         </div>
 
-                        <div style={{ display: "flex", alignItems: "center", marginLeft: "10px" }}>
-                            <h4>
-                                Link da imagem do webhook
-                            </h4>
-                            <input style={{borderRadius: "5px"}} className="textNameWebhook" type="text" id="imageWebhook" onChange={(e) => { changeWebImg(e) }} />
+                        <div id="ValuesWebhook">
+
+                            <div style={{ display: "flex", alignItems: "center" }}>
+                                <h4>
+                                    Nome do WebHook
+                                </h4>
+                                <input style={{ borderRadius: "5px" }} className="textNameWebhook" type="text" id="nameWebhook" maxLength={32} minLength={1} onChange={(e) => { changeWebName(e) }} />
+                            </div>
+
+                            <div style={{ display: "flex", alignItems: "center", marginLeft: "10px" }}>
+                                <h4>
+                                    Link da imagem do webhook
+                                </h4>
+                                <input style={{ borderRadius: "5px" }} className="textNameWebhook" type="text" id="imageWebhook" onChange={(e) => { changeWebImg(e) }} />
+                            </div>
+
                         </div>
 
                     </div>

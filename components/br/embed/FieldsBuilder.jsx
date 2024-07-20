@@ -22,8 +22,6 @@ const FieldsBuilder = ({ fields }) => {
             </DiscordEmbedField>
         )
 
-        console.log(calculateInlineIndex(fields, Number(i)))
-
         if (p.length === 3) {
 
             fieldArray.push(

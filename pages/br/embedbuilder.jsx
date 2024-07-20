@@ -1,4 +1,4 @@
-import EmbedContructor from "@/components/br/embedContructor"
+import EmbedContructor from "@/components/br/embed/embedContructor"
 import Footer from "@/components/br/footers"
 import FormEmbed from "@/components/br/formEmbed"
 import HEADER from "@/components/br/headers"

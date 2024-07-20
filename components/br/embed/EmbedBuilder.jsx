@@ -8,12 +8,12 @@ import {
 import FieldsBuilder from "./FieldsBuilder"
 import myMD from "@/scripts/myMD"
 
-const EmbedBuilder = ({ embed, ActionRow }) => {
+const EmbedBuilder = ({ embed }) => {
 
     return (
         <DiscordMessages noBackground>
 
-            <DiscordMessage author="RE=L" bot verified>
+            <DiscordMessage id="AuthorMessage" author="RE=L" bot verified avatar="https://images-ext-1.discordapp.net/external/3LBc_lYPIjZbMNBSYtx0t-Tch2fMtZLoIcvzIfAVTM0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/1018958083764002919/72e160dd9dc0d2952529c3388c81715d.webp?format=webp&width=473&height=473">
 
                 <DiscordEmbed
                     slot="embeds"

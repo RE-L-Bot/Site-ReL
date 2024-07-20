@@ -123,23 +123,17 @@ export default function Ticket() {
 
                         <div>
 
-                            {/* <FormEmbed qnt="1" /> */}
-
-                            <EmbedEditor onEmbedChange={handleEmbedChange}/>
+                            <EmbedEditor onEmbedChange={handleEmbedChange} />
 
                             <div id="embed">
 
                                 <div>
 
-                                    {/* <SenderMessage /> */}
-
-                                    {/* <EmbedContructor qnt="1" /> */}
-
                                     <EmbedBuilder embed={embed} />
 
                                     <SelectMenus />
 
-                                    <SENDMESSAGE qnt="1" />
+                                    <SENDMESSAGE opt={{ qnt: "1" }} embedOption={embed} />
 
                                 </div>
 
