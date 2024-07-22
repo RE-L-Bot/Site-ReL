@@ -154,6 +154,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                         resize: "vertical",
                                         width: "100%",
                                         height: "35px",
+                                        minHeight: "35px",
                                         borderRadius: "5px"
                                     }}
                                     className="textAreaeEmbed"
@@ -175,6 +176,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                             resize: "none",
                                             width: "100%",
                                             height: "35px",
+                                            minHeight: "35px",
                                             borderRadius: "5px"
                                         }}
                                         className="textAreaeEmbed"
@@ -194,6 +196,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                             resize: "none",
                                             width: "100%",
                                             height: "35px",
+                                            minHeight: "35px",
                                             borderRadius: "5px"
                                         }}
                                         className="textAreaeEmbed"
@@ -255,6 +258,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                         resize: "vertical",
                                         width: "100%",
                                         height: "35px",
+                                        minHeight: "35px",
                                         borderRadius: "5px"
                                     }}
                                     className="textAreaeEmbed"
@@ -274,6 +278,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                         resize: "vertical",
                                         width: "100%",
                                         height: "60px",
+                                        minHeight: "60px",
                                         borderRadius: "5px"
                                     }}
                                     className="textAreaeEmbed"
@@ -296,6 +301,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                             resize: "none",
                                             width: "100%",
                                             height: "35px",
+                                            minHeight: "35px",
                                             borderRadius: "5px"
                                         }}
                                         className="textAreaeEmbed"
@@ -313,6 +319,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                         className="ColorEmbed"
                                         style={{
                                             height: "41px",
+                                            minHeight: "41px",
                                             width: "100%",
                                             borderRadius: "5px",
                                         }}
@@ -320,6 +327,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                     />
 
                                 </div>
+
                             </div>
 
                         </div>
@@ -390,22 +398,31 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                                                     </div>
 
-                                                    <label className="SelectTypeSender" style={{ background: "none", padding: "none", margin: "none" }} >
-
-                                                        {/* <div>
-                                                            <ToogleOff qnt={index} />
-                                                        </div> */}
+                                                    <label
+                                                        className="SelectTypeSender"
+                                                        style={{
+                                                            background: "none",
+                                                            padding: "none",
+                                                            margin: "none",
+                                                            display: "flex",
+                                                            alignItems: "center",
+                                                            gap: "20px",
+                                                        }} >
 
                                                         <input
                                                             type="checkbox"
                                                             checked={value.inline}
                                                             onChange={(e) => { handleFieldInlineChange(index, e.target.checked) }}
-                                                            className="mr-2"
                                                         />
 
-                                                        Alinhado
+                                                        <div>
+
+                                                            <h4>Alinhado</h4>
+
+                                                        </div>
 
                                                     </label>
+
 
                                                     <button style={{ borderRadius: "5px" }} className="styleButton" onClick={e => handleRemoveField(index)}>Remover Field</button>
 
@@ -425,10 +442,21 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                                     <div id={`contentCampo${index}`}>
 
                                                         <h4>Nome {fields[index].name.length}/256</h4>
-                                                        <textarea type="text" style={{ width: "100%", height: "35px", borderRadius: "5px", resize: "vertical" }} maxLength={256} onChange={e => handleFieldNameChange(index, e.target.value)} />
+                                                        <textarea
+                                                            type="text"
+                                                            style={{
+                                                                width: "100%", height: "35px",
+                                                                minHeight: "35px", borderRadius: "5px", resize: "vertical"
+                                                            }}
+                                                            maxLength={256}
+                                                            onChange={e => handleFieldNameChange(index, e.target.value)}
+                                                        />
 
                                                         <h4>Valor {fields[index].value.length}/1024</h4>
-                                                        <textarea type="text" style={{ width: "100%", height: "60px", borderRadius: "5px", resize: "vertical" }} maxLength={1024} onChange={e => handleFieldValueChange(index, e.target.value)} />
+                                                        <textarea type="text" style={{
+                                                            width: "100%", height: "60px",
+                                                            minHeight: "60px", borderRadius: "5px", resize: "vertical"
+                                                        }} maxLength={1024} onChange={e => handleFieldValueChange(index, e.target.value)} />
 
                                                     </div>
 
@@ -492,6 +520,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                     resize: "none",
                                     width: "100%",
                                     height: "35px",
+                                    minHeight: "35px",
                                     borderRadius: "5px"
                                 }}
                                 className="textAreaeEmbed"
@@ -506,6 +535,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                     resize: "none",
                                     width: "100%",
                                     height: "35px",
+                                    minHeight: "35px",
                                     borderRadius: "5px"
                                 }}
                                 className="textAreaeEmbed"
