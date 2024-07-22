@@ -2,6 +2,9 @@ import axios from "axios"
 
 export default async function handler(req, res) {
 
+    if (!req.body.idUser)
+        return res.send(400).send({ error: "User is not logged in" })
+
     if (req.method !== "PUT")
         return res.status(405).send({ error: "Method Errado", status: 405 })
 
