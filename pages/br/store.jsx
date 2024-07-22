@@ -2,7 +2,6 @@ import Footer from "@/components/br/footers";
 import Header from "@/components/br/headers";
 import { calculatePercent } from "@/scripts/outhers";
 import axios from "axios";
-import dayjs from "dayjs";
 
 export default function Teste() {
 
@@ -96,7 +95,34 @@ export default function Teste() {
 
                         <br />
 
-                        <button onClick={() => axios("/api/createpayment", { method: "PUT", data: { value: 15.99, type: "basic_1M", idUser: localStorage.getItem("idUser") } }).then(x => x.data).then(res => window.open(res.response, "_blank"))}>
+                        <button onClick={() => {
+
+                            const doclogin = document.getElementsByClassName("login");
+
+                            const langP = window.location.pathname.split("/")[1]
+
+                            if (doclogin[0].textContent.toLowerCase() != "login")
+                                return axios(
+                                    "/api/createpayment",
+                                    {
+                                        method: "PUT",
+                                        data: {
+                                            value: 15.99,
+                                            type: "basic_1M",
+                                            idUser: localStorage.getItem("idUser")
+                                        }
+                                    })
+                                    .then(x => x.data)
+                                    .then(res => window.open(res.response, "_blank"))
+
+                            const randomString = generateRandomString();
+
+                            localStorage.setItem('oauth-state', randomString);
+
+                            window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
+
+
+                        }}>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "5px", margin: "10px", borderRadius: "5px" }}>
 
@@ -150,7 +176,34 @@ export default function Teste() {
 
                         <br />
 
-                        <button onClick={() => axios("/api/createpayment", { method: "PUT", data: { value: 86.35, type: "basic_6M", idUser: localStorage.getItem("idUser") } }).then(x => x.data).then(res => window.open(res.response, "_blank"))}>
+                        <button onClick={() => {
+
+                            const doclogin = document.getElementsByClassName("login");
+
+                            const langP = window.location.pathname.split("/")[1]
+
+                            if (doclogin[0].textContent.toLowerCase() != "login")
+                                return axios(
+                                    "/api/createpayment",
+                                    {
+                                        method: "PUT",
+                                        data: {
+                                            value: 86.35,
+                                            type: "basic_6M",
+                                            idUser: localStorage.getItem("idUser")
+                                        }
+                                    })
+                                    .then(x => x.data)
+                                    .then(res => window.open(res.response, "_blank"))
+
+                            const randomString = generateRandomString();
+
+                            localStorage.setItem('oauth-state', randomString);
+
+                            window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
+
+
+                        }}>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "5px", margin: "10px", borderRadius: "5px" }}>
 
@@ -204,7 +257,33 @@ export default function Teste() {
 
                         <br />
 
-                        <button onClick={() => axios("/api/createpayment", { method: "PUT", data: { value: 153.50, type: "basic_12M", idUser: localStorage.getItem("idUser") } }).then(x => x.data).then(res => window.open(res.response, "_blank"))}>
+                        <button onClick={() => {
+
+                            const doclogin = document.getElementsByClassName("login");
+
+                            const langP = window.location.pathname.split("/")[1]
+
+                            if (doclogin[0].textContent.toLowerCase() != "login")
+                                return axios(
+                                    "/api/createpayment",
+                                    {
+                                        method: "PUT",
+                                        data: {
+                                            value: 153.50,
+                                            type: "basic_12M",
+                                            idUser: localStorage.getItem("idUser")
+                                        }
+                                    })
+                                    .then(x => x.data)
+                                    .then(res => window.open(res.response, "_blank"))
+
+                            const randomString = generateRandomString();
+
+                            localStorage.setItem('oauth-state', randomString);
+
+                            window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
+
+                        }}>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "5px", margin: "10px", borderRadius: "5px" }}>
 
@@ -276,7 +355,33 @@ export default function Teste() {
 
                         <p>1 cargo personalizado no servidor de suporte</p>
 
-                        <button onClick={() => axios("/api/createpayment", { method: "PUT", data: { value: 30.99, type: "medium_1M", idUser: localStorage.getItem("idUser") } }).then(x => x.data).then(res => window.open(res.response, "_blank"))}>
+                        <button onClick={() => {
+
+                            const doclogin = document.getElementsByClassName("login");
+
+                            const langP = window.location.pathname.split("/")[1]
+
+                            if (doclogin[0].textContent.toLowerCase() != "login")
+                                return axios(
+                                    "/api/createpayment",
+                                    {
+                                        method: "PUT",
+                                        data: {
+                                            value: 30.99,
+                                            type: "medium_1M",
+                                            idUser: localStorage.getItem("idUser")
+                                        }
+                                    })
+                                    .then(x => x.data)
+                                    .then(res => window.open(res.response, "_blank"))
+
+                            const randomString = generateRandomString();
+
+                            localStorage.setItem('oauth-state', randomString);
+
+                            window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
+
+                        }}>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "5px", margin: "10px", borderRadius: "5px" }}>
 
@@ -340,7 +445,33 @@ export default function Teste() {
 
                         <p>1 cargo personalizado no servidor de suporte</p>
 
-                        <button onClick={() => axios("/api/createpayment", { method: "PUT", data: { value: 167.35, type: "medium_6M", idUser: localStorage.getItem("idUser") } }).then(x => x.data).then(res => window.open(res.response, "_blank"))}>
+                        <button onClick={() => {
+
+                            const doclogin = document.getElementsByClassName("login");
+
+                            const langP = window.location.pathname.split("/")[1]
+
+                            if (doclogin[0].textContent.toLowerCase() != "login")
+                                return axios(
+                                    "/api/createpayment",
+                                    {
+                                        method: "PUT",
+                                        data: {
+                                            value: 167.35,
+                                            type: "medium_6M",
+                                            idUser: localStorage.getItem("idUser")
+                                        }
+                                    })
+                                    .then(x => x.data)
+                                    .then(res => window.open(res.response, "_blank"))
+
+                            const randomString = generateRandomString();
+
+                            localStorage.setItem('oauth-state', randomString);
+
+                            window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
+
+                        }}>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "5px", margin: "10px", borderRadius: "5px" }}>
 
@@ -404,7 +535,33 @@ export default function Teste() {
 
                         <p>1 cargo personalizado no servidor de suporte</p>
 
-                        <button onClick={() => axios("/api/createpayment", { method: "PUT", data: { value: 297.5, type: "medium_12M", idUser: localStorage.getItem("idUser") } }).then(x => x.data).then(res => window.open(res.response, "_blank"))}>
+                        <button onClick={() => {
+
+                            const doclogin = document.getElementsByClassName("login");
+
+                            const langP = window.location.pathname.split("/")[1]
+
+                            if (doclogin[0].textContent.toLowerCase() != "login")
+                                return axios(
+                                    "/api/createpayment",
+                                    {
+                                        method: "PUT",
+                                        data: {
+                                            value: 297.5,
+                                            type: "medium_12M",
+                                            idUser: localStorage.getItem("idUser")
+                                        }
+                                    })
+                                    .then(x => x.data)
+                                    .then(res => window.open(res.response, "_blank"))
+
+                            const randomString = generateRandomString();
+
+                            localStorage.setItem('oauth-state', randomString);
+
+                            window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
+
+                        }}>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "5px", margin: "10px", borderRadius: "5px" }}>
 
@@ -480,7 +637,33 @@ export default function Teste() {
 
                         <p>2 cargo personalizado no servidor de suporte</p>
 
-                        <button onClick={() => axios("/api/createpayment", { method: "PUT", data: { value: 50.99, type: "master_1M", idUser: localStorage.getItem("idUser") } }).then(x => x.data).then(res => window.open(res.response, "_blank"))}>
+                        <button onClick={() => {
+
+                            const doclogin = document.getElementsByClassName("login");
+
+                            const langP = window.location.pathname.split("/")[1]
+
+                            if (doclogin[0].textContent.toLowerCase() != "login")
+                                return axios(
+                                    "/api/createpayment",
+                                    {
+                                        method: "PUT",
+                                        data: {
+                                            value: 50.99,
+                                            type: "master_1M",
+                                            idUser: localStorage.getItem("idUser")
+                                        }
+                                    })
+                                    .then(x => x.data)
+                                    .then(res => window.open(res.response, "_blank"))
+
+                            const randomString = generateRandomString();
+
+                            localStorage.setItem('oauth-state', randomString);
+
+                            window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
+
+                        }}>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "5px", margin: "10px", borderRadius: "5px" }}>
 
@@ -548,7 +731,33 @@ export default function Teste() {
 
                         <p>2 cargo personalizado no servidor de suporte</p>
 
-                        <button onClick={() => axios("/api/createpayment", { method: "PUT", data: { value: 275.35, type: "master_6M", idUser: localStorage.getItem("idUser") } }).then(x => x.data).then(res => window.open(res.response, "_blank"))}>
+                        <button onClick={() => {
+
+                            const doclogin = document.getElementsByClassName("login");
+
+                            const langP = window.location.pathname.split("/")[1]
+
+                            if (doclogin[0].textContent.toLowerCase() != "login")
+                                return axios(
+                                    "/api/createpayment",
+                                    {
+                                        method: "PUT",
+                                        data: {
+                                            value: 275.35,
+                                            type: "master_6M",
+                                            idUser: localStorage.getItem("idUser")
+                                        }
+                                    })
+                                    .then(x => x.data)
+                                    .then(res => window.open(res.response, "_blank"))
+
+                            const randomString = generateRandomString();
+
+                            localStorage.setItem('oauth-state', randomString);
+
+                            window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
+
+                        }}>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "5px", margin: "10px", borderRadius: "5px" }}>
 
@@ -616,7 +825,33 @@ export default function Teste() {
 
                         <p>2 cargo personalizado no servidor de suporte</p>
 
-                        <button onClick={() => axios("/api/createpayment", { method: "PUT", data: { value: 489.5, type: "master_12M", idUser: localStorage.getItem("idUser") } }).then(x => x.data).then(res => window.open(res.response, "_blank"))}>
+                        <button onClick={() => {
+
+                            const doclogin = document.getElementsByClassName("login");
+
+                            const langP = window.location.pathname.split("/")[1]
+
+                            if (doclogin[0].textContent.toLowerCase() != "login")
+                                return axios(
+                                    "/api/createpayment",
+                                    {
+                                        method: "PUT",
+                                        data: {
+                                            value: 489.5,
+                                            type: "master_12M",
+                                            idUser: localStorage.getItem("idUser")
+                                        }
+                                    })
+                                    .then(x => x.data)
+                                    .then(res => window.open(res.response, "_blank"))
+
+                            const randomString = generateRandomString();
+
+                            localStorage.setItem('oauth-state', randomString);
+
+                            window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
+
+                        }}>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "5px", margin: "10px", borderRadius: "5px" }}>
 
@@ -678,7 +913,33 @@ export default function Teste() {
 
                         <br />
 
-                        <button onClick={() => axios("/api/createpayment", { method: "PUT", data: { value: 671.58, type: "basic_LT", idUser: localStorage.getItem("idUser") } }).then(x => x.data).then(res => window.open(res.response, "_blank"))}>
+                        <button onClick={() => {
+
+                            const doclogin = document.getElementsByClassName("login");
+
+                            const langP = window.location.pathname.split("/")[1]
+
+                            if (doclogin[0].textContent.toLowerCase() != "login")
+                                return axios(
+                                    "/api/createpayment",
+                                    {
+                                        method: "PUT",
+                                        data: {
+                                            value: 671.58,
+                                            type: "basic_LT",
+                                            idUser: localStorage.getItem("idUser")
+                                        }
+                                    })
+                                    .then(x => x.data)
+                                    .then(res => window.open(res.response, "_blank"))
+
+                            const randomString = generateRandomString();
+
+                            localStorage.setItem('oauth-state', randomString);
+
+                            window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
+
+                        }}>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "5px", margin: "10px", borderRadius: "5px" }}>
 
@@ -742,7 +1003,33 @@ export default function Teste() {
 
                         <p>1 cargo personalizado no servidor de suporte</p>
 
-                        <button onClick={() => axios("/api/createpayment", { method: "PUT", data: { value: 1301.58, type: "medium_LT", idUser: localStorage.getItem("idUser") } }).then(x => x.data).then(res => window.open(res.response, "_blank"))}>
+                        <button onClick={() => {
+
+                            const doclogin = document.getElementsByClassName("login");
+
+                            const langP = window.location.pathname.split("/")[1]
+
+                            if (doclogin[0].textContent.toLowerCase() != "login")
+                                return axios(
+                                    "/api/createpayment",
+                                    {
+                                        method: "PUT",
+                                        data: {
+                                            value: 1301.58,
+                                            type: "medium_LT",
+                                            idUser: localStorage.getItem("idUser")
+                                        }
+                                    })
+                                    .then(x => x.data)
+                                    .then(res => window.open(res.response, "_blank"))
+
+                            const randomString = generateRandomString();
+
+                            localStorage.setItem('oauth-state', randomString);
+
+                            window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
+
+                        }}>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "5px", margin: "10px", borderRadius: "5px" }}>
 
@@ -810,7 +1097,35 @@ export default function Teste() {
 
                         <p>2 cargo personalizado no servidor de suporte</p>
 
-                        <button onClick={() => axios("/api/createpayment", { method: "PUT", data: { value: 2141.58, type: "master_LT", idUser: localStorage.getItem("idUser") } }).then(x => x.data).then(res => window.open(res.response, "_blank"))}>
+                        <button onClick={() => {
+
+                            const doclogin = document.getElementsByClassName("login");
+
+                            const langP = window.location.pathname.split("/")[1]
+
+                            if (doclogin[0].textContent.toLowerCase() != "login")
+                                return axios(
+                                    "/api/createpayment",
+                                    {
+                                        method: "PUT",
+                                        data: {
+                                            value: 2141.58,
+                                            type: "master_LT",
+                                            idUser:
+                                                localStorage.getItem("idUser")
+                                        }
+                                    }
+                                )
+                                    .then(x => x.data)
+                                    .then(res => window.open(res.response, "_blank"))
+
+                            const randomString = generateRandomString();
+
+                            localStorage.setItem('oauth-state', randomString);
+
+                            window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
+
+                        }}>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "5px", margin: "10px", borderRadius: "5px" }}>
 
