@@ -313,11 +313,10 @@ export function checkKeysPremium() {
 
                 typePremium.innerText = response.type
 
-                daysPremium.innerHTML = (response.date == "LT") ? "Lifetime": dayjs(response.date).toDate().toLocaleDateString("America/Sao_Paulo")
+                daysPremium.innerText = (response.date == "LT") ? "Lifetime": dayjs(response.date).toDate().toLocaleDateString("America/Sao_Paulo")
 
                 document.getElementById("actvatedPremium").style.display = "block"
 
-                
             }
 
         })
