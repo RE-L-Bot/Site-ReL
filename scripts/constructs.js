@@ -1,4 +1,3 @@
-import { url } from "@/configDev";
 import { range } from "./outhers";
 
 export function constructMessageComponent(opt) {
@@ -42,8 +41,6 @@ export function constructMessageComponent(opt) {
 
 export function constructMessageEmbed(embedOption) {
 
-    console.log(embedOption)
-
     const embed = {
         title: embedOption.title,
         description: embedOption.description[0],
@@ -68,18 +65,18 @@ export function constructMessageEmbed(embedOption) {
     }
 
     if (
-        !embed.title &&
-        !embed.description &&
-        !embed.author.name &&
-        !embed.image.url &&
-        !embed.thumbnail.url
+        embed.title.length < 1 &&
+        embed.description.length < 1 &&
+        embed.author.name.length < 1 &&
+        embed.image.url.length < 1 &&
+        embed.thumbnail.url.length < 1
     ) {
 
         const langP = window.location.pathname.slice(1, 3)
 
         const messages = {
             br: {
-                emptyEmbed: "Eu não posso enviar uma embed Vazia"
+                emptyEmbed: "Eu não posso enviar uma embed vazia"
             },
             es: {
                 emptyEmbed: "No puedo enviar una embed vacía"
