@@ -1,4 +1,4 @@
-DISPLAY_NAME=Asite front re4
+DISPLAY_NAME=Site RE DEV
 MAIN=next.config.mjs
 MEMORY=512
 START=npm run build-start
