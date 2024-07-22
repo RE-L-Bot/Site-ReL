@@ -399,7 +399,6 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                                     </div>
 
                                                     <label
-                                                        className="SelectTypeSender"
                                                         style={{
                                                             background: "none",
                                                             padding: "none",
@@ -422,7 +421,6 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                                         </div>
 
                                                     </label>
-
 
                                                     <button style={{ borderRadius: "5px" }} className="styleButton" onClick={e => handleRemoveField(index)}>Remover Field</button>
 
