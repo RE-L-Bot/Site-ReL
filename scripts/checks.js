@@ -304,8 +304,6 @@ export function checkKeysPremium() {
         .then(x => x.json())
         .then(async (response) => {
 
-            console.log(response)
-
             if (response.active) {
 
                 const typePremium = document.getElementById("typePremium")
@@ -313,7 +311,7 @@ export function checkKeysPremium() {
 
                 typePremium.innerText = response.type
 
-                daysPremium.innerText = (response.date == "LT") ? "Lifetime": dayjs(response.date).toDate().toLocaleDateString("America/Sao_Paulo")
+                daysPremium.innerText = (response.date == "LT") ? "Lifetime": dayjs(response.date).toDate().toLocaleDateString("pt-br").toString()
 
                 document.getElementById("actvatedPremium").style.display = "block"
 
