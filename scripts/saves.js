@@ -16,7 +16,7 @@ export async function saveConfigGeneral() {
 
     let channels2 = 0
 
-    if (localStorage.getItem("channelsAddUseCommand")){
+    if (localStorage.getItem("channelsAddUseCommand")) {
 
         for (const c of JSON.parse(localStorage.getItem("channelsAddUseCommand"))) {
 
@@ -25,7 +25,7 @@ export async function saveConfigGeneral() {
             } else {
                 channels2--
             }
-    
+
         }
 
     }
@@ -50,13 +50,13 @@ export async function saveConfigGeneral() {
             method: "PATCH",
             headers: {
                 guild_id: idGuild,
-                channels: JSON.stringify(channels)
+                channels: (channels.length == 0) ? "false" : JSON.stringify(channels)
             }
         })
             .then(response => response.json())
             .then(async (data) => {
                 if (data.status == 200)
-                    localStorage.setItem("channelsAddUseCommand", JSON.stringify(channels))
+                    localStorage.setItem("channelsAddUseCommand", (channels.length == 0) ? "false" : JSON.stringify(channels))
             })
 
     if (document.getElementsByClassName("checkMessageNoPerm")[0].checked && document.getElementById("messageSendNoPerm").value !== localStorage.getItem("messageSendNoPerm")) {
@@ -104,6 +104,7 @@ export async function saveConfigGeneral() {
         obj.volume = 0.2
 
         obj.play()
+
     }, 1000)
 
 }

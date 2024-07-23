@@ -58,7 +58,7 @@ export function addChannelsUseCommands() {
 
             let user = window.location.pathname
             user = user.split("/")
-            user = user[user.length - 2]    
+            user = user[user.length - 2]
 
             if (countUseCommands == 0) {
 
@@ -97,64 +97,64 @@ export function addChannelsUseCommands() {
                     })
                         .then(response => response.json())
                         .then(async (data) => {
-        
+
                             if (data.response) {
-        
+
                                 const divP = document.getElementById("channelsAddUseCommand")
-        
+
                                 for (const c of JSON.parse(localStorage.getItem("channelsGuild"))) {
-        
+
                                     for (const i of data.response) {
-        
+
                                         if (i == c.id) {
-        
+
                                             const label = document.createElement("label")
-        
+
                                             const p = document.createElement("p")
-        
+
                                             const i = document.createElement("i")
-        
+
                                             const checkbox = document.createElement("input")
-        
+
                                             label.style.display = "flex"
-        
+
                                             label.style.alignItems = "center"
-        
+
                                             label.className = "hoverPointer"
-        
+
                                             checkbox.type = "checkbox"
-        
+
                                             checkbox.style.display = "none"
-        
+
                                             checkbox.id = "channelAddUseCommand-" + c.id
-        
+
                                             checkbox.onclick = removeChannelDiv
-        
+
                                             p.innerText = c.name.substring(0, 20)
-        
+
                                             i.className = "material-symbols-outlined"
-        
+
                                             i.innerText = "close"
-        
+
                                             label?.appendChild(checkbox)
-        
+
                                             label?.appendChild(p)
-        
+
                                             label?.appendChild(i)
-        
+
                                             divP?.appendChild(label)
-        
+
                                         }
-        
+
                                     }
-        
+
                                 }
 
                                 localStorage.setItem("channelsAddUseCommand", JSON.stringify(data.response))
-        
+
                             }
-        
-                        })        
+
+                        })
 
                     countUseCommands++
 
@@ -162,7 +162,7 @@ export function addChannelsUseCommands() {
 
             }
 
-            countUseCommands --
+            countUseCommands--
 
         })();
 
