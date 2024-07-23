@@ -16,7 +16,7 @@ export async function saveConfigGeneral() {
 
     let channels2 = 0
 
-    if (localStorage.getItem("channelsAddUseCommand")) {
+    if (localStorage.getItem("channelsAddUseCommand") && localStorage.getItem("channelsAddUseCommand") != "false") {
 
         for (const c of JSON.parse(localStorage.getItem("channelsAddUseCommand"))) {
 
