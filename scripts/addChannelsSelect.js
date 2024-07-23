@@ -15,8 +15,8 @@ export function addChannels() {
 
                 const channels = await getChannelsGuild(window.location.pathname.split("/")[4])
 
-                if (channels.response)
-                    localStorage.setItem("channelsGuild", JSON.stringify(channels.response))
+                if (channels)
+                    localStorage.setItem("channelsGuild", JSON.stringify(channels))
 
                 if (form.length < 2) {
 
@@ -68,8 +68,8 @@ export function addChannelsUseCommands() {
 
                     const channels = await getChannelsGuild(window.location.pathname.split("/")[4])
 
-                    if (channels.response)
-                        localStorage.setItem("channelsGuild", JSON.stringify(channels.response))
+                    if (channels)
+                        localStorage.setItem("channelsGuild", JSON.stringify(channels))
 
                     if (form.length < 2) {
 

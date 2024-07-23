@@ -3,6 +3,7 @@ import axios from "axios"
 import { permissions } from "discord-bitfield-calculator";
 import { dashGuildClick } from "./redirects";
 import { decrypt4x } from "./enc";
+import dayjs from "dayjs";
 
 export function getCookie(cookieName) {
 
@@ -35,28 +36,33 @@ export function GetGuildsDash() {
 
             if (getCookie("RELOG")) {
 
-                fetch(
-                    "/api/getguildsdash",
-                    {
-                        method: "GET",
-                        headers: {
-                            token_type: "Bearer",
-                            access_token: decrypt4x(getCookie("RELOG"))
+                if (!localStorage.getItem("REFRESHGETGILDDASH") || localStorage.getItem("REFRESHGETGILDDASH") && dayjs(new Date()).diff(localStorage.getItem("REFRESHGETGILDDASH"), "seconds") > 10) {
+
+                    fetch(
+                        "/api/getguildsdash",
+                        {
+                            method: "GET",
+                            headers: {
+                                token_type: "Bearer",
+                                access_token: decrypt4x(getCookie("RELOG"))
+                            }
                         }
-                    }
-                )
-                    .then(request => request.json())
-                    .then(response => {
-                        localStorage.setItem(`GUILDS`, JSON.stringify(response.response))
-                        addGuilds(response.response)
-                    })
-                    .catch((err) => {
-                        console.log(err)
-                    });
+                    )
+                        .then(request => request.json())
+                        .then(response => {
+                            localStorage.setItem("REFRESHGETGILDDASH", new Date())
+                            localStorage.setItem(`GUILDS`, JSON.stringify(response.response))
+                            addGuilds(response.response)
+                        })
+                        .catch((err) => {
+                            console.log(err)
+                        });
+
+                }
 
             }
 
-            if (localStorage.getItem(`GUILDS`)){
+            if (localStorage.getItem(`GUILDS`)) {
                 addGuilds(JSON.parse(localStorage.getItem(`GUILDS`)))
             }
 
@@ -70,17 +76,29 @@ export function GetGuildsDash() {
 
 export async function getChannelsGuild(guild_id) {
 
-    const fetchedChannels = await fetch(
-        "/api/getChannelsGuild",
-        {
-            method: "GET",
-            headers: {
-                guild_id: guild_id
-            }
-        }
-    )
+    console.log(localStorage)
 
-    return (await fetchedChannels.json())["response"]
+    if (!localStorage.getItem("channelsGuild") || localStorage.getItem("channelsGuild") && dayjs(new Date()).diff(localStorage.getItem("REFRESHGETGILDCHANNELS"), "seconds") > 10){
+
+        const fetchedChannels = await fetch(
+            "/api/getChannelsGuild",
+            {
+                method: "GET",
+                headers: {
+                    guild_id: guild_id
+                }
+            }
+        )
+
+        const reponse = (await fetchedChannels.json())["response"]
+
+        localStorage.setItem("REFRESHGETGILDCHANNELS", new Date())
+
+        return reponse["response"]
+
+    }
+
+    return JSON.parse(localStorage.getItem("channelsGuild"))
 
 }
 

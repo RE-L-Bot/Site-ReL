@@ -32,7 +32,7 @@ export function dashGuildClick(c) {
             {
                 method: "POST",
                 headers: {
-                    guildid: c.target.id
+                    guild_id: c.target.id
                 }
             }
         )

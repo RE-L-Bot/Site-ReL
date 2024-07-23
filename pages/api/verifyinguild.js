@@ -9,7 +9,7 @@ export default function handler(req, res) {
     fetch(`${process.env.URLAPI}/verifyinguild`, {
         method: "POST",
         headers: {
-            "guild_id": req.headers.guildid,
+            "guild_id": req.headers.guild_id,
             authorization: process.env.AUTHCLIENT
         }
     })

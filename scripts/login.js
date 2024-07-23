@@ -57,6 +57,7 @@ export default async function Login() {
                             )
                                 .then(request => request.json())
                                 .then(response => {
+                                    localStorage.setItem("REFRESHGETGILDDASH", new Date())
                                     localStorage.setItem(`GUILDS`, JSON.stringify(response.response))
                                 })
 
