@@ -191,8 +191,6 @@ export function checkGuildPermissions() {
 
         useEffect(() => {
 
-            const val1 = getCookie("RELOG")
-
             const obj = JSON.parse(localStorage.getItem(`GUILDS`))
 
             if (user !== undefined) {

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { encrypt4x, decrypt4x, generateRandomString } from "@/scripts/enc";
-import { getCookie } from "./getters";
+import { encrypt4x, decrypt4x } from "@/scripts/enc";
+import { getCookie, GetGuildsDash } from "./getters";
 import axios from "axios";
 import { usePathname } from "next/navigation";
 import { redirectLogDash } from "./redirects";
@@ -39,11 +39,26 @@ export default async function Login() {
                     })
                     .setEndPoint("login")
                     .request()
-                    .then((data) => {
+                    .then(async (data) => {
 
                         if (data.response.access_token) {
 
                             document.cookie = `RELOG=${encrypt4x(data.response.access_token)}; path=/`
+
+                            await fetch(
+                                "/api/getguildsdash",
+                                {
+                                    method: "GET",
+                                    headers: {
+                                        token_type: "Bearer",
+                                        access_token: data.response.access_token
+                                    }
+                                }
+                            )
+                                .then(request => request.json())
+                                .then(response => {
+                                    localStorage.setItem(`GUILDS`, JSON.stringify(response.response))
+                                })
 
                             if (guild)
                                 return window.location = `/${langP}/dashboard/guild/${guild}/configure`

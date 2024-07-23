@@ -27,8 +27,6 @@ export function getCookie(cookieName) {
     return val1[1]
 }
 
-let validate = 0;
-
 export function GetGuildsDash() {
 
     try {
@@ -49,8 +47,8 @@ export function GetGuildsDash() {
                 )
                     .then(request => request.json())
                     .then(response => {
-                        addGuilds(response.response)
                         localStorage.setItem(`GUILDS`, JSON.stringify(response.response))
+                        addGuilds(response.response)
                     })
                     .catch((err) => {
                         console.log(err)
