@@ -1,5 +1,4 @@
 import RequestApi from "@/scripts/ManagerRequest"
-import axios from "axios"
 
 export default async function handler(req, res) {
 

@@ -1,4 +1,5 @@
 import { showDialogueBox } from "./changes"
+import RequestApi from "./ManagerRequest"
 
 export async function saveConfigGeneral() {
 
@@ -31,29 +32,28 @@ export async function saveConfigGeneral() {
     }
 
     if (document.getElementById("selecidioma").value !== localStorage.getItem("GuildLang"))
-        fetch("/api/updatelang", {
-            method: "PATCH",
-            headers: {
+        await new RequestApi()
+            .setApiEndPoint("thisAPI")
+            .setEndPoint("upLanguage")
+            .setHeaders({
                 guild_id: idGuild,
                 lang: document.getElementById("selecidioma").value
-            }
-        })
-            .then(response => response.json())
+            })
+            .request()
             .then(async (data) => {
                 if (data.status == 200)
                     localStorage.setItem("GuildLang", document.getElementById("selecidioma").value)
             })
 
-
     if (channels.length !== channels2)
-        fetch("/api/updateChannelsPermUse", {
-            method: "PATCH",
-            headers: {
+        await new RequestApi()
+            .setApiEndPoint("thisAPI")
+            .setEndPoint("upChannelPermUse")
+            .setHeaders({
                 guild_id: idGuild,
                 channels: (channels.length == 0) ? "false" : JSON.stringify(channels)
-            }
-        })
-            .then(response => response.json())
+            })
+            .request()
             .then(async (data) => {
                 if (data.status == 200)
                     localStorage.setItem("channelsAddUseCommand", (channels.length == 0) ? "false" : JSON.stringify(channels))
@@ -61,14 +61,14 @@ export async function saveConfigGeneral() {
 
     if (document.getElementsByClassName("checkMessageNoPerm")[0].checked && document.getElementById("messageSendNoPerm").value !== localStorage.getItem("messageSendNoPerm")) {
 
-        fetch("/api/updateMessageSendChannelNoPerm", {
-            method: "PATCH",
-            headers: {
+        await new RequestApi()
+            .setApiEndPoint("thisAPI")
+            .setEndPoint("upMessageChannelNoPerm")
+            .setHeaders({
                 guild_id: idGuild,
                 message: document.getElementById("messageSendNoPerm").value
-            }
-        })
-            .then(response => response.json())
+            })
+            .request()
             .then(async (data) => {
                 if (data.status == 200)
                     localStorage.setItem("messageSendNoPerm", document.getElementById("messageSendNoPerm").value)
@@ -77,15 +77,14 @@ export async function saveConfigGeneral() {
     }
 
     if (document.getElementsByClassName("checkMessageNoPerm")[0].checked && document.getElementById("messageSendNoPerm").value == "" || !document.getElementsByClassName("checkMessageNoPerm")[0].checked) {
-
-        fetch("/api/updateMessageSendChannelNoPerm", {
-            method: "PATCH",
-            headers: {
+        await new RequestApi()
+            .setApiEndPoint("thisAPI")
+            .setEndPoint("upMessageChannelNoPerm")
+            .setHeaders({
                 guild_id: idGuild,
                 message: ""
-            }
-        })
-            .then(response => response.json())
+            })
+            .request()
             .then(async (data) => {
                 if (data.status == 200)
                     localStorage.setItem("messageSendNoPerm", "")

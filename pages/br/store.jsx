@@ -1,7 +1,7 @@
 import Footer from "@/components/br/footers";
 import Header from "@/components/br/headers";
+import RequestApi from "@/scripts/ManagerRequest";
 import { calculatePercent } from "@/scripts/outhers";
-import axios from "axios";
 
 export default function Teste() {
 
@@ -102,25 +102,22 @@ export default function Teste() {
                             const langP = window.location.pathname.split("/")[1]
 
                             if (doclogin[0].textContent.toLowerCase() != "login")
-                                return axios(
-                                    "/api/createpayment",
-                                    {
-                                        method: "PUT",
-                                        data: {
-                                            value: 15.99,
-                                            type: "basic_1M",
-                                            idUser: localStorage.getItem("idUser")
-                                        }
+                                return new RequestApi()
+                                    .setApiEndPoint("thisAPI")
+                                    .setEndPoint("cPayment")
+                                    .setBody({
+                                        value: 15.99,
+                                        type: "basic_1M",
+                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
                                     })
-                                    .then(x => x.data)
-                                    .then(res => window.open(res.response, "_blank"))
+                                    .request()
+                                    .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
                             localStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
-
 
                         }}>
 
@@ -183,25 +180,22 @@ export default function Teste() {
                             const langP = window.location.pathname.split("/")[1]
 
                             if (doclogin[0].textContent.toLowerCase() != "login")
-                                return axios(
-                                    "/api/createpayment",
-                                    {
-                                        method: "PUT",
-                                        data: {
-                                            value: 86.35,
-                                            type: "basic_6M",
-                                            idUser: localStorage.getItem("idUser")
-                                        }
+                                return new RequestApi()
+                                    .setApiEndPoint("thisAPI")
+                                    .setEndPoint("cPayment")
+                                    .setBody({
+                                        value: 86.35,
+                                        type: "basic_6M",
+                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
                                     })
-                                    .then(x => x.data)
-                                    .then(res => window.open(res.response, "_blank"))
+                                    .request()
+                                    .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
                             localStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
-
 
                         }}>
 
@@ -264,18 +258,16 @@ export default function Teste() {
                             const langP = window.location.pathname.split("/")[1]
 
                             if (doclogin[0].textContent.toLowerCase() != "login")
-                                return axios(
-                                    "/api/createpayment",
-                                    {
-                                        method: "PUT",
-                                        data: {
-                                            value: 153.50,
-                                            type: "basic_12M",
-                                            idUser: localStorage.getItem("idUser")
-                                        }
+                                return new RequestApi()
+                                    .setApiEndPoint("thisAPI")
+                                    .setEndPoint("cPayment")
+                                    .setBody({
+                                        value: 153.50,
+                                        type: "basic_12M",
+                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
                                     })
-                                    .then(x => x.data)
-                                    .then(res => window.open(res.response, "_blank"))
+                                    .request()
+                                    .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
@@ -362,18 +354,16 @@ export default function Teste() {
                             const langP = window.location.pathname.split("/")[1]
 
                             if (doclogin[0].textContent.toLowerCase() != "login")
-                                return axios(
-                                    "/api/createpayment",
-                                    {
-                                        method: "PUT",
-                                        data: {
-                                            value: 30.99,
-                                            type: "medium_1M",
-                                            idUser: localStorage.getItem("idUser")
-                                        }
+                                return new RequestApi()
+                                    .setApiEndPoint("thisAPI")
+                                    .setEndPoint("cPayment")
+                                    .setBody({
+                                        value: 30.99,
+                                        type: "medium_1M",
+                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
                                     })
-                                    .then(x => x.data)
-                                    .then(res => window.open(res.response, "_blank"))
+                                    .request()
+                                    .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
@@ -452,18 +442,16 @@ export default function Teste() {
                             const langP = window.location.pathname.split("/")[1]
 
                             if (doclogin[0].textContent.toLowerCase() != "login")
-                                return axios(
-                                    "/api/createpayment",
-                                    {
-                                        method: "PUT",
-                                        data: {
-                                            value: 167.35,
-                                            type: "medium_6M",
-                                            idUser: localStorage.getItem("idUser")
-                                        }
+                                new RequestApi()
+                                    .setApiEndPoint("thisAPI")
+                                    .setEndPoint("cPayment")
+                                    .setBody({
+                                        value: 167.35,
+                                        type: "medium_6M",
+                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
                                     })
-                                    .then(x => x.data)
-                                    .then(res => window.open(res.response, "_blank"))
+                                    .request()
+                                    .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
@@ -542,18 +530,16 @@ export default function Teste() {
                             const langP = window.location.pathname.split("/")[1]
 
                             if (doclogin[0].textContent.toLowerCase() != "login")
-                                return axios(
-                                    "/api/createpayment",
-                                    {
-                                        method: "PUT",
-                                        data: {
-                                            value: 297.5,
-                                            type: "medium_12M",
-                                            idUser: localStorage.getItem("idUser")
-                                        }
+                                new RequestApi()
+                                    .setApiEndPoint("thisAPI")
+                                    .setEndPoint("cPayment")
+                                    .setBody({
+                                        value: 297.5,
+                                        type: "medium_12M",
+                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
                                     })
-                                    .then(x => x.data)
-                                    .then(res => window.open(res.response, "_blank"))
+                                    .request()
+                                    .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
@@ -644,18 +630,16 @@ export default function Teste() {
                             const langP = window.location.pathname.split("/")[1]
 
                             if (doclogin[0].textContent.toLowerCase() != "login")
-                                return axios(
-                                    "/api/createpayment",
-                                    {
-                                        method: "PUT",
-                                        data: {
-                                            value: 50.99,
-                                            type: "master_1M",
-                                            idUser: localStorage.getItem("idUser")
-                                        }
+                                new RequestApi()
+                                    .setApiEndPoint("thisAPI")
+                                    .setEndPoint("cPayment")
+                                    .setBody({
+                                        value: 50.99,
+                                        type: "master_1M",
+                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
                                     })
-                                    .then(x => x.data)
-                                    .then(res => window.open(res.response, "_blank"))
+                                    .request()
+                                    .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
@@ -738,18 +722,16 @@ export default function Teste() {
                             const langP = window.location.pathname.split("/")[1]
 
                             if (doclogin[0].textContent.toLowerCase() != "login")
-                                return axios(
-                                    "/api/createpayment",
-                                    {
-                                        method: "PUT",
-                                        data: {
-                                            value: 275.35,
-                                            type: "master_6M",
-                                            idUser: localStorage.getItem("idUser")
-                                        }
+                                new RequestApi()
+                                    .setApiEndPoint("thisAPI")
+                                    .setEndPoint("cPayment")
+                                    .setBody({
+                                        value: 275.35,
+                                        type: "master_6M",
+                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
                                     })
-                                    .then(x => x.data)
-                                    .then(res => window.open(res.response, "_blank"))
+                                    .request()
+                                    .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
@@ -832,18 +814,16 @@ export default function Teste() {
                             const langP = window.location.pathname.split("/")[1]
 
                             if (doclogin[0].textContent.toLowerCase() != "login")
-                                return axios(
-                                    "/api/createpayment",
-                                    {
-                                        method: "PUT",
-                                        data: {
-                                            value: 489.5,
-                                            type: "master_12M",
-                                            idUser: localStorage.getItem("idUser")
-                                        }
+                                new RequestApi()
+                                    .setApiEndPoint("thisAPI")
+                                    .setEndPoint("cPayment")
+                                    .setBody({
+                                        value: 489.5,
+                                        type: "master_12M",
+                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
                                     })
-                                    .then(x => x.data)
-                                    .then(res => window.open(res.response, "_blank"))
+                                    .request()
+                                    .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
@@ -920,18 +900,16 @@ export default function Teste() {
                             const langP = window.location.pathname.split("/")[1]
 
                             if (doclogin[0].textContent.toLowerCase() != "login")
-                                return axios(
-                                    "/api/createpayment",
-                                    {
-                                        method: "PUT",
-                                        data: {
-                                            value: 671.58,
-                                            type: "basic_LT",
-                                            idUser: localStorage.getItem("idUser")
-                                        }
+                                new RequestApi()
+                                    .setApiEndPoint("thisAPI")
+                                    .setEndPoint("cPayment")
+                                    .setBody({
+                                        value: 671.58,
+                                        type: "basic_LT",
+                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
                                     })
-                                    .then(x => x.data)
-                                    .then(res => window.open(res.response, "_blank"))
+                                    .request()
+                                    .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
@@ -1010,18 +988,16 @@ export default function Teste() {
                             const langP = window.location.pathname.split("/")[1]
 
                             if (doclogin[0].textContent.toLowerCase() != "login")
-                                return axios(
-                                    "/api/createpayment",
-                                    {
-                                        method: "PUT",
-                                        data: {
-                                            value: 1301.58,
-                                            type: "medium_LT",
-                                            idUser: localStorage.getItem("idUser")
-                                        }
+                                new RequestApi()
+                                    .setApiEndPoint("thisAPI")
+                                    .setEndPoint("cPayment")
+                                    .setBody({
+                                        value: 1301.58,
+                                        type: "medium_LT",
+                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
                                     })
-                                    .then(x => x.data)
-                                    .then(res => window.open(res.response, "_blank"))
+                                    .request()
+                                    .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
@@ -1104,20 +1080,16 @@ export default function Teste() {
                             const langP = window.location.pathname.split("/")[1]
 
                             if (doclogin[0].textContent.toLowerCase() != "login")
-                                return axios(
-                                    "/api/createpayment",
-                                    {
-                                        method: "PUT",
-                                        data: {
-                                            value: 2141.58,
-                                            type: "master_LT",
-                                            idUser:
-                                                localStorage.getItem("idUser")
-                                        }
-                                    }
-                                )
-                                    .then(x => x.data)
-                                    .then(res => window.open(res.response, "_blank"))
+                                new RequestApi()
+                                    .setApiEndPoint("thisAPI")
+                                    .setEndPoint("cPayment")
+                                    .setBody({
+                                        value: 2141.58,
+                                        type: "master_LT",
+                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
+                                    })
+                                    .request()
+                                    .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 

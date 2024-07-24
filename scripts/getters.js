@@ -1,9 +1,9 @@
 import { useEffect } from "react"
-import axios from "axios"
 import { permissions } from "discord-bitfield-calculator";
 import { dashGuildClick } from "./redirects";
 import { decrypt4x } from "./enc";
 import dayjs from "dayjs";
+import RequestApi from "./ManagerRequest";
 
 export function getCookie(cookieName) {
 
@@ -36,19 +36,19 @@ export function GetGuildsDash() {
 
             if (getCookie("RELOG")) {
 
-                if (!localStorage.getItem("REFRESHGETGILDDASH") || localStorage.getItem("REFRESHGETGILDDASH") && dayjs(new Date()).diff(localStorage.getItem("REFRESHGETGILDDASH"), "seconds") > 10) {
+                if (
+                    !localStorage.getItem("REFRESHGETGILDDASH") ||
+                    localStorage.getItem("REFRESHGETGILDDASH") &&
+                    dayjs(new Date()).diff(localStorage.getItem("REFRESHGETGILDDASH"), "seconds") > 20) {
 
-                    fetch(
-                        "/api/getguildsdash",
-                        {
-                            method: "GET",
-                            headers: {
-                                token_type: "Bearer",
-                                access_token: decrypt4x(getCookie("RELOG"))
-                            }
-                        }
-                    )
-                        .then(request => request.json())
+                    new RequestApi()
+                        .setApiEndPoint("thisAPI")
+                        .setEndPoint("gGuildsDash")
+                        .setHeaders({
+                            token_type: "Bearer",
+                            access_token: decrypt4x(getCookie("RELOG"))
+                        })
+                        .request()
                         .then(response => {
                             localStorage.setItem("REFRESHGETGILDDASH", new Date())
                             localStorage.setItem(`GUILDS`, JSON.stringify(response.response))
@@ -76,26 +76,27 @@ export function GetGuildsDash() {
 
 export async function getChannelsGuild(guild_id) {
 
-    console.log(localStorage)
+    if (
+        !localStorage.getItem("channelsGuild") ||
+        localStorage.getItem("channelsGuild") &&
+        dayjs(new Date()).diff(localStorage.getItem("REFRESHGETGILDCHANNELS"), "seconds") > 20
+    ) {
 
-    if (!localStorage.getItem("channelsGuild") || localStorage.getItem("channelsGuild") && dayjs(new Date()).diff(localStorage.getItem("REFRESHGETGILDCHANNELS"), "seconds") > 10){
+        let response;
 
-        
-        const fetchedChannels = await fetch(
-            "/api/getChannelsGuild",
-            {
-                method: "GET",
-                headers: {
-                    guild_id: guild_id
-                }
-            }
-        )
+        await new RequestApi()
+            .setApiEndPoint("thisAPI")
+            .setEndPoint("gChannelsGuild")
+            .setHeaders({
+                guild_id: guild_id
+            })
+            .request()
+            .then((data) => {
+                response = data.response.response
+                localStorage.setItem("REFRESHGETGILDCHANNELS", new Date())
+            })
 
-        const reponse = (await fetchedChannels.json())["response"]
-
-        localStorage.setItem("REFRESHGETGILDCHANNELS", new Date())
-
-        return reponse["response"]
+        return response
 
     }
 

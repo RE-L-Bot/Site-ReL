@@ -12,11 +12,12 @@ export default async function handler(req, res) {
 
         await new RequestApi()
             .setApiEndPoint("ApiCentral")
-            .setEndPoint("gGuildDash")
+            .setEndPoint("gGuildsDash")
             .setHeaders({
                 authorization: process.env.AUTHCLIENT,
                 authorization_dc: `${req.headers["token_type"]} ${req.headers["access_token"]}`,
             })
+            .request()
             .then((data) => {
                 res.status(200).send({ response: data.response, status: 200 })
             })

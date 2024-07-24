@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { getChannelsGuild } from "./getters";
+import RequestApi from "./ManagerRequest";
 
 var count = 0
 
@@ -89,13 +90,13 @@ export function addChannelsUseCommands() {
                         }
                     }
 
-                    fetch("/api/getChannelsPermUse", {
-                        method: "GET",
-                        headers: {
+                    await new RequestApi()
+                        .setApiEndPoint("thisAPI")
+                        .setEndPoint("gChannelsPermUse")
+                        .setHeaders({
                             guild_id: user
-                        }
-                    })
-                        .then(response => response.json())
+                        })
+                        .request()
                         .then(async (data) => {
 
                             if (data.response) {

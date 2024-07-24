@@ -1,5 +1,6 @@
 import { configData } from "@/scripts/login"
 import { generateRandomString } from "./enc"
+import RequestApi from "./ManagerRequest"
 
 export function redirectTerms() {
     const langP = window.location.pathname.split("/")[1]
@@ -28,15 +29,12 @@ export function dashGuildClick(c) {
 
     try {
 
-        fetch("/api/verifyinguild",
-            {
-                method: "POST",
-                headers: {
-                    guild_id: c.target.id
-                }
-            }
-        )
-            .then(x => x.json())
+        new RequestApi()
+            .setApiEndPoint("thisAPI")
+            .setHeaders({
+                guild_id: c.target.id
+            })
+            .request()
             .then(response => {
 
                 if (response.response.code == 10004) {
@@ -46,7 +44,7 @@ export function dashGuildClick(c) {
                 }
 
                 const langP = window.location.pathname.split("/")[1]
-                
+
                 location.href = `/${langP}/dashboard/guild/${c.target.id}/configure`
 
             })

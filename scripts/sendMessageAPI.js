@@ -25,12 +25,18 @@ export default async function (e, opt, embedOption) {
 
     const guildID = window.location.pathname.split("/")[4]
 
-    const premium = await (await fetch("/api/checkPremium", {
-        method: "GET",
-        headers: {
+    let premium;
+
+    await new RequestApi()
+        .setApiEndPoint("thisAPI")
+        .setEndPoint("gPremium")
+        .setHeaders({
             guild_id: guildID
-        }
-    })).json()
+        })
+        .request()
+        .then(async (data) => {
+            premium = data.response
+        });
 
     const messages = {
         br: {
@@ -68,14 +74,14 @@ export default async function (e, opt, embedOption) {
             selectACategoryToAllTopics: "Select a category for all topics",
             defineNameToAllSelectsMenus: "Define a name for all SelectMenus",
             nameWebhookInvalidBylength: "The Webhook name is invalid, possibly you changed it in the html to accept a larger size"
-        }        
+        }
     }
 
     if (
         parseInt(SLCQNT.split(" ")[0]) > 3 &&
         parseInt(SLCQNT.split(" ")[0]) <= 5 &&
-        !premium.response.active &&
-        !["basic", "medium", "master"].includes(premium.response.type)
+        !premium.active &&
+        !["basic", "medium", "master"].includes(premium.type)
     ) {
         return alert(messages[langP]["noPremiumBasic"])
     };
@@ -83,29 +89,29 @@ export default async function (e, opt, embedOption) {
     if (
         parseInt(SLCQNT.split(" ")[0]) > 5 &&
         parseInt(SLCQNT.split(" ")[0]) <= 10
-        && !premium.response.active &&
-        !["medium", "master"].includes(premium.response.type)
+        && !premium.active &&
+        !["medium", "master"].includes(premium.type)
     ) {
         return alert(messages[langP]["noPremiumMedium"])
     };
 
     if (
         parseInt(SLCQNT.split(" ")[0]) > 10 &&
-        !premium.response.active &&
-        !["master"].includes(premium.response.type)
+        !premium.active &&
+        !["master"].includes(premium.type)
     ) {
         return alert(messages[langP]["noPremiumMaster"])
     };
 
     if (
         SelectType.checked &&
-        !premium.response.active &&
-        !["medium", "master"].includes(premium.response.type)
+        !premium.active &&
+        !["medium", "master"].includes(premium.type)
     ) {
         return alert(messages[langP]["noPremiumMedium"])
     };
 
-    if (Enviar && !["master"].includes(premium.response.type))
+    if (Enviar && !["master"].includes(premium.type))
         return alert(messages[langP]["noPremiumMaster"])
 
     if (channelId == "") {
@@ -116,7 +122,7 @@ export default async function (e, opt, embedOption) {
         if (nameWebhook.value == "") {
             return alert(messages[langP]["defineNameWebhookSender"])
         }
-        if (nameWebhook.value.length > 32){
+        if (nameWebhook.value.length > 32) {
             return alert(messages[langP]["nameWebhookInvalidBylength"])
         }
     };

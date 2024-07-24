@@ -5,6 +5,7 @@ import bitfieldCalculator from 'discord-bitfield-calculator';
 import { actKey, range } from "./outhers";
 import { enableDisableMessageSendInChannelNoPerm, showDialogueBox } from "./changes";
 import dayjs from "dayjs";
+import RequestApi from "./ManagerRequest";
 
 export function checkColor() {
 
@@ -68,13 +69,13 @@ export function checkPremiumTicket(guild_id) {
 
     useEffect(() => {
 
-        fetch("/api/checkPremium", {
-            method: "GET",
-            headers: {
-                guild_id: guild_id
-            }
-        })
-            .then(x => x.json())
+        new RequestApi()
+            .setApiEndPoint("thisAPI")
+            .setEndPoint("gPremium")
+            .setHeaders({
+                guild_id: guild_id,
+            })
+            .request()
             .then((response) => {
 
                 if (response.response.active) {
@@ -228,25 +229,25 @@ export function checkLanguageSelect() {
             if (user[user.length - 1] !== "configure")
                 return
 
-            fetch("/api/getlanguage", {
-                method: "GET",
-                headers: {
-                    guild_id: user[user.length - 2]
-                }
-            })
-                .then(response => response.json())
+            new RequestApi()
+                .setApiEndPoint("thisAPI")
+                .setEndPoint("gLanguage")
+                .setHeaders({
+                    guild_id: user[user.length - 2],
+                })
+                .request()
                 .then(async (data) => {
                     document.getElementById("selecidioma").value = data.response
                     localStorage.setItem("GuildLang", data.response)
                 })
 
-            fetch("/api/getMessageSendChannelNoPerm", {
-                method: "GET",
-                headers: {
-                    guild_id: user[user.length - 2]
-                }
-            })
-                .then(response => response.json())
+            new RequestApi()
+                .setApiEndPoint("thisAPI")
+                .setEndPoint("gMessageChannelNoPerm")
+                .setHeaders({
+                    guild_id: user[user.length - 2],
+                })
+                .request()
                 .then(async (data) => {
 
                     if (data.response) {
@@ -292,14 +293,13 @@ export function checkKeysPremium() {
     if (user === undefined)
         return
 
-    fetch("/api/getkeyguild",
-        {
-            headers: {
-                guild_id: user[user.length - 2]
-            }
-        }
-    )
-        .then(x => x.json())
+    new RequestApi()
+        .setApiEndPoint("thisAPI")
+        .setEndPoint("gKeyGuild")
+        .setHeaders({
+            guild_id: user[user.length - 2]
+        })
+        .request()
         .then(async (response) => {
 
             if (response.active) {
@@ -317,14 +317,13 @@ export function checkKeysPremium() {
 
         })
 
-    fetch("/api/getkeysuser",
-        {
-            headers: {
-                iduser: localStorage.getItem("idUser")
-            }
-        }
-    )
-        .then(x => x.json())
+    new RequestApi()
+        .setApiEndPoint("thisAPI")
+        .setEndPoint("gKeysUser")
+        .setHeaders({
+            iduser: JSON.parse(localStorage.getItem("USERINFO")).id
+        })
+        .request()
         .then(async (data) => {
 
             if (data.response.length > 0) {

@@ -1,4 +1,5 @@
 import { usePathname } from "next/navigation";
+import RequestApi from "./ManagerRequest";
 
 export function range(start, stop, step) {
 
@@ -40,17 +41,13 @@ export function actKey(e) {
     const idKey = e.target.id
     const guild_id = location.pathname.match(/[0-9]+/g)
 
-    fetch(
-        "/api/activeKey",
-        {
-            method: "PATCH",
-            headers: {
-                guild_id,
-                idKey
-            }
-        }
-    )
-        .then(x => x.json())
+    new RequestApi()
+        .setApiEndPoint("thisAPI")
+        .setEndPoint("activeKey")
+        .setHeaders({
+            guild_id,
+            idKey
+        })
         .then(async (response) => {
 
             if (response.status == 200) {
@@ -59,21 +56,22 @@ export function actKey(e) {
 
         })
         .catch((e) => window.alert(e))
+
 }
 
 export function calculateInlineIndex(fields, currentFieldIndex) {
-    
+
     const startIndex = currentFieldIndex - 1;
-  
+
     for (let i = startIndex; i >= 0; i--) {
-      const field = fields[i];
-      if (!field) continue;
-  
-      if (field.inline === false) {
-        const amount = startIndex - i;
-        return (amount % 3) + 1;
-      }
+        const field = fields[i];
+        if (!field) continue;
+
+        if (field.inline === false) {
+            const amount = startIndex - i;
+            return (amount % 3) + 1;
+        }
     }
-  
+
     return (currentFieldIndex % 3) + 1;
-  }
+}
