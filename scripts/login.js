@@ -44,7 +44,6 @@ export default async function Login() {
                         if (data.response.access_token) {
 
                             document.cookie = `RELOG=${encrypt4x(data.response.access_token)}; path=/`
-
                             await fetch(
                                 "/api/getguildsdash",
                                 {

@@ -80,6 +80,7 @@ export async function getChannelsGuild(guild_id) {
 
     if (!localStorage.getItem("channelsGuild") || localStorage.getItem("channelsGuild") && dayjs(new Date()).diff(localStorage.getItem("REFRESHGETGILDCHANNELS"), "seconds") > 10){
 
+        
         const fetchedChannels = await fetch(
             "/api/getChannelsGuild",
             {

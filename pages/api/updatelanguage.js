@@ -2,7 +2,7 @@ import RequestApi from "@/scripts/ManagerRequest"
 
 export default async function handler(req, res) {
 
-    if (req.method !== "GET")
+    if (req.method !== "PATCH")
         return res.status(405).send({ error: "Method Errado", status: 405 })
 
     if (!req.headers.guild_id)
@@ -12,20 +12,19 @@ export default async function handler(req, res) {
 
         await new RequestApi()
             .setApiEndPoint("ApiCentral")
-            .setEndPoint("gChannelsGuild")
+            .setEndPoint("upLanguage")
             .setHeaders({
                 guild_id: req.headers.guild_id,
+                language: req.headers.lang,
                 authorization: process.env.AUTHCLIENT
             })
             .request()
             .then((data) => {
-                res.status(200).send({ response: data, status: 200 })
+                res.status(200).send({ response: data.response, status: 200 })
             })
-            .catch(e => res.status(400).send({ error: `${e}`, status: 400 }))
 
     } catch (e) {
         res.status(400).send({ error: `${e}`, status: 400 })
     }
-
 
 }

@@ -1,24 +1,24 @@
+import RequestApi from "@/scripts/ManagerRequest"
+
 export default async function handler(req, res) {
 
     if (req.method !== "PATCH")
         return res.status(405).send({ error: "Method Errado", status: 405 })
 
     if (!req.headers.guild_id)
-        return res.status(400).send({ error: "NoBotRequest", status: 400})
+        return res.status(400).send({ error: "NoBotRequest", status: 400 })
 
     try {
-        fetch(
-            `${process.env.URLAPI}/updateChannelsPermUse`,
-            {
-                method: "PATCH",
-                headers: {
-                    guild_id: req.headers.guild_id,
-                    channels: req.headers.channels,
-                    authorization: process.env.AUTHCLIENT
-                }
-            }
-        )
-            .then((response) => response.json())
+
+        await new RequestApi()
+            .setApiEndPoint("ApiCentral")
+            .setEndPoint("upChannelPermUse")
+            .setHeaders({
+                guild_id: req.headers.guild_id,
+                channels: req.headers.channels,
+                authorization: process.env.AUTHCLIENT
+            })
+            .request()
             .then((data) => {
                 res.status(200).send({ response: data.response, status: 200 })
             })

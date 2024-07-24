@@ -1,3 +1,5 @@
+import RequestApi from "@/scripts/ManagerRequest"
+
 export default async function handler(req, res) {
 
     if (req.method !== "GET")
@@ -8,17 +10,14 @@ export default async function handler(req, res) {
 
     try {
 
-        fetch(
-            `${process.env.URLAPI}/getkeysuser`,
-            {
-                method: "GET",
-                headers: {
-                    iduser: req.headers.iduser,
-                    authorization: process.env.AUTHCLIENT
-                }
-            }
-        )
-            .then((response) => response.json())
+        await new RequestApi()
+            .setApiEndPoint("ApiCentral")
+            .setEndPoint("gKeysUser")
+            .setHeaders({
+                iduser: req.headers.iduser,
+                authorization: process.env.AUTHCLIENT
+            })
+            .request()
             .then((data) => {
                 res.status(200).send({ response: data.keys, status: 200 })
             })

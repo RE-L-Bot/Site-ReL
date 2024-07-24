@@ -1,24 +1,22 @@
+import RequestApi from "@/scripts/ManagerRequest"
+
 export default async function handler(req, res) {
 
     if (req.method !== "GET")
         return res.status(405).send({ error: "Method Errado", status: 405 })
 
     if (!req.headers.access_token)
-        return res.status(400).send({ error: "NoBotRequest", status: 400})
+        return res.status(400).send({ error: "NoBotRequest", status: 400 })
 
     try {
 
-        fetch(
-            `${process.env.URLAPI}/getguildsdash`,
-            {
-                method: "GET",
-                headers: {
-                    authorization: process.env.AUTHCLIENT,
-                    authorization_dc: `${req.headers["token_type"]} ${req.headers["access_token"]}`,
-                }
-            }
-        )
-            .then(response => response.json())
+        await new RequestApi()
+            .setApiEndPoint("ApiCentral")
+            .setEndPoint("gGuildDash")
+            .setHeaders({
+                authorization: process.env.AUTHCLIENT,
+                authorization_dc: `${req.headers["token_type"]} ${req.headers["access_token"]}`,
+            })
             .then((data) => {
                 res.status(200).send({ response: data.response, status: 200 })
             })

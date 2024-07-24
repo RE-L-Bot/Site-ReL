@@ -5,34 +5,73 @@ class RequesterManager {
     constructor(obj) {
 
         this.endpoints = {
-            messageTicket: {
-                endpoint: "sendmessageticket",
-                method: "POST"
+            activeKey: {
+                endpoint: "activeKey",
+                method: "PATCH"
             },
-            login: {
-                endpoint: "login",
-                method: "POST"
+            cPayment: {
+                endpoint: "createpayment",
+                method: "PUT"
+            },
+            dGuildDb: {
+                endpoint: "deleteguilddb",
+                method: "DELETE"
+            },
+            gChannelPermUse: {
+                endpoint: "getChannelsPermUse",
+                method: "PATCH"
+            },
+            gChannelsGuild: {
+                endpoint: "getchannelsguild",
+                method: "GET"
             },
             gGuildDash: {
                 endpoint: "getguilddash",
                 method: "GET"
             },
-            gChannelsGuild: {
-                endpoint: "getchannelsguild",
+            gKeyGuild: {
+                endpoint: "getkeyguild",
                 method: "GET"
-
             },
-            vInGuild: {
-                endpoint: "verifyinguild",
-                method: "POST"
-            },
-            gPremium: {
-                endpoint: "checkpremium",
+            gKeysUser: {
+                endpoint: "getkeysuser",
                 method: "GET"
             },
             gLanguage: {
                 endpoint: "getlanguage",
                 method: "GET"
+            },
+            gLog: {
+                endpoint: "getlog",
+                method: "GET"
+            },
+            gMessageChannelNoPerm: {
+                endpoint: "getMessageSendChannelNoPerm",
+                method: "GET"
+            },
+            gPayment: {
+                endpoint: "getInfosPayment",
+                method: "GET"
+            },
+            gPremium: {
+                endpoint: "checkpremium",
+                method: "GET"
+            },
+            gRolesTicket: {
+                endpoint: "getrolesticket",
+                method: "GET"
+            },
+            login: {
+                endpoint: "login",
+                method: "POST"
+            },
+            messageTicket: {
+                endpoint: "sendmessageticket",
+                method: "POST"
+            },
+            upChannelPermUse: {
+                endpoint: "updateChannelsPermUse",
+                method: "PATCH"
             },
             upLanguage: {
                 endpoint: "updatelanguage",
@@ -42,43 +81,15 @@ class RequesterManager {
                 endpoint: "updatelog",
                 method: "PATCH"
             },
-            gLog: {
-                endpoint: "getlog",
-                method: "GET"
-            },
-            gRolesTicket: {
-                endpoint: "getrolesticket",
-                method: "GET"
-            },
-            dGuildDb: {
-                endpoint: "deleteguilddb",
-                method: "DELETE"
-            },
-            upChannelPermUse: {
-                endpoint: "updateChannelsPermUse",
-                method: "PATCH"
-            },
-            gChannelPermUse: {
-                endpoint: "getChannelsPermUse",
-                method: "PATCH"
-            },
-            gMessageChannelNoPerm: {
-                endpoint: "getMessageSendChannelNoPerm",
-                method: "GET"
-            },
             upMessageChannelNoPerm: {
                 endpoint: "updateMessageSendChannelNoPerm",
                 method: "PATCH"
             },
-            cPayment: {
-                endpoint: "createPayment",
-                method: "PUT"
-            },
-            gPayment: {
-                endpoint: "getInfosPayment",
-                method: "GET"
+            vInGuild: {
+                endpoint: "verifyinguild",
+                method: "POST"
             }
-        }
+        }        
 
         this.headers = obj["headers"] || null
         this.endpoint = obj["endpoint"] || ""
@@ -247,7 +258,9 @@ export default class RequestApi {
     }
 
     /**
-     *  @param { "messageTicket" | "login" | "gGuildDash" | "gLanguage" |  "gChannelsGuild" | "vInGuild" | "gPremium" |  "upLanguage" |  "upLog" |  "gLog" |  "gRolesTicket" |  "dGuildDb" |  "upChannelPermUse" |  "gMessageChannelNoPerm" |  "upMessageChannelNoPerm" |  "cPayment" |  "gPayment" } request 
+     *  @param { "activeKey" | "cPayment" | "dGuildDb" | "gChannelsGuild" | "gGuildDash" | "gKeyGuild" | "gKeysUser" | "gLanguage" | "gLog" | "gMessageChannelNoPerm" | "gPaymentMp" | "gPremium" | "gRolesTicket" | "login" | "messageTicket" | "upChannelPermUse" | "upLanguage" | "upLog" | "upMessageChannelNoPerm" | "vInGuild"
+}
+ request 
      */
     setEndPoint(request) {
         this.endpoint = request
