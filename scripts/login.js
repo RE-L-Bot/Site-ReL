@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { encrypt4x, decrypt4x } from "@/scripts/enc";
-import { getCookie, GetGuildsDash } from "./getters";
-import axios from "axios";
+import { getCookie } from "./getters";
 import { usePathname } from "next/navigation";
 import { redirectLogDash } from "./redirects";
 import RequestApi from "./ManagerRequest";
+import dayjs from "dayjs";
 /** @type {import('@/configDev.js')} */
 export const configData = await import(`../config${process.env.NEXT_PUBLIC_TYPE}.js`)
 
@@ -44,17 +44,14 @@ export default async function Login() {
                         if (data.response.access_token) {
 
                             document.cookie = `RELOG=${encrypt4x(data.response.access_token)}; path=/`
-                            await fetch(
-                                "/api/getguildsdash",
-                                {
-                                    method: "GET",
-                                    headers: {
-                                        token_type: "Bearer",
-                                        access_token: data.response.access_token
-                                    }
-                                }
-                            )
-                                .then(request => request.json())
+
+                            await new RequestApi()
+                                .setApiEndPoint("thisAPI")
+                                .setHeaders({
+                                    token_type: "Bearer",
+                                    access_token: data.response.access_token
+                                })
+                                .request()
                                 .then(response => {
                                     localStorage.setItem("REFRESHGETGILDDASH", new Date())
                                     localStorage.setItem(`GUILDS`, JSON.stringify(response.response))
@@ -79,41 +76,50 @@ export default async function Login() {
 
                 const docimage = document.getElementsByClassName("imageUser");
 
-                await axios(
-                    `${configData["API_ENDPOINT"]}/users/@me`,
-                    {
-                        headers: {
-                            Authorization: `Bearer ${decrypt4x(cookieToken)}`
-                        }
-                    }
-                )
-                    .then(request => request.data)
-                    .then(response => {
+                if (
+                    !localStorage.getItem("USERINFO") ||
+                    localStorage.getItem("REFRESHGETUSERINFO") &&
+                    dayjs(new Date()).diff(localStorage.getItem("REFRESHGETUSERINFO"), "seconds") > 20) {
 
-                        localStorage.setItem("idUser", response.id)
+                    new RequestApi()
+                        .setApiEndPoint("thisAPI")
+                        .setEndPoint("getuserinfo")
+                        .setHeaders({
+                            authorization: `Bearer ${decrypt4x(cookieToken)}`
+                        })
+                        .request()
+                        .then(response => {
 
-                        for (const l of doclogin) {
+                            localStorage.setItem("REFRESHGETUSERINFO", new Date())
+                            localStorage.setItem(`USERINFO`, JSON.stringify(response))
+                            localStorage.setItem("idUser", response.id)
 
-                            l.innerHTML = response.username;
+                        })
+                        .catch(e => {
 
-                        }
+                            if (window.location.href.indexOf("dashboard") >= 0) {
+                                redirectLogDash()
+                            }
 
-                        for (const img of docimage) {
+                        })
 
-                            img.src = `https://cdn.discordapp.com/avatars/${response.id}/${response.avatar}`
+                }
 
-                            img.style.display = "block"
+                const userInfo = JSON.parse(localStorage.getItem(`USERINFO`))
 
-                        }
+                for (const l of doclogin) {
 
-                    })
-                    .catch(e => {
+                    l.innerHTML = userInfo.username;
 
-                        if (window.location.href.indexOf("dashboard") >= 0) {
-                            redirectLogDash()
-                        }
+                }
 
-                    })
+                for (const img of docimage) {
+
+                    img.src = `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}`
+
+                    img.style.display = "block"
+
+                }
 
             } else {
 
