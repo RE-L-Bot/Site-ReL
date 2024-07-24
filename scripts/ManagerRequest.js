@@ -6,7 +6,7 @@ class RequesterManager {
 
         this.endpoints = {
             activeKey: {
-                endpoint: "activeKey",
+                endpoint: "activekey",
                 method: "PATCH"
             },
             cPayment: {
@@ -17,16 +17,16 @@ class RequesterManager {
                 endpoint: "deleteguilddb",
                 method: "DELETE"
             },
-            gChannelPermUse: {
-                endpoint: "getChannelsPermUse",
-                method: "PATCH"
+            gChannelsPermUse: {
+                endpoint: "getchannelspermuse",
+                method: "GET"
             },
             gChannelsGuild: {
                 endpoint: "getchannelsguild",
                 method: "GET"
             },
-            gGuildDash: {
-                endpoint: "getguilddash",
+            gGuildsDash: {
+                endpoint: "getguildsdash",
                 method: "GET"
             },
             gKeyGuild: {
@@ -46,11 +46,11 @@ class RequesterManager {
                 method: "GET"
             },
             gMessageChannelNoPerm: {
-                endpoint: "getMessageSendChannelNoPerm",
+                endpoint: "getmessagesendchannelnoperm",
                 method: "GET"
             },
             gPayment: {
-                endpoint: "getInfosPayment",
+                endpoint: "getinfospayment",
                 method: "GET"
             },
             gPremium: {
@@ -70,7 +70,7 @@ class RequesterManager {
                 method: "POST"
             },
             upChannelPermUse: {
-                endpoint: "updateChannelsPermUse",
+                endpoint: "updatechannelspermuse",
                 method: "PATCH"
             },
             upLanguage: {
@@ -82,7 +82,7 @@ class RequesterManager {
                 method: "PATCH"
             },
             upMessageChannelNoPerm: {
-                endpoint: "updateMessageSendChannelNoPerm",
+                endpoint: "updatemessagesendchannelnoperm",
                 method: "PATCH"
             },
             vInGuild: {
@@ -258,7 +258,7 @@ export default class RequestApi {
     }
 
     /**
-     *  @param { "activeKey" | "cPayment" | "dGuildDb" | "gChannelsGuild" | "gGuildDash" | "gKeyGuild" | "gKeysUser" | "gLanguage" | "gLog" | "gMessageChannelNoPerm" | "gPaymentMp" | "gPremium" | "gRolesTicket" | "login" | "messageTicket" | "upChannelPermUse" | "upLanguage" | "upLog" | "upMessageChannelNoPerm" | "vInGuild"
+     *  @param { "activeKey" | "cPayment" | "dGuildDb" | "gChannelsPermUse" | "gChannelsGuild" | "gGuildsDash" | "gKeyGuild" | "gKeysUser" | "gLanguage" | "gLog" | "gMessageChannelNoPerm" | "gPaymentMp" | "gPremium" | "gRolesTicket" | "login" | "messageTicket" | "upChannelPermUse" | "upLanguage" | "upLog" | "upMessageChannelNoPerm" | "vInGuild"
 }
  request 
      */
