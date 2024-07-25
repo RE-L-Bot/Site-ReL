@@ -6,8 +6,6 @@ import(`./config${process.env.NEXT_PUBLIC_TYPE}.js`)
     configData = data
   })
 
-export { configData }
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async redirects() {
@@ -23,3 +21,4 @@ const nextConfig = {
 };
 
 export default nextConfig;
+export { configData }
