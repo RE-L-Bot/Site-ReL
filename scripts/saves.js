@@ -17,9 +17,9 @@ export async function saveConfigGeneral() {
 
     let channels2 = 0
 
-    if (localStorage.getItem("channelsAddUseCommand") && localStorage.getItem("channelsAddUseCommand") != "false") {
+    if (sessionStorage.getItem("channelsAddUseCommand") && sessionStorage.getItem("channelsAddUseCommand") != "false") {
 
-        for (const c of JSON.parse(localStorage.getItem("channelsAddUseCommand"))) {
+        for (const c of JSON.parse(sessionStorage.getItem("channelsAddUseCommand"))) {
 
             if (channels.includes(c)) {
                 channels2++
@@ -31,7 +31,7 @@ export async function saveConfigGeneral() {
 
     }
 
-    if (document.getElementById("selecidioma").value !== localStorage.getItem("GuildLang"))
+    if (document.getElementById("selecidioma").value !== sessionStorage.getItem("GuildLang"))
         await new RequestApi()
             .setApiEndPoint("thisAPI")
             .setEndPoint("upLanguage")
@@ -42,7 +42,7 @@ export async function saveConfigGeneral() {
             .request()
             .then(async (data) => {
                 if (data.status == 200)
-                    localStorage.setItem("GuildLang", document.getElementById("selecidioma").value)
+                    sessionStorage.setItem("GuildLang", document.getElementById("selecidioma").value)
             })
 
     if (channels.length !== channels2)
@@ -56,10 +56,10 @@ export async function saveConfigGeneral() {
             .request()
             .then(async (data) => {
                 if (data.status == 200)
-                    localStorage.setItem("channelsAddUseCommand", (channels.length == 0) ? "false" : JSON.stringify(channels))
+                    sessionStorage.setItem("channelsAddUseCommand", (channels.length == 0) ? "false" : JSON.stringify(channels))
             })
 
-    if (document.getElementsByClassName("checkMessageNoPerm")[0].checked && document.getElementById("messageSendNoPerm").value !== localStorage.getItem("messageSendNoPerm")) {
+    if (document.getElementsByClassName("checkMessageNoPerm")[0].checked && document.getElementById("messageSendNoPerm").value !== sessionStorage.getItem("messageSendNoPerm")) {
 
         await new RequestApi()
             .setApiEndPoint("thisAPI")
@@ -71,7 +71,7 @@ export async function saveConfigGeneral() {
             .request()
             .then(async (data) => {
                 if (data.status == 200)
-                    localStorage.setItem("messageSendNoPerm", document.getElementById("messageSendNoPerm").value)
+                    sessionStorage.setItem("messageSendNoPerm", document.getElementById("messageSendNoPerm").value)
             });
 
     }
@@ -87,7 +87,7 @@ export async function saveConfigGeneral() {
             .request()
             .then(async (data) => {
                 if (data.status == 200)
-                    localStorage.setItem("messageSendNoPerm", "")
+                    sessionStorage.setItem("messageSendNoPerm", "")
             });
 
     }

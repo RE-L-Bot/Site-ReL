@@ -65,7 +65,7 @@ export function redirectLogDash() {
 
     const randomString = generateRandomString();
 
-    localStorage.setItem('oauth-state', randomString);
+    sessionStorage.setItem('oauth-state', randomString);
 
     window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
 

@@ -7,13 +7,8 @@ export default function Document() {
     <Html>
 
       <Head>
-
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
-        <meta charSet="UTF-8" />
-
         <link rel="icon" href="/svgs/RELCHIBI.svg" type="image/x-icon" />
-
       </Head>
 
       <body>

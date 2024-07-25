@@ -11,8 +11,6 @@ export default async function handler(req, res) {
 
     try {
 
-        console.log(req.headers.authorization)
-
         new RequestApi()
             .setApiEndPoint(`${configData["API_ENDPOINT"]}`)
             .setEndPoint("users/@me")

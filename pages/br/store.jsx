@@ -108,14 +108,14 @@ export default function Teste() {
                                     .setBody({
                                         value: 15.99,
                                         type: "basic_1M",
-                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
+                                        idUser: JSON.parse(sessionStorage.getItem("USERINFO")).id
                                     })
                                     .request()
                                     .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
-                            localStorage.setItem('oauth-state', randomString);
+                            sessionStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
 
@@ -186,14 +186,14 @@ export default function Teste() {
                                     .setBody({
                                         value: 86.35,
                                         type: "basic_6M",
-                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
+                                        idUser: JSON.parse(sessionStorage.getItem("USERINFO")).id
                                     })
                                     .request()
                                     .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
-                            localStorage.setItem('oauth-state', randomString);
+                            sessionStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
 
@@ -264,14 +264,14 @@ export default function Teste() {
                                     .setBody({
                                         value: 153.50,
                                         type: "basic_12M",
-                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
+                                        idUser: JSON.parse(sessionStorage.getItem("USERINFO")).id
                                     })
                                     .request()
                                     .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
-                            localStorage.setItem('oauth-state', randomString);
+                            sessionStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
 
@@ -360,14 +360,14 @@ export default function Teste() {
                                     .setBody({
                                         value: 30.99,
                                         type: "medium_1M",
-                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
+                                        idUser: JSON.parse(sessionStorage.getItem("USERINFO")).id
                                     })
                                     .request()
                                     .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
-                            localStorage.setItem('oauth-state', randomString);
+                            sessionStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
 
@@ -448,14 +448,14 @@ export default function Teste() {
                                     .setBody({
                                         value: 167.35,
                                         type: "medium_6M",
-                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
+                                        idUser: JSON.parse(sessionStorage.getItem("USERINFO")).id
                                     })
                                     .request()
                                     .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
-                            localStorage.setItem('oauth-state', randomString);
+                            sessionStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
 
@@ -536,14 +536,14 @@ export default function Teste() {
                                     .setBody({
                                         value: 297.5,
                                         type: "medium_12M",
-                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
+                                        idUser: JSON.parse(sessionStorage.getItem("USERINFO")).id
                                     })
                                     .request()
                                     .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
-                            localStorage.setItem('oauth-state', randomString);
+                            sessionStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
 
@@ -636,14 +636,14 @@ export default function Teste() {
                                     .setBody({
                                         value: 50.99,
                                         type: "master_1M",
-                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
+                                        idUser: JSON.parse(sessionStorage.getItem("USERINFO")).id
                                     })
                                     .request()
                                     .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
-                            localStorage.setItem('oauth-state', randomString);
+                            sessionStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
 
@@ -728,14 +728,14 @@ export default function Teste() {
                                     .setBody({
                                         value: 275.35,
                                         type: "master_6M",
-                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
+                                        idUser: JSON.parse(sessionStorage.getItem("USERINFO")).id
                                     })
                                     .request()
                                     .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
-                            localStorage.setItem('oauth-state', randomString);
+                            sessionStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
 
@@ -820,14 +820,14 @@ export default function Teste() {
                                     .setBody({
                                         value: 489.5,
                                         type: "master_12M",
-                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
+                                        idUser: JSON.parse(sessionStorage.getItem("USERINFO")).id
                                     })
                                     .request()
                                     .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
-                            localStorage.setItem('oauth-state', randomString);
+                            sessionStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
 
@@ -906,14 +906,14 @@ export default function Teste() {
                                     .setBody({
                                         value: 671.58,
                                         type: "basic_LT",
-                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
+                                        idUser: JSON.parse(sessionStorage.getItem("USERINFO")).id
                                     })
                                     .request()
                                     .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
-                            localStorage.setItem('oauth-state', randomString);
+                            sessionStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
 
@@ -994,14 +994,14 @@ export default function Teste() {
                                     .setBody({
                                         value: 1301.58,
                                         type: "medium_LT",
-                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
+                                        idUser: JSON.parse(sessionStorage.getItem("USERINFO")).id
                                     })
                                     .request()
                                     .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
-                            localStorage.setItem('oauth-state', randomString);
+                            sessionStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
 
@@ -1086,14 +1086,14 @@ export default function Teste() {
                                     .setBody({
                                         value: 2141.58,
                                         type: "master_LT",
-                                        idUser: JSON.parse(localStorage.getItem("USERINFO")).id
+                                        idUser: JSON.parse(sessionStorage.getItem("USERINFO")).id
                                     })
                                     .request()
                                     .then(res => window.open(res.response, "_blank"));
 
                             const randomString = generateRandomString();
 
-                            localStorage.setItem('oauth-state', randomString);
+                            sessionStorage.setItem('oauth-state', randomString);
 
                             window.location.href = `${configData["linkRedirectDiscord"].replace("{lang}", langP)}&state=${randomString}`
 

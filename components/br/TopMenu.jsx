@@ -13,7 +13,7 @@ const infosGuild = () => {
 
         React.useEffect(() => {
 
-            const infos = JSON.parse(localStorage.getItem(`GUILDS`))
+            const infos = JSON.parse(sessionStorage.getItem(`GUILDS`))
                 .find((x) => x.id === window.location.pathname.split("/")[4])
 
             const imgTAG = document.getElementsByClassName("imgGuild")[0]

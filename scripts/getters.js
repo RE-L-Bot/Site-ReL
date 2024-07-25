@@ -37,9 +37,9 @@ export function GetGuildsDash() {
             if (getCookie("RELOG")) {
 
                 if (
-                    !localStorage.getItem("REFRESHGETGILDDASH") ||
-                    localStorage.getItem("REFRESHGETGILDDASH") &&
-                    dayjs(new Date()).diff(localStorage.getItem("REFRESHGETGILDDASH"), "seconds") > 20) {
+                    !sessionStorage.getItem("REFRESHGETGILDDASH") ||
+                    sessionStorage.getItem("REFRESHGETGILDDASH") &&
+                    dayjs(new Date()).diff(sessionStorage.getItem("REFRESHGETGILDDASH"), "seconds") > 20) {
 
                     new RequestApi()
                         .setApiEndPoint("thisAPI")
@@ -50,8 +50,8 @@ export function GetGuildsDash() {
                         })
                         .request()
                         .then(response => {
-                            localStorage.setItem("REFRESHGETGILDDASH", new Date())
-                            localStorage.setItem(`GUILDS`, JSON.stringify(response.response))
+                            sessionStorage.setItem("REFRESHGETGILDDASH", new Date())
+                            sessionStorage.setItem(`GUILDS`, JSON.stringify(response.response))
                             addGuilds(response.response)
                         })
                         .catch((err) => {
@@ -62,8 +62,8 @@ export function GetGuildsDash() {
 
             }
 
-            if (localStorage.getItem(`GUILDS`)) {
-                addGuilds(JSON.parse(localStorage.getItem(`GUILDS`)))
+            if (sessionStorage.getItem(`GUILDS`)) {
+                addGuilds(JSON.parse(sessionStorage.getItem(`GUILDS`)))
             }
 
         })
@@ -77,9 +77,9 @@ export function GetGuildsDash() {
 export async function getChannelsGuild(guild_id) {
 
     if (
-        !localStorage.getItem("channelsGuild") ||
-        localStorage.getItem("channelsGuild") &&
-        dayjs(new Date()).diff(localStorage.getItem("REFRESHGETGILDCHANNELS"), "seconds") > 20
+        !sessionStorage.getItem("channelsGuild") ||
+        sessionStorage.getItem("channelsGuild") &&
+        dayjs(new Date()).diff(sessionStorage.getItem("REFRESHGETGILDCHANNELS"), "seconds") > 20
     ) {
 
         let response;
@@ -93,14 +93,14 @@ export async function getChannelsGuild(guild_id) {
             .request()
             .then((data) => {
                 response = data.response.response
-                localStorage.setItem("REFRESHGETGILDCHANNELS", new Date())
+                sessionStorage.setItem("REFRESHGETGILDCHANNELS", new Date())
             })
 
         return response
 
     }
 
-    return JSON.parse(localStorage.getItem("channelsGuild"))
+    return JSON.parse(sessionStorage.getItem("channelsGuild"))
 
 }
 

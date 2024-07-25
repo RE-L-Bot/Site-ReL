@@ -22,8 +22,8 @@ export default async function Login() {
                 const [code, state, guild] = [urlParams.get('code'), urlParams.get('state'), urlParams.get('guild_id')];
 
                 if (
-                    state && !localStorage.getItem('oauth-state') ||
-                    state && state != localStorage.getItem('oauth-state')
+                    state && !sessionStorage.getItem('oauth-state') ||
+                    state && state != sessionStorage.getItem('oauth-state')
                 ) {
 
                     redirectLogDash()
@@ -53,14 +53,14 @@ export default async function Login() {
                                 })
                                 .request()
                                 .then(response => {
-                                    localStorage.setItem("REFRESHGETGILDDASH", new Date())
-                                    localStorage.setItem(`GUILDS`, JSON.stringify(response.response))
+                                    sessionStorage.setItem("REFRESHGETGILDDASH", new Date())
+                                    sessionStorage.setItem(`GUILDS`, JSON.stringify(response.response))
+
+                                    if (guild)
+                                        return window.location = `/${langP}/dashboard/guild/${guild}/configure`
+
+                                    return window.location = `/${langP}/dashboard`
                                 })
-
-                            if (guild)
-                                return window.location = `/${langP}/dashboard/guild/${guild}/configure`
-
-                            return window.location = `/${langP}/dashboard`
 
                         }
 
@@ -77,9 +77,9 @@ export default async function Login() {
                 const docimage = document.getElementsByClassName("imageUser");
 
                 if (
-                    !localStorage.getItem("USERINFO") ||
-                    localStorage.getItem("REFRESHGETUSERINFO") &&
-                    dayjs(new Date()).diff(localStorage.getItem("REFRESHGETUSERINFO"), "seconds") > 20) {
+                    !sessionStorage.getItem("USERINFO") ||
+                    sessionStorage.getItem("REFRESHGETUSERINFO") &&
+                    dayjs(new Date()).diff(sessionStorage.getItem("REFRESHGETUSERINFO"), "seconds") > 20) {
 
                     await new RequestApi()
                         .setApiEndPoint("thisAPI")
@@ -90,9 +90,9 @@ export default async function Login() {
                         .request()
                         .then(response => {
 
-                            localStorage.setItem(`USERINFO`, JSON.stringify(response))
-                            localStorage.setItem("REFRESHGETUSERINFO", new Date())
-                            localStorage.setItem("idUser", response.id)
+                            sessionStorage.setItem(`USERINFO`, JSON.stringify(response))
+                            sessionStorage.setItem("REFRESHGETUSERINFO", new Date())
+                            sessionStorage.setItem("idUser", response.id)
 
                         })
                         .catch(e => {
@@ -105,7 +105,7 @@ export default async function Login() {
 
                 }
 
-                const userInfo = JSON.parse(localStorage.getItem(`USERINFO`))
+                const userInfo = JSON.parse(sessionStorage.getItem(`USERINFO`))
 
                 for (const l of doclogin) {
 

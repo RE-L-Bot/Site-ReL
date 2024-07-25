@@ -192,7 +192,7 @@ export function checkGuildPermissions() {
 
         useEffect(() => {
 
-            const obj = JSON.parse(localStorage.getItem(`GUILDS`))
+            const obj = JSON.parse(sessionStorage.getItem(`GUILDS`))
 
             if (user !== undefined) {
 
@@ -238,7 +238,7 @@ export function checkLanguageSelect() {
                 .request()
                 .then(async (data) => {
                     document.getElementById("selecidioma").value = data.response
-                    localStorage.setItem("GuildLang", data.response)
+                    sessionStorage.setItem("GuildLang", data.response)
                 })
 
             new RequestApi()
@@ -270,7 +270,7 @@ export function checkLanguageSelect() {
 
                         blockMessage.innerText = data.response
 
-                        localStorage.setItem("messageSendNoPerm", data.response)
+                        sessionStorage.setItem("messageSendNoPerm", data.response)
 
                         enableDisableMessageSendInChannelNoPerm()
 
@@ -321,7 +321,7 @@ export function checkKeysPremium() {
         .setApiEndPoint("thisAPI")
         .setEndPoint("gKeysUser")
         .setHeaders({
-            iduser: JSON.parse(localStorage.getItem("USERINFO")).id
+            iduser: JSON.parse(sessionStorage.getItem("USERINFO")).id
         })
         .request()
         .then(async (data) => {

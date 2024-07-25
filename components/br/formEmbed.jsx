@@ -16,26 +16,6 @@ import { showDialogueBox } from "@/scripts/changes";
 
 export default function FormEmbed(opts) {
 
-    React.useEffect(() => {
-        localStorage.setItem("embedObject", JSON.stringify({
-            title: undefined,
-            description: undefined,
-            color: undefined,
-            author: {
-                name: undefined,
-                url: undefined,
-                icon_url: undefined
-            },
-            image: {
-                url: undefined
-            },
-            thumbnail: {
-                url: undefined
-            },
-            timestamp: undefined
-        }))
-    })
-
     return (
 
         <div className="LineFormEmbed">

@@ -372,7 +372,7 @@ export async function SelectCategoriasChange(e) {
 
         select.appendChild(opt)
 
-        for (const c of channels["response"]) {
+        for (const c of channels) {
 
             if (c.type == 4) {
 
@@ -417,7 +417,7 @@ export async function SelectCategoriasChange(e) {
 
     }
 
-    localStorage.setItem("componentObject", JSON.stringify(component))
+    sessionStorage.setItem("componentObject", JSON.stringify(component))
 
 }
 
@@ -427,21 +427,21 @@ function SelectMenuTitleChange(c, r) {
 
     titleSlectMenu.innerText = c.target.value.toString();
 
-    let componentObject = JSON.parse(localStorage.getItem("componentObject"));
+    let componentObject = JSON.parse(sessionStorage.getItem("componentObject"));
 
     componentObject["components"][0]["options"][r]["label"] = c.target.value.toString()
 
-    localStorage.setItem("componentObject", JSON.stringify(componentObject))
+    sessionStorage.setItem("componentObject", JSON.stringify(componentObject))
 
 }
 
 function SelectMenuEmojiChange(c, r) {
 
-    let componentObject = JSON.parse(localStorage.getItem("componentObject"))
+    let componentObject = JSON.parse(sessionStorage.getItem("componentObject"))
 
     componentObject["components"][0]["options"][r]["emoji"] = resolvePartialEmoji(c.target.value.toString())
 
-    localStorage.setItem("componentObject", JSON.stringify(componentObject))
+    sessionStorage.setItem("componentObject", JSON.stringify(componentObject))
 
 }
 
@@ -451,11 +451,11 @@ function SelectMenuDescriptionChange(c, r) {
 
     titleSlectMenu.innerText = c.target.value.toString();
 
-    let componentObject = JSON.parse(localStorage.getItem("componentObject"))
+    let componentObject = JSON.parse(sessionStorage.getItem("componentObject"))
 
     componentObject["components"][0]["options"][r]["description"] = c.target.value.toString()
 
-    localStorage.setItem("componentObject", JSON.stringify(componentObject))
+    sessionStorage.setItem("componentObject", JSON.stringify(componentObject))
 
 }
 

@@ -16,7 +16,7 @@ export function constructMessageComponent(opt) {
         }
     }
 
-    const component = JSON.parse(localStorage.getItem("componentObject"))
+    const component = JSON.parse(sessionStorage.getItem("componentObject"))
 
     for (const r of range(0, component.components[0].options.length)) {
 

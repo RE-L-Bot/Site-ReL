@@ -134,7 +134,7 @@ function gerarembed(embedOption) {
 
     const text = document.getElementById("textInput");
 
-    text.defaultValue = JSON.stringify(JSON.parse(localStorage.getItem("embedObject")), null, 4)
+    text.defaultValue = JSON.stringify(JSON.parse(sessionStorage.getItem("embedObject")), null, 4)
 
 }
 

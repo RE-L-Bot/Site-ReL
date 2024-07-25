@@ -17,11 +17,11 @@ export function addChannels() {
                 const channels = await getChannelsGuild(window.location.pathname.split("/")[4])
 
                 if (channels)
-                    localStorage.setItem("channelsGuild", JSON.stringify(channels))
+                    sessionStorage.setItem("channelsGuild", JSON.stringify(channels))
 
                 if (form.length < 2) {
 
-                    for (const c of JSON.parse(localStorage.getItem("channelsGuild"))) {
+                    for (const c of JSON.parse(sessionStorage.getItem("channelsGuild"))) {
 
                         if (c.type == 0) {
 
@@ -70,11 +70,11 @@ export function addChannelsUseCommands() {
                     const channels = await getChannelsGuild(window.location.pathname.split("/")[4])
 
                     if (channels)
-                        localStorage.setItem("channelsGuild", JSON.stringify(channels))
+                        sessionStorage.setItem("channelsGuild", JSON.stringify(channels))
 
                     if (form.length < 2) {
 
-                        for (const c of JSON.parse(localStorage.getItem("channelsGuild"))) {
+                        for (const c of JSON.parse(sessionStorage.getItem("channelsGuild"))) {
 
                             if (c.type == 0) {
 
@@ -103,7 +103,7 @@ export function addChannelsUseCommands() {
 
                                 const divP = document.getElementById("channelsAddUseCommand")
 
-                                for (const c of JSON.parse(localStorage.getItem("channelsGuild"))) {
+                                for (const c of JSON.parse(sessionStorage.getItem("channelsGuild"))) {
 
                                     for (const i of data.response) {
 
@@ -151,7 +151,7 @@ export function addChannelsUseCommands() {
 
                                 }
 
-                                localStorage.setItem("channelsAddUseCommand", JSON.stringify(data.response))
+                                sessionStorage.setItem("channelsAddUseCommand", JSON.stringify(data.response))
 
                             }
 
