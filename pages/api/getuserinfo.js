@@ -1,4 +1,4 @@
-import { configData } from "@/scripts/login"
+import { configData } from "@/next.config.mjs"
 import RequestApi from "@/scripts/ManagerRequest"
 
 export default async function handler(req, res) {

@@ -1,6 +1,6 @@
 import FOOTER from "@/components/br/footers";
 import HEADER from "@/components/br/headers";
-import { configData } from "@/scripts/login"
+import { configData } from "@/next.config.mjs"
 
 export default function Terms() {
     return (

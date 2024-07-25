@@ -5,8 +5,7 @@ import { usePathname } from "next/navigation";
 import { redirectLogDash } from "./redirects";
 import RequestApi from "./ManagerRequest";
 import dayjs from "dayjs";
-/** @type {import('@/configDev.js')} */
-export const configData = await import(`../config${process.env.NEXT_PUBLIC_TYPE}.js`)
+import { configData } from "@/next.config.mjs";
 
 export default async function Login() {
 
@@ -47,6 +46,7 @@ export default async function Login() {
 
                             await new RequestApi()
                                 .setApiEndPoint("thisAPI")
+                                .setEndPoint("gGuildsDash")
                                 .setHeaders({
                                     token_type: "Bearer",
                                     access_token: data.response.access_token
@@ -81,7 +81,7 @@ export default async function Login() {
                     localStorage.getItem("REFRESHGETUSERINFO") &&
                     dayjs(new Date()).diff(localStorage.getItem("REFRESHGETUSERINFO"), "seconds") > 20) {
 
-                    new RequestApi()
+                    await new RequestApi()
                         .setApiEndPoint("thisAPI")
                         .setEndPoint("getuserinfo")
                         .setHeaders({
@@ -90,8 +90,8 @@ export default async function Login() {
                         .request()
                         .then(response => {
 
-                            localStorage.setItem("REFRESHGETUSERINFO", new Date())
                             localStorage.setItem(`USERINFO`, JSON.stringify(response))
+                            localStorage.setItem("REFRESHGETUSERINFO", new Date())
                             localStorage.setItem("idUser", response.id)
 
                         })

@@ -1,4 +1,4 @@
-import { configData } from "@/scripts/login"
+import { configData } from "@/next.config.mjs"
 import { generateRandomString } from "./enc"
 import RequestApi from "./ManagerRequest"
 
