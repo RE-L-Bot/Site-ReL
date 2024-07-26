@@ -35,8 +35,6 @@ export default function (value) {
 
                 complete += "° "
 
-            } else if (w.match(/(\*\*)([A-Z 0-9]\w+)(\*\*)/gi)) {
-                arrayP.push(<strong>{w.replace(/[*]/gi, "")}</strong>)
             } else {
 
                 complete += `${w} `
