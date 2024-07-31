@@ -18,7 +18,7 @@ export default async function handler(req, res) {
             "content-type": "application/json",
             authorization: process.env.AUTHCLIENT
         })
-        .body(req.body)
+        .setBody(req.body)
         .request()
         .then((rD) => {
 
@@ -26,7 +26,7 @@ export default async function handler(req, res) {
                 return res.status(400).send({ error: rD.error, status: 400 })
             }
 
-            res.status(200).send({ response: rD.sucess, status: 200 })
+            res.status(rD.status).send({ response: rD.sucess, status: rD.status })
 
         })
 
