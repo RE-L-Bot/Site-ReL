@@ -48,6 +48,7 @@ export function actKey(e) {
             guild_id,
             idKey
         })
+        .request()
         .then(async (response) => {
 
             if (response.status == 200) {
