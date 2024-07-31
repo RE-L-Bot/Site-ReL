@@ -43,7 +43,7 @@ export function constructMessageEmbed(embedOption) {
 
     const embed = {
         title: embedOption.title,
-        description: embedOption.description[0],
+        description: (embedOption.description[0]) ? embedOption.description[0] : "",
         author: {
             name: embedOption.authorName,
             icon_url: embedOption.authorImage,
