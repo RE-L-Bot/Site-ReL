@@ -152,12 +152,12 @@ export default async function (e, opt, embedOption) {
 
     await new RequestApi()
         .setApiEndPoint("thisAPI")
+        .setEndPoint("messageTicket")
         .setBody({
             embeds: [embed],
             components: [component],
             avatar_url: imageWebhook.value
         })
-        .setEndPoint("messageTicket")
         .setHeaders({
             channel_id: channelId,
             quem: `${Enviar}`,
