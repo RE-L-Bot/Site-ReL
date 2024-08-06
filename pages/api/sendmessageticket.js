@@ -15,7 +15,7 @@ export default async function handler(req, res) {
             channel_id: req.headers.channel_id,
             webhook: req.headers.quem,
             username: req.headers.username,
-            "content-type": "application/json",
+            'content-type': 'application/json',
             authorization: process.env.AUTHCLIENT
         })
         .setBody(req.body)

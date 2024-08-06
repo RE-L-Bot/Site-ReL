@@ -1,12 +1,13 @@
 import InfosTicket from "@/components/br/InfosTicket";
 import SENDMESSAGE from "@/components/br/sendMessageButton";
-import SelectMenus from "@/components/br/selectMenus";
+import SelectMenus from "@/components/br/embed/selectMenus";
 import TopMenu from "@/components/br/TopMenu";
 import { redirectStore } from "@/scripts/redirects";
 import Head from "next/head";
 import EmbedBuilder from "@/components/br/embed/EmbedBuilder";
 import EmbedEditor from "@/components/br/embed/EmbedEditor";
 import { useState } from "react";
+import { DiscordMessages, DiscordMessage } from "@skyra/discord-components-react";
 
 export default function Ticket() {
 
@@ -22,6 +23,14 @@ export default function Ticket() {
         fields: [],
         url: ""
     });
+    
+    const [selectMenu, setSelectMenu] = useState({
+        options: []
+    })
+
+    const handleOptionChange = (newOption)  => {
+        setSelectMenu(newOption)
+    }
 
     const handleEmbedChange = (newEmbed) => {
         setEmbed(newEmbed);
@@ -119,7 +128,7 @@ export default function Ticket() {
 
                     <div>
 
-                        <InfosTicket />
+                        <InfosTicket selectmenusetter={handleOptionChange} />
 
                         <div>
 
@@ -129,11 +138,19 @@ export default function Ticket() {
 
                                 <div>
 
-                                    <EmbedBuilder embed={embed} />
+                                    <DiscordMessages noBackground>
 
-                                    <SelectMenus />
+                                        <DiscordMessage id="AuthorMessage" author="RE=L" bot verified avatar="https://images-ext-1.discordapp.net/external/3LBc_lYPIjZbMNBSYtx0t-Tch2fMtZLoIcvzIfAVTM0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/1018958083764002919/72e160dd9dc0d2952529c3388c81715d.webp?format=webp&width=473&height=473">
 
-                                    <SENDMESSAGE opt={{ qnt: "1" }} embedOption={embed} />
+                                            <EmbedBuilder embed={embed} />
+
+                                            <SelectMenus selectmenus={selectMenu} />
+
+                                        </DiscordMessage>
+
+                                    </DiscordMessages>
+
+                                    <SENDMESSAGE opt={{ qnt: "1" }} embedOption={embed} selectMenuOption={selectMenu} />
 
                                 </div>
 

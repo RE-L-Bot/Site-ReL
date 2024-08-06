@@ -7,19 +7,64 @@ import {
     ChangeEnabled,
     SeeTypeTicket,
     ChangeEnabledNobackground,
+    resolvePartialEmoji,
 } from "@/scripts/changes";
 import { addChannels } from "@/scripts/addChannelsSelect";
 import {
     checkPremiumTicket
 } from "@/scripts/checks";
 import ToogleOff from "../globals/toogleOff";
+import { range } from "@/scripts/outhers";
+import { useState } from "react";
 
 function onLoad() {
     checkPremiumTicket(window.location.pathname.split("/")[4])
     addChannels()
 }
 
-export default function InfosTicket() {
+const InfosTicket = ({ selectmenusetter }) => {
+
+    let channels = JSON.parse(sessionStorage.getItem("channelsGuild"))
+
+    const [options, setOptions] = useState([])
+
+    const handlerOptionsChange = (qnt) => {
+        const option = []
+        if (options.length < 21)
+            for (const v in range(0, parseInt(qnt))) {
+                option.push({})
+            }
+        setOptions(option.slice())
+        selectmenusetter({ options: option });
+    }
+
+    const handleLabelChange = (index, label) => {
+        const newFields = options.slice();
+        newFields[index].label = label;
+        setOptions(newFields);
+        selectmenusetter({ options: newFields });
+    };
+
+    const handleDescriptionChange = (index, description) => {
+        const newFields = options.slice();
+        newFields[index].description = description;
+        setOptions(newFields);
+        selectmenusetter({ options: newFields });
+    };
+
+    const handleValueChange = (index, value) => {
+        const newFields = options.slice();
+        newFields[index].value = `c${index}-${value}`;
+        setOptions(newFields);
+        selectmenusetter({ options: newFields });
+    };
+
+    const handleEmojiChange = (index, emoji) => {
+        const newFields = options.slice();
+        newFields[index].emoji = resolvePartialEmoji(emoji);
+        setOptions(newFields);
+        selectmenusetter({ options: newFields });
+    };
 
     return (
 
@@ -63,7 +108,7 @@ export default function InfosTicket() {
 
                     <div className="infosWebHook" id="divInfosWeb">
 
-                        <div style={{opacity: "50%"}}>
+                        <div style={{ opacity: "50%" }}>
                             <h5>
                                 Se o nome e a imagem lá na representação da mensagem mudar, não se preocupe, oq contara é oq está aqui
                             </h5>
@@ -151,7 +196,7 @@ export default function InfosTicket() {
                             Quantidade de topicos
                         </h4>
 
-                        <select name="tipo" id="SelectQnt" style={{ height: "42px", borderRadius: "5px" }} defaultValue={""} onChange={(e) => { SelectCategoriasChange(e) }}>
+                        <select name="tipo" id="SelectQnt" style={{ height: "42px", borderRadius: "5px" }} defaultValue={""} onChange={(e) => { handlerOptionsChange(e.target.value); SelectCategoriasChange(e) }}>
                             <option value="" disabled></option>
                         </select>
 
@@ -160,7 +205,7 @@ export default function InfosTicket() {
                     <div style={{ display: "block", alignText: "center" }}>
 
                         <h4>
-                            Qual canal enviara a mensagem
+                            Qual canal enviar a mensagem
                         </h4>
 
                         <select name="tipo" id="formsInfoTicketChannel" style={{ height: "42px", borderRadius: "5px" }} defaultValue={""}>
@@ -173,13 +218,66 @@ export default function InfosTicket() {
 
                         <div style={{ display: "flex", gap: "5px", flexWrap: "wrap", justifyContent: "center" }}>
 
-                            <div id="selectNameCategories" />
+                            <div id="selectNameCategories">
+                                {options.map((value, index) => (
+                                    <div key={index}>
+                                        <textarea
+                                            id={`nameCategoria-${index}`}
+                                            placeholder={`Nome do selectmenu ${index + 1}`}
+                                            maxLength={100}
+                                            className="noresize"
+                                            style={{ width: "100px", borderRadius: "5px" }}
+                                            onInput={(e) => handleLabelChange(index, e.target.value)}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
 
-                            <div id="selectDescriptionCategories" />
+                            <div id="selectDescriptionCategories" >
+                                {options.map((value, index) => (
+                                    <div key={index}>
+                                        <textarea
+                                            id={`descriptionCategoria-${index}`}
+                                            placeholder={`Descrição do selectmenu ${index + 1}`}
+                                            maxLength={100}
+                                            className="noresize"
+                                            style={{ width: "100px", borderRadius: "5px" }}
+                                            onInput={(e) => handleDescriptionChange(index, e.target.value)}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
 
-                            <div id="selectMenuEmoji" />
+                            <div id="selectMenuEmoji" >
+                                {options.map((value, index) => (
+                                    <div key={index}>
+                                        <textarea
+                                            id={`emojiCategoria-${index}`}
+                                            placeholder={`Emoji do selectmenu ${index + 1}`}
+                                            maxLength={100}
+                                            className="noresize"
+                                            style={{ width: "100px", borderRadius: "5px" }}
+                                            onInput={(e) => handleEmojiChange(index, e.target.value)}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
 
-                            <div id="selectCategories" />
+                            <div id="selectCategories">
+
+                                {options.map((value, index) => (
+
+                                    <div key={index}>
+                                        <select className="selectChannelCategoria" defaultValue={""} style={{ width: "100px", height: "50px", borderRadius: "5px" }} onChange={e => handleValueChange(index, e.target.value)}>
+                                            <option content="" value="" disabled>Selecione uma categoria</option>
+                                            {channels.map((value, index) => (
+                                                (value.type === 4) ? <option key={index} value={`${value.id}`}>{value.name.substring(0, 19)}</option> : ""
+                                            ))}
+                                        </select>
+                                    </div>
+
+                                ))}
+                            </div>
 
                         </div>
 
@@ -194,3 +292,5 @@ export default function InfosTicket() {
     )
 
 }
+
+export default InfosTicket;

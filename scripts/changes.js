@@ -310,114 +310,31 @@ let val = 0
 
 export async function SelectCategoriasChange(e) {
 
-    if (val < 1) {
-        channels = await getChannelsGuild(window.location.pathname.split("/")[4])
-        val++
-    }
-
-    SelectCategoriasNameChange(e)
-
-    SelectCategoriasDesctiptionChange(e)
-
-    SelectMenuCategoriesEmojiChange(e)
-
-    SelectMenuAdd(e)
-
-    const component = {
-        type: 1,
-        components: [{
-            type: 3,
-            custom_id: "ticket_select",
-            options: [],
-            placeholder: "",
-            min_values: 1,
-        }]
-    }
-
     const divp = document.getElementById("selectCategories")
 
     const selectType = document.getElementsByClassName("checkTypeTicket")[0]
 
-    while (divp.firstChild) {
-        divp.removeChild(divp.firstChild);
-    }
 
-    for (const r of range(0, parseInt(e.target.value))) {
+    if (selectType.checked) divp.style.display == "none"
+    else {
 
-        const div = document.createElement("div")
+        divp.style.display = "block"
 
-        const form = document.createElement("form")
+        document.getElementById("selectNameCategories").style.display = "block"
 
-        const select = document.createElement("select")
+        document.getElementById("selectDescriptionCategories").style.display = "block"
 
-        select.style.borderRadius = "5px"
+        document.getElementById("selectMenuEmoji").style.display = "block"
 
-        select.style.height = "46px"
+        document.getElementById("divCategories").style.display = "block"
 
-        select.style.width = "100px"
+        document.getElementById("selectCategories").style.display = "block"
 
-        select.className = `selectChannelCategoria`
+        document.getElementById("selectCategories").style.display = "block"
 
-        const opt = document.createElement("option")
-
-        component.components[0].options.push({})
-
-        opt.disabled = true
-
-        opt.value = ""
-
-        opt.defaultSelected = true
-
-        opt.textContent = `Selecione uma categoria ${r + 1}`
-
-        select.appendChild(opt)
-
-        for (const c of channels) {
-
-            if (c.type == 4) {
-
-                const option = document.createElement("option")
-
-                option.value = c.id
-
-                option.textContent = c.name.split(0, 19)
-
-                select.appendChild(option)
-
-            }
-
-        }
-
-        form.appendChild(select)
-
-        div.appendChild(form)
-
-        if (selectType.checked) divp.style.display == "none"
-        else {
-
-            divp.style.display = "block"
-
-            document.getElementById("selectNameCategories").style.display = "block"
-
-            document.getElementById("selectDescriptionCategories").style.display = "block"
-
-            document.getElementById("selectMenuEmoji").style.display = "block"
-
-            document.getElementById("divCategories").style.display = "block"
-
-            document.getElementById("selectCategories").style.display = "block"
-
-            document.getElementById("selectCategories").style.display = "block"
-
-            if (parseInt(e.target.value) > 3) divp.style.display = "block"
-
-        }
-
-        divp?.appendChild(div)
+        if (parseInt(e.target.value) > 3) divp.style.display = "block"
 
     }
-
-    sessionStorage.setItem("componentObject", JSON.stringify(component))
 
 }
 
@@ -606,7 +523,7 @@ export function changeWebImg(c) {
 
 }
 
-function resolvePartialEmoji(emoji) {
+export function resolvePartialEmoji(emoji) {
     if (!emoji) return null;
     if (typeof emoji === 'string') return /^\d{17,19}$/.test(emoji) ? { id: emoji } : parseEmoji(emoji);
     const { id, name, animated } = emoji;
@@ -614,7 +531,7 @@ function resolvePartialEmoji(emoji) {
     return { id, name, animated: Boolean(animated) };
 }
 
-function parseEmoji(text) {
+export function parseEmoji(text) {
     if (text.includes('%')) text = decodeURIComponent(text);
     if (!text.includes(':')) return { animated: false, name: text, id: undefined };
     const match = text.match(/<?(?:(a):)?(\w{2,32}):(\d{17,19})?>?/);

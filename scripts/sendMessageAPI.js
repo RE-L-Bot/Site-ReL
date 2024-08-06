@@ -1,7 +1,7 @@
 import { constructMessageEmbed, constructMessageComponent } from "./constructs";
 import RequestApi from "./ManagerRequest";
 
-export default async function (e, opt, embedOption) {
+export default async function (e, opt, embedOption, selectMenuOption) {
 
     const langP = window.location.pathname.slice(1, 3)
 
@@ -14,8 +14,6 @@ export default async function (e, opt, embedOption) {
     const imageWebhook = document.getElementById("imageWebhook");
 
     const QntCat = (document.getElementById("SelectQnt"))?.value;
-
-    const nameCat = document.getElementsByClassName("nameCategoria");
 
     const CatCat = (document.getElementsByClassName("selectChannelCategoria"));
 
@@ -131,12 +129,6 @@ export default async function (e, opt, embedOption) {
         return alert(messages[langP]["selectQuantityOfCategories"])
     };
 
-    for (const catsName of nameCat) {
-        if (catsName.value == "") {
-            return alert(messages[langP]["defineNameToAllSelectsMenus"])
-        }
-    };
-
     if (!SelectType.checked) {
         for (const catsName of CatCat) {
             if (catsName.value == "") {
@@ -146,7 +138,7 @@ export default async function (e, opt, embedOption) {
     };
 
     const embed = constructMessageEmbed(embedOption);
-    const component = constructMessageComponent();
+    const component = constructMessageComponent(selectMenuOption["options"]);
 
     if (!embed || !component) return
 
@@ -165,6 +157,7 @@ export default async function (e, opt, embedOption) {
         })
         .request()
         .then((response) => {
+
 
             if (response.status == 200)
                 return window.alert("Sucess")

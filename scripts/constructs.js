@@ -1,6 +1,4 @@
-import { range } from "./outhers";
-
-export function constructMessageComponent(opt) {
+export function constructMessageComponent(selectMenuOption) {
 
     const langP = window.location.pathname.slice(1, 3)
 
@@ -16,11 +14,13 @@ export function constructMessageComponent(opt) {
         }
     }
 
-    const component = JSON.parse(sessionStorage.getItem("componentObject"))
+    for (const r in selectMenuOption) {
 
-    for (const r of range(0, component.components[0].options.length)) {
+        if (!selectMenuOption[r]["value"]) {
+            selectMenuOption[r]["value"] = `c${r}-thread`
+        }
 
-        if (!component.components[0].options[r].label) {
+        if (!selectMenuOption[r].label) {
 
             window.alert(messages[langP]["nameToAllSelectMenus"])
 
@@ -28,15 +28,21 @@ export function constructMessageComponent(opt) {
 
         }
 
-        const v1 = (document.getElementsByClassName("selectChannelCategoria")[r].value) ?
-            document.getElementsByClassName("selectChannelCategoria")[r].value
-            : "thread";
-
-        component.components[0].options[r]["value"] = `c${r}-${v1}`
-
     };
 
-    return component;
+    return {
+        type: 1,
+        components: [
+            {
+                type: 3,
+                placeholder: "",
+                min_values: 1,
+                custom_id: "ticket_select",
+                options: selectMenuOption
+            }
+        ]
+    };
+
 };
 
 export function constructMessageEmbed(embedOption) {
@@ -55,7 +61,7 @@ export function constructMessageEmbed(embedOption) {
         image: {
             url: embedOption.imageUrl
         },
-        color: Number(embedOption.color.replace("#","0x")),
+        color: Number(embedOption.color.replace("#", "0x")),
         fields: embedOption.fields,
         url: embedOption.url,
         footer: {
@@ -69,7 +75,8 @@ export function constructMessageEmbed(embedOption) {
         embed.description.length < 1 &&
         embed.author.name.length < 1 &&
         embed.image.url.length < 1 &&
-        embed.thumbnail.url.length < 1
+        embed.thumbnail.url.length < 1 &&
+        embed.fields.length < 1
     ) {
 
         const langP = window.location.pathname.slice(1, 3)
