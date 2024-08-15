@@ -1,6 +1,6 @@
 import Footer from "@/components/br/footers";
 import Header from "@/components/br/headers";
-import { configData } from "@/next.config.mjs";
+import { configData } from "@/scripts/login";
 import { generateRandomString } from "@/scripts/enc";
 import RequestApi from "@/scripts/ManagerRequest";
 import { calculatePercent } from "@/scripts/outhers";

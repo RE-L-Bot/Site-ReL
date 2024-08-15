@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 import { redirectLogDash } from "./redirects";
 import RequestApi from "./ManagerRequest";
 import dayjs from "dayjs";
-import { configData } from "@/next.config.mjs";
+/** @type {import('@/configDev.js')} */
+export const configData = await import(`../config${process.env.NEXT_PUBLIC_TYPE}`)
 
 export default async function Login() {
 

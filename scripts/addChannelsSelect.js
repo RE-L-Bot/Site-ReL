@@ -69,6 +69,8 @@ export function addChannelsUseCommands() {
 
                     const channels = await getChannelsGuild(window.location.pathname.split("/")[4])
 
+                    console.log(channels)
+
                     if (channels)
                         sessionStorage.setItem("channelsGuild", JSON.stringify(channels))
 

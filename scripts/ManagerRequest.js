@@ -91,11 +91,11 @@ class RequesterManager {
             }
         }        
 
-        this.headers = obj["headers"] || null
-        this.endpoint = obj["endpoint"] || ""
+        this.headers = obj["headers"] ?? null
+        this.endpoint = obj["endpoint"] ?? ""
         this.method = (obj["method"]) ? obj["method"].toUpperCase() : "GET"
-        this.APIENDPOINT = obj["APIENDPOINT"] || obj["APIENDPOINTS"]["thisAPI"]
-        this.body = obj["body"] || null
+        this.APIENDPOINT = obj["APIENDPOINT"] ?? obj["APIENDPOINTS"]["thisAPI"]
+        this.body = obj["body"] ?? null
 
         if (this.endpoints[this.endpoint]) {
 

@@ -1,4 +1,4 @@
-import { configData } from "@/next.config.mjs"
+import { configData } from "@/scripts/login"
 import { generateRandomString } from "./enc"
 import RequestApi from "./ManagerRequest"
 
@@ -16,7 +16,6 @@ export function redirectInvite(guildID) {
     const langP = window.location.pathname.split("/")[1]
 
     window.location.href = `${configData[`linkRedirectAddBot`]
-        .replace("{guildID}", guildID)
         .replace("{lang}", langP)}`
 }
 

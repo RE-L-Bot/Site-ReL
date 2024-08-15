@@ -20,7 +20,7 @@ export function constructMessageComponent(selectMenuOption) {
             selectMenuOption[r]["value"] = `c${r}-thread`
         }
 
-        if (!selectMenuOption[r].label) {
+        if (!selectMenuOption[r].label || !selectMenuOption[r].label == "\u200B") {
 
             window.alert(messages[langP]["nameToAllSelectMenus"])
 

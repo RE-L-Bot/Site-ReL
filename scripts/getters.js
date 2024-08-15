@@ -84,7 +84,7 @@ export async function getChannelsGuild(guild_id) {
 
         let response;
 
-        new RequestApi()
+        await new RequestApi()
             .setApiEndPoint("thisAPI")
             .setEndPoint("gChannelsGuild")
             .setHeaders({
