@@ -67,9 +67,7 @@ export function addChannelsUseCommands() {
 
                 if (form) {
 
-                    const channels = await getChannelsGuild(window.location.pathname.split("/")[4])
-
-                    console.log(channels)
+                    const channels = await getChannelsGuild(user)
 
                     if (channels)
                         sessionStorage.setItem("channelsGuild", JSON.stringify(channels))
