@@ -9,42 +9,40 @@ import KeysPremiumPage from "@/components/br/pages/dashboard/guild/premium";
 import Error404 from "@/components/br/error404";
 import { checkGuildPermissions } from "@/scripts/checks";
 
-let val = 0
-
 export default function DashBoardId() {
 
-  let id = usePathname()
+	let id = usePathname()
 
-  checkGuildPermissions()
+	checkGuildPermissions()
 
-  const dataSet = {
-    configure: <Config />,
-    ticket: <Ticket />,
-    logs: <Logs />,
-    keyspremium: <KeysPremiumPage />,
-    error404: <Error404 />
-  }
+	const dataSet = {
+		configure: <Config />,
+		ticket: <Ticket />,
+		logs: <Logs />,
+		keyspremium: <KeysPremiumPage />,
+		error404: <Error404 />
+	}
 
-  if (id) {
+	if (id) {
 
-    id = id.split("/")
+		id = id.split("/")
 
-    if (dataSet[id[id.length - 1]]) return (
-      <>
-        <Header />
-        {dataSet[id[id.length - 1]]}
-        <Footer />
-      </>
-    )
-    else return (
-      <>
-        <Header />
-        {dataSet["error404"]}
-        <Footer />
-      </>
-    )
-  } else {
-    return <h1>Carregando...</h1>
-  }
+		if (dataSet[id[id.length - 1]]) return (
+			<>
+				<Header />
+				{dataSet[id[id.length - 1]]}
+				<Footer />
+			</>
+		)
+		else return (
+			<>
+				<Header />
+				{dataSet["error404"]}
+				<Footer />
+			</>
+		)
+	} else {
+		return <h1>Carregando...</h1>
+	}
 
 }
