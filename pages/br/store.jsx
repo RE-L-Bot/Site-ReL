@@ -55,6 +55,67 @@ export default function Teste() {
 
             </div>
 
+            <div className="SecondDivIndex">
+
+                <div>
+
+                    <h2>Politicas de reembolso</h2>
+
+                    <br />
+
+                    <p>
+                        Como todos os produtos comprados aqui são produtos digitais nos não oferecemos reembolso
+                    </p>
+
+                    <br />
+
+                    <h4>Comprei com um cartão sem permissão</h4>
+
+                    <br />
+
+                    <p>
+                        Como comprar com cartão de terceiros sem a devida permissão do mesmo se encaixa em fraude <br />
+                        e isto é um crime, alem de não conseguir o reembolso nos tomamos a liberdade de <br />
+                        bloquear seu acesso ao uso do bot
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div className="SecondDivIndex">
+
+                <div>
+
+                    <h2>Tirando algumas duvidas</h2>
+
+                    <ul>
+                        <li>
+                            Não tenho dinheiro oq eu faço?
+                        </li>
+                        <ul>
+                            <li>
+                                Nos não oferecemos descontos maiores do que os estão disponiveis no site, <br />
+                                caso você esteja com pouco capital, nos recomendamos juntar o dinheiro para si <br />
+                                e gastar com suas necessidades pois nos não reembolsaremos o seu dinheiro por irresponsabilidade do usuario
+                            </li>
+                        </ul>
+                        <li>
+                            Isto não é injusto com outros usuarios?
+                        </li>
+                        <ul>
+                            <li>
+                                Os servisos do bot são gratis para todos mas nos contamos com funcionalidades premium <br />
+                                para benificiar quem deseja ajudar a manter o bot e tambem são vantagens onde outros usuarios <br />
+                                seram prejudicados
+                            </li>
+                        </ul>
+                    </ul>
+
+                </div>
+
+            </div>
+
             <h1>Premium</h1>
 
             <hr />
