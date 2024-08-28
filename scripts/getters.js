@@ -79,7 +79,8 @@ export async function getChannelsGuild(guild_id) {
     if (
         !sessionStorage.getItem("channelsGuild") ||
         sessionStorage.getItem("channelsGuild") &&
-        dayjs(new Date()).diff(sessionStorage.getItem("REFRESHGETGILDCHANNELS"), "seconds") > 20
+        dayjs(new Date()).diff(sessionStorage.getItem("REFRESHGETGILDCHANNELS"), "seconds") > 20 ||
+        sessionStorage.getItem("channelsGuild")[0] != guild_id
     ) {
 
         let response;
