@@ -5,7 +5,7 @@ import { generateRandomString } from "@/scripts/enc";
 import RequestApi from "@/scripts/ManagerRequest";
 import { calculatePercent } from "@/scripts/outhers";
 
-export default function Teste() {
+export default function Store() {
 
     return (
 
