@@ -10,18 +10,22 @@ export function addChannels() {
 
         (async () => {
 
+            let user = window.location.pathname
+            user = user.split("/")
+            user = user[user.length - 2]
+
             if (count == 0) {
 
                 const form = document.getElementById("formsInfoTicketChannel")
 
-                const channels = await getChannelsGuild(window.location.pathname.split("/")[4])
+                const channels = await getChannelsGuild(user)
 
                 if (channels)
-                    sessionStorage.setItem("channelsGuild", JSON.stringify(channels))
+                    sessionStorage.setItem("channelsGuild", JSON.stringify([user, channels]))
 
                 if (form.length < 2) {
 
-                    for (const c of JSON.parse(sessionStorage.getItem("channelsGuild"))) {
+                    for (const c of JSON.parse(sessionStorage.getItem("channelsGuild"))[1]) {
 
                         if (c.type == 0) {
 
@@ -70,11 +74,11 @@ export function addChannelsUseCommands() {
                     const channels = await getChannelsGuild(user)
 
                     if (channels)
-                        sessionStorage.setItem("channelsGuild", JSON.stringify(channels))
+                        sessionStorage.setItem("channelsGuild", JSON.stringify([user, channels]))
 
                     if (form.length < 2) {
 
-                        for (const c of JSON.parse(sessionStorage.getItem("channelsGuild"))) {
+                        for (const c of JSON.parse(sessionStorage.getItem("channelsGuild"))[1]) {
 
                             if (c.type == 0) {
 
@@ -103,7 +107,7 @@ export function addChannelsUseCommands() {
 
                                 const divP = document.getElementById("channelsAddUseCommand")
 
-                                for (const c of JSON.parse(sessionStorage.getItem("channelsGuild"))) {
+                                for (const c of JSON.parse(sessionStorage.getItem("channelsGuild"))[1]) {
 
                                     for (const i of data.response) {
 
