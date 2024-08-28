@@ -12,7 +12,7 @@ export default async function handler(req, res) {
 
         await new RequestApi()
             .setApiEndPoint("ApiCentral")
-            .setEndPoint("gMessageChannelNoPerm")
+            .setEndPoint("gChannelsPermUse")
             .setHeaders({
                 guild_id: req.headers.guild_id,
                 authorization: process.env.AUTHCLIENT
