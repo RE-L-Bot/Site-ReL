@@ -9,7 +9,7 @@ export default function Header() {
     Login()
     checkColor()
     return (
-        <>
+        <div>
 
             <div id="headerPcDiv" />
             <div className="headerPC">
@@ -153,6 +153,6 @@ export default function Header() {
 
             </div>
 
-        </>
+        </ div>
     )
 }
