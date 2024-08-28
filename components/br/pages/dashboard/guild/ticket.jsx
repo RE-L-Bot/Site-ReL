@@ -23,12 +23,12 @@ export default function Ticket() {
         fields: [],
         url: ""
     });
-    
+
     const [selectMenu, setSelectMenu] = useState({
         options: []
     })
 
-    const handleOptionChange = (newOption)  => {
+    const handleOptionChange = (newOption) => {
         setSelectMenu(newOption)
     }
 
@@ -51,7 +51,12 @@ export default function Ticket() {
 
                         <h2>Função Premium</h2>
 
-                        <div style={{ display: "flex", alignItems: "revert", flexWrap: "wrap-reverse", justifyContent: "center" }}>
+                        <div style={{
+                            display: "flex",
+                            alignItems: "revert",
+                            flexWrap: "wrap-reverse",
+                            justifyContent: "center"
+                        }}>
 
                             <div style={{ maxWidth: "40%" }}>
 
