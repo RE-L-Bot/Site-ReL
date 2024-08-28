@@ -133,12 +133,12 @@ export default function Header() {
                         </li>
 
                         <li>
-                            <Link href="/br/comandos/todos">Comandos</Link>
+                            <Link href="/br/commands/all">Comandos</Link>
                         </li>
 
                         <li>
 
-                            <Link href="/br/contatos">Contato</Link>
+                            <Link href="/br/terms">Termos</Link>
 
                         </li>
 
