@@ -1,5 +1,5 @@
 import React from "react";
-import EventsCommands from "@/components/br/commands/eventos";
+import EventsCommands from "@/components/br/commands/events";
 import AsideSelectCommands from "@/components/br/commands/asideSelectCommands";
 import Head from "next/head";
 

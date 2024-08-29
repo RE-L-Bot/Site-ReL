@@ -1,6 +1,6 @@
 import React from "react";
 import AsideSelectCommands from "@/components/br/commands/asideSelectCommands";
-import GeneralsCommands from "../../commands/gerais";
+import GeneralsCommands from "../../commands/generals";
 import Head from "next/head";
 
 export default function Generals() {

@@ -1,5 +1,5 @@
 import React from "react";
-import ModerationCommands from "@/components/br/commands/moderacao";
+import ModerationCommands from "@/components/br/commands/moderation";
 import AsideSelectCommands from "@/components/br/commands/asideSelectCommands";
 import Head from "next/head";
 
