@@ -1,112 +1,269 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
+import {
+    DiscordMessage,
+    DiscordAttachments,
+    DiscordCommand,
+    DiscordEmbed,
+    DiscordLink,
+    DiscordEmbedDescription,
+    DiscordActionRow,
+    DiscordButton,
+    DiscordEmbedFields,
+    DiscordEmbedField,
+    DiscordCustomEmoji,
+    DiscordMention,
+    DiscordTime,
+    DiscordReply,
+    DiscordBold,
+    DiscordEmbedFooter,
+    DiscordMessages
+} from "@skyra/discord-components-react";
 
-const nameCatCommand =  "moderacao"
+const nameCatCommand = "moderacao"
 
 export default function ModerationCommands() {
     return (
-        <>
-            <main className="CommandsList">
 
-                <div className="conjuntCommand">
+        <main className="CommandsList">
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentbanir" onClick={(event) => changeDisplayNoneToAndResetAll(event, "banir", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentbanir" onClick={(event) => changeDisplayNoneToAndResetAll(event, "banir", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandbanir">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandbanir">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        banir
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Bane membros do seu servidor
-                                    </p>
+                                <h3>
+                                    banir
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-                                <p className="CategoryCommandModeration sobDiv">
-                                    Moderação
+                                <p>
+                                    Bane membros do seu servidor
                                 </p>
+
                             </div>
 
                         </div>
 
+                        <div className="DivCategoryCommand">
+                            <p className="CategoryCommandModeration sobDiv">
+                                Moderação
+                            </p>
+                        </div>
+
                     </div>
 
-                    <div className="BodyInformationCommand">
+                </div>
 
-                        <div className="InformationsCommand" id="InformationsCommandbanir">
+                <div className="BodyInformationCommand">
 
-                            <div>
+                    <div className="InformationsCommand" id="InformationsCommandbanir">
+
+                        <div>
+
+                            <h4>
+                                Descrição longa:
+                            </h4>
+
+                            <h5>
+                                ° Bane varios membros do seu servidor ao mesmo tempo <br />
+                                ° sendo mass ban nativamente
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Observações:
+                            </h4>
+
+                            <h5>
+                                ° A Re ira informar membro por membro caso ela não consiga banir <br />
+                                ° antes de iniciar todo o processo de ban para evitar dor de cabeça <br />
+                                ° e problemas
+                                <br />
+                                <br />
+                                ° Bane membros mesmo o usuario estando fora do servidor
+                                <br />
+                                <br />
+                                ° Identifica quando o id enviado não é id de um usuario
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Argumentos:
+                            </h4>
+
+                            <h5>
+                                ° Motivo: Motivo de banir os membros (Opcional)
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Representação do comando:
+                            </h4>
+
+                            <DiscordMessages>
+
+                                <DiscordMessage
+                                    profile="RELBOT"
+                                    timestamp="30/08/2024 13:00"
+                                >
+                                    <DiscordCommand
+                                        style={{ marginLeft: "56px" }}
+                                        slot="reply"
+                                        profile="marciel404"
+                                        command="/banir"
+                                    ></DiscordCommand>
+
+                                    <span>Envie os ids dos membros um em baixo do outro</span>
+
+                                </DiscordMessage>
+
+                                <DiscordMessage
+                                    profile="marciel404"
+                                    highlight
+                                    timestamp="30/08/2024 13:00"
+                                >
+
+                                    <span><DiscordMention>RE=L</DiscordMention></span> <br />
+
+                                    <span><DiscordMention>marciel404</DiscordMention></span> <br />
+
+                                    <span>1044742053252313199</span> <br />
+
+                                    <span>1044742053252313855</span> <br />
+
+                                    <span><DiscordMention>Sabre Samurai</DiscordMention></span> <br />
+
+                                    <span>536586433595441163</span>
+
+                                </DiscordMessage>
 
                                 <h4>
-                                    Descrição longa:
+                                    Caso 1
                                 </h4>
 
-                                <h5>
-                                    ° Bane varios membros do seu servidor ao mesmo tempo <br />
-                                    ° sendo mass ban nativamente
-                                </h5>
+                                <hr />
 
-                                <br />
+                                <DiscordMessage profile="RELBOT" timestamp="30/08/2024 13:00">
+
+                                    <span>Não consigo banir o membro <DiscordMention>RE=L</DiscordMention></span> <br />
+
+                                </DiscordMessage>
+
+                                <DiscordMessage profile="RELBOT" messageBodyOnly highlight timestamp="13:01">
+
+                                    <span>Não consigo banir o membro <DiscordMention>marciel404</DiscordMention></span>
+
+                                </DiscordMessage>
+
+                                <DiscordMessage profile="RELBOT" messageBodyOnly timestamp="13:01">
+
+                                    <span>1044742053252313199 não é um usuario</span>
+
+                                </DiscordMessage>
+
+                                <DiscordMessage profile="RELBOT" messageBodyOnly timestamp="13:01">
+
+                                    <span>1044742053252313855 não é um usuario</span>
+
+                                </DiscordMessage>
 
                                 <h4>
-                                    Observações:
+                                    Caso 2
                                 </h4>
 
-                                <h5>
-                                    ° A Re ira informar membro por membro caso ela não consiga banir <br />
-                                    ° antes de iniciar todo o processo de ban para evitar dor de cabeça <br />
-                                    ° e problemas
-                                    <br />
-                                    <br />
-                                    ° Bane membros mesmo o usuario estando fora do servidor
-                                    <br />
-                                    <br />
-                                    ° Identifica quando o id enviado não é id de um usuario
-                                </h5>
+                                <hr />
 
-                                <br />
+                                <div id="message-ban-confirm">
 
-                                <h4>
-                                    Argumentos:
-                                </h4>
+                                    <DiscordMessage profile="RELBOT" edited timestamp="30/08/2024 13:00">
 
-                                <h5>
-                                    ° Motivo: Motivo de banir os membros (Opcional)
-                                </h5>
+                                        <DiscordCommand
+                                            style={{ marginLeft: "56px" }}
+                                            slot="reply"
+                                            profile="marciel404"
+                                            command="/banir"
+                                        ></DiscordCommand>
 
-                                <br />
+                                        <DiscordEmbed slot="embeds" embedTitle="Banimento">
 
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
+                                            <DiscordEmbedDescription slot="description">
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img1.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                                <DiscordMention>Bagre Samurai</DiscordMention><br />
 
-                                <br />
+                                                <span>durateston_e_trembolona 536586433595441163</span>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                            </DiscordEmbedDescription>
 
-                                <br />
+                                            <DiscordEmbedFields slot="fields">
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img3.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                                <DiscordEmbedField fieldTitle="Motivo">
+                                                    Links maliciosos
+                                                </DiscordEmbedField>
 
-                                <br />
+                                            </DiscordEmbedFields>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img4.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                        </DiscordEmbed>
 
-                            </div>
+                                        <DiscordAttachments slot="components">
+
+                                            <DiscordActionRow>
+
+                                                <DiscordButton type="destructive" onClick={
+                                                    () => {
+                                                        document.getElementById("message-ban-confirm").style.display = "none"
+                                                        document.getElementById("message-sucess-ban").style.display = "block"
+                                                    }
+                                                }>
+                                                    ✔
+                                                </DiscordButton>
+
+                                                <DiscordButton type="destructive">
+                                                    ✖
+                                                </DiscordButton>
+
+                                            </DiscordActionRow>
+
+                                        </DiscordAttachments>
+
+                                    </DiscordMessage>
+
+                                </div>
+
+                                <div id="message-sucess-ban" style={{ display: "none" }} >
+
+                                    <DiscordMessage profile="RELBOT" timestamp="30/08/2024 13:03">
+                                        <DiscordMention>marciel404</DiscordMention><br />
+                                        <span>Membros Banidos com Sucesso</span>
+                                    </DiscordMessage>
+
+                                </div>
+
+                            </DiscordMessages>
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img1.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                            <br />
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                            <br />
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img3.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                            <br />
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img4.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                         </div>
 
@@ -114,89 +271,89 @@ export default function ModerationCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentclear" onClick={(event) => changeDisplayNoneToAndResetAll(event, "clear", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentclear" onClick={(event) => changeDisplayNoneToAndResetAll(event, "clear", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandclear">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandclear">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        clear
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Limpa as mensagens de um chat
-                                    </p>
+                                <h3>
+                                    clear
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-                                <p className="CategoryCommandModeration sobDiv">
-                                    Moderação
+                                <p>
+                                    Limpa as mensagens de um chat
                                 </p>
+
                             </div>
 
                         </div>
 
+                        <div className="DivCategoryCommand">
+                            <p className="CategoryCommandModeration sobDiv">
+                                Moderação
+                            </p>
+                        </div>
+
                     </div>
 
-                    <div className="BodyInformationCommand">
+                </div>
 
-                        <div className="InformationsCommand" id="InformationsCommandclear">
+                <div className="BodyInformationCommand">
 
-                            <div>
+                    <div className="InformationsCommand" id="InformationsCommandclear">
 
-                                <h4>
-                                    Descrição longa:
-                                </h4>
+                        <div>
 
-                                <h5>
-                                    ° Limpa uma certa quantia de mensagens de um canal no seu <br />
-                                    ° servidor
-                                </h5>
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Limpa uma certa quantia de mensagens de um canal no seu <br />
+                                ° servidor
+                            </h5>
 
-                                <h4>
-                                    Observações:
-                                </h4>
+                            <br />
 
-                                <h5>
-                                    ° Por limitações do discord a Re só é capaz de apagar 100 em 100 <br />
-                                    ° mensagens e mensagens com menos de 14 dias <br />
-                                </h5>
+                            <h4>
+                                Observações:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Por limitações do discord a Re só é capaz de apagar 100 em 100 <br />
+                                ° mensagens e mensagens com menos de 14 dias <br />
+                            </h5>
 
-                                <h4>
-                                    Argumentos:
-                                </h4>
+                            <br />
 
-                                <h5>
-                                    ° qnt: Quantidade de mensagens a limpar (Necessário) <br />
-                                    ° canal: Canal para apagar as mensagens (Opcional)
-                                </h5>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° qnt: Quantidade de mensagens a limpar (Necessário) <br />
+                                ° canal: Canal para apagar as mensagens (Opcional)
+                            </h5>
 
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
+                            <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/clear/img1.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <h4>
+                                Representação do comando:
+                            </h4>
 
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/clear/img1.png`} alt="imageCommand" style={{ width: "60%" }} />
 
-                            </div>
 
                         </div>
 
@@ -204,77 +361,77 @@ export default function ModerationCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentforce_disconect" onClick={(event) => changeDisplayNoneToAndResetAll(event, "force_disconect", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentforce_disconect" onClick={(event) => changeDisplayNoneToAndResetAll(event, "force_disconect", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandforce_disconect">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandforce_disconect">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        force_disconect
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Disconecta um membro de uma call
-                                    </p>
+                                <h3>
+                                    force_disconect
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-                                <p className="CategoryCommandModeration sobDiv">
-                                    Moderação
+                                <p>
+                                    Disconecta um membro de uma call
                                 </p>
+
                             </div>
 
                         </div>
 
+                        <div className="DivCategoryCommand">
+                            <p className="CategoryCommandModeration sobDiv">
+                                Moderação
+                            </p>
+                        </div>
+
                     </div>
 
-                    <div className="BodyInformationCommand">
+                </div>
 
-                        <div className="InformationsCommand" id="InformationsCommandforce_disconect">
+                <div className="BodyInformationCommand">
 
-                            <div>
+                    <div className="InformationsCommand" id="InformationsCommandforce_disconect">
 
-                                <h4>
-                                    Descrição longa:
-                                </h4>
+                        <div>
 
-                                <h5>
-                                    ° Desconecta um membro de uma call que ele esteja <br />
-                                </h5>
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Desconecta um membro de uma call que ele esteja <br />
+                            </h5>
 
-                                <h4>
-                                    Argumentos:
-                                </h4>
+                            <br />
 
-                                <h5>
-                                    ° Membro: Membro a desconectar da call (Necessário)
-                                </h5>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Membro: Membro a desconectar da call (Necessário)
+                            </h5>
 
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
+                            <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/fsdc/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <h4>
+                                Representação do comando:
+                            </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/fsdc/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/fsdc/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
-                            </div>
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/fsdc/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                         </div>
 
@@ -282,79 +439,79 @@ export default function ModerationCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentforce_move" onClick={(event) => changeDisplayNoneToAndResetAll(event, "force_move", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentforce_move" onClick={(event) => changeDisplayNoneToAndResetAll(event, "force_move", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandforce_move">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandforce_move">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        force_move
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Move um membro para outra call
-                                    </p>
+                                <h3>
+                                    force_move
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-                                <p className="CategoryCommandModeration sobDiv">
-                                    Moderação
+                                <p>
+                                    Move um membro para outra call
                                 </p>
+
                             </div>
 
                         </div>
 
+                        <div className="DivCategoryCommand">
+                            <p className="CategoryCommandModeration sobDiv">
+                                Moderação
+                            </p>
+                        </div>
+
                     </div>
 
-                    <div className="BodyInformationCommand">
+                </div>
 
-                        <div className="InformationsCommand" id="InformationsCommandforce_move">
+                <div className="BodyInformationCommand">
 
-                            <div>
+                    <div className="InformationsCommand" id="InformationsCommandforce_move">
 
-                                <h4>
-                                    Descrição longa:
-                                </h4>
+                        <div>
 
-                                <h5>
-                                    ° Move um membro de call para outra caso a call não esteja <br />
-                                    ° lotada
-                                </h5>
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Move um membro de call para outra caso a call não esteja <br />
+                                ° lotada
+                            </h5>
 
-                                <h4>
-                                    Argumentos:
-                                </h4>
+                            <br />
 
-                                <h5>
-                                    ° Membro: Membro a desconectar da call (Necessário) <br />
-                                    ° Canal: Canal para mover o membro (Necessário)
-                                </h5>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Membro: Membro a desconectar da call (Necessário) <br />
+                                ° Canal: Canal para mover o membro (Necessário)
+                            </h5>
 
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
+                            <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/fsmv/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <h4>
+                                Representação do comando:
+                            </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/fsmv/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/fsmv/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
-                            </div>
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/fsmv/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                         </div>
 
@@ -362,80 +519,80 @@ export default function ModerationCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentkick" onClick={(event) => changeDisplayNoneToAndResetAll(event, "kick", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentkick" onClick={(event) => changeDisplayNoneToAndResetAll(event, "kick", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandkick">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandkick">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        expulsar
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Expulsa membros do servidor
-                                    </p>
+                                <h3>
+                                    expulsar
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-                                <p className="CategoryCommandModeration sobDiv">
-                                    Moderação
+                                <p>
+                                    Expulsa membros do servidor
                                 </p>
+
                             </div>
 
                         </div>
 
+                        <div className="DivCategoryCommand">
+                            <p className="CategoryCommandModeration sobDiv">
+                                Moderação
+                            </p>
+                        </div>
+
                     </div>
 
-                    <div className="BodyInformationCommand">
+                </div>
 
-                        <div className="InformationsCommand" id="InformationsCommandkick">
+                <div className="BodyInformationCommand">
 
-                            <div>
+                    <div className="InformationsCommand" id="InformationsCommandkick">
 
-                                <h4>
-                                    Descrição longa:
-                                </h4>
+                        <div>
 
-                                <h5>
-                                    ° Expulsa varios membros do seu servidor ao mesmo tempo <br />
-                                    ° sendo mass kick nativamente
-                                </h5>
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Expulsa varios membros do seu servidor ao mesmo tempo <br />
+                                ° sendo mass kick nativamente
+                            </h5>
 
-                                <h4>
-                                    Argumentos:
-                                </h4>
+                            <br />
 
-                                <h5>
-                                    ° Motivo: Motivo de expulsa os membros (Necessário) <br />
-                                </h5>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Motivo: Motivo de expulsa os membros (Necessário) <br />
+                            </h5>
 
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
+                            <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/kick/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <h4>
+                                Representação do comando:
+                            </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/kick/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/kick/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/kick/img3.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/kick/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
 
-                            </div>
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/kick/img3.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                         </div>
 
@@ -443,79 +600,79 @@ export default function ModerationCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentmmd" onClick={(event) => changeDisplayNoneToAndResetAll(event, "mmd", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentmmd" onClick={(event) => changeDisplayNoneToAndResetAll(event, "mmd", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandmmd">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandmmd">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        deletar_mensagens_de_membro
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Deleta as mensagens de um membro
-                                    </p>
+                                <h3>
+                                    deletar_mensagens_de_membro
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-                                <p className="CategoryCommandModeration sobDiv">
-                                    Moderação
+                                <p>
+                                    Deleta as mensagens de um membro
                                 </p>
+
                             </div>
 
                         </div>
 
+                        <div className="DivCategoryCommand">
+                            <p className="CategoryCommandModeration sobDiv">
+                                Moderação
+                            </p>
+                        </div>
+
                     </div>
 
-                    <div className="BodyInformationCommand">
+                </div>
 
-                        <div className="InformationsCommand" id="InformationsCommandmmd">
+                <div className="BodyInformationCommand">
 
-                            <div>
+                    <div className="InformationsCommand" id="InformationsCommandmmd">
 
-                                <h4>
-                                    Descrição longa:
-                                </h4>
+                        <div>
 
-                                <h5>
-                                    ° Deletas mensagens de um membro expecifico em 1 ou <br />
-                                    ° todos os canais do servidor
-                                </h5>
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Deletas mensagens de um membro expecifico em 1 ou <br />
+                                ° todos os canais do servidor
+                            </h5>
 
-                                <h4>
-                                    Argumentos:
-                                </h4>
+                            <br />
 
-                                <h5>
-                                    ° Membro: Membro para apagar as mensagens (Necessário) <br />
-                                    ° Canal: Canal a apagar as mensagens (Se vazio apaga em todos) (Opcional)
-                                </h5>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Membro: Membro para apagar as mensagens (Necessário) <br />
+                                ° Canal: Canal a apagar as mensagens (Se vazio apaga em todos) (Opcional)
+                            </h5>
 
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
+                            <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/mmd/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <h4>
+                                Representação do comando:
+                            </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/mmd/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/mmd/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
-                            </div>
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/mmd/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                         </div>
 
@@ -523,75 +680,75 @@ export default function ModerationCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentsetLang" onClick={(event) => changeDisplayNoneToAndResetAll(event, "setLang", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentsetLang" onClick={(event) => changeDisplayNoneToAndResetAll(event, "setLang", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandsetLang">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandsetLang">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        definir_idioma
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Define qual idioma sera enviado as mensagens do bot
-                                    </p>
+                                <h3>
+                                    definir_idioma
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-                                <p className="CategoryCommandModeration sobDiv">
-                                    Moderação
+                                <p>
+                                    Define qual idioma sera enviado as mensagens do bot
                                 </p>
+
                             </div>
 
                         </div>
 
+                        <div className="DivCategoryCommand">
+                            <p className="CategoryCommandModeration sobDiv">
+                                Moderação
+                            </p>
+                        </div>
+
                     </div>
 
-                    <div className="BodyInformationCommand">
+                </div>
 
-                        <div className="InformationsCommand" id="InformationsCommandsetLang">
+                <div className="BodyInformationCommand">
 
-                            <div>
+                    <div className="InformationsCommand" id="InformationsCommandsetLang">
 
-                                <h4>
-                                    Descrição longa:
-                                </h4>
+                        <div>
 
-                                <h5>
-                                    ° Define em qual idioma ser enviadas as mensagens da RE <br />
-                                </h5>
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Define em qual idioma ser enviadas as mensagens da RE <br />
+                            </h5>
 
-                                <h4>
-                                    Argumentos:
-                                </h4>
+                            <br />
 
-                                <h5>
-                                    ° Idiomas: Idioma a definir (Necessário) <br />
-                                </h5>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Idiomas: Idioma a definir (Necessário) <br />
+                            </h5>
 
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
+                            <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/setlang/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <h4>
+                                Representação do comando:
+                            </h4>
 
-                            </div>
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/setlang/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                         </div>
 
@@ -599,78 +756,78 @@ export default function ModerationCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentsetsetLogs" onClick={(event) => changeDisplayNoneToAndResetAll(event, "setsetLogs", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentsetsetLogs" onClick={(event) => changeDisplayNoneToAndResetAll(event, "setsetLogs", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandsetsetLogs">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandsetsetLogs">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        set_logs
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Define as logs do bot
-                                    </p>
+                                <h3>
+                                    set_logs
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-                                <p className="CategoryCommandModeration sobDiv">
-                                    Moderação
+                                <p>
+                                    Define as logs do bot
                                 </p>
+
                             </div>
 
                         </div>
 
+                        <div className="DivCategoryCommand">
+                            <p className="CategoryCommandModeration sobDiv">
+                                Moderação
+                            </p>
+                        </div>
+
                     </div>
 
-                    <div className="BodyInformationCommand">
+                </div>
 
-                        <div className="InformationsCommand" id="InformationsCommandsetsetLogs">
+                <div className="BodyInformationCommand">
 
-                            <div>
+                    <div className="InformationsCommand" id="InformationsCommandsetsetLogs">
 
-                                <h4>
-                                    Descrição longa:
-                                </h4>
+                        <div>
 
-                                <h5>
-                                    ° Define os chats das logs da RE <br />
-                                </h5>
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Define os chats das logs da RE <br />
+                            </h5>
 
-                                <h4>
-                                    Argumentos:
-                                </h4>
+                            <br />
 
-                                <h5>
-                                    ° Log: Log a ser definida (Necessário) <br />
-                                    ° Channel: Canal para definir as logs (Se vazio remove a log) - (Opcional)
-                                </h5>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Log: Log a ser definida (Necessário) <br />
+                                ° Channel: Canal para definir as logs (Se vazio remove a log) - (Opcional)
+                            </h5>
 
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
+                            <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/setlog/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <h4>
+                                Representação do comando:
+                            </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/setlog/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/setlog/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
-                            </div>
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/setlog/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                         </div>
 
@@ -678,7 +835,8 @@ export default function ModerationCommands() {
 
                 </div>
 
-            </main>
-        </>
+            </div>
+
+        </main>
     )
 }
