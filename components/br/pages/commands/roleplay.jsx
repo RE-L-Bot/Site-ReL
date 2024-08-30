@@ -9,7 +9,7 @@ export default function Roleplay() {
         <main>
 
             <Head>
-                <title>RE=L Bot • Comandos De Roleplay</title>
+                <title>RE=L Bot • Comandos de roleplay</title>
             </Head>
 
             <div className="alignItens">

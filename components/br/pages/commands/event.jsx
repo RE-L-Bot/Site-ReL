@@ -9,7 +9,7 @@ export default function Events() {
         <main>
 
             <Head>
-                <title>RE=L Bot • Comandos De Evento</title>
+                <title>RE=L Bot • Comandos de evento</title>
             </Head>
 
             <div className="alignItens">

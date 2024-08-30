@@ -9,7 +9,7 @@ export default function Ticket() {
         <main>
 
             <Head>
-                <title>RE=L Bot • Comandos de Ticket</title>
+                <title>RE=L Bot • Comandos de ticket</title>
             </Head>
 
             <div className="alignItens">

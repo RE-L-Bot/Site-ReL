@@ -9,7 +9,7 @@ export default function Registro() {
         <main>
 
             <Head>
-                <title>RE=L Bot • COmandos de Registro</title>
+                <title>RE=L Bot • Comandos de registro</title>
             </Head>
 
             <div className="alignItens">

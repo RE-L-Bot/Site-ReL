@@ -107,6 +107,7 @@ export default function GeneralsCommands() {
 
 								<DiscordMessage
 									profile="RELBOT"
+									timestamp="30/08/2024 13:00"
 								>
 									<DiscordCommand
 										style={{ marginLeft: "56px" }}
@@ -149,6 +150,7 @@ export default function GeneralsCommands() {
 
 								<DiscordMessage
 									profile="RELBOT"
+									timestamp="30/08/2024 13:00"
 								>
 									<DiscordCommand
 										style={{ marginLeft: "56px" }}
@@ -197,6 +199,7 @@ export default function GeneralsCommands() {
 
 									<DiscordMessage
 										profile="RELBOT"
+										timestamp="30/08/2024 13:00"
 										ephemeral
 										dismissMessageClicked={() => document.getElementById("message-ephemeral-avatar").style.display = "none"}
 									>
@@ -205,6 +208,7 @@ export default function GeneralsCommands() {
 											slot="reply"
 											command
 											profile="RELBOT"
+											timestamp="30/08/2024 13:00"
 										>
 											Clique aqui para ver o comando
 										</DiscordReply>
@@ -303,6 +307,7 @@ export default function GeneralsCommands() {
 
 								<DiscordMessage
 									profile="RELBOT"
+									timestamp="30/08/2024 13:00"
 								>
 									<DiscordCommand
 										style={{ marginLeft: "56px" }}
@@ -489,6 +494,7 @@ export default function GeneralsCommands() {
 
 								<DiscordMessage
 									profile="RELBOT"
+									timestamp="30/08/2024 13:00"
 								>
 									<DiscordCommand
 										style={{ marginLeft: "56px" }}
@@ -663,6 +669,7 @@ export default function GeneralsCommands() {
 
 								<DiscordMessage
 									profile="RELBOT"
+									timestamp="30/08/2024 13:00"
 									ephemeral
 								>
 									<DiscordCommand
@@ -765,6 +772,7 @@ export default function GeneralsCommands() {
 
 								<DiscordMessage
 									profile="RELBOT"
+									timestamp="30/08/2024 13:00"
 									ephemeral
 								>
 									<DiscordCommand
@@ -908,6 +916,7 @@ export default function GeneralsCommands() {
 
 								<DiscordMessage
 									profile="RELBOT"
+									timestamp="30/08/2024 13:00"
 								>
 									<DiscordCommand
 										style={{ marginLeft: "56px" }}
@@ -1060,6 +1069,7 @@ export default function GeneralsCommands() {
 
 								<DiscordMessage
 									profile="RELBOT"
+									timestamp="30/08/2024 13:00"
 								>
 									<DiscordCommand
 										style={{ marginLeft: "56px" }}

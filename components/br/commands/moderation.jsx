@@ -4,22 +4,14 @@ import {
     DiscordAttachments,
     DiscordCommand,
     DiscordEmbed,
-    DiscordLink,
     DiscordEmbedDescription,
     DiscordActionRow,
     DiscordButton,
     DiscordEmbedFields,
     DiscordEmbedField,
-    DiscordCustomEmoji,
     DiscordMention,
-    DiscordTime,
-    DiscordReply,
-    DiscordBold,
-    DiscordEmbedFooter,
     DiscordMessages
 } from "@skyra/discord-components-react";
-
-const nameCatCommand = "moderacao"
 
 export default function ModerationCommands() {
     return (
@@ -142,7 +134,7 @@ export default function ModerationCommands() {
 
                                     <span>1044742053252313855</span> <br />
 
-                                    <span><DiscordMention>Sabre Samurai</DiscordMention></span> <br />
+                                    <span><DiscordMention>Bagre Samurai</DiscordMention></span> <br />
 
                                     <span>536586433595441163</span>
 
@@ -251,20 +243,6 @@ export default function ModerationCommands() {
 
                             </DiscordMessages>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img1.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            <br />
-
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            <br />
-
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img3.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            <br />
-
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/ban/img4.png`} alt="imageCommand" style={{ width: "60%" }} />
-
                         </div>
 
                     </div>
@@ -352,8 +330,37 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/clear/img1.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <DiscordMessages>
 
+                                <DiscordMessage
+                                    profile="RELBOT"
+                                    timestamp="30/08/2024 13:00"
+                                    ephemeral
+                                >
+                                    <DiscordCommand
+                                        style={{ marginLeft: "56px" }}
+                                        slot="reply"
+                                        profile="marciel404"
+                                        command="/clear"
+                                    ></DiscordCommand>
+
+                                    <span>Começando</span>
+
+                                </DiscordMessage>
+
+                                <DiscordMessage
+                                    profile="RELBOT"
+                                    timestamp="30/08/2024 13:00"
+                                >
+
+                                    <span>
+                                        Foram limpas 100 mensagens no canal <DiscordMention type="channel">geral</DiscordMention>,
+                                        não consigo limpar mensagens mais velhas que 14 dias
+                                    </span>
+
+                                </DiscordMessage>
+
+                            </DiscordMessages>
 
                         </div>
 
@@ -429,9 +436,59 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/fsdc/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <DiscordMessages>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/fsdc/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <h4>
+                                    Caso 1
+                                </h4>
+
+                                <hr />
+
+                                <DiscordMessage
+                                    profile="RELBOT"
+                                    timestamp="30/08/2024 13:00"
+                                    highlight
+                                >
+
+                                    <DiscordCommand
+                                        style={{ marginLeft: "56px" }}
+                                        slot="reply"
+                                        profile="marciel404"
+                                        command="/force_disconect"
+                                    ></DiscordCommand>
+
+                                    <span>
+                                        O membro <DiscordMention>marciel404</DiscordMention> não está em uma call
+                                    </span>
+
+                                </DiscordMessage>
+
+                                <h4>
+                                    Caso 2
+                                </h4>
+
+                                <hr />
+
+                                <DiscordMessage
+                                    profile="RELBOT"
+                                    timestamp="30/08/2024 13:00"
+                                    highlight
+                                >
+
+                                    <DiscordCommand
+                                        style={{ marginLeft: "56px" }}
+                                        slot="reply"
+                                        profile="marciel404"
+                                        command="/force_disconect"
+                                    ></DiscordCommand>
+
+                                    <span>
+                                        <DiscordMention>marciel404</DiscordMention> desconectado com sucesso
+                                    </span>
+
+                                </DiscordMessage>
+
+                            </DiscordMessages>
 
                         </div>
 
@@ -509,9 +566,59 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/fsmv/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <DiscordMessages>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/fsmv/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <h4>
+                                    Caso 1
+                                </h4>
+
+                                <hr />
+
+                                <DiscordMessage
+                                    profile="RELBOT"
+                                    timestamp="30/08/2024 13:00"
+                                    highlight
+                                >
+
+                                    <DiscordCommand
+                                        style={{ marginLeft: "56px" }}
+                                        slot="reply"
+                                        profile="marciel404"
+                                        command="/force_disconect"
+                                    ></DiscordCommand>
+
+                                    <span>
+                                        O membro <DiscordMention>marciel404</DiscordMention> não está em uma call
+                                    </span>
+
+                                </DiscordMessage>
+
+                                <h4>
+                                    Caso 2
+                                </h4>
+
+                                <hr />
+
+                                <DiscordMessage
+                                    profile="RELBOT"
+                                    timestamp="30/08/2024 13:00"
+                                    highlight
+                                >
+
+                                    <DiscordCommand
+                                        style={{ marginLeft: "56px" }}
+                                        slot="reply"
+                                        profile="marciel404"
+                                        command="/force_disconect"
+                                    ></DiscordCommand>
+
+                                    <span>
+                                        <DiscordMention>marciel404</DiscordMention> desconectado com sucesso para a call <DiscordMention type="voice">⭐ Reunião</DiscordMention>
+                                    </span>
+
+                                </DiscordMessage>
+
+                            </DiscordMessages>
 
                         </div>
 
@@ -588,11 +695,149 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/kick/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <DiscordMessages>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/kick/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <DiscordMessage
+                                    profile="RELBOT"
+                                    timestamp="30/08/2024 13:00"
+                                >
+                                    <DiscordCommand
+                                        style={{ marginLeft: "56px" }}
+                                        slot="reply"
+                                        profile="marciel404"
+                                        command="/expulsar"
+                                    ></DiscordCommand>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/kick/img3.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                    <span>Envie os ids dos membros um em baixo do outro</span>
+
+                                </DiscordMessage>
+
+                                <DiscordMessage
+                                    profile="marciel404"
+                                    highlight
+                                    timestamp="30/08/2024 13:00"
+                                >
+
+                                    <span><DiscordMention>RE=L</DiscordMention></span> <br />
+
+                                    <span><DiscordMention>marciel404</DiscordMention></span> <br />
+
+                                    <span>1044742053252313199</span> <br />
+
+                                    <span>1044742053252313855</span> <br />
+
+                                    <span><DiscordMention>Bagre Samurai</DiscordMention></span> <br />
+
+                                    <span>536586433595441163</span>
+
+                                </DiscordMessage>
+
+                                <h4>
+                                    Caso 1
+                                </h4>
+
+                                <hr />
+
+                                <DiscordMessage profile="RELBOT" timestamp="30/08/2024 13:00">
+
+                                    <span>Não consigo expulsar o membro <DiscordMention>RE=L</DiscordMention></span> <br />
+
+                                </DiscordMessage>
+
+                                <DiscordMessage profile="RELBOT" messageBodyOnly highlight timestamp="13:01">
+
+                                    <span>Não consigo expulsar o membro <DiscordMention>marciel404</DiscordMention></span>
+
+                                </DiscordMessage>
+
+                                <DiscordMessage profile="RELBOT" messageBodyOnly timestamp="13:01">
+
+                                    <span>1044742053252313199 não é um usuario</span>
+
+                                </DiscordMessage>
+
+                                <DiscordMessage profile="RELBOT" messageBodyOnly timestamp="13:01">
+
+                                    <span>1044742053252313855 não é um usuario</span>
+
+                                </DiscordMessage>
+
+                                <DiscordMessage profile="RELBOT" messageBodyOnly timestamp="13:01">
+
+                                    <span>536586433595441163 não está no servidor</span>
+
+                                </DiscordMessage>
+
+                                <h4>
+                                    Caso 2
+                                </h4>
+
+                                <hr />
+
+                                <div id="message-kick-confirm">
+
+                                    <DiscordMessage profile="RELBOT" edited timestamp="30/08/2024 13:00">
+
+                                        <DiscordCommand
+                                            style={{ marginLeft: "56px" }}
+                                            slot="reply"
+                                            profile="marciel404"
+                                            command="/expulsar"
+                                        ></DiscordCommand>
+
+                                        <DiscordEmbed slot="embeds" embedTitle="Expulsar">
+
+                                            <DiscordEmbedDescription slot="description">
+
+                                                <DiscordMention>Bagre Samurai</DiscordMention><br />
+
+                                            </DiscordEmbedDescription>
+
+                                            <DiscordEmbedFields slot="fields">
+
+                                                <DiscordEmbedField fieldTitle="Motivo">
+                                                    Para deixar de ser bobo
+                                                </DiscordEmbedField>
+
+                                            </DiscordEmbedFields>
+
+                                        </DiscordEmbed>
+
+                                        <DiscordAttachments slot="components">
+
+                                            <DiscordActionRow>
+
+                                                <DiscordButton type="destructive" onClick={
+                                                    () => {
+                                                        document.getElementById("message-kick-confirm").style.display = "none"
+                                                        document.getElementById("message-sucess-kick").style.display = "block"
+                                                    }
+                                                }>
+                                                    ✔
+                                                </DiscordButton>
+
+                                                <DiscordButton type="destructive">
+                                                    ✖
+                                                </DiscordButton>
+
+                                            </DiscordActionRow>
+
+                                        </DiscordAttachments>
+
+                                    </DiscordMessage>
+
+                                </div>
+
+                                <div id="message-sucess-kick" style={{ display: "none" }} >
+
+                                    <DiscordMessage profile="RELBOT" timestamp="30/08/2024 13:03">
+                                        <DiscordMention>marciel404</DiscordMention><br />
+                                        <span>Membros expulsos com Sucesso</span>
+                                    </DiscordMessage>
+
+                                </div>
+
+                            </DiscordMessages>
 
                         </div>
 
@@ -670,9 +915,36 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/mmd/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <DiscordMessages>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/mmd/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <DiscordMessage
+                                    profile="RELBOT"
+                                    timestamp="30/08/2024 13:00"
+                                    ephemeral
+                                >
+                                    <DiscordCommand
+                                        style={{ marginLeft: "56px" }}
+                                        slot="reply"
+                                        profile="marciel404"
+                                        command="/deletar_mensagens_de_membro"
+                                    ></DiscordCommand>
+
+                                    <span>Começando</span>
+
+                                </DiscordMessage>
+
+                                <DiscordMessage
+                                    profile="RELBOT"
+                                    timestamp="30/08/2024 13:00"
+                                >
+
+                                    <span>
+                                        Pronto, foram apagadas 200 de marciel404
+                                    </span>
+
+                                </DiscordMessage>
+
+                            </DiscordMessages>
 
                         </div>
 
@@ -748,7 +1020,24 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/setlang/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <DiscordMessages>
+
+                                <DiscordMessage
+                                    profile="RELBOT"
+                                    timestamp="30/08/2024 13:00"
+                                >
+                                    <DiscordCommand
+                                        style={{ marginLeft: "56px" }}
+                                        slot="reply"
+                                        profile="marciel404"
+                                        command="/set_lang"
+                                    ></DiscordCommand>
+
+                                    <span>Okay, agora falarei português</span>
+
+                                </DiscordMessage>
+
+                            </DiscordMessages>
 
                         </div>
 
@@ -825,9 +1114,26 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/setlog/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <DiscordMessages>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/setlog/img2.png`} alt="imageCommand" style={{ width: "60%" }} />
+                                <DiscordMessage
+                                    profile="RELBOT"
+                                    timestamp="30/08/2024 13:00"
+                                >
+                                    <DiscordCommand
+                                        style={{ marginLeft: "56px" }}
+                                        slot="reply"
+                                        profile="marciel404"
+                                        command="/set_log"
+                                    ></DiscordCommand>
+
+                                    <span>
+                                        Log definida com sucesso
+                                    </span>
+
+                                </DiscordMessage>
+
+                            </DiscordMessages>
 
                         </div>
 

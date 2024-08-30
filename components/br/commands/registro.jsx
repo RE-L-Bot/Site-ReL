@@ -1,5 +1,25 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
 
+import {
+    DiscordMessage,
+    DiscordAttachments,
+    DiscordCommand,
+    DiscordEmbed,
+    DiscordLink,
+    DiscordEmbedDescription,
+    DiscordActionRow,
+    DiscordButton,
+    DiscordEmbedFields,
+    DiscordEmbedField,
+    DiscordCustomEmoji,
+    DiscordMention,
+    DiscordTime,
+    DiscordReply,
+    DiscordBold,
+    DiscordEmbedFooter,
+    DiscordMessages
+} from "@skyra/discord-components-react";
+
 const nameCatCommand = "registro"
 
 export default function RegisterCommands() {
@@ -298,6 +318,78 @@ export default function RegisterCommands() {
                                 <h4>
                                     Imagens do comando:
                                 </h4>
+
+                                <DiscordMessages>
+
+                                    <DiscordMessage
+                                        profile="RELBOT"
+                                    >
+
+                                        <DiscordCommand
+                                            style={{ marginLeft: "56px" }}
+                                            slot="reply"
+                                            command="/registrar"
+                                            profile="marciel404"
+                                        >
+                                        </DiscordCommand>
+
+                                        <DiscordEmbed
+                                            authorName="marciel404"
+                                            authorImage="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
+                                            color="#00008b"
+                                            authorUrl="/users/485801281621852175"
+                                            embedTitle="Registro"
+                                        >
+
+                                            <DiscordEmbedDescription slot="description">
+                                                Escolha a categoria que deseja
+                                            </DiscordEmbedDescription>
+
+                                            <DiscordEmbedFooter slot="footer">
+                                                143
+                                            </DiscordEmbedFooter>
+
+                                        </DiscordEmbed>
+
+                                        <DiscordAttachments slot="components">
+
+                                            <DiscordActionRow>
+
+                                                <DiscordButton type="primary">
+                                                    Genero
+                                                </DiscordButton>
+
+                                                <DiscordButton type="primary">
+                                                    Sexualidade
+                                                </DiscordButton>
+
+                                                <DiscordButton type="primary">
+                                                    Região
+                                                </DiscordButton>
+
+                                                <DiscordButton type="primary">
+                                                    Plataforma
+                                                </DiscordButton>
+
+                                                <DiscordButton type="primary">
+                                                    Relacionamento
+                                                </DiscordButton>
+
+                                            </DiscordActionRow>
+
+                                            <DiscordActionRow>
+
+                                                <DiscordButton type="primary">
+                                                    Idade
+                                                </DiscordButton>
+
+                                            </DiscordActionRow>
+
+                                        </DiscordAttachments>
+
+                                    </DiscordMessage>
+
+                                </DiscordMessages>
 
                                 <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
