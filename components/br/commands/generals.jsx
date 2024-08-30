@@ -103,7 +103,7 @@ export default function GeneralsCommands() {
 
 							<hr />
 
-							<DiscordMessages>
+							<DiscordMessages style={{ borderRadius: "5px" }}>
 
 								<DiscordMessage
 									profile="RELBOT"
@@ -113,7 +113,7 @@ export default function GeneralsCommands() {
 										style={{ marginLeft: "56px" }}
 										slot="reply"
 										profile="marciel404"
-										command="/gerais avatar"
+										command="gerais avatar"
 									></DiscordCommand>
 
 									<DiscordEmbed
@@ -146,7 +146,7 @@ export default function GeneralsCommands() {
 
 							<hr />
 
-							<DiscordMessages>
+							<DiscordMessages style={{ borderRadius: "5px" }}>
 
 								<DiscordMessage
 									profile="RELBOT"
@@ -156,7 +156,7 @@ export default function GeneralsCommands() {
 										style={{ marginLeft: "56px" }}
 										slot="reply"
 										profile="marciel404"
-										command="/gerais avatar"
+										command="gerais avatar"
 									></DiscordCommand>
 
 									<DiscordEmbed
@@ -303,7 +303,7 @@ export default function GeneralsCommands() {
 								Representação do comando:
 							</h4>
 
-							<DiscordMessages>
+							<DiscordMessages style={{ borderRadius: "5px" }}>
 
 								<DiscordMessage
 									profile="RELBOT"
@@ -313,7 +313,7 @@ export default function GeneralsCommands() {
 										style={{ marginLeft: "56px" }}
 										slot="reply"
 										profile="marciel404"
-										command="/gerais botinfo"
+										command="gerais botinfo"
 									></DiscordCommand>
 
 									<DiscordEmbed
@@ -490,7 +490,7 @@ export default function GeneralsCommands() {
 								Representação do comando:
 							</h4>
 
-							<DiscordMessages>
+							<DiscordMessages style={{ borderRadius: "5px" }}>
 
 								<DiscordMessage
 									profile="RELBOT"
@@ -500,7 +500,7 @@ export default function GeneralsCommands() {
 										style={{ marginLeft: "56px" }}
 										slot="reply"
 										profile="marciel404"
-										command="/gerais serverinfo"
+										command="gerais serverinfo"
 									></DiscordCommand>
 
 									<DiscordEmbed
@@ -665,7 +665,7 @@ export default function GeneralsCommands() {
 								Representação do comando:
 							</h4>
 
-							<DiscordMessages>
+							<DiscordMessages style={{ borderRadius: "5px" }}>
 
 								<DiscordMessage
 									profile="RELBOT"
@@ -675,7 +675,7 @@ export default function GeneralsCommands() {
 									<DiscordCommand
 										style={{ marginLeft: "56px" }}
 										slot="reply"
-										command="/gerais ping"
+										command="gerais ping"
 										profile="marciel404"
 									>
 										Clique aqui para ver o comando
@@ -768,7 +768,7 @@ export default function GeneralsCommands() {
 								Representação do comando:
 							</h4>
 
-							<DiscordMessages>
+							<DiscordMessages style={{ borderRadius: "5px" }}>
 
 								<DiscordMessage
 									profile="RELBOT"
@@ -779,7 +779,7 @@ export default function GeneralsCommands() {
 										style={{ marginLeft: "56px" }}
 										slot="reply"
 										profile="marciel404"
-										command="/gerais links"
+										command="gerais links"
 									></DiscordCommand>
 
 									<DiscordEmbed
@@ -912,7 +912,7 @@ export default function GeneralsCommands() {
 								Representação do comando:
 							</h4>
 
-							<DiscordMessages>
+							<DiscordMessages style={{ borderRadius: "5px" }}>
 
 								<DiscordMessage
 									profile="RELBOT"
@@ -922,7 +922,7 @@ export default function GeneralsCommands() {
 										style={{ marginLeft: "56px" }}
 										profile="marciel404"
 										slot="reply"
-										command="/gerais tabuada"
+										command="gerais tabuada"
 									></DiscordCommand>
 
 									<DiscordEmbed
@@ -1065,7 +1065,7 @@ export default function GeneralsCommands() {
 								Representação do comando:
 							</h4>
 
-							<DiscordMessages>
+							<DiscordMessages style={{ borderRadius: "5px" }}>
 
 								<DiscordMessage
 									profile="RELBOT"
@@ -1075,7 +1075,7 @@ export default function GeneralsCommands() {
 										style={{ marginLeft: "56px" }}
 										slot="reply"
 										profile="marciel404"
-										command="/gerais userinfo"
+										command="gerais userinfo"
 									></DiscordCommand>
 
 									<DiscordEmbed

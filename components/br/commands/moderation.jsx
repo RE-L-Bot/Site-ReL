@@ -103,7 +103,7 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <DiscordMessages>
+                            <DiscordMessages style={{ borderRadius: "5px" }}>
 
                                 <DiscordMessage
                                     profile="RELBOT"
@@ -113,7 +113,7 @@ export default function ModerationCommands() {
                                         style={{ marginLeft: "56px" }}
                                         slot="reply"
                                         profile="marciel404"
-                                        command="/banir"
+                                        command="banir"
                                     ></DiscordCommand>
 
                                     <span>Envie os ids dos membros um em baixo do outro</span>
@@ -184,7 +184,7 @@ export default function ModerationCommands() {
                                             style={{ marginLeft: "56px" }}
                                             slot="reply"
                                             profile="marciel404"
-                                            command="/banir"
+                                            command="banir"
                                         ></DiscordCommand>
 
                                         <DiscordEmbed slot="embeds" embedTitle="Banimento">
@@ -330,7 +330,7 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <DiscordMessages>
+                            <DiscordMessages style={{ borderRadius: "5px" }}>
 
                                 <DiscordMessage
                                     profile="RELBOT"
@@ -341,7 +341,7 @@ export default function ModerationCommands() {
                                         style={{ marginLeft: "56px" }}
                                         slot="reply"
                                         profile="marciel404"
-                                        command="/clear"
+                                        command="clear"
                                     ></DiscordCommand>
 
                                     <span>Começando</span>
@@ -436,7 +436,7 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <DiscordMessages>
+                            <DiscordMessages style={{ borderRadius: "5px" }}>
 
                                 <h4>
                                     Caso 1
@@ -454,7 +454,7 @@ export default function ModerationCommands() {
                                         style={{ marginLeft: "56px" }}
                                         slot="reply"
                                         profile="marciel404"
-                                        command="/force_disconect"
+                                        command="force_disconect"
                                     ></DiscordCommand>
 
                                     <span>
@@ -479,7 +479,7 @@ export default function ModerationCommands() {
                                         style={{ marginLeft: "56px" }}
                                         slot="reply"
                                         profile="marciel404"
-                                        command="/force_disconect"
+                                        command="force_disconect"
                                     ></DiscordCommand>
 
                                     <span>
@@ -566,7 +566,7 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <DiscordMessages>
+                            <DiscordMessages style={{ borderRadius: "5px" }}>
 
                                 <h4>
                                     Caso 1
@@ -584,7 +584,7 @@ export default function ModerationCommands() {
                                         style={{ marginLeft: "56px" }}
                                         slot="reply"
                                         profile="marciel404"
-                                        command="/force_disconect"
+                                        command="force_disconect"
                                     ></DiscordCommand>
 
                                     <span>
@@ -609,7 +609,7 @@ export default function ModerationCommands() {
                                         style={{ marginLeft: "56px" }}
                                         slot="reply"
                                         profile="marciel404"
-                                        command="/force_disconect"
+                                        command="force_disconect"
                                     ></DiscordCommand>
 
                                     <span>
@@ -695,7 +695,7 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <DiscordMessages>
+                            <DiscordMessages style={{ borderRadius: "5px" }}>
 
                                 <DiscordMessage
                                     profile="RELBOT"
@@ -705,7 +705,7 @@ export default function ModerationCommands() {
                                         style={{ marginLeft: "56px" }}
                                         slot="reply"
                                         profile="marciel404"
-                                        command="/expulsar"
+                                        command="expulsar"
                                     ></DiscordCommand>
 
                                     <span>Envie os ids dos membros um em baixo do outro</span>
@@ -782,7 +782,7 @@ export default function ModerationCommands() {
                                             style={{ marginLeft: "56px" }}
                                             slot="reply"
                                             profile="marciel404"
-                                            command="/expulsar"
+                                            command="expulsar"
                                         ></DiscordCommand>
 
                                         <DiscordEmbed slot="embeds" embedTitle="Expulsar">
@@ -915,7 +915,7 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <DiscordMessages>
+                            <DiscordMessages style={{ borderRadius: "5px" }}>
 
                                 <DiscordMessage
                                     profile="RELBOT"
@@ -926,7 +926,7 @@ export default function ModerationCommands() {
                                         style={{ marginLeft: "56px" }}
                                         slot="reply"
                                         profile="marciel404"
-                                        command="/deletar_mensagens_de_membro"
+                                        command="deletar_mensagens_de_membro"
                                     ></DiscordCommand>
 
                                     <span>Começando</span>
@@ -1020,7 +1020,7 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <DiscordMessages>
+                            <DiscordMessages style={{ borderRadius: "5px" }}>
 
                                 <DiscordMessage
                                     profile="RELBOT"
@@ -1030,7 +1030,7 @@ export default function ModerationCommands() {
                                         style={{ marginLeft: "56px" }}
                                         slot="reply"
                                         profile="marciel404"
-                                        command="/set_lang"
+                                        command="set_lang"
                                     ></DiscordCommand>
 
                                     <span>Okay, agora falarei português</span>
@@ -1114,7 +1114,7 @@ export default function ModerationCommands() {
                                 Representação do comando:
                             </h4>
 
-                            <DiscordMessages>
+                            <DiscordMessages style={{ borderRadius: "5px" }}>
 
                                 <DiscordMessage
                                     profile="RELBOT"
@@ -1124,7 +1124,7 @@ export default function ModerationCommands() {
                                         style={{ marginLeft: "56px" }}
                                         slot="reply"
                                         profile="marciel404"
-                                        command="/set_log"
+                                        command="set_log"
                                     ></DiscordCommand>
 
                                     <span>
