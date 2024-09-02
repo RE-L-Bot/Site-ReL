@@ -4,70 +4,66 @@ const nameCatCommand = "ticket"
 
 export default function TicketCommands() {
     return (
-        <>
+        <div className="CommandsList">
 
-            <main className="CommandsList">
+            <div className="conjuntCommand">
 
-                <div className="conjuntCommand">
+                <div className="BodyCommand">
 
-                    <div className="BodyCommand">
+                    <div className="contentCommand" id="contentaddrticket" onClick={(event) => changeDisplayNoneToAndResetAll(event, "addrticket", "flex")}>
 
-                        <div className="contentCommand" id="contentaddrticket" onClick={(event) => changeDisplayNoneToAndResetAll(event, "addrticket", "flex")}>
+                        <div className="NameAndDescriptionCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandaddrticket">
+                                expand_more
+                            </i>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandaddrticket">
-                                    expand_more
-                                </i>
+                            <div>
+                                <h3>
+                                    definir_cargo_ticket
+                                </h3>
 
-                                <div>
-                                    <h3>
-                                        definir_cargo_ticket
-                                    </h3>
-
-                                    <p>
-                                        Adiciona cargos aos overwrites do ticket
-                                    </p>
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-                                <p className="CategoryCommandTicket sobDiv">
-                                    Ticket
+                                <p>
+                                    Adiciona cargos aos overwrites do ticket
                                 </p>
                             </div>
 
                         </div>
 
+                        <div className="DivCategoryCommand">
+                            <p className="CategoryCommandTicket sobDiv">
+                                Ticket
+                            </p>
+                        </div>
+
                     </div>
 
-                    <div className="BodyInformationCommand">
+                </div>
 
-                        <div className="InformationsCommand" id="InformationsCommandaddrticket">
+                <div className="BodyInformationCommand">
 
-                            <div>
+                    <div className="InformationsCommand" id="InformationsCommandaddrticket">
 
-                                <h4>
-                                    Descrição longa:
-                                </h4>
+                        <div>
 
-                                <h5>
-                                    ° Adiciona varios cargos aos overwrites do canal <br />
-                                    ° do ticket aberto
-                                </h5>
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Adiciona varios cargos aos overwrites do canal <br />
+                                ° do ticket aberto
+                            </h5>
 
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
+                            <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <h4>
+                                Imagens do comando:
+                            </h4>
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
-                            </div>
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                         </div>
 
@@ -75,64 +71,64 @@ export default function TicketCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentsetupTicket" onClick={(event) => changeDisplayNoneToAndResetAll(event, "setupTicket", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentsetupTicket" onClick={(event) => changeDisplayNoneToAndResetAll(event, "setupTicket", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandsetupTicket">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
-                                    <h3>
-                                        setupticket
-                                    </h3>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandsetupTicket">
+                                expand_more
+                            </i>
 
-                                    <p>
-                                        Te direciona para a dashboard
-                                    </p>
-                                </div>
+                            <div>
+                                <h3>
+                                    setupticket
+                                </h3>
 
-                            </div>
-
-                            <div className="DivCategoryCommand">
-                                <p className="CategoryCommandTicket sobDiv">
-                                    Ticket
+                                <p>
+                                    Te direciona para a dashboard
                                 </p>
                             </div>
 
                         </div>
 
+                        <div className="DivCategoryCommand">
+                            <p className="CategoryCommandTicket sobDiv">
+                                Ticket
+                            </p>
+                        </div>
+
                     </div>
 
-                    <div className="BodyInformationCommand">
+                </div>
 
-                        <div className="InformationsCommand" id="InformationsCommandsetupTicket">
+                <div className="BodyInformationCommand">
 
-                            <div>
+                    <div className="InformationsCommand" id="InformationsCommandsetupTicket">
 
-                                <h4>
-                                    Descrição longa:
-                                </h4>
+                        <div>
 
-                                <h5>
-                                    ° Envia uma mensagem dizendo que o comando foi migrado para <br />
-                                    ° a dashboard e um botão para te mandar para a dashboard
-                                </h5>
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <br />
+                            <h5>
+                                ° Envia uma mensagem dizendo que o comando foi migrado para <br />
+                                ° a dashboard e um botão para te mandar para a dashboard
+                            </h5>
 
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
+                            <br />
 
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <h4>
+                                Imagens do comando:
+                            </h4>
 
-                            </div>
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                         </div>
 
@@ -140,8 +136,8 @@ export default function TicketCommands() {
 
                 </div>
 
-            </main>
+            </div>
 
-        </>
+        </div>
     )
 }

@@ -1,13 +1,10 @@
 import {
     DiscordMessage,
     DiscordAttachments,
-    DiscordCommand,
     DiscordEmbed,
     DiscordEmbedDescription,
     DiscordActionRow,
     DiscordButton,
-    DiscordEmbedFields,
-    DiscordEmbedField,
     DiscordMention,
     DiscordReply,
     DiscordEmbedFooter,
@@ -74,7 +71,7 @@ export default function () {
                         slot="embeds"
                         embedTitle="Ticket Atendimento"
                         color="#000000"
-                        image="https://media.discordapp.net/attachments/1101286572533502072/1101707342652907552/image0.gif?ex=66d332ab&is=66d1e12b&hm=fff030a4fa55a0f57dbf2fd9cd9dbaa495fa9e529f488e2311c789861271cccb&=&width=710&height=473"
+                        image="https://media0.giphy.com/media/qvNpPZYqNkRo0c3TDv/giphy.gif"
                         thumbnail="https://images-ext-1.discordapp.net/external/FqwA9DbyXqKAZgZMZZqT_al7u3URaTltKT26Fk44EOo/https/cdn.discordapp.com/icons/1101694285839077537/0572af3a3447d536d63f58ede8827dd9?format=webp"
                     >
 

@@ -1,95 +1,51 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
+import Hug from "./representation/roleplay/hug";
+import Wave from "./representation/roleplay/wave";
+import Applaud from "./representation/roleplay/applaud";
+import Shoot from "./representation/roleplay/shoot";
+import Kiss from "./representation/roleplay/kiss";
+import Toast from "./representation/roleplay/toast";
+import Headpat from "./representation/roleplay/headpat";
+import Poke from "./representation/roleplay/poke";
+import Dance from "./representation/roleplay/dance";
 
 const nameCatCommand = "roleplay"
 
 export default function RolePlayCommands() {
     return (
-        <>
+        <div className="CommandsList">
 
-            <main className="CommandsList">
+            <div className="conjuntCommand">
 
-                <div className="conjuntCommand">
+                <div className="BodyCommand">
 
-                    <div className="BodyCommand">
+                    <div className="contentCommand" id="contentabraçar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "abraçar", "flex")}>
 
-                        <div className="contentCommand" id="contentabraçar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "abraçar", "flex")}>
+                        <div className="NameAndDescriptionCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandabraçar">
+                                expand_more
+                            </i>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandabraçar">
-                                    expand_more
-                                </i>
+                            <div>
 
-                                <div>
+                                <h3>
+                                    abraçar
+                                </h3>
 
-                                    <h3>
-                                        abraçar
-                                    </h3>
-
-                                    <p>
-                                        Abraça um membro
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
+                                <p>
+                                    Abraça um membro
                                 </p>
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div className="DivCategoryCommand">
 
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandabraçar">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Abraça um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para abraçar (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
 
                         </div>
 
@@ -97,88 +53,48 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+                <div className="BodyInformationCommand">
 
-                    <div className="BodyCommand">
+                    <div className="InformationsCommand" id="InformationsCommandabraçar">
 
-                        <div className="contentCommand" id="contentacenar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "acenar", "flex")}>
+                        <div>
 
-                            <div className="NameAndDescriptionCommand">
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandacenar">
-                                    expand_more
-                                </i>
+                            <h5>
+                                ° Abraça um membro desejado <br />
+                            </h5>
 
-                                <div>
+                            <br />
 
-                                    <h3>
-                                        acenar
-                                    </h3>
+                            <h4>
+                                Observações:
+                            </h4>
 
-                                    <p>
-                                        Acena para um membro
-                                    </p>
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
 
-                                </div>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                            <div className="DivCategoryCommand">
+                            <h5>
+                                ° Membro: Membro para abraçar (Necessário) <br />
+                            </h5>
 
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
-                                </p>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Representação do comando
+                            </h4>
 
-                        </div>
-
-                    </div>
-
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandacenar">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Acena para um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para acenar (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <Hug />
 
                         </div>
 
@@ -186,88 +102,39 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentaplaudir" onClick={(event) => changeDisplayNoneToAndResetAll(event, "aplaudir", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentacenar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "acenar", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandaplaudir">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandacenar">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        aplaudir
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Apalude um membro
-                                    </p>
+                                <h3>
+                                    acenar
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
+                                <p>
+                                    Acena para um membro
                                 </p>
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div className="DivCategoryCommand">
 
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandaplaudir">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Aplaude um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para aplaudir (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
 
                         </div>
 
@@ -275,88 +142,48 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+                <div className="BodyInformationCommand">
 
-                    <div className="BodyCommand">
+                    <div className="InformationsCommand" id="InformationsCommandacenar">
 
-                        <div className="contentCommand" id="contentatirar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "atirar", "flex")}>
+                        <div>
 
-                            <div className="NameAndDescriptionCommand">
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandatirar">
-                                    expand_more
-                                </i>
+                            <h5>
+                                ° Acena para um membro desejado <br />
+                            </h5>
 
-                                <div>
+                            <br />
 
-                                    <h3>
-                                        atirar
-                                    </h3>
+                            <h4>
+                                Observações:
+                            </h4>
 
-                                    <p>
-                                        Atira em um membro
-                                    </p>
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
 
-                                </div>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                            <div className="DivCategoryCommand">
+                            <h5>
+                                ° Membro: Membro para acenar (Necessário) <br />
+                            </h5>
 
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
-                                </p>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Representação do comando
+                            </h4>
 
-                        </div>
-
-                    </div>
-
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandatirar">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Atira em um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para atirar (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <Wave />
 
                         </div>
 
@@ -364,88 +191,39 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentbeijar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "beijar", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentaplaudir" onClick={(event) => changeDisplayNoneToAndResetAll(event, "aplaudir", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandbeijar">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandaplaudir">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        beijar
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Beija um membro
-                                    </p>
+                                <h3>
+                                    aplaudir
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
+                                <p>
+                                    Apalude um membro
                                 </p>
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div className="DivCategoryCommand">
 
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandbeijar">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Beija um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para beijar (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
 
                         </div>
 
@@ -453,88 +231,48 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+                <div className="BodyInformationCommand">
 
-                    <div className="BodyCommand">
+                    <div className="InformationsCommand" id="InformationsCommandaplaudir">
 
-                        <div className="contentCommand" id="contentbrindar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "brindar", "flex")}>
+                        <div>
 
-                            <div className="NameAndDescriptionCommand">
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandbrindar">
-                                    expand_more
-                                </i>
+                            <h5>
+                                ° Aplaude um membro desejado <br />
+                            </h5>
 
-                                <div>
+                            <br />
 
-                                    <h3>
-                                        brindar
-                                    </h3>
+                            <h4>
+                                Observações:
+                            </h4>
 
-                                    <p>
-                                        Brinda com um membro
-                                    </p>
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
 
-                                </div>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                            <div className="DivCategoryCommand">
+                            <h5>
+                                ° Membro: Membro para aplaudir (Necessário) <br />
+                            </h5>
 
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
-                                </p>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Representação do comando
+                            </h4>
 
-                        </div>
-
-                    </div>
-
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandbrindar">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Brinda com um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para brindar (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <Applaud />
 
                         </div>
 
@@ -542,88 +280,39 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentcafuné" onClick={(event) => changeDisplayNoneToAndResetAll(event, "cafuné", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentatirar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "atirar", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandcafuné">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandatirar">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        cafuné
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Faz um cafuné em um membro
-                                    </p>
+                                <h3>
+                                    atirar
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
+                                <p>
+                                    Atira em um membro
                                 </p>
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div className="DivCategoryCommand">
 
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandcafuné">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Faz um cafuné em um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para fazer um cafuné (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
 
                         </div>
 
@@ -631,88 +320,48 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+                <div className="BodyInformationCommand">
 
-                    <div className="BodyCommand">
+                    <div className="InformationsCommand" id="InformationsCommandatirar">
 
-                        <div className="contentCommand" id="contentcutucar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "cutucar", "flex")}>
+                        <div>
 
-                            <div className="NameAndDescriptionCommand">
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandcutucar">
-                                    expand_more
-                                </i>
+                            <h5>
+                                ° Atira em um membro desejado <br />
+                            </h5>
 
-                                <div>
+                            <br />
 
-                                    <h3>
-                                        cutucar
-                                    </h3>
+                            <h4>
+                                Observações:
+                            </h4>
 
-                                    <p>
-                                        Cutuca um membro
-                                    </p>
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
 
-                                </div>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                            <div className="DivCategoryCommand">
+                            <h5>
+                                ° Membro: Membro para atirar (Necessário) <br />
+                            </h5>
 
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
-                                </p>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Representação do comando
+                            </h4>
 
-                        </div>
-
-                    </div>
-
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandcutucar">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Cutuca um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para cutucar (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <Shoot />
 
                         </div>
 
@@ -720,78 +369,39 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentdançar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "dançar", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentbeijar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "beijar", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expanddançar">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandbeijar">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        dançar
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Dança com um membro
-                                    </p>
+                                <h3>
+                                    beijar
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
+                                <p>
+                                    Beija um membro
                                 </p>
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div className="DivCategoryCommand">
 
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommanddançar">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Manda uma embed de anime dançando e falando que você está dançando <br />
-                                    ° com um memnbro
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para dançar (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
 
                         </div>
 
@@ -799,88 +409,48 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+                <div className="BodyInformationCommand">
 
-                    <div className="BodyCommand">
+                    <div className="InformationsCommand" id="InformationsCommandbeijar">
 
-                        <div className="contentCommand" id="contentestapear" onClick={(event) => changeDisplayNoneToAndResetAll(event, "estapear", "flex")}>
+                        <div>
 
-                            <div className="NameAndDescriptionCommand">
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandestapear">
-                                    expand_more
-                                </i>
+                            <h5>
+                                ° Beija um membro desejado <br />
+                            </h5>
 
-                                <div>
+                            <br />
 
-                                    <h3>
-                                        estapear
-                                    </h3>
+                            <h4>
+                                Observações:
+                            </h4>
 
-                                    <p>
-                                        Estapeia um membro
-                                    </p>
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
 
-                                </div>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                            <div className="DivCategoryCommand">
+                            <h5>
+                                ° Membro: Membro para beijar (Necessário) <br />
+                            </h5>
 
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
-                                </p>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Representação do comando
+                            </h4>
 
-                        </div>
-
-                    </div>
-
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandestapear">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Estapeia um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para estapear (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <Kiss />
 
                         </div>
 
@@ -888,88 +458,39 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentgritar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "gritar", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentbrindar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "brindar", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandgritar">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandbrindar">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        gritar
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Grita com um membro
-                                    </p>
+                                <h3>
+                                    brindar
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
+                                <p>
+                                    Brinda com um membro
                                 </p>
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div className="DivCategoryCommand">
 
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandgritar">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Grita com um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para gritar (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
 
                         </div>
 
@@ -977,88 +498,48 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+                <div className="BodyInformationCommand">
 
-                    <div className="BodyCommand">
+                    <div className="InformationsCommand" id="InformationsCommandbrindar">
 
-                        <div className="contentCommand" id="contentlamber" onClick={(event) => changeDisplayNoneToAndResetAll(event, "lamber", "flex")}>
+                        <div>
 
-                            <div className="NameAndDescriptionCommand">
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandlamber">
-                                    expand_more
-                                </i>
+                            <h5>
+                                ° Brinda com um membro desejado <br />
+                            </h5>
 
-                                <div>
+                            <br />
 
-                                    <h3>
-                                        lamber
-                                    </h3>
+                            <h4>
+                                Observações:
+                            </h4>
 
-                                    <p>
-                                        Lambe um membro
-                                    </p>
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
 
-                                </div>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                            <div className="DivCategoryCommand">
+                            <h5>
+                                ° Membro: Membro para brindar (Necessário) <br />
+                            </h5>
 
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
-                                </p>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Representação do comando
+                            </h4>
 
-                        </div>
-
-                    </div>
-
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandlamber">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Lambe um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para lamber (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <Toast />
 
                         </div>
 
@@ -1066,88 +547,39 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentmandar_beijo" onClick={(event) => changeDisplayNoneToAndResetAll(event, "mandar_beijo", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentcafuné" onClick={(event) => changeDisplayNoneToAndResetAll(event, "cafuné", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandmandar_beijo">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandcafuné">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        mandar_beijo
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Manda um beijo
-                                    </p>
+                                <h3>
+                                    cafuné
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
+                                <p>
+                                    Faz um cafuné em um membro
                                 </p>
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div className="DivCategoryCommand">
 
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandmandar_beijo">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Manda um beijo para um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para mandar um beijo (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
 
                         </div>
 
@@ -1155,88 +587,48 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+                <div className="BodyInformationCommand">
 
-                    <div className="BodyCommand">
+                    <div className="InformationsCommand" id="InformationsCommandcafuné">
 
-                        <div className="contentCommand" id="contentmorder" onClick={(event) => changeDisplayNoneToAndResetAll(event, "morder", "flex")}>
+                        <div>
 
-                            <div className="NameAndDescriptionCommand">
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandmorder">
-                                    expand_more
-                                </i>
+                            <h5>
+                                ° Faz um cafuné em um membro desejado <br />
+                            </h5>
 
-                                <div>
+                            <br />
 
-                                    <h3>
-                                        morder
-                                    </h3>
+                            <h4>
+                                Observações:
+                            </h4>
 
-                                    <p>
-                                        Morde um membro
-                                    </p>
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
 
-                                </div>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                            <div className="DivCategoryCommand">
+                            <h5>
+                                ° Membro: Membro para fazer um cafuné (Necessário) <br />
+                            </h5>
 
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
-                                </p>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Representação do comando
+                            </h4>
 
-                        </div>
-
-                    </div>
-
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandmorder">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Morder um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para estapear (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <Headpat />
 
                         </div>
 
@@ -1244,88 +636,39 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentpiscar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "piscar", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentcutucar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "cutucar", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandpiscar">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandcutucar">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        piscar
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Pisca para um membro
-                                    </p>
+                                <h3>
+                                    cutucar
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
+                                <p>
+                                    Cutuca um membro
                                 </p>
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div className="DivCategoryCommand">
 
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandpiscar">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Da uma piscadinha para um membro <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para dar uma piscadinha (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
 
                         </div>
 
@@ -1333,88 +676,48 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+                <div className="BodyInformationCommand">
 
-                    <div className="BodyCommand">
+                    <div className="InformationsCommand" id="InformationsCommandcutucar">
 
-                        <div className="contentCommand" id="contentrir" onClick={(event) => changeDisplayNoneToAndResetAll(event, "rir", "flex")}>
+                        <div>
 
-                            <div className="NameAndDescriptionCommand">
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandrir">
-                                    expand_more
-                                </i>
+                            <h5>
+                                ° Cutuca um membro desejado <br />
+                            </h5>
 
-                                <div>
+                            <br />
 
-                                    <h3>
-                                        rir
-                                    </h3>
+                            <h4>
+                                Observações:
+                            </h4>
 
-                                    <p>
-                                        Ri de um membro
-                                    </p>
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
 
-                                </div>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                            <div className="DivCategoryCommand">
+                            <h5>
+                                ° Membro: Membro para cutucar (Necessário) <br />
+                            </h5>
 
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
-                                </p>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Representação do comando
+                            </h4>
 
-                        </div>
-
-                    </div>
-
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandrir">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Ri da cara de um membro <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para dar rir (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <Poke />
 
                         </div>
 
@@ -1422,88 +725,39 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentsegurar_mão" onClick={(event) => changeDisplayNoneToAndResetAll(event, "segurar_mão", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentdançar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "dançar", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandsegurar_mão">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expanddançar">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        segurar_mão
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Segura a mão de um membro
-                                    </p>
+                                <h3>
+                                    dançar
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
+                                <p>
+                                    Dança com um membro
                                 </p>
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div className="DivCategoryCommand">
 
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandsegurar_mão">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Segura a mão de um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para segurar a mão (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
 
                         </div>
 
@@ -1511,88 +765,38 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+                <div className="BodyInformationCommand">
 
-                    <div className="BodyCommand">
+                    <div className="InformationsCommand" id="InformationsCommanddançar">
 
-                        <div className="contentCommand" id="contentsocar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "socar", "flex")}>
+                        <div>
 
-                            <div className="NameAndDescriptionCommand">
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandsocar">
-                                    expand_more
-                                </i>
+                            <h5>
+                                ° Manda uma embed de anime dançando e falando que você está dançando <br />
+                                ° com um memnbro
+                            </h5>
 
-                                <div>
+                            <br />
 
-                                    <h3>
-                                        socar
-                                    </h3>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                                    <p>
-                                        Soca um membro
-                                    </p>
+                            <h5>
+                                ° Membro: Membro para dançar (Necessário) <br />
+                            </h5>
 
-                                </div>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Representação do comando
+                            </h4>
 
-                            <div className="DivCategoryCommand">
-
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandsocar">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Faz um highfive em com um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para socar (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <Dance />
 
                         </div>
 
@@ -1600,88 +804,39 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+            </div>
 
-                    <div className="BodyCommand">
+            <div className="conjuntCommand">
 
-                        <div className="contentCommand" id="contentsorrir" onClick={(event) => changeDisplayNoneToAndResetAll(event, "sorrir", "flex")}>
+                <div className="BodyCommand">
 
-                            <div className="NameAndDescriptionCommand">
+                    <div className="contentCommand" id="contentestapear" onClick={(event) => changeDisplayNoneToAndResetAll(event, "estapear", "flex")}>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandsorrir">
-                                    expand_more
-                                </i>
+                        <div className="NameAndDescriptionCommand">
 
-                                <div>
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandestapear">
+                                expand_more
+                            </i>
 
-                                    <h3>
-                                        sorrir
-                                    </h3>
+                            <div>
 
-                                    <p>
-                                        Sorri para um membro
-                                    </p>
+                                <h3>
+                                    estapear
+                                </h3>
 
-                                </div>
-
-                            </div>
-
-                            <div className="DivCategoryCommand">
-
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
+                                <p>
+                                    Estapeia um membro
                                 </p>
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div className="DivCategoryCommand">
 
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandsorrir">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Sorri para um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para segurar a sorrir (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
 
                         </div>
 
@@ -1689,88 +844,48 @@ export default function RolePlayCommands() {
 
                 </div>
 
-                <div className="conjuntCommand">
+                <div className="BodyInformationCommand">
 
-                    <div className="BodyCommand">
+                    <div className="InformationsCommand" id="InformationsCommandestapear">
 
-                        <div className="contentCommand" id="contenttoca_aqui" onClick={(event) => changeDisplayNoneToAndResetAll(event, "toca_aqui", "flex")}>
+                        <div>
 
-                            <div className="NameAndDescriptionCommand">
+                            <h4>
+                                Descrição longa:
+                            </h4>
 
-                                <i className="material-symbols-outlined transitionShowCommands expand" id="expandtoca_aqui">
-                                    expand_more
-                                </i>
+                            <h5>
+                                ° Estapeia um membro desejado <br />
+                            </h5>
 
-                                <div>
+                            <br />
 
-                                    <h3>
-                                        toca_aqui
-                                    </h3>
+                            <h4>
+                                Observações:
+                            </h4>
 
-                                    <p>
-                                        Faz um highfive com um membro
-                                    </p>
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
 
-                                </div>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Argumentos:
+                            </h4>
 
-                            <div className="DivCategoryCommand">
+                            <h5>
+                                ° Membro: Membro para estapear (Necessário) <br />
+                            </h5>
 
-                                <p className="CategoryCommandRoleplay sobDiv">
-                                    Roleplay
-                                </p>
+                            <br />
 
-                            </div>
+                            <h4>
+                                Representação do comando
+                            </h4>
 
-                        </div>
-
-                    </div>
-
-                    <div className="BodyInformationCommand">
-
-                        <div className="InformationsCommand" id="InformationsCommandtoca_aqui">
-
-                            <div>
-
-                                <h4>
-                                    Descrição longa:
-                                </h4>
-
-                                <h5>
-                                    ° Faz um highfive em com um membro desejado <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Observações:
-                                </h4>
-
-                                <h5>
-                                    ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
-                                    ° e tera uma resposta
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Argumentos:
-                                </h4>
-
-                                <h5>
-                                    ° Membro: Membro para bater (Necessário) <br />
-                                </h5>
-
-                                <br />
-
-                                <h4>
-                                    Imagens do comando:
-                                </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            </div>
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                         </div>
 
@@ -1778,8 +893,898 @@ export default function RolePlayCommands() {
 
                 </div>
 
-            </main>
+            </div>
 
-        </>
+            <div className="conjuntCommand">
+
+                <div className="BodyCommand">
+
+                    <div className="contentCommand" id="contentgritar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "gritar", "flex")}>
+
+                        <div className="NameAndDescriptionCommand">
+
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandgritar">
+                                expand_more
+                            </i>
+
+                            <div>
+
+                                <h3>
+                                    gritar
+                                </h3>
+
+                                <p>
+                                    Grita com um membro
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div className="DivCategoryCommand">
+
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="BodyInformationCommand">
+
+                    <div className="InformationsCommand" id="InformationsCommandgritar">
+
+                        <div>
+
+                            <h4>
+                                Descrição longa:
+                            </h4>
+
+                            <h5>
+                                ° Grita com um membro desejado <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Observações:
+                            </h4>
+
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Argumentos:
+                            </h4>
+
+                            <h5>
+                                ° Membro: Membro para gritar (Necessário) <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Representação do comando
+                            </h4>
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="conjuntCommand">
+
+                <div className="BodyCommand">
+
+                    <div className="contentCommand" id="contentlamber" onClick={(event) => changeDisplayNoneToAndResetAll(event, "lamber", "flex")}>
+
+                        <div className="NameAndDescriptionCommand">
+
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandlamber">
+                                expand_more
+                            </i>
+
+                            <div>
+
+                                <h3>
+                                    lamber
+                                </h3>
+
+                                <p>
+                                    Lambe um membro
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div className="DivCategoryCommand">
+
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="BodyInformationCommand">
+
+                    <div className="InformationsCommand" id="InformationsCommandlamber">
+
+                        <div>
+
+                            <h4>
+                                Descrição longa:
+                            </h4>
+
+                            <h5>
+                                ° Lambe um membro desejado <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Observações:
+                            </h4>
+
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Argumentos:
+                            </h4>
+
+                            <h5>
+                                ° Membro: Membro para lamber (Necessário) <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Representação do comando
+                            </h4>
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="conjuntCommand">
+
+                <div className="BodyCommand">
+
+                    <div className="contentCommand" id="contentmandar_beijo" onClick={(event) => changeDisplayNoneToAndResetAll(event, "mandar_beijo", "flex")}>
+
+                        <div className="NameAndDescriptionCommand">
+
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandmandar_beijo">
+                                expand_more
+                            </i>
+
+                            <div>
+
+                                <h3>
+                                    mandar_beijo
+                                </h3>
+
+                                <p>
+                                    Manda um beijo
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div className="DivCategoryCommand">
+
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="BodyInformationCommand">
+
+                    <div className="InformationsCommand" id="InformationsCommandmandar_beijo">
+
+                        <div>
+
+                            <h4>
+                                Descrição longa:
+                            </h4>
+
+                            <h5>
+                                ° Manda um beijo para um membro desejado <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Observações:
+                            </h4>
+
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Argumentos:
+                            </h4>
+
+                            <h5>
+                                ° Membro: Membro para mandar um beijo (Necessário) <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Representação do comando
+                            </h4>
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="conjuntCommand">
+
+                <div className="BodyCommand">
+
+                    <div className="contentCommand" id="contentmorder" onClick={(event) => changeDisplayNoneToAndResetAll(event, "morder", "flex")}>
+
+                        <div className="NameAndDescriptionCommand">
+
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandmorder">
+                                expand_more
+                            </i>
+
+                            <div>
+
+                                <h3>
+                                    morder
+                                </h3>
+
+                                <p>
+                                    Morde um membro
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div className="DivCategoryCommand">
+
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="BodyInformationCommand">
+
+                    <div className="InformationsCommand" id="InformationsCommandmorder">
+
+                        <div>
+
+                            <h4>
+                                Descrição longa:
+                            </h4>
+
+                            <h5>
+                                ° Morder um membro desejado <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Observações:
+                            </h4>
+
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Argumentos:
+                            </h4>
+
+                            <h5>
+                                ° Membro: Membro para estapear (Necessário) <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Representação do comando
+                            </h4>
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="conjuntCommand">
+
+                <div className="BodyCommand">
+
+                    <div className="contentCommand" id="contentpiscar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "piscar", "flex")}>
+
+                        <div className="NameAndDescriptionCommand">
+
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandpiscar">
+                                expand_more
+                            </i>
+
+                            <div>
+
+                                <h3>
+                                    piscar
+                                </h3>
+
+                                <p>
+                                    Pisca para um membro
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div className="DivCategoryCommand">
+
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="BodyInformationCommand">
+
+                    <div className="InformationsCommand" id="InformationsCommandpiscar">
+
+                        <div>
+
+                            <h4>
+                                Descrição longa:
+                            </h4>
+
+                            <h5>
+                                ° Da uma piscadinha para um membro <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Observações:
+                            </h4>
+
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Argumentos:
+                            </h4>
+
+                            <h5>
+                                ° Membro: Membro para dar uma piscadinha (Necessário) <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Representação do comando
+                            </h4>
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="conjuntCommand">
+
+                <div className="BodyCommand">
+
+                    <div className="contentCommand" id="contentrir" onClick={(event) => changeDisplayNoneToAndResetAll(event, "rir", "flex")}>
+
+                        <div className="NameAndDescriptionCommand">
+
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandrir">
+                                expand_more
+                            </i>
+
+                            <div>
+
+                                <h3>
+                                    rir
+                                </h3>
+
+                                <p>
+                                    Ri de um membro
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div className="DivCategoryCommand">
+
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="BodyInformationCommand">
+
+                    <div className="InformationsCommand" id="InformationsCommandrir">
+
+                        <div>
+
+                            <h4>
+                                Descrição longa:
+                            </h4>
+
+                            <h5>
+                                ° Ri da cara de um membro <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Observações:
+                            </h4>
+
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Argumentos:
+                            </h4>
+
+                            <h5>
+                                ° Membro: Membro para dar rir (Necessário) <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Representação do comando
+                            </h4>
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="conjuntCommand">
+
+                <div className="BodyCommand">
+
+                    <div className="contentCommand" id="contentsegurar_mão" onClick={(event) => changeDisplayNoneToAndResetAll(event, "segurar_mão", "flex")}>
+
+                        <div className="NameAndDescriptionCommand">
+
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandsegurar_mão">
+                                expand_more
+                            </i>
+
+                            <div>
+
+                                <h3>
+                                    segurar_mão
+                                </h3>
+
+                                <p>
+                                    Segura a mão de um membro
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div className="DivCategoryCommand">
+
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="BodyInformationCommand">
+
+                    <div className="InformationsCommand" id="InformationsCommandsegurar_mão">
+
+                        <div>
+
+                            <h4>
+                                Descrição longa:
+                            </h4>
+
+                            <h5>
+                                ° Segura a mão de um membro desejado <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Observações:
+                            </h4>
+
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Argumentos:
+                            </h4>
+
+                            <h5>
+                                ° Membro: Membro para segurar a mão (Necessário) <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Representação do comando
+                            </h4>
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="conjuntCommand">
+
+                <div className="BodyCommand">
+
+                    <div className="contentCommand" id="contentsocar" onClick={(event) => changeDisplayNoneToAndResetAll(event, "socar", "flex")}>
+
+                        <div className="NameAndDescriptionCommand">
+
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandsocar">
+                                expand_more
+                            </i>
+
+                            <div>
+
+                                <h3>
+                                    socar
+                                </h3>
+
+                                <p>
+                                    Soca um membro
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div className="DivCategoryCommand">
+
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="BodyInformationCommand">
+
+                    <div className="InformationsCommand" id="InformationsCommandsocar">
+
+                        <div>
+
+                            <h4>
+                                Descrição longa:
+                            </h4>
+
+                            <h5>
+                                ° Faz um highfive em com um membro desejado <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Observações:
+                            </h4>
+
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Argumentos:
+                            </h4>
+
+                            <h5>
+                                ° Membro: Membro para socar (Necessário) <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Representação do comando
+                            </h4>
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="conjuntCommand">
+
+                <div className="BodyCommand">
+
+                    <div className="contentCommand" id="contentsorrir" onClick={(event) => changeDisplayNoneToAndResetAll(event, "sorrir", "flex")}>
+
+                        <div className="NameAndDescriptionCommand">
+
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandsorrir">
+                                expand_more
+                            </i>
+
+                            <div>
+
+                                <h3>
+                                    sorrir
+                                </h3>
+
+                                <p>
+                                    Sorri para um membro
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div className="DivCategoryCommand">
+
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="BodyInformationCommand">
+
+                    <div className="InformationsCommand" id="InformationsCommandsorrir">
+
+                        <div>
+
+                            <h4>
+                                Descrição longa:
+                            </h4>
+
+                            <h5>
+                                ° Sorri para um membro desejado <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Observações:
+                            </h4>
+
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Argumentos:
+                            </h4>
+
+                            <h5>
+                                ° Membro: Membro para segurar a sorrir (Necessário) <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Representação do comando
+                            </h4>
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="conjuntCommand">
+
+                <div className="BodyCommand">
+
+                    <div className="contentCommand" id="contenttoca_aqui" onClick={(event) => changeDisplayNoneToAndResetAll(event, "toca_aqui", "flex")}>
+
+                        <div className="NameAndDescriptionCommand">
+
+                            <i className="material-symbols-outlined transitionShowCommands expand" id="expandtoca_aqui">
+                                expand_more
+                            </i>
+
+                            <div>
+
+                                <h3>
+                                    toca_aqui
+                                </h3>
+
+                                <p>
+                                    Faz um highfive com um membro
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div className="DivCategoryCommand">
+
+                            <p className="CategoryCommandRoleplay sobDiv">
+                                Roleplay
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="BodyInformationCommand">
+
+                    <div className="InformationsCommand" id="InformationsCommandtoca_aqui">
+
+                        <div>
+
+                            <h4>
+                                Descrição longa:
+                            </h4>
+
+                            <h5>
+                                ° Faz um highfive em com um membro desejado <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Observações:
+                            </h4>
+
+                            <h5>
+                                ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
+                                ° e tera uma resposta
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Argumentos:
+                            </h4>
+
+                            <h5>
+                                ° Membro: Membro para bater (Necessário) <br />
+                            </h5>
+
+                            <br />
+
+                            <h4>
+                                Representação do comando
+                            </h4>
+
+                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
     )
 }

@@ -1,27 +1,15 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
-import {
-	DiscordMessage,
-	DiscordAttachments,
-	DiscordCommand,
-	DiscordEmbed,
-	DiscordLink,
-	DiscordEmbedDescription,
-	DiscordActionRow,
-	DiscordButton,
-	DiscordEmbedFields,
-	DiscordEmbedField,
-	DiscordCustomEmoji,
-	DiscordMention,
-	DiscordTime,
-	DiscordReply,
-	DiscordBold,
-	DiscordEmbedFooter,
-	DiscordMessages
-} from "@skyra/discord-components-react";
+import Avatar from "./representation/generals/avatar";
+import Botinfo from "./representation/generals/botinfo";
+import Serverinfo from "./representation/generals/serverinfo";
+import Ping from "./representation/generals/ping";
+import Links from "./representation/generals/links";
+import Multiplication_table from "./representation/generals/multiplication_table";
+import Userinfo from "./representation/generals/userinfo";
 
 export default function GeneralsCommands() {
 	return (
-		<main className="CommandsList">
+		<div className="CommandsList">
 
 			<div className="conjuntCommand">
 
@@ -99,147 +87,7 @@ export default function GeneralsCommands() {
 								Representação do comando:
 							</h4>
 
-							<h3>Caso 1</h3>
-
-							<hr />
-
-							<DiscordMessages style={{ borderRadius: "5px" }}>
-
-								<DiscordMessage
-									profile="RELBOT"
-									timestamp="30/08/2024 13:00"
-								>
-									<DiscordCommand
-										style={{ marginLeft: "56px" }}
-										slot="reply"
-										profile="marciel404"
-										command="gerais avatar"
-									></DiscordCommand>
-
-									<DiscordEmbed
-										slot="embeds"
-										embedTitle="Avatar de marciel404"
-										image="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
-										color="#00008b"
-									>
-
-										<DiscordEmbedDescription
-											style={{ marginTop: "8px" }}
-											slot="description"
-										>
-											Clique <DiscordLink
-												target="_blank"
-												href="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
-											>
-												aqui
-											</DiscordLink> para baixar a imagem
-
-										</DiscordEmbedDescription>
-
-									</DiscordEmbed>
-
-								</DiscordMessage>
-
-							</DiscordMessages>
-
-							<h3>Caso 2</h3>
-
-							<hr />
-
-							<DiscordMessages style={{ borderRadius: "5px" }}>
-
-								<DiscordMessage
-									profile="RELBOT"
-									timestamp="30/08/2024 13:00"
-								>
-									<DiscordCommand
-										style={{ marginLeft: "56px" }}
-										slot="reply"
-										profile="marciel404"
-										command="gerais avatar"
-									></DiscordCommand>
-
-									<DiscordEmbed
-										slot="embeds"
-										embedTitle="Avatar de marciel404"
-										image="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
-										color="#00008b"
-									>
-
-										<DiscordEmbedDescription
-											style={{ marginTop: "8px" }}
-											slot="description"
-										>
-											Clique <DiscordLink
-												target="_blank"
-												href="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
-											>
-												aqui
-											</DiscordLink> para baixar a imagem
-
-										</DiscordEmbedDescription>
-
-									</DiscordEmbed>
-
-									<DiscordAttachments slot="components">
-
-										<DiscordActionRow>
-
-											<DiscordButton type="primary" onClick={() => document.getElementById("message-ephemeral-avatar").style.display = "block"}>
-												Avatar de Usuario
-											</DiscordButton>
-
-										</DiscordActionRow>
-
-									</DiscordAttachments>
-
-								</DiscordMessage>
-
-								<div id="message-ephemeral-avatar" style={{ display: "none" }}>
-
-									<DiscordMessage
-										profile="RELBOT"
-										timestamp="30/08/2024 13:00"
-										ephemeral
-										dismissMessageClicked={() => document.getElementById("message-ephemeral-avatar").style.display = "none"}
-									>
-										<DiscordReply
-											style={{ marginLeft: "56px" }}
-											slot="reply"
-											command
-											profile="RELBOT"
-											timestamp="30/08/2024 13:00"
-										>
-											Clique aqui para ver o comando
-										</DiscordReply>
-
-										<DiscordEmbed
-											slot="embeds"
-											embedTitle="Avatar de marciel404"
-											image="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
-											color="#00008b"
-										>
-
-											<DiscordEmbedDescription
-												style={{ marginTop: "8px" }}
-												slot="description"
-											>
-												Clique <DiscordLink
-													target="_blank"
-													href="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
-												>
-													aqui
-												</DiscordLink> para baixar a imagem
-
-											</DiscordEmbedDescription>
-
-										</DiscordEmbed>
-
-									</DiscordMessage>
-
-								</div>
-
-							</DiscordMessages>
+							<Avatar />
 
 						</div>
 
@@ -303,108 +151,7 @@ export default function GeneralsCommands() {
 								Representação do comando:
 							</h4>
 
-							<DiscordMessages style={{ borderRadius: "5px" }}>
-
-								<DiscordMessage
-									profile="RELBOT"
-									timestamp="30/08/2024 13:00"
-								>
-									<DiscordCommand
-										style={{ marginLeft: "56px" }}
-										slot="reply"
-										profile="marciel404"
-										command="gerais botinfo"
-									></DiscordCommand>
-
-									<DiscordEmbed
-										slot="embeds"
-										embedTitle="Minhas informações"
-										thumbnail="https://cdn.discordapp.com/avatars/1018958083764002919/a5a4bdda04141404a228cdf6a8aa8401.webp?size=2048"
-										color="#00008b"
-									>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"identificationemoji Nome"} inline inlineIndex={1}>
-												RE=L
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"vscodeemoji Linguagem"} inline inlineIndex={2}>
-												<DiscordCustomEmoji name="jsemoji">
-												</DiscordCustomEmoji>
-												JavaScript
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"════════════"}>
-												════════════
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"djsemoji Livraria/Versão"} inline inlineIndex={1}>
-												Discord.js/14.15.3
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"nodejsemoji Versão do NodeJs"} inline inlineIndex={2}>
-												v20.15.1
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"════════════"}>
-												════════════
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"hugdiscordemoji Servidores"} inline inlineIndex={1}>
-												250
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"membersemoji Membros Totais"} inline inlineIndex={2}>
-												14822
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"════════════"}>
-												════════════
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"owneryellowemoji Meu Dono"} inline inlineIndex={1}>
-												<DiscordMention>
-													marciel404
-												</DiscordMention>
-												(Marciel404)
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"membersemoji Membros Totais"} inline inlineIndex={2}>
-												14822
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"════════════"}>
-												════════════
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"botemoji Versão do Bot"} inline inlineIndex={1}>
-												4.0.0
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-									</DiscordEmbed>
-
-								</DiscordMessage>
-
-							</DiscordMessages>
+							<Botinfo />
 
 						</div>
 
@@ -490,117 +237,7 @@ export default function GeneralsCommands() {
 								Representação do comando:
 							</h4>
 
-							<DiscordMessages style={{ borderRadius: "5px" }}>
-
-								<DiscordMessage
-									profile="RELBOT"
-									timestamp="30/08/2024 13:00"
-								>
-									<DiscordCommand
-										style={{ marginLeft: "56px" }}
-										slot="reply"
-										profile="marciel404"
-										command="gerais serverinfo"
-									></DiscordCommand>
-
-									<DiscordEmbed
-										slot="embeds"
-										embedTitle="Informações do servidor"
-										thumbnail="https://images-ext-1.discordapp.net/external/End4uqNSssZyzlEGItDQzbLy_kctiB5N0zS23FFXHQI/https/cdn.discordapp.com/icons/1153322679999397898/2758142f8364113ddeb3f40394a5fbcb.webp?format=webp"
-										color="#00008b"
-									>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"identificationemoji Nome"} inline inlineIndex={1}>
-												RE=L (Support)
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"identificationemoji Id"} inline inlineIndex={2}>
-												1153322679999397898
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"owneryellowemoji Dono"} inline inlineIndex={3}>
-												marciel404 485801281621852175
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"membersemoji Membros"} inline inlineIndex={1}>
-												21
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"listemoji Canais (39)"} inline inlineIndex={2}>
-
-												<DiscordCustomEmoji name="textchannelemoji">
-												</DiscordCustomEmoji> Texto: 21 <br />
-
-												<DiscordCustomEmoji name="voicechannelemoji">
-												</DiscordCustomEmoji> Voz: 18
-
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"dateemoji Criado em"} inline inlineIndex={3}>
-												<DiscordTime>
-													18 de setembro de
-												</DiscordTime> <br />
-												<DiscordTime>
-													2023 às 10:32 (há
-												</DiscordTime> <br />
-												<DiscordTime>
-													{(Number(new Date().getFullYear()) - 2023)} {((Number(new Date().getFullYear()) - 2023) > 1) ? "anos" : "ano"})
-												</DiscordTime>
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"🛡 Nivel de segurança"} inline inlineIndex={1}>
-												Muito alto
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"start2emoji Entrei aqui em"} inline inlineIndex={2}>
-												<DiscordTime>
-													18 de setembro de
-												</DiscordTime> <br />
-												<DiscordTime>
-													2023 às 10:36 (há
-												</DiscordTime> <br />
-												<DiscordTime>
-													{(Number(new Date().getFullYear()) - 2023)} {((Number(new Date().getFullYear()) - 2023) > 1) ? "anos" : "ano"})
-												</DiscordTime>
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"rolesdiscordemoji Cargos"} inline inlineIndex={3}>
-												78
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"😁 Emojis"} inline inlineIndex={1}>
-												0
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"🎞 Figurinhas"} inline inlineIndex={2}>
-												0
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"Sharid"} inline inlineIndex={3}>
-												0
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-									</DiscordEmbed>
-
-								</DiscordMessage>
-
-							</DiscordMessages>
+							<Serverinfo />
 
 						</div>
 
@@ -665,46 +302,8 @@ export default function GeneralsCommands() {
 								Representação do comando:
 							</h4>
 
-							<DiscordMessages style={{ borderRadius: "5px" }}>
+							<Ping />
 
-								<DiscordMessage
-									profile="RELBOT"
-									timestamp="30/08/2024 13:00"
-									ephemeral
-								>
-									<DiscordCommand
-										style={{ marginLeft: "56px" }}
-										slot="reply"
-										command="gerais ping"
-										profile="marciel404"
-									>
-										Clique aqui para ver o comando
-									</DiscordCommand>
-
-									<DiscordEmbed
-										slot="embeds"
-										embedTitle="Minha latencia"
-										color="#00008b"
-									>
-
-										<DiscordEmbedDescription
-											style={{ marginTop: "8px" }}
-											slot="description"
-										>
-
-											<span>Minha latencia é de 73ms</span>
-
-											<br />
-
-											<span>A latencia da api é 24ms</span>
-
-										</DiscordEmbedDescription>
-
-									</DiscordEmbed>
-
-								</DiscordMessage>
-
-							</DiscordMessages>
 						</div>
 
 					</div>
@@ -768,76 +367,7 @@ export default function GeneralsCommands() {
 								Representação do comando:
 							</h4>
 
-							<DiscordMessages style={{ borderRadius: "5px" }}>
-
-								<DiscordMessage
-									profile="RELBOT"
-									timestamp="30/08/2024 13:00"
-									ephemeral
-								>
-									<DiscordCommand
-										style={{ marginLeft: "56px" }}
-										slot="reply"
-										profile="marciel404"
-										command="gerais links"
-									></DiscordCommand>
-
-									<DiscordEmbed
-										slot="embeds"
-										embedTitle="Meus links"
-										thumbnail="https://cdn.discordapp.com/avatars/1018958083764002919/a5a4bdda04141404a228cdf6a8aa8401.webp?size=2048"
-										color="#00008b"
-									>
-
-										<DiscordEmbedDescription
-											style={{ marginTop: "8px" }}
-											slot="description"
-										>
-
-											<span>Aqui estão meus links, só clicar nos botões para ser redirecionado</span>
-
-										</DiscordEmbedDescription>
-
-									</DiscordEmbed>
-
-									<DiscordAttachments slot="components">
-
-										<DiscordActionRow>
-
-											<DiscordButton
-												type="secondary"
-												url="https://discord.com/api/oauth2/authorize?client_id=1018958083764002919&permissions=8&scope=bot%20applications.commands"
-											>
-
-												Clique aqui para me convidar
-
-											</DiscordButton>
-
-											<DiscordButton
-												type="secondary"
-												url="https://discord.gg/mmwUHd4Yzf"
-											>
-
-												Clique aqui para entrar no meu servidor de suporte
-
-											</DiscordButton>
-
-											<DiscordButton
-												type="secondary"
-												url="/br"
-											>
-
-												Clique aqui para ir para minha dashboard
-
-											</DiscordButton>
-
-										</DiscordActionRow>
-
-									</DiscordAttachments>
-
-								</DiscordMessage>
-
-							</DiscordMessages>
+							<Links />
 
 						</div>
 
@@ -912,85 +442,7 @@ export default function GeneralsCommands() {
 								Representação do comando:
 							</h4>
 
-							<DiscordMessages style={{ borderRadius: "5px" }}>
-
-								<DiscordMessage
-									profile="RELBOT"
-									timestamp="30/08/2024 13:00"
-								>
-									<DiscordCommand
-										style={{ marginLeft: "56px" }}
-										profile="marciel404"
-										slot="reply"
-										command="gerais tabuada"
-									></DiscordCommand>
-
-									<DiscordEmbed
-										slot="embeds"
-										color="#00008b"
-									>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"10 x 1"} inline inlineIndex={1}>
-												10
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"10 x 2"} inline inlineIndex={2}>
-												20
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"10 x 3"} inline inlineIndex={3}>
-												30
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"10 x 4"} inline inlineIndex={1}>
-												40
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"10 x 5"} inline inlineIndex={2}>
-												50
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"10 x 6"} inline inlineIndex={3}>
-												60
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"10 x 7"} inline inlineIndex={1}>
-												70
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"10 x 8"} inline inlineIndex={2}>
-												80
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"10 x 9"} inline inlineIndex={3}>
-												90
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"10 x 10"} inline inlineIndex={1}>
-												100
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-									</DiscordEmbed>
-
-								</DiscordMessage>
-
-							</DiscordMessages>
+							<Multiplication_table />
 
 						</div>
 
@@ -1065,95 +517,7 @@ export default function GeneralsCommands() {
 								Representação do comando:
 							</h4>
 
-							<DiscordMessages style={{ borderRadius: "5px" }}>
-
-								<DiscordMessage
-									profile="RELBOT"
-									timestamp="30/08/2024 13:00"
-								>
-									<DiscordCommand
-										style={{ marginLeft: "56px" }}
-										slot="reply"
-										profile="marciel404"
-										command="gerais userinfo"
-									></DiscordCommand>
-
-									<DiscordEmbed
-										slot="embeds"
-										embedTitle="discordofflineemoji marciel404 • marciel404"
-										thumbnail="https://cdn.discordapp.com/avatars/1018958083764002919/a5a4bdda04141404a228cdf6a8aa8401.webp?size=2048"
-										color="#00008b"
-									>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"identificationemoji Id"}>
-												485801281621852175
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"Informação do usuario"}>
-
-												<DiscordBold>Menção:</DiscordBold> <DiscordMention>
-													marciel404
-												</DiscordMention><br />
-
-												<DiscordBold>Conta criada em:</DiscordBold> <DiscordTime>
-													2 de setembro de 2018 às 10:20 (há {new Date().getFullYear() - 2018} anos)
-												</DiscordTime>
-
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"Informações do servidor"}>
-
-												<DiscordBold>Entrou em:</DiscordBold> <br />
-
-												<DiscordTime>18 de setembro de 2023 às 10:32 (há {Number(new Date().getFullYear()) - 2023} {((Number(new Date().getFullYear()) - 2023) > 1) ? "anos" : "ano"})</DiscordTime>
-
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-										<DiscordEmbedFields slot="fields">
-
-											<DiscordEmbedField fieldTitle={"Maior cargo"}>
-
-												<DiscordMention>
-													Pai Da RE
-												</DiscordMention>
-
-											</DiscordEmbedField>
-
-											<DiscordEmbedField fieldTitle={"Cargos"}>
-
-												<DiscordMention>
-													Pai Da RE
-												</DiscordMention>
-
-												<DiscordMention>
-													Suporte
-												</DiscordMention>
-
-												<DiscordMention color="#00fffd">
-													Developers
-												</DiscordMention>
-
-												<DiscordMention>
-													Admin
-												</DiscordMention>
-
-											</DiscordEmbedField>
-
-										</DiscordEmbedFields>
-
-										<DiscordEmbedFooter slot="footer">
-											485801281621852175
-										</DiscordEmbedFooter>
-
-									</DiscordEmbed>
-
-								</DiscordMessage>
-
-							</DiscordMessages>
+							<Userinfo />
 
 						</div>
 
@@ -1163,7 +527,7 @@ export default function GeneralsCommands() {
 
 			</div>
 
-		</main>
+		</div>
 
 	)
 }

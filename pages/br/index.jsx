@@ -1,7 +1,7 @@
 import FOOTER from "@/components/br/footers"
 import HEADER from "@/components/br/headers"
-import Registrar from "@/components/br/principalFunctions/registrar"
-import Ticket from "@/components/br/principalFunctions/Ticket"
+import Registrar from "@/components/br/commands/representation/registry/registrar"
+import Ticket from "@/components/br/ticketRepresentation"
 import {
     redirectInfos,
     redirectInvite,
@@ -58,7 +58,11 @@ export default function HomeBr() {
 
                 </div>
 
-            </div><div id="about" /><div className="SecondDivIndex">
+            </div>
+
+            <div id="about" />
+
+            <div className="SecondDivIndex">
 
                 <div>
 
@@ -77,22 +81,27 @@ export default function HomeBr() {
                         uma função de "registrar" os membros, a RE automatiza o processo <br />
                         de ter que atribuir vários cargos de uma vez e melhor e cargos padrões <br />
                         E com funções de moderação e ticket
-                        <br />
-                        <br />
 
-                        <h5>Tudo a baixo é personalizável, só esta assim para ilustrar</h5>
+                        <br />
+                        <br />
 
                     </p>
+
+                    <h5>Tudo a baixo é personalizável, só esta assim para ilustrar</h5>
 
                 </div>
 
                 <img src="/svgs/RELCHIBI.svg" alt="RE=L Chibi" id="RELChibi" className="images" />
 
-            </div><div className="SecondDivIndex">
+            </div>
+
+            <div className="SecondDivIndex">
 
                 <Registrar />
 
-            </div><br /><div className="FourDivIndex">
+            </div>
+
+            <div className="FourDivIndex">
 
                 <img src="/svgs/RELINTEIRA2.svg" alt="RE=L Espada" style={{ height: "500px" }} id="reLInteira" />
 

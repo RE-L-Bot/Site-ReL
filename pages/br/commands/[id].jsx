@@ -13,35 +13,35 @@ import Error404 from "@/components/br/error404";
 
 export default function DashBoardId() {
 
-  const id = useRouter().query.id
+	const id = useRouter().query.id
 
-  const dataSet = {
-    all: <All />,
-    event: <Events />,
-    generals: <Generals />,
-    moderation: <Moderation />,
-    registro: <Registro />,
-    roleplay: <Roleplay />,
-    ticket: <Ticket />,
-    error404: <Error404 />
-  }
+	const dataSet = {
+		all: <All />,
+		event: <Events />,
+		generals: <Generals />,
+		moderation: <Moderation />,
+		registro: <Registro />,
+		roleplay: <Roleplay />,
+		ticket: <Ticket />,
+		error404: <Error404 />
+	}
 
-  if (id !== undefined) {
-    if (dataSet[id]) return (
-      <>
-        <Header />
-        {dataSet[id]}
-        <Footer />
-      </>
-    )
-    else return (
-      <>
-        <Header />
-        {dataSet["error404"]}
-        <Footer />
-      </>
-    )
-  } else {
-    return <h1>Carregando...</h1>
-  }
+	if (id !== undefined) {
+		if (dataSet[id]) return (
+			<div>
+				<Header />
+				{dataSet[id]}
+				<Footer />
+			</div>
+		)
+		else return (
+			<div>
+				<Header />
+				{dataSet["error404"]}
+				<Footer />
+			</div>
+		)
+	} else {
+		return <h1>Carregando...</h1>
+	}
 }
