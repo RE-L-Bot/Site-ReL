@@ -126,7 +126,7 @@ export default function () {
                     <DiscordEmbed
                         slot="embeds"
                         embedTitle="Avatar de marciel404"
-                        image="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
+                        image="https://th.bing.com/th/id/OIP.ukEgUEXdqDKRvAlKPESkSQHaFY?rs=1&pid=ImgDetMain"
                         color="#00008b"
                     >
 
@@ -136,7 +136,7 @@ export default function () {
                         >
                             Clique <DiscordLink
                                 target="_blank"
-                                href="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
+                                href="https://th.bing.com/th/id/OIP.ukEgUEXdqDKRvAlKPESkSQHaFY?rs=1&pid=ImgDetMain"
                             >
                                 aqui
                             </DiscordLink> para baixar a imagem
