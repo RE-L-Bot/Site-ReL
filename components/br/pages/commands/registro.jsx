@@ -10,6 +10,7 @@ export default function Registro() {
 
             <Head>
                 <title>RE=L Bot • Comandos de registro</title>
+                <meta name="description" content="Lista de comandos de registro" />
             </Head>
 
             <div className="alignItens">

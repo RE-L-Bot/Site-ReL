@@ -10,6 +10,7 @@ export default function Events() {
 
             <Head>
                 <title>RE=L Bot • Comandos de evento</title>
+                <meta name="description" content="Lista de comandos de evento" />
             </Head>
 
             <div className="alignItens">

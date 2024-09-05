@@ -15,6 +15,7 @@ export default function All() {
 
             <Head>
                 <title>RE=L Bot • Todos os comandos</title>
+                <meta name="description" content="Lista de todos os comandos" />
             </Head>
 
             <div className="alignItens">

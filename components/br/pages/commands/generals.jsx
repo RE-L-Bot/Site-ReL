@@ -10,6 +10,7 @@ export default function Generals() {
 
             <Head>
                 <title>RE=L Bot • Comandos Gerais</title>
+                <meta name="description" content="Lista de comandos gerais" />
             </Head>
 
             <div className="alignItens">

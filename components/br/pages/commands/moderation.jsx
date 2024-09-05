@@ -10,6 +10,7 @@ export default function Moderation() {
 
             <Head>
                 <title>RE=L Bot • Comandos de moderação</title>
+                <meta name="description" content="Lista de comandos de moderação" />
             </Head>
 
             <div className="alignItens">

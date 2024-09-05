@@ -10,6 +10,7 @@ export default function Roleplay() {
 
             <Head>
                 <title>RE=L Bot • Comandos de roleplay</title>
+                <meta name="description" content="Lista de comandos de roleplay" />
             </Head>
 
             <div className="alignItens">
