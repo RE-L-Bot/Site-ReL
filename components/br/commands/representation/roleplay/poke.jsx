@@ -19,7 +19,7 @@ function NameUser() {
         return userInfos.username
     }
 
-    return "Marciel do bem"
+    return "Marciel do mau"
 
 }
 
@@ -68,7 +68,7 @@ export default function () {
                             emoji="https://th.bing.com/th/id/R.1063a47aed0b451f55004a81dfda7b1b?rik=gMvkFH1UIz2ing&pid=ImgRaw&r=0"
                             type="primary"
                             onClick={() => {
-                                if (NameUser() != "Marciel do bem") {
+                                if (NameUser() != "Marciel do mau") {
                                     document.getElementById("msg-r-poke-self").style.display = "block"
                                     document.getElementById("active-button-poke").style.display = "none"
                                     document.getElementById("desactive-button-poke").style.display = "block"

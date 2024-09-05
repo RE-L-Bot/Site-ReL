@@ -8,6 +8,17 @@ import Toast from "./representation/roleplay/toast";
 import Headpat from "./representation/roleplay/headpat";
 import Poke from "./representation/roleplay/poke";
 import Dance from "./representation/roleplay/dance";
+import Slap from "./representation/roleplay/slap";
+import Shout from "./representation/roleplay/shout";
+import Lick from "./representation/roleplay/lick";
+import Airkiss from "./representation/roleplay/airkiss";
+import Bite from "./representation/roleplay/bite";
+import Blink from "./representation/roleplay/blink";
+import Laugh from "./representation/roleplay/laugh";
+import Hold_hand from "./representation/roleplay/hold_hand";
+import Punch from "./representation/roleplay/punch";
+import Smile from "./representation/roleplay/smile";
+import Highfive from "./representation/roleplay/highfive";
 
 const nameCatCommand = "roleplay"
 
@@ -885,7 +896,7 @@ export default function RolePlayCommands() {
                                 Representação do comando
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <Slap />
 
                         </div>
 
@@ -974,7 +985,7 @@ export default function RolePlayCommands() {
                                 Representação do comando
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <Shout />
 
                         </div>
 
@@ -1063,7 +1074,7 @@ export default function RolePlayCommands() {
                                 Representação do comando
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <Lick />
 
                         </div>
 
@@ -1152,7 +1163,7 @@ export default function RolePlayCommands() {
                                 Representação do comando
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <Airkiss />
 
                         </div>
 
@@ -1241,7 +1252,7 @@ export default function RolePlayCommands() {
                                 Representação do comando
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <Bite />
 
                         </div>
 
@@ -1330,7 +1341,7 @@ export default function RolePlayCommands() {
                                 Representação do comando
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <Blink />
 
                         </div>
 
@@ -1419,7 +1430,7 @@ export default function RolePlayCommands() {
                                 Representação do comando
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <Laugh />
 
                         </div>
 
@@ -1508,7 +1519,7 @@ export default function RolePlayCommands() {
                                 Representação do comando
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <Hold_hand />
 
                         </div>
 
@@ -1597,7 +1608,7 @@ export default function RolePlayCommands() {
                                 Representação do comando
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <Punch />
 
                         </div>
 
@@ -1686,7 +1697,7 @@ export default function RolePlayCommands() {
                                 Representação do comando
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <Smile />
 
                         </div>
 
@@ -1775,7 +1786,7 @@ export default function RolePlayCommands() {
                                 Representação do comando
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <Highfive />
 
                         </div>
 

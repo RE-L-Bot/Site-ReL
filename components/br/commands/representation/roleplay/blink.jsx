@@ -19,7 +19,7 @@ function NameUser() {
         return userInfos.username
     }
 
-    return "Marciel do bem"
+    return "Marciel do mau"
 
 }
 
@@ -40,20 +40,20 @@ export default function () {
                     style={{ marginLeft: "56px" }}
                     slot="reply"
                     profile="marciel404"
-                    command="roleplay atirar"
+                    command="roleplay piscar"
                 >
                 </DiscordCommand>
 
                 <DiscordEmbed
                     slot="embeds"
-                    embedTitle="Atirar"
+                    embedTitle="Piscadinha"
                     color="#ed4245"
-                    image="https://nekos.best/api/v2/shoot/453ab869-f191-4555-a0ea-7a1c70013751.gif"
+                    image="https://cdn.otakugifs.xyz/gifs/wink/d551b0901d4ac8db.gif"
                 >
 
                     <DiscordEmbedDescription slot="description">
 
-                        <span><DiscordMention>marciel404</DiscordMention> atirou em <DiscordMention>{NameUser()}</DiscordMention></span>
+                        <span><DiscordMention>marciel404</DiscordMention> deu uma piscadinha para <DiscordMention>{NameUser()}</DiscordMention></span>
 
                     </DiscordEmbedDescription>
 
@@ -64,16 +64,16 @@ export default function () {
                     <DiscordActionRow>
 
                         <DiscordButton
-                            id="active-button-shoot"
+                            id="active-button-blink"
                             emoji="https://th.bing.com/th/id/R.1063a47aed0b451f55004a81dfda7b1b?rik=gMvkFH1UIz2ing&pid=ImgRaw&r=0"
                             type="primary"
                             onClick={() => {
-                                if (NameUser() != "Marciel do bem") {
-                                    document.getElementById("msg-r-shoot-self").style.display = "block"
-                                    document.getElementById("active-button-shoot").style.display = "none"
-                                    document.getElementById("desactive-button-shoot").style.display = "block"
+                                if (NameUser() != "Marciel do mau") {
+                                    document.getElementById("msg-r-blink-self").style.display = "block"
+                                    document.getElementById("active-button-blink").style.display = "none"
+                                    document.getElementById("desactive-button-blink").style.display = "block"
                                 } else {
-                                    document.getElementById("msg-r-shoot-not-self").style.display = "block"
+                                    document.getElementById("msg-r-blink-not-self").style.display = "block"
                                 }
                             }}
                         >
@@ -81,7 +81,7 @@ export default function () {
                         </DiscordButton>
 
                         <DiscordButton
-                            id="desactive-button-shoot"
+                            id="desactive-button-blink"
                             emoji="https://th.bing.com/th/id/R.1063a47aed0b451f55004a81dfda7b1b?rik=gMvkFH1UIz2ing&pid=ImgRaw&r=0"
                             type="primary"
                             disabled
@@ -94,13 +94,13 @@ export default function () {
 
                 </DiscordAttachments>
 
-                <div id="msg-r-shoot-not-self" style={{ display: "none" }}>
+                <div id="msg-r-blink-not-self" style={{ display: "none" }}>
                     <span style={{ color: "red" }}>* Faça login para interagir</span>
                 </div>
 
             </DiscordMessage>
 
-            <div id="msg-r-shoot-self" style={{ display: "none" }}>
+            <div id="msg-r-blink-self" style={{ display: "none" }}>
 
                 <DiscordMessage
                     profile="RELBOT"
@@ -118,14 +118,14 @@ export default function () {
 
                     <DiscordEmbed
                         slot="embeds"
-                        embedTitle="Atirar"
+                        embedTitle="Piscadinha"
                         color="#5865f2"
-                        image="https://nekos.best/api/v2/shoot/82af1bc8-23cd-409d-a6e4-1526790c0408.gif"
+                        image="https://cdn.otakugifs.xyz/gifs/wink/765450c9024b2884.gif"
                     >
 
                         <DiscordEmbedDescription slot="description">
 
-                            <span><DiscordMention>{NameUser()}</DiscordMention> atirou em <DiscordMention>marciel404</DiscordMention></span>
+                            <span><DiscordMention>{NameUser()}</DiscordMention> deu uma piscadinha para <DiscordMention>marciel404</DiscordMention></span>
 
                         </DiscordEmbedDescription>
 
@@ -148,22 +148,20 @@ export default function () {
                     style={{ marginLeft: "56px" }}
                     slot="reply"
                     profile="marciel404"
-                    command="roleplay atirar"
+                    command="roleplay piscar"
                 >
                 </DiscordCommand>
 
-                <span>Você não achou que faria isso comigo né?</span>
-
                 <DiscordEmbed
                     slot="embeds"
-                    embedTitle="Atirar"
+                    embedTitle="Piscadinha"
                     color="#ed4245"
-                    image="https://nekos.best/api/v2/shoot/767524d1-7d9d-48b8-b571-d08d7753f64e.gif"
+                    image="https://cdn.otakugifs.xyz/gifs/wink/c36ae6e435e81a8e.gif"
                 >
 
                     <DiscordEmbedDescription slot="description">
 
-                        <span><DiscordMention>RE=L</DiscordMention> atirou em <DiscordMention>marciel404</DiscordMention></span>
+                        <span><DiscordMention>marciel404</DiscordMention> deu uma piscadinha para <DiscordMention>RE=L</DiscordMention></span>
 
                     </DiscordEmbedDescription>
 
@@ -174,7 +172,7 @@ export default function () {
                     <DiscordActionRow>
 
                         <DiscordButton
-                            id="desactive-button-shoot"
+                            id="desactive-button-blink"
                             emoji="https://th.bing.com/th/id/R.1063a47aed0b451f55004a81dfda7b1b?rik=gMvkFH1UIz2ing&pid=ImgRaw&r=0"
                             type="primary"
                             disabled
@@ -188,6 +186,24 @@ export default function () {
 
             </DiscordMessage>
 
+            <DiscordMessage
+                profile="RELBOT"
+                timestamp="30/08/2024 13:00"
+            >
+
+                <DiscordReply
+                    style={{ marginLeft: "56px" }}
+                    slot="reply"
+                    profile="RELBOT"
+                    command
+                >
+                    Clique para ver o comando
+                </DiscordReply>
+
+                <span>Isso é um flerte?<br />Eu não gosto dessas coisas</span>
+
+            </DiscordMessage>
+
             <h3>Caso 3</h3>
 
             <hr />
@@ -197,26 +213,26 @@ export default function () {
                 timestamp="30/08/2024 13:00"
             >
 
-                <span>Atirou em uma chapa de metal e acertou si mesmo??</span>
+                <span>Piscou para si mesmo no espelho??</span>
 
                 <DiscordCommand
                     style={{ marginLeft: "56px" }}
                     slot="reply"
                     profile="marciel404"
-                    command="roleplay atirar"
+                    command="roleplay piscar"
                 >
                 </DiscordCommand>
 
                 <DiscordEmbed
                     slot="embeds"
-                    embedTitle="Atirar"
+                    embedTitle="Piscadinha"
                     color="#ed4245"
-                    image="https://nekos.best/api/v2/shoot/a44f2a4a-bde1-414a-951f-fb4fb0e2a2cc.gif"
+                    image="https://cdn.otakugifs.xyz/gifs/wink/2800b23d741f69bc.gif"
                 >
 
                     <DiscordEmbedDescription slot="description">
 
-                        <span><DiscordMention>marciel404</DiscordMention> atirou em <DiscordMention>marciel404</DiscordMention></span>
+                        <span><DiscordMention>marciel404</DiscordMention> deu uma piscadinha para <DiscordMention>marciel404</DiscordMention></span>
 
                     </DiscordEmbedDescription>
 
@@ -227,7 +243,7 @@ export default function () {
                     <DiscordActionRow>
 
                         <DiscordButton
-                            id="desactive-button-shoot"
+                            id="desactive-button-blink"
                             emoji="https://th.bing.com/th/id/R.1063a47aed0b451f55004a81dfda7b1b?rik=gMvkFH1UIz2ing&pid=ImgRaw&r=0"
                             type="primary"
                             disabled

@@ -64,16 +64,16 @@ export default function () {
                     <DiscordActionRow>
 
                         <DiscordButton
-                            id="active-button-hug"
+                            id="active-button-dance"
                             emoji="https://th.bing.com/th/id/R.1063a47aed0b451f55004a81dfda7b1b?rik=gMvkFH1UIz2ing&pid=ImgRaw&r=0"
                             type="primary"
                             onClick={() => {
                                 if (NameUser() != "Marciel do bem") {
-                                    document.getElementById("msg-r-hug-self").style.display = "block"
-                                    document.getElementById("active-button-hug").style.display = "none"
-                                    document.getElementById("desactive-button-hug").style.display = "block"
+                                    document.getElementById("msg-r-dance-self").style.display = "block"
+                                    document.getElementById("active-button-dance").style.display = "none"
+                                    document.getElementById("desactive-button-dance").style.display = "block"
                                 } else {
-                                    document.getElementById("msg-r-hug-not-self").style.display = "block"
+                                    document.getElementById("msg-r-dance-not-self").style.display = "block"
                                 }
                             }}
                         >
@@ -81,7 +81,7 @@ export default function () {
                         </DiscordButton>
 
                         <DiscordButton
-                            id="desactive-button-hug"
+                            id="desactive-button-dance"
                             emoji="https://th.bing.com/th/id/R.1063a47aed0b451f55004a81dfda7b1b?rik=gMvkFH1UIz2ing&pid=ImgRaw&r=0"
                             type="primary"
                             disabled
@@ -94,13 +94,13 @@ export default function () {
 
                 </DiscordAttachments>
 
-                <div id="msg-r-hug-not-self" style={{ display: "none" }}>
+                <div id="msg-r-dance-not-self" style={{ display: "none" }}>
                     <span style={{ color: "red" }}>* Faça login para interagir</span>
                 </div>
 
             </DiscordMessage>
 
-            <div id="msg-r-hug-self" style={{ display: "none" }}>
+            <div id="msg-r-dance-self" style={{ display: "none" }}>
 
                 <DiscordMessage
                     profile="RELBOT"
@@ -147,7 +147,7 @@ export default function () {
                 <DiscordCommand
                     style={{ marginLeft: "56px" }}
                     slot="reply"
-                    profile="RELBOT"
+                    profile="marciel404"
                     command="roleplay dançar"
                 >
                 </DiscordCommand>
@@ -195,7 +195,7 @@ export default function () {
                     <DiscordActionRow>
 
                         <DiscordButton
-                            id="desactive-button-hug"
+                            id="desactive-button-dance"
                             emoji="https://th.bing.com/th/id/R.1063a47aed0b451f55004a81dfda7b1b?rik=gMvkFH1UIz2ing&pid=ImgRaw&r=0"
                             type="primary"
                             disabled
