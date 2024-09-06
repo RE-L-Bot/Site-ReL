@@ -68,14 +68,6 @@ export default function RegisterCommands() {
                                 ° Categoria: Cargo para adicionar (Necessário)
                             </h5>
 
-                            <br />
-
-                            <h4>
-                                Representação do comando:
-                            </h4>
-
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
                         </div>
 
                     </div>
@@ -144,14 +136,6 @@ export default function RegisterCommands() {
                                 ° cargo_default_reg: Cargo para remover depois de registrado (Opcional) <br />
                             </h5>
 
-                            <br />
-
-                            <h4>
-                                Representação do comando:
-                            </h4>
-
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
                         </div>
 
                     </div>
@@ -217,14 +201,6 @@ export default function RegisterCommands() {
                             <h5>
                                 ° Categoria: Categoria a deletar (Necessário) <br />
                             </h5>
-
-                            <br />
-
-                            <h4>
-                                Representação do comando:
-                            </h4>
-
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                         </div>
 
@@ -367,14 +343,6 @@ export default function RegisterCommands() {
                                 ° Categoria: Nome da categoria que o cargo esta (Necessário) <br />
                                 ° Nome: Nome do cargo a remover da categoria (Necessário)
                             </h5>
-
-                            <br />
-
-                            <h4>
-                                Representação do comando:
-                            </h4>
-
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                         </div>
 
