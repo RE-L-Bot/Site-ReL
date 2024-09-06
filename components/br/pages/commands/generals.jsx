@@ -6,7 +6,7 @@ import Head from "next/head";
 export default function Generals() {
     return (
 
-        <main>
+        <div>
 
             <Head>
                 <title>RE=L Bot • Comandos Gerais</title>
@@ -23,7 +23,7 @@ export default function Generals() {
 
             </div>
 
-        </main>
+        </div>
 
     )
 }

@@ -6,7 +6,7 @@ import Head from "next/head";
 export default function Roleplay() {
     return (
 
-        <main>
+        <div>
 
             <Head>
                 <title>RE=L Bot • Comandos de roleplay</title>
@@ -23,7 +23,7 @@ export default function Roleplay() {
 
             </div>
 
-        </main>
+        </div>
 
     )
 }

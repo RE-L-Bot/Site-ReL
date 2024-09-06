@@ -6,7 +6,7 @@ import Head from "next/head";
 export default function Registro() {
     return (
 
-        <main>
+        <div>
 
             <Head>
                 <title>RE=L Bot • Comandos de registro</title>
@@ -23,7 +23,7 @@ export default function Registro() {
 
             </div>
 
-        </main>
+        </div>
 
     )
 }

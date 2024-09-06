@@ -6,7 +6,7 @@ import Head from "next/head";
 export default function Moderation() {
     return (
 
-        <main>
+        <div>
 
             <Head>
                 <title>RE=L Bot • Comandos de moderação</title>
@@ -23,6 +23,6 @@ export default function Moderation() {
 
             </div>
 
-        </main>
+        </div>
     )
 }

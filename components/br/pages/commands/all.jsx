@@ -11,7 +11,7 @@ import Head from "next/head";
 export default function All() {
     return (
 
-        <main>
+        <div>
 
             <Head>
                 <title>RE=L Bot • Todos os comandos</title>
@@ -33,6 +33,6 @@ export default function All() {
 
             </div>
 
-        </main>
+        </div>
     )
 }

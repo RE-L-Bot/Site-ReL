@@ -6,7 +6,7 @@ import Head from "next/head";
 export default function Ticket() {
     return (
 
-        <main>
+        <div>
 
             <Head>
                 <title>RE=L Bot • Comandos de ticket</title>
@@ -23,7 +23,7 @@ export default function Ticket() {
 
             </div>
 
-        </main>
+        </div>
 
     )
 }

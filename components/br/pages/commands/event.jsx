@@ -6,7 +6,7 @@ import Head from "next/head";
 export default function Events() {
     return (
 
-        <main>
+        <div>
 
             <Head>
                 <title>RE=L Bot • Comandos de evento</title>
@@ -23,7 +23,7 @@ export default function Events() {
 
             </div>
 
-        </main>
+        </div>
 
     )
 }
