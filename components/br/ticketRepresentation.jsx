@@ -123,7 +123,7 @@ export default function () {
 
                             <DiscordStringSelectMenuOption
                                 label="Outros"
-                                description="Outra situação que não foi sitado acima"
+                                description="Outra situação que não foi citado acima"
                                 selectOption={() => {
                                     document.getElementById("div-opening-ticket").style.display = "block"
                                 }}
