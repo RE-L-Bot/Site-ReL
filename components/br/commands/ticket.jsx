@@ -1,4 +1,6 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
+import Set_role_ticket from "./representation/ticket/set_role_ticket";
+import Setup_ticket from "./representation/ticket/setup_ticket";
 
 const nameCatCommand = "ticket"
 
@@ -51,19 +53,16 @@ export default function TicketCommands() {
                             </h4>
 
                             <h5>
-                                ° Adiciona varios cargos aos overwrites do canal <br />
-                                ° do ticket aberto
+                                ° Adiciona varios cargos aos overwrites do canal do ticket aberto
                             </h5>
 
                             <br />
 
                             <h4>
-                                Imagens do comando:
+                                Representação do comando:
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
-
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <Set_role_ticket />
 
                         </div>
 
@@ -125,10 +124,10 @@ export default function TicketCommands() {
                             <br />
 
                             <h4>
-                                Imagens do comando:
+                                Representação do comando:
                             </h4>
 
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
+                            <Setup_ticket />
 
                         </div>
 
