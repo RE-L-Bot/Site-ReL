@@ -34,7 +34,7 @@ export default function Footer() {
                         <p className="PFooter">Dashboard</p>
                     </Link>
 
-                    <Link href="/br/suport">
+                    <Link href="/serversupportinvite">
                         <p className="PFooter">suporte</p>
                     </Link>
 
