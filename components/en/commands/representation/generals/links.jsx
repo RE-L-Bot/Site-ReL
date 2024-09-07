@@ -1,0 +1,86 @@
+import {
+    DiscordActionRow,
+    DiscordAttachments,
+    DiscordButton,
+    DiscordCommand,
+    DiscordEmbed,
+    DiscordEmbedDescription,
+    DiscordMessage,
+    DiscordMessages
+} from "@skyra/discord-components-react";
+
+export default function () {
+    return (
+        <DiscordMessages style={{ borderRadius: "5px" }}>
+
+            <DiscordMessage
+                profile="RELBOT"
+                timestamp="30/08/2024 13:00"
+                ephemeral
+            >
+                <DiscordCommand
+                    style={{ marginLeft: "56px" }}
+                    slot="reply"
+                    profile="marciel404"
+                    command="generals links"
+                ></DiscordCommand>
+
+                <DiscordEmbed
+                    slot="embeds"
+                    embedTitle="My Links"
+                    thumbnail="https://cdn.discordapp.com/avatars/1018958083764002919/a5a4bdda04141404a228cdf6a8aa8401.webp?size=2048"
+                    color="#00008b"
+                >
+
+                    <DiscordEmbedDescription
+                        style={{ marginTop: "8px" }}
+                        slot="description"
+                    >
+
+                        <span>Here are my links; just click the buttons to be redirected.</span>
+
+                    </DiscordEmbedDescription>
+
+                </DiscordEmbed>
+
+                <DiscordAttachments slot="components">
+
+                    <DiscordActionRow>
+
+                        <DiscordButton
+                            type="secondary"
+                            url="https://discord.com/api/oauth2/authorize?client_id=1018958083764002919&permissions=8&scope=bot%20applications.commands"
+                        >
+
+                            Click here to invite me
+
+                        </DiscordButton>
+
+                        <DiscordButton
+                            type="secondary"
+                            url="https://discord.gg/mmwUHd4Yzf"
+                        >
+
+                            Click here to join my support server
+
+                        </DiscordButton>
+
+                        <DiscordButton
+                            type="secondary"
+                            url="/en"
+                        >
+
+                            Click here to go to my dashboard
+
+                        </DiscordButton>
+
+                    </DiscordActionRow>
+
+                </DiscordAttachments>
+
+            </DiscordMessage>
+
+        </DiscordMessages>
+
+    )
+}

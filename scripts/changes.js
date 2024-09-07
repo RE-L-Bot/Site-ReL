@@ -305,15 +305,11 @@ export async function SelectMenuAdd(e) {
 
 }
 
-let channels = null
-let val = 0
-
 export async function SelectCategoriasChange(e) {
 
     const divp = document.getElementById("selectCategories")
 
     const selectType = document.getElementsByClassName("checkTypeTicket")[0]
-
 
     if (selectType.checked) divp.style.display == "none"
     else {
@@ -479,11 +475,28 @@ export function SeeTypeTicket(e) {
 
     const typeTicketName = document.getElementById("TypeTicket")
 
-    if (e.target.checked) {
-        return typeTicketName.innerText = "Topico"
+    const langP = window.location.pathname.slice(1, 3)
+
+    const args = {
+        br: {
+            thread: "Topico",
+            category: "Categoria"
+        },
+        en: {
+            thread: "Thread",
+            category: "Category"
+        },
+        es: {
+            thread: "Topico",
+            category: "Categoria"
+        }
     }
 
-    typeTicketName.innerText = "Categoria"
+    if (e.target.checked) {
+        return typeTicketName.innerText = args[langP]["thread"]
+    }
+
+    typeTicketName.innerText = args[langP]["category"]
 
 }
 

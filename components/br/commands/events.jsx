@@ -32,7 +32,7 @@ export default function EventsCommands() {
                             </div>
 
                             <div className="DivCategoryCommand">
-                                <p className="CategoryCommandEventos sobDiv">
+                                <p className="CategoryCommandEvents sobDiv">
                                     Eventos
                                 </p>
                             </div>
@@ -107,7 +107,7 @@ export default function EventsCommands() {
                             </div>
 
                             <div className="DivCategoryCommand">
-                                <p className="CategoryCommandEventos sobDiv">
+                                <p className="CategoryCommandEvents sobDiv">
                                     Eventos
                                 </p>
                             </div>
@@ -182,7 +182,7 @@ export default function EventsCommands() {
                             </div>
 
                             <div className="DivCategoryCommand">
-                                <p className="CategoryCommandEventos sobDiv">
+                                <p className="CategoryCommandEvents sobDiv">
                                     Eventos
                                 </p>
                             </div>

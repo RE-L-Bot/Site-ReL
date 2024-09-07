@@ -1,8 +1,6 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
 import Registrar from "./representation/registry/registrar";
 
-const nameCatCommand = "registro"
-
 export default function RegisterCommands() {
     return (
         <div className="CommandsList">
@@ -21,11 +19,11 @@ export default function RegisterCommands() {
 
                             <div>
                                 <h3>
-                                    adicionar_cargo_registro
+                                    add_role_register
                                 </h3>
 
                                 <p>
-                                    Adiciona um cargo ao registro
+                                    Adds a role to the register
                                 </p>
                             </div>
 
@@ -33,7 +31,7 @@ export default function RegisterCommands() {
 
                         <div className="DivCategoryCommand">
                             <p className="CategoryCommandRegistry sobDiv">
-                                Registro
+                                Register
                             </p>
                         </div>
 
@@ -48,24 +46,24 @@ export default function RegisterCommands() {
                         <div>
 
                             <h4>
-                                Descrição longa:
+                                Long description:
                             </h4>
 
                             <h5>
-                                ° Adiciona um cargo a uma categoria dos cargos de <br />
-                                ° registro
+                                ° Adds a role to a role category of the <br />
+                                ° register
                             </h5>
 
                             <br />
 
                             <h4>
-                                Argumentos:
+                                Arguments:
                             </h4>
 
                             <h5>
-                                ° Categoria: Categoria para adicionar o cargo (Necessário) <br />
-                                ° Nome: Nome do que vai aparecer no SelecMenu (Necessário) <br />
-                                ° Categoria: Cargo para adicionar (Necessário)
+                                ° Category: Category to add the role (Required) <br />
+                                ° Name: Name that will appear in the SelectMenu (Required) <br />
+                                ° Role: Role to add (Required)
                             </h5>
 
                         </div>
@@ -90,11 +88,11 @@ export default function RegisterCommands() {
 
                             <div>
                                 <h3>
-                                    cargos_defaults
+                                    default_roles
                                 </h3>
 
                                 <p>
-                                    Adiciona os cargos defaults do registro
+                                    Adds the default register roles
                                 </p>
                             </div>
 
@@ -102,7 +100,7 @@ export default function RegisterCommands() {
 
                         <div className="DivCategoryCommand">
                             <p className="CategoryCommandRegistry sobDiv">
-                                Registro
+                                Register
                             </p>
                         </div>
 
@@ -117,23 +115,23 @@ export default function RegisterCommands() {
                         <div>
 
                             <h4>
-                                Descrição longa:
+                                Long description:
                             </h4>
 
                             <h5>
-                                ° Adiciona os cargos que é para adicionar e remover <br />
-                                ° por padrão ao finalizar o registro
+                                ° Adds roles to add and remove <br />
+                                ° by default when registration is complete
                             </h5>
 
                             <br />
 
                             <h4>
-                                Argumentos:
+                                Arguments:
                             </h4>
 
                             <h5>
-                                ° cargo_final_reg: Cargo para adicionar depois de registrado (Necessário) <br />
-                                ° cargo_default_reg: Cargo para remover depois de registrado (Opcional) <br />
+                                ° final_reg_role: Role to add after registration (Required) <br />
+                                ° default_reg_role: Role to remove after registration (Optional) <br />
                             </h5>
 
                         </div>
@@ -158,11 +156,11 @@ export default function RegisterCommands() {
 
                             <div>
                                 <h3>
-                                    deletar_categoria_registro
+                                    delete_register_category
                                 </h3>
 
                                 <p>
-                                    Deleta uma categoria do registro
+                                    Deletes a category from the register
                                 </p>
                             </div>
 
@@ -170,7 +168,7 @@ export default function RegisterCommands() {
 
                         <div className="DivCategoryCommand">
                             <p className="CategoryCommandRegistry sobDiv">
-                                Registro
+                                Register
                             </p>
                         </div>
 
@@ -185,21 +183,21 @@ export default function RegisterCommands() {
                         <div>
 
                             <h4>
-                                Descrição longa:
+                                Long description:
                             </h4>
 
                             <h5>
-                                ° Deleta uma categoria categoria de registro existente<br />
+                                ° Deletes an existing register category<br />
                             </h5>
 
                             <br />
 
                             <h4>
-                                Argumentos:
+                                Arguments:
                             </h4>
 
                             <h5>
-                                ° Categoria: Categoria a deletar (Necessário) <br />
+                                ° Category: Category to delete (Required) <br />
                             </h5>
 
                         </div>
@@ -224,11 +222,11 @@ export default function RegisterCommands() {
 
                             <div>
                                 <h3>
-                                    registrar
+                                    register
                                 </h3>
 
                                 <p>
-                                    Registra um membro
+                                    Registers a member
                                 </p>
                             </div>
 
@@ -236,7 +234,7 @@ export default function RegisterCommands() {
 
                         <div className="DivCategoryCommand">
                             <p className="CategoryCommandRegistry sobDiv">
-                                Registro
+                                Register
                             </p>
                         </div>
 
@@ -251,28 +249,28 @@ export default function RegisterCommands() {
                         <div>
 
                             <h4>
-                                Descrição longa:
+                                Long description:
                             </h4>
 
                             <h5>
-                                ° Registra um membro no seu servidor<br />
+                                ° Registers a member on your server<br />
                             </h5>
 
                             <br />
 
                             <h4>
-                                Argumentos:
+                                Arguments:
                             </h4>
 
                             <h5>
-                                ° Membro: Membro a registrar (Necessário) <br />
-                                ° Modo: Se ira adicionar ou remover os cargos (Necessário)
+                                ° Member: Member to register (Required) <br />
+                                ° Mode: Whether to add or remove roles (Required)
                             </h5>
 
                             <br />
 
                             <h4>
-                                Representação do comando:
+                                Command representation:
                             </h4>
 
                             <Registrar />
@@ -299,11 +297,11 @@ export default function RegisterCommands() {
 
                             <div>
                                 <h3>
-                                    remover_cargo_registro
+                                    remove_register_role
                                 </h3>
 
                                 <p>
-                                    Remove um cargo de uma categoria do registro
+                                    Removes a role from a register category
                                 </p>
                             </div>
 
@@ -311,7 +309,7 @@ export default function RegisterCommands() {
 
                         <div className="DivCategoryCommand">
                             <p className="CategoryCommandRegistry sobDiv">
-                                Registro
+                                Register
                             </p>
                         </div>
 
@@ -326,22 +324,22 @@ export default function RegisterCommands() {
                         <div>
 
                             <h4>
-                                Descrição longa:
+                                Long description:
                             </h4>
 
                             <h5>
-                                ° Remove um cargo de registro de uma categoria<br />
+                                ° Removes a register role from a category<br />
                             </h5>
 
                             <br />
 
                             <h4>
-                                Argumentos:
+                                Arguments:
                             </h4>
 
                             <h5>
-                                ° Categoria: Nome da categoria que o cargo esta (Necessário) <br />
-                                ° Nome: Nome do cargo a remover da categoria (Necessário)
+                                ° Category: Name of the category where the role is (Required) <br />
+                                ° Name: Name of the role to remove from the category (Required)
                             </h5>
 
                         </div>
@@ -353,7 +351,5 @@ export default function RegisterCommands() {
             </div>
 
         </div>
-
-
     )
 }

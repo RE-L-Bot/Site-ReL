@@ -61,7 +61,7 @@ export default async function (e, opt, embedOption, selectMenuOption) {
             defineNameToAllSelectsMenus: "Defina un nombre para todos los SelectMenus",
             nameWebhookInvalidBylength: "El nombre del webhook no es válido, posiblemente lo haya cambiado en el html para aceptar un tamaño más grande"
         },
-        us: {
+        en: {
             noPremiumBasic: "You do not have premium basic or higher",
             noPremiumMedium: "You do not have premium medium or higher",
             noPremiumMaster: "You do not have premium master",

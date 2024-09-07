@@ -93,7 +93,7 @@ export async function getChannelsGuild(guild_id) {
             })
             .request()
             .then((data) => {
-                response = data.response.response
+                response = (data.response.response != "Bad Request") ? data.response.response : JSON.parse(sessionStorage.getItem("channelsGuild"))[1]
                 sessionStorage.setItem("REFRESHGETGILDCHANNELS", new Date())
             })
 
@@ -108,6 +108,29 @@ export async function getChannelsGuild(guild_id) {
 function addGuilds(obj) {
 
     const guildDIV = document.getElementById("guildsDIV")
+
+    const langP = window.location.pathname.slice(1, 3)
+
+    const langs = {
+        "br": {
+            adm: "Administrador",
+            manager: "Gerenciador",
+            owner: "Dono",
+            configure: "Configurar"
+        },
+        "en": {
+            adm: "Administrator",
+            manager: "Manager",
+            owner: "Owner",
+            configure: "Configure"
+        },
+        "es": {
+            adm: "Administrador",
+            manager: "Gerenciador",
+            owner: "Dono",
+            configure: "Configurar"
+        }
+    }
 
     for (const g of obj) {
 
@@ -143,11 +166,11 @@ function addGuilds(obj) {
                 let perms = "";
 
                 if (g.owner) {
-                    perms = "Dono";
+                    perms = langs[langP]["owner"];
                 } else if (permissions(g.permissions).includes("ADMINISTRATOR")) {
-                    perms = "Administrador";
+                    perms = langs[langP]["adm"];
                 } else if (permissions(g.permissions).includes("MANAGE_GUILD")) {
-                    perms = "Gerenciador";
+                    perms = langs[langP]["owner"];
                 };
 
                 paragraphElement.setAttribute("style", "white-space: pre;");
@@ -159,7 +182,7 @@ function addGuilds(obj) {
                 button.className = "buttonConfig";
                 button.onclick = dashGuildClick;
                 button.id = `${g.id}`;
-                button.textContent = "Configurar";
+                button.textContent = langs[langP]["configure"];
 
                 imgElement.className = "imgGuild";
                 imgElement.src = img
@@ -179,4 +202,5 @@ function addGuilds(obj) {
         }
 
     }
+
 }

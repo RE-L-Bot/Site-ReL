@@ -329,10 +329,21 @@ export function checkKeysPremium() {
             if (data.response.length > 0) {
 
                 const time = {
-                    "1M": "1 Mês",
-                    "6M": "6 Meses",
-                    "12M": "12 Meses",
-                    "LT": "LifeTime"
+                    br: {
+                        "1M": "1 Mês",
+                        "6M": "6 Meses",
+                        "12M": "12 Meses",
+                        "LT": "LifeTime"
+                    },
+                    en: {
+                        "1M": "1 Month",
+                        "6M": "6 Months",
+                        "12M": "12 Months",
+                        "LT": "LifeTime"
+                    },
+                    es: {
+
+                    },
                 }
 
                 document.getElementById("notKey").style.display = "none"
@@ -354,7 +365,7 @@ export function checkKeysPremium() {
 
                     pKey.innerText = `Key: ${d.id}`
                     ptype.innerText = `Tipo: Premium ${d.typepremium}`
-                    ptime.innerText = `Tempo: ${time[d.time]}`
+                    ptime.innerText = `Tempo: ${time[user[1]][d.time]}`
 
                     divInfos.appendChild(pKey)
                     divInfos.appendChild(ptype)
