@@ -36,11 +36,11 @@ export default function Header() {
 
                             <ul className="SelectLang">
 
-                                <li onClick={changeLang}>
+                                <li id="br" onClick={changeLang}>
                                     <p id="br">PT-BR</p>
                                 </li>
 
-                                <li onClick={changeLang} >
+                                <li id="es" onClick={changeLang} >
                                     <p id="es">ES-ES</p>
                                 </li>
 
