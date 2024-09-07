@@ -58,7 +58,7 @@ export default function Footer() {
                 <div>
 
                     <h3>
-                        Importante
+                        Important
                     </h3>
 
                     <Link href="/en/terms">
@@ -74,7 +74,7 @@ export default function Footer() {
                 <div>
 
                     <h3>
-                        Outros links da RE=L
+                        Outhers links of RE=L
                     </h3>
 
                 </div>
