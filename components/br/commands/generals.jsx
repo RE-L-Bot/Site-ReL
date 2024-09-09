@@ -36,7 +36,7 @@ export default function GeneralsCommands() {
 						</div>
 
 						<div className="DivCategoryCommand">
-							<p className="CategoryCommandGerais sobDiv">
+							<p className="CategoryCommandGenerals sobDiv">
 								Gerais
 							</p>
 						</div>
@@ -122,7 +122,7 @@ export default function GeneralsCommands() {
 						</div>
 
 						<div className="DivCategoryCommand">
-							<p className="CategoryCommandGerais sobDiv">
+							<p className="CategoryCommandGenerals sobDiv">
 								Gerais
 							</p>
 						</div>
@@ -186,7 +186,7 @@ export default function GeneralsCommands() {
 						</div>
 
 						<div className="DivCategoryCommand">
-							<p className="CategoryCommandGerais sobDiv">
+							<p className="CategoryCommandGenerals sobDiv">
 								Gerais
 							</p>
 						</div>
@@ -272,7 +272,7 @@ export default function GeneralsCommands() {
 						</div>
 
 						<div className="DivCategoryCommand">
-							<p className="CategoryCommandGerais sobDiv">
+							<p className="CategoryCommandGenerals sobDiv">
 								Gerais
 							</p>
 						</div>
@@ -337,7 +337,7 @@ export default function GeneralsCommands() {
 						</div>
 
 						<div className="DivCategoryCommand">
-							<p className="CategoryCommandGerais sobDiv">
+							<p className="CategoryCommandGenerals sobDiv">
 								Gerais
 							</p>
 						</div>
@@ -402,7 +402,7 @@ export default function GeneralsCommands() {
 						</div>
 
 						<div className="DivCategoryCommand">
-							<p className="CategoryCommandGerais sobDiv">
+							<p className="CategoryCommandGenerals sobDiv">
 								Gerais
 							</p>
 						</div>
@@ -477,7 +477,7 @@ export default function GeneralsCommands() {
 						</div>
 
 						<div className="DivCategoryCommand">
-							<p className="CategoryCommandGerais sobDiv">
+							<p className="CategoryCommandGenerals sobDiv">
 								Gerais
 							</p>
 						</div>
