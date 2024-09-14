@@ -7,9 +7,9 @@ export default async function handler(req, res) {
         return res.status(405).send({ error: "Method Errado", status: 405 })
 
     if (
-        !req.headers.origin ||
         !req.headers.authorization ||
-        req.headers.origin && req.headers.origin.replace(/[https:\/\/]/g, "") != req.headers.host.replace(/[https:\/\/]/g, "")
+        !req.headers["sec-fetch-site"] ||
+        req.headers["sec-fetch-site"] && req.headers["sec-fetch-site"] != "same-origin"
     )
         return res.status(400).send({ error: "NotSiteRequest", status: 400 })
 
