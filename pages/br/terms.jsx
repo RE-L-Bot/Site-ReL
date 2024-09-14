@@ -75,7 +75,7 @@ export default function Terms() {
                     </p>
 
                     <p style={{ color: "red" }}>
-                        Em caso de ser menor de Idade (18 anos) presumasse que seu responsavel tenha lido os termos e permitido você usufruir
+                        Em caso de ser menor de Idade (18 anos) presume-se que seu responsavel tenha lido os termos e permitido você usufruir
                     </p>
 
                     <p style={{ color: "red" }}>
