@@ -37,9 +37,9 @@ export function GetGuildsDash() {
             if (getCookie("RELOG")) {
 
                 if (
-                    !sessionStorage.getItem("REFRESHGETGILDDASH") ||
-                    sessionStorage.getItem("REFRESHGETGILDDASH") &&
-                    dayjs(new Date()).diff(sessionStorage.getItem("REFRESHGETGILDDASH"), "seconds") > 20) {
+                    !sessionStorage.getItem("REFRESHGETGUILDCHANNELS") ||
+                    sessionStorage.getItem("REFRESHGETGUILDCHANNELS") &&
+                    dayjs(new Date()).diff(sessionStorage.getItem("REFRESHGETGUILDCHANNELS"), "seconds") > 20) {
 
                     new RequestApi()
                         .setApiEndPoint("thisAPI")
@@ -50,7 +50,7 @@ export function GetGuildsDash() {
                         })
                         .request()
                         .then(response => {
-                            sessionStorage.setItem("REFRESHGETGILDDASH", new Date())
+                            sessionStorage.setItem("REFRESHGETGUILDCHANNELS", new Date())
                             sessionStorage.setItem(`GUILDS`, JSON.stringify(response.response))
                             addGuilds(response.response)
                         })
@@ -79,8 +79,8 @@ export async function getChannelsGuild(guild_id) {
     if (
         !sessionStorage.getItem("channelsGuild") ||
         sessionStorage.getItem("channelsGuild") &&
-        dayjs(new Date()).diff(sessionStorage.getItem("REFRESHGETGILDCHANNELS"), "seconds") > 20 ||
-        sessionStorage.getItem("channelsGuild")[0] != guild_id
+        dayjs().diff(sessionStorage.getItem("REFRESHGETGUILDCHANNELS"), "seconds") > 20 ||
+        JSON.parse(sessionStorage.getItem("channelsGuild"))[0] != guild_id
     ) {
 
         let response;
@@ -94,7 +94,7 @@ export async function getChannelsGuild(guild_id) {
             .request()
             .then((data) => {
                 response = (data.response.response != "Bad Request") ? data.response.response : JSON.parse(sessionStorage.getItem("channelsGuild"))[1]
-                sessionStorage.setItem("REFRESHGETGILDCHANNELS", new Date())
+                sessionStorage.setItem("REFRESHGETGUILDCHANNELS", dayjs())
             })
 
         return response
