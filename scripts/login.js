@@ -54,7 +54,7 @@ export default async function Login() {
                                 })
                                 .request()
                                 .then(response => {
-                                    sessionStorage.setItem("REFRESHGETGILDDASH", new Date())
+                                    sessionStorage.setItem("REFRESHGETGUILDCHANNELS", new Date())
                                     sessionStorage.setItem(`GUILDS`, JSON.stringify(response.response))
 
                                     if (guild)
