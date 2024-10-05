@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 
     try {
 
-        new RequestApi()
+        await new RequestApi()
             .setApiEndPoint(`${configData["API_ENDPOINT"]}`)
             .setEndPoint("users/@me")
             .setMethod("GET")

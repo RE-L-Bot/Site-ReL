@@ -24,7 +24,7 @@ export default function Teste() {
     };
 
     return (
-        <main>
+        <div>
 
             <Header />
 
@@ -60,6 +60,6 @@ export default function Teste() {
 
             </div>
 
-        </main>
+        </div>
     )
 }

@@ -26,6 +26,8 @@ export default function Config() {
                 </form>
             </dialog>
 
+            <audio src="/audios/sucessSave.mp3" id="audioSucessSave" />
+
             <div className="alignItens">
 
                 <TOPMENU />
@@ -84,8 +86,6 @@ export default function Config() {
 
                                     <button className="buttonSave" onClick={() => addChannelInUseCommands()}>Adicionar</button>
 
-                                    <audio src="/audios/sucessSave.mp3" id="audioSucessSave" />
-
                                 </div>
 
                                 <div id="channelsAddUseCommand" />
@@ -117,7 +117,18 @@ export default function Config() {
 
                                         <div>
 
-                                            <input type="checkbox" id="checkBox" className="checkMessageNoPerm" onChange={(e) => { ChangeEnabledNobackground(e, 1), enableDisableMessageSendInChannelNoPerm() }} />
+                                            <input type="checkbox" id="checkBox" className="checkMessageNoPerm" onChange={(e) => {
+                                                ChangeEnabledNobackground(e, 1)
+
+                                                const divMessage = document.getElementById("messageNoPermChannel")
+
+                                                if (divMessage.className == "Disabled") {
+                                                    return divMessage.className = ""
+                                                }
+
+                                                divMessage.className = "Disabled"
+
+                                            }} />
 
                                             <ToogleOff qnt={1} />
 

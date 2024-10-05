@@ -7,7 +7,7 @@ import Head from "next/head"
 export default function Dashboard() {
 
     return (
-        <main onLoad={GetGuildsDash()}>
+        <div onLoad={GetGuildsDash()}>
 
             <Head>
                 <title>RE=L Bot • Dashboard</title>
@@ -27,7 +27,7 @@ export default function Dashboard() {
 
             <Footer />
 
-        </main>
+        </div>
 
     )
 }

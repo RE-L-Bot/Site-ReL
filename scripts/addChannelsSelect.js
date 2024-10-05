@@ -175,6 +175,105 @@ export function addChannelsUseCommands() {
 
 }
 
+var countLogsUse = 0
+
+export function addChannelsLogs() {
+
+    useEffect(() => {
+
+        (async () => {
+
+            let user = window.location.pathname
+            user = user.split("/")
+            user = user[user.length - 2]
+
+            let logs;
+
+            await new RequestApi()
+                .setApiEndPoint("thisAPI")
+                .setEndPoint("gLog")
+                .setHeaders({
+                    guild_id: user,
+                    log: "all"
+                })
+                .request()
+                .then(async (response) => {
+                    logs = response.response
+                })
+
+            if (countLogsUse == 0) {
+
+                const form = document.getElementsByClassName("selectChannelsLog")
+
+                if (form) {
+
+                    const channels = await getChannelsGuild(user)
+
+                    const optionsArray = []
+
+                    if (channels)
+                        sessionStorage.setItem("channelsGuild", JSON.stringify([user, channels]))
+
+                    if (form[0].length < 2) {
+
+                        for (const c of JSON.parse(sessionStorage.getItem("channelsGuild"))[1]) {
+
+                            if (c.type == 0) {
+
+                                for (const select of form) {
+
+                                    const option = document.createElement("option")
+
+                                    option.value = `${select.id}-${c.id}`
+
+                                    option.textContent = c.name.substring(0, 19)
+
+                                    optionsArray.push(option)
+
+                                    select?.appendChild(option)
+
+                                    if (logs[select.id] && logs[select.id] != "false") {
+
+                                        select.value = `${select.id}-${logs[select.id]}`
+
+                                        const divMessageP = document.getElementById(`divSelectMenuLog${select.id}`)
+
+                                        divMessageP.className = ""
+
+                                        document.getElementsByClassName(`inputlog${select.id}`)[0].checked = true
+
+                                        const backGround = document.getElementById(`toogleOff-${select.id}`)
+
+                                        const boll = document.getElementById(`bollToogleOff-${select.id}`)
+
+                                        backGround.className = "toogleOn transitionToogle";
+
+                                        boll.className = "bollToogleOn transitionToogle";
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                    countLogsUse++
+
+                }
+
+            }
+
+            countLogsUse--
+
+        })();
+
+    })
+
+}
+
 export function addChannelInUseCommands() {
 
     const form = document.getElementById("selectChannelsUseCommand")

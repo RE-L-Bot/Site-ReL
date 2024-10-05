@@ -81,6 +81,14 @@ export default function TopMenu() {
                 </Link>
 
                 <Link
+                    href={`${window.location.pathname.split("/")[4]}/logs`}
+                    style={{ textDecoration: "none", color: "inherit" }}>
+                    <p className="SelectTipeCommand" id="logs" onClick={ChangeTipeCommand}>
+                        logs
+                    </p>
+                </Link>
+
+                <Link
                     href={`${window.location.pathname.split("/")[4]}/ticket`}
                     style={{ textDecoration: "none", color: "inherit" }}>
                     <p className="SelectTipeCommand" id="ticket" onClick={ChangeTipeCommand}>

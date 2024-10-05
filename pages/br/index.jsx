@@ -12,7 +12,7 @@ import {
 export default function HomeBr() {
 
     return (
-        <main>
+        <div>
 
             <HEADER />
 
@@ -130,7 +130,7 @@ export default function HomeBr() {
 
             <FOOTER />
 
-        </main>
+        </div>
     )
 
 }

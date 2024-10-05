@@ -8,8 +8,7 @@ import { calculatePercent } from "@/scripts/outhers";
 export default function Store() {
 
     return (
-
-        <main>
+        <div>
 
             <Header />
 
@@ -1184,6 +1183,7 @@ export default function Store() {
 
             <Footer />
 
-        </main>
+        </div>
     )
+
 }

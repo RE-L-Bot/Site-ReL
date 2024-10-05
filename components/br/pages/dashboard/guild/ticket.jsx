@@ -169,11 +169,9 @@ export default function Ticket() {
 
                 <br />
 
-                <br />
-
             </div>
 
         </div>
     )
-}
 
+}

@@ -408,18 +408,6 @@ export function ChangeEnabled(e, r) {
 
 }
 
-export function enableDisableMessageSendInChannelNoPerm() {
-
-    const divMessage = document.getElementById("messageNoPermChannel")
-
-    if (divMessage.className == "Disabled") {
-        return divMessage.className = ""
-    }
-
-    divMessage.className = "Disabled"
-
-}
-
 export function ChangeEnabledNobackground(e, r) {
 
     const backGround = document.getElementById(`toogleOff-${r}`)

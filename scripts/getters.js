@@ -101,7 +101,7 @@ export async function getChannelsGuild(guild_id) {
 
     }
 
-    return JSON.parse(sessionStorage.getItem("channelsGuild"))
+    return JSON.parse(sessionStorage.getItem("channelsGuild"))[1]
 
 }
 

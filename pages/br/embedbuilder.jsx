@@ -25,7 +25,7 @@ export default function Teste() {
     };
 
     return (
-        <main>
+        <div>
 
             <Head>
                 <title>Contrutor de embed</title>
@@ -75,7 +75,7 @@ export default function Teste() {
 
             <Footer />
 
-        </main>
+        </div>
     )
 }
 

@@ -107,3 +107,74 @@ export async function saveConfigGeneral() {
     }, 1000)
 
 }
+
+export async function saveLogs() {
+
+    const modal = showDialogueBox("", "savemodal")
+
+    const idGuild = window.location.pathname.split("/")[4]
+
+    const SelectsMenus = document.getElementsByClassName("selectChannelsLog")
+
+    let logs;
+
+    await new RequestApi()
+        .setApiEndPoint("thisAPI")
+        .setEndPoint("gLog")
+        .setHeaders({
+            guild_id: idGuild,
+            log: "all"
+        })
+        .request()
+        .then(async (response) => {
+            logs = response.response
+        })
+
+    for (const select of SelectsMenus) {
+
+        const value = (!select.value.split("-")[1]) ? "false" : select.value.split("-")[1]
+
+        if (value != logs[select.id]) {
+
+            await new RequestApi()
+                .setApiEndPoint("thisAPI")
+                .setEndPoint("upLog")
+                .setHeaders({
+                    guild_id: idGuild,
+                    log: `${select.id}`,
+                    channel_id: value
+                })
+                .request()
+        }
+
+        if (!document.getElementsByClassName(`inputlog${select.id}`)[0].checked) {
+
+            await new RequestApi()
+                .setApiEndPoint("thisAPI")
+                .setEndPoint("upLog")
+                .setHeaders({
+                    guild_id: idGuild,
+                    log: `${select.id}`,
+                    channel_id: "false"
+                })
+                .request()
+
+        }
+
+    }
+
+    setTimeout(() => {
+
+        modal.close()
+
+        const obj = document.getElementById("audioSucessSave")
+
+        obj.currentTime = .6
+
+        obj.volume = 0.2
+
+        obj.play()
+
+    }, 1000)
+
+}

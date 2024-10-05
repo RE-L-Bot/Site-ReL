@@ -3,7 +3,7 @@ import { getCookie } from "@/scripts/getters"
 import { useRouter } from "next/router"
 import bitfieldCalculator from 'discord-bitfield-calculator';
 import { actKey, range } from "./outhers";
-import { enableDisableMessageSendInChannelNoPerm, showDialogueBox } from "./changes";
+import { showDialogueBox } from "./changes";
 import dayjs from "dayjs";
 import RequestApi from "./ManagerRequest";
 
@@ -254,7 +254,11 @@ export function checkLanguageSelect() {
 
                         const textarea = document.getElementById("messageSendNoPerm")
 
+                        const divMessageP = document.getElementById("messageNoPermChannel")
+
                         const blockMessage = document.getElementById("contentMessageBlock")
+
+                        divMessageP.className = ""
 
                         document.getElementsByClassName("checkMessageNoPerm")[0].checked = true
 
@@ -271,8 +275,6 @@ export function checkLanguageSelect() {
                         blockMessage.innerText = data.response
 
                         sessionStorage.setItem("messageSendNoPerm", data.response)
-
-                        enableDisableMessageSendInChannelNoPerm()
 
                     }
 
@@ -386,4 +388,5 @@ export function checkKeysPremium() {
                 }
             }
         })
+
 }

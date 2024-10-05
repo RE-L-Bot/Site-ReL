@@ -4,7 +4,7 @@ import { configData } from "@/scripts/login"
 
 export default function Terms() {
     return (
-        <main >
+        <div>
 
             <HEADER />
 
@@ -320,8 +320,9 @@ export default function Terms() {
 
             <FOOTER />
 
-        </main>
+        </div>
     )
+
 }
 
 function redirectServidor() {
