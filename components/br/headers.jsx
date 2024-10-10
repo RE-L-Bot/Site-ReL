@@ -14,9 +14,11 @@ export default function Header() {
             <div id="headerPcDiv" />
             <div className="headerPC">
 
-                <h3 className="RedirectToIndex headerChangeColor">
-                    <Link href="/">RE=L</Link>
-                </h3>
+                <Link href="/" style={{color: "white", textDecoration: "none"}}>
+                    <h3 className="RedirectToIndex headerChangeColor padding3">
+                        RE=L
+                    </h3>
+                </Link>
 
                 <div className="DivHeaderPc">
 
@@ -54,7 +56,7 @@ export default function Header() {
 
                     <Link href="/br/terms">
                         <h3 className="headerChangeColor padding3">
-                            Temos
+                            Termos
                         </h3>
                     </Link>
 
