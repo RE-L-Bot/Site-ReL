@@ -51,7 +51,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>Terms of Service & Privacy</h1>
+                    <h3>Terms of Service & Privacy</h3>
 
                 </div>
 
@@ -85,7 +85,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>Bug Exploitation</h1>
+                    <h3>Bug Exploitation</h3>
 
                     <p className="mt-5">
                         Exploiting or abusing bugs for personal or others' gain is strictly prohibited.
@@ -101,7 +101,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>Command Flood</h1>
+                    <h3>Command Flood</h3>
 
                     <p className="mt-5">
                         Flooding commands to try to crash the bot is strictly prohibited. If this term is violated, your account and data may be banned and removed from the Re=L database without the possibility of unbanning or recovering lost data.
@@ -115,7 +115,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>Nsfw</h1>
+                    <h3>Nsfw</h3>
 
                     <h3>(Not Safe For Work)</h3>
 
@@ -132,7 +132,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>Use of Secondary Accounts</h1>
+                    <h3>Use of Secondary Accounts</h3>
 
                     <p className="mt-5">
                         Re=L has an economy system (currently disabled). With this in mind, the use of secondary accounts to gain more "Edinhos" is prohibited.
@@ -147,7 +147,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>Edinhos Trading</h1>
+                    <h3>Edinhos Trading</h3>
 
                     <p className="mt-5">
                         The buying/selling of Edinhos with third parties and the exchange of monetary value products like Discord Nitro is prohibited, and you will be banned from using Re=L if you engage in such trade.
@@ -163,7 +163,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>Fees</h1>
+                    <h3>Fees</h3>
 
                     <p className="mt-5">
                         We will not charge any fees for using the basic functionality of the Service.
@@ -184,7 +184,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>Data Control</h1>
+                    <h3>Data Control</h3>
 
                     <p className="mt-5">
                         All data can only be accessed by Marcelo (Marciel404 — <a className="text-blue-700 underline" href="https://github.com/Marciel404">https://github.com/Marciel404</a>), who agreed not to share/sell/distribute any stored data with third parties.
@@ -198,7 +198,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>Bot Usage</h1>
+                    <h3>Bot Usage</h3>
 
                     <p className="mt-5">
                         2.1 Bot & Servers. Marciel404 reserves the right to remove Re=L from any server at any time. We may remove Re=L from a server for any reason, such as: (a) The server is abusing the bot, causing issues with it. (b) The server is defaming the reputation of Re=L, Marciel404, or any of the project contributors. (c) We do not want our services associated with the server.
@@ -220,7 +220,7 @@ export default function Terms() {
 
                 <div className=" mb-3">
 
-                    <h1>Types of Data Collected</h1>
+                    <h3>Types of Data Collected</h3>
 
                     <p className="mt-5">
                         1.1a User Data. User Data includes, but is not limited to, User IDs, User IPs, User emails, profile pictures, usernames, and user tags ("discriminator"). Re=L uses Client Data as a means of personalizing the Licensee's experience and assisting them in any way possible. The use may include, but is not limited to, debugging information for commands like "suggestion" or "support" to identify a user, use in message embeds, and logging about the user and command usage.

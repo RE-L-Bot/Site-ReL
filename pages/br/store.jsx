@@ -115,11 +115,11 @@ export default function Store() {
 
             </div>
 
-            <h1>Premium</h1>
+            <h3>Premium</h3>
 
             <hr />
 
-            <h1 style={{ textAlign: "center" }}>Premium Basic</h1>
+            <h3 style={{ textAlign: "center" }}>Premium Basic</h3>
 
             <div className="DivProductsStore">
 
@@ -361,7 +361,7 @@ export default function Store() {
 
             <br />
 
-            <h1 style={{ textAlign: "center" }}>Premium Medium</h1>
+            <h3 style={{ textAlign: "center" }}>Premium Medium</h3>
 
             <div className="DivProductsStore">
 
@@ -633,7 +633,7 @@ export default function Store() {
 
             <br />
 
-            <h1 style={{ textAlign: "center" }}>Premium Master</h1>
+            <h3 style={{ textAlign: "center" }}>Premium Master</h3>
 
             <div className="DivProductsStore">
 
@@ -917,7 +917,7 @@ export default function Store() {
 
             <br />
 
-            <h1 style={{ textAlign: "center" }}>Premiuns LifeTime</h1>
+            <h3 style={{ textAlign: "center" }}>Premiuns LifeTime</h3>
 
             <div className="DivProductsStore">
 

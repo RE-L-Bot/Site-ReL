@@ -28,7 +28,7 @@ export default function HomeBr() {
 
                     <div>
 
-                        <h1>Re=L Bot</h1>
+                        <h3>Re=L Bot</h3>
 
                         <h3>Um bot de discord para auxiliar seu servidor</h3>
 
@@ -66,7 +66,7 @@ export default function HomeBr() {
 
                 <div>
 
-                    <h1>Eleve seu servidor a outro nivel</h1>
+                    <h3>Eleve seu servidor a outro nivel</h3>
 
                     <br />
 

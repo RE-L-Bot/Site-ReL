@@ -1,10 +1,13 @@
 import { saveConfigGeneral } from "@/scripts/saves";
 import { addChannelsUseCommands, addChannelInUseCommands } from "@/scripts/addChannelsSelect";
 import ToogleOff from "@/components/globals/toogleOff";
-import { ChangeEnabledNobackground, enableDisableMessageSendInChannelNoPerm } from "@/scripts/changes";
+import { ChangeEnabledNobackground } from "@/scripts/changes";
 import { checkLanguageSelect } from "@/scripts/checks";
 import TOPMENU from "@/components/en/TopMenu";
 import Head from "next/head";
+import { DiscordMessage, DiscordMessages } from "@skyra/discord-components-react";
+import myMD from "@/scripts/myMD";
+import { useState } from "react";
 
 function onLoadPageConfig() {
     addChannelsUseCommands()
@@ -12,6 +15,9 @@ function onLoadPageConfig() {
 }
 
 export default function Config() {
+
+    const [content, setContent] = useState("");
+
     return (
         <div onLoad={onLoadPageConfig()}>
 
@@ -32,9 +38,9 @@ export default function Config() {
 
                 <div style={{ padding: "20px" }}>
 
-                    <h1 className="center">
+                    <h3 className="center">
                         Settings
-                    </h1>
+                    </h3>
 
                     <div className="BorderConfigDashBot">
 
@@ -117,7 +123,19 @@ export default function Config() {
 
                                         <div>
 
-                                            <input type="checkbox" id="checkBox" className="checkMessageNoPerm" onChange={(e) => { ChangeEnabledNobackground(e, 1), enableDisableMessageSendInChannelNoPerm() }} />
+                                            <input type="checkbox" id="checkBox" className="checkMessageNoPerm" onChange={(e) => {
+
+                                                ChangeEnabledNobackground(e, 1)
+
+                                                const divMessage = document.getElementById("messageNoPermChannel")
+
+                                                if (divMessage.className == "Disabled") {
+                                                    return divMessage.className = ""
+                                                }
+
+                                                divMessage.className = "Disabled"
+
+                                            }} />
 
                                             <ToogleOff qnt={1} />
 
@@ -129,47 +147,37 @@ export default function Config() {
 
                             </div>
 
-                            <br />
-
                             <div id="messageNoPermChannel" className="Disabled">
 
                                 <div>
 
                                     <h5>Message when using a command on an unallowed channel</h5>
 
-                                    <textarea id="messageSendNoPerm" name="TextChannelMessage" maxLength={2000} style={{ fontSize: "15px", width: "100%", height: "40px", resize: "none", borderRadius: "5px", cursor: "pointer" }} onInput={(e) => { document.getElementById("contentMessageBlock").innerHTML = e.target.value.toString() }}></textarea>
+                                    <textarea
+                                        id="messageSendNoPerm"
+                                        name="TextChannelMessage"
+                                        maxLength={2000}
+                                        style={{
+                                            fontSize: "15px",
+                                            width: "100%",
+                                            height: "40px",
+                                            resize: "none",
+                                            borderRadius: "5px",
+                                            cursor: "pointer"
+                                        }}
+                                        onInput={(e) => {
+                                            setContent(e.target.value.toString())
+                                        }}></textarea>
 
                                 </div>
 
-                                <div id="reMessage" className="perfilAlign">
+                                <DiscordMessages>
 
-                                    <img src="/svgs/RELCHIBI.svg" className="imageHW" alt="" />
+                                    <DiscordMessage profile="RELBOT">
+                                        {myMD(content)}
+                                    </DiscordMessage>
 
-                                    <div style={{ maxWidth: "50%" }}>
-
-                                        <div className="perfilAlign">
-
-                                            <p>Re=L</p>
-
-                                            <div style={{ gap: "5px", height: "0.9375rem", padding: "0.275rem", marginTop: "0.075em", display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#7289da", borderRadius: "5px" }}>
-
-                                                <h6>
-                                                    APP
-                                                </h6>
-
-                                                <i className="material-symbols-outlined" style={{ fontSize: "16px" }}>
-                                                    check_small
-                                                </i>
-
-                                            </div>
-
-                                        </div>
-
-                                        <p id="contentMessageBlock" style={{ wordBreak: "break-all" }} />
-
-                                    </div>
-
-                                </div>
+                                </DiscordMessages>
 
                             </div>
 

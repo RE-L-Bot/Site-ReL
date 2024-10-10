@@ -56,7 +56,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>Termos de Serviço & Privacidade</h1>
+                    <h3>Termos de Serviço & Privacidade</h3>
 
                 </div>
 
@@ -90,7 +90,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>Abuso de bugs</h1>
+                    <h3>Abuso de bugs</h3>
 
                     <p className="mt-5">
                         Usufruir ou abusar de bugs para tomar vantagens para si mesmo ou para outrem são extremamente proibidos,
@@ -107,7 +107,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>Flood de comandos</h1>
+                    <h3>Flood de comandos</h3>
 
                     <p className="mt-5">
                         O Flood de comandos para estar tentando derrubar o bot é extremamente
@@ -124,9 +124,9 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>
+                    <h3>
                         Nsfw
-                    </h1>
+                    </h3>
 
                     <h3>
                         (Not Safe For Work)
@@ -149,9 +149,9 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>
+                    <h3>
                         Uso de contas secundarias
-                    </h1>
+                    </h3>
 
                     <p className="mt-5">
                         A Re=L possue seu sistema de economia (porem esta desabilitado no momento) tendo isto em
@@ -169,9 +169,9 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>
+                    <h3>
                         Comercio de Edinhos
-                    </h1>
+                    </h3>
 
                     <p className="mt-5">
                         A compra/venda de Edinhos com terceiros e a troca de produtos de valor monetário, como Discord Nitro, é proibida e você será banido de usar a Re=L caso comercialize algo assim.
@@ -187,9 +187,9 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>
+                    <h3>
                         Tarifas
-                    </h1>
+                    </h3>
 
                     <p className="mt-5">
                         Não cobraremos nenhuma taxa para usar a funcionalidade básica do Serviço.
@@ -218,9 +218,9 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>
+                    <h3>
                         Controle de Dados
-                    </h1>
+                    </h3>
 
                     <p className="mt-5">
                         Todos os dados só podem ser acessados pelo Marcelo
@@ -237,9 +237,9 @@ export default function Terms() {
 
                 <div>
 
-                    <h1>
+                    <h3>
                         Uso do bot
-                    </h1>
+                    </h3>
 
                     <p className="mt-5">
                         2.1 Bot & Servidores. Marciel404 reserva-se o direito de remover Re=L de qualquer
@@ -274,9 +274,9 @@ export default function Terms() {
 
                 <div className=" mb-3">
 
-                    <h1>
+                    <h3>
                         Tipo de Dados Coletados
-                    </h1>
+                    </h3>
 
                     <p className="mt-5">
                         1.1a Dados do Usuário. Os Dados do Usuário incluem, entre outros, IDs de Usuário,

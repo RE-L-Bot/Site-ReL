@@ -42,6 +42,6 @@ export default function DashBoardId() {
 			</div>
 		)
 	} else {
-		return <h1>Carregando...</h1>
+		return <h3>Carregando...</h3>
 	}
 }

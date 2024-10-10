@@ -7,7 +7,7 @@ import Head from "next/head";
 import EmbedBuilder from "@/components/br/embed/EmbedBuilder";
 import EmbedEditor from "@/components/br/embed/EmbedEditor";
 import { useState } from "react";
-import { DiscordMessages, DiscordMessage } from "@skyra/discord-components-react";
+import { DiscordMessages, DiscordMessage, DiscordReply, DiscordAttachments, DiscordActionRow, DiscordButton } from "@skyra/discord-components-react";
 
 export default function Ticket() {
 
@@ -135,7 +135,7 @@ export default function Ticket() {
 
                         <InfosTicket selectmenusetter={handleOptionChange} />
 
-                        <div>
+                        <div className="embedBuilderDiv">
 
                             <EmbedEditor onEmbedChange={handleEmbedChange} />
 
@@ -143,15 +143,93 @@ export default function Ticket() {
 
                                 <div>
 
-                                    <DiscordMessages noBackground>
+                                    <DiscordMessages style={{ borderRadius: "5px" }}>
 
-                                        <DiscordMessage id="AuthorMessage" author="RE=L" bot verified avatar="https://images-ext-1.discordapp.net/external/3LBc_lYPIjZbMNBSYtx0t-Tch2fMtZLoIcvzIfAVTM0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/1018958083764002919/72e160dd9dc0d2952529c3388c81715d.webp?format=webp&width=473&height=473">
+                                        <DiscordMessage id="AuthorMessage" profile="RELBOT">
 
                                             <EmbedBuilder embed={embed} />
 
                                             <SelectMenus selectmenus={selectMenu} />
 
                                         </DiscordMessage>
+
+                                        <div id="div-opening-ticket" style={{ display: "none" }}>
+
+                                            <DiscordMessage
+                                                timestamp="30/08/2024 13:00"
+                                                profile="RELBOT"
+                                                ephemeral
+                                            >
+
+                                                <DiscordReply
+                                                    style={{ marginLeft: "56px" }}
+                                                    author="IVM (Ticket Express)"
+                                                    avatar="https://images-ext-1.discordapp.net/external/nNVuKLahkkEPMoXf9_lDrbEyiSWImKzczdDsqsBnUwM/https/cdn.discordapp.com/icons/1101694285839077537/0572af3a3447d536d63f58ede8827dd9.webp?format=webp"
+                                                    bot
+                                                    slot="reply"
+                                                    attachment
+                                                >
+                                                    Clique para ver anexo
+                                                </DiscordReply>
+
+                                                <span>Criando Ticket</span>
+
+                                            </DiscordMessage>
+
+                                            <DiscordMessage
+                                                timestamp="30/08/2024 13:00"
+                                                profile="RELBOT"
+                                                ephemeral
+                                            >
+
+                                                <DiscordReply
+                                                    style={{ marginLeft: "56px" }}
+                                                    author="IVM (Ticket Express)"
+                                                    avatar="https://images-ext-1.discordapp.net/external/nNVuKLahkkEPMoXf9_lDrbEyiSWImKzczdDsqsBnUwM/https/cdn.discordapp.com/icons/1101694285839077537/0572af3a3447d536d63f58ede8827dd9.webp?format=webp"
+                                                    bot
+                                                    slot="reply"
+                                                    attachment
+                                                >
+                                                    Clique para ver anexo
+                                                </DiscordReply>
+
+                                                <span>Ticket criado com sucesso</span>
+
+                                                <DiscordAttachments slot="components">
+
+                                                    <DiscordActionRow>
+
+                                                        <DiscordButton
+                                                            type="secondary"
+                                                        >
+
+                                                            <div style={{ display: "flex", gap: "5px" }}>
+
+                                                                <span>Atalho para o ticket</span>
+
+                                                                <span>
+
+                                                                    <svg aria-hidden="false" width="16" height="16" viewBox="0 0 24 24">
+
+                                                                        <path fill="currentColor" d="M10 5V3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V14H19V19H5V5H10Z"></path>
+
+                                                                        <path fill="currentColor" d="M21 2.99902H14V4.99902H17.586L9.29297 13.292L10.707 14.706L19 6.41302V9.99902H21V2.99902Z"></path>
+
+                                                                    </svg>
+
+                                                                </span>
+
+                                                            </div>
+
+                                                        </DiscordButton>
+
+                                                    </DiscordActionRow>
+
+                                                </DiscordAttachments>
+
+                                            </DiscordMessage>
+
+                                        </div>
 
                                     </DiscordMessages>
 

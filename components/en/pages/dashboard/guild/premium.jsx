@@ -17,15 +17,15 @@ export default function keysPremium() {
 
                 <div style={{ padding: "10px" }}>
 
-                    <h1>Your Premium Keys</h1>
+                    <h3>Your Premium Keys</h3>
 
                     <hr />
 
                     <div id="actvatedPremium" style={{ display: "none" }}>
 
-                        <h1>
+                        <h3>
                             Premium Enabled
-                        </h1>
+                        </h3>
 
                         <div className="SelectTipeCommand">
 
@@ -37,7 +37,7 @@ export default function keysPremium() {
 
                     </div>
 
-                    <h1 style={{ opacity: "50%" }} id="notKey">You don't own Premium Keys</h1>
+                    <h3 style={{ opacity: "50%" }} id="notKey">You don't own Premium Keys</h3>
 
                     <div id="divKeys">
                     </div>

@@ -24,23 +24,21 @@ export function redirectStore() {
     window.open(`/${langP}/store`, "_blanck")
 }
 
-export function dashGuildClick(c) {
+export async function dashGuildClick(c) {
 
     try {
 
-        new RequestApi()
+        await new RequestApi()
             .setApiEndPoint("thisAPI")
+            .setEndPoint("vInGuild")
             .setHeaders({
                 guild_id: c.target.id
             })
             .request()
             .then(response => {
 
-                if (response.response.code == 10004) {
-
+                if (response.response.code == 10004) 
                     return redirectInvite(c.target.id)
-
-                }
 
                 const langP = window.location.pathname.split("/")[1]
 

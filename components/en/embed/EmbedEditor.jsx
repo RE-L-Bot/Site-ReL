@@ -112,7 +112,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                 <div style={{ width: "100%" }}>
 
-                    <div id="expandDivAuthor" style={{ width: "80%", padding: "10px" }} className="contentCommand" onClick={(e) => changeDisplay(e, "Author", "block")}>
+                    <div id="expandDivAuthor" style={{ width: "100%", padding: "10px" }} className="contentCommand" onClick={(e) => changeDisplay(e, "Author", "block")}>
 
                         <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
 
@@ -131,7 +131,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                     <div
                         id="expandEmbedAuthor"
                         style={{
-                            width: "80%",
+                            width: "100%",
                             padding: "10px",
                             display: "none",
                             borderTopLeftRadius: "0px",
@@ -216,7 +216,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                 <div style={{ width: "100%" }}>
 
-                    <div id="expandDivBody" style={{ width: "80%", padding: "10px" }} className="contentCommand" onClick={(e) => changeDisplay(e, "Body", "block")}>
+                    <div id="expandDivBody" style={{ width: "100%", padding: "10px" }} className="contentCommand" onClick={(e) => changeDisplay(e, "Body", "block")}>
 
                         <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
 
@@ -235,7 +235,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                     <div
                         id="expandEmbedBody"
                         style={{
-                            width: "80%",
+                            width: "100%",
                             padding: "10px",
                             display: "none",
                             borderTopLeftRadius: "0px",
@@ -341,7 +341,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                 <div style={{ width: "100%" }}>
 
-                    <div id="expandDivCampos" style={{ width: "80%", padding: "10px" }} className="contentCommand" onClick={(e) => changeDisplay(e, "Campos", "block")}>
+                    <div id="expandDivCampos" style={{ width: "100%", padding: "10px" }} className="contentCommand" onClick={(e) => changeDisplay(e, "Campos", "block")}>
 
                         <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
 
@@ -360,7 +360,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                     <div
                         id="expandEmbedCampos"
                         style={{
-                            width: "80%",
+                            width: "100%",
                             padding: "10px",
                             display: "none",
                             borderTopLeftRadius: "0px",
@@ -480,7 +480,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                 <div style={{ width: "100%" }}>
 
-                    <div id="expandDivImages" style={{ width: "80%", padding: "10px" }} className="contentCommand" onClick={(e) => changeDisplay(e, "Images", "block")}>
+                    <div id="expandDivImages" style={{ width: "100%", padding: "10px" }} className="contentCommand" onClick={(e) => changeDisplay(e, "Images", "block")}>
 
                         <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
 
@@ -499,7 +499,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                     <div
                         id="expandEmbedImages"
                         style={{
-                            width: "80%",
+                            width: "100%",
                             padding: "10px",
                             display: "none",
                             borderTopLeftRadius: "0px",

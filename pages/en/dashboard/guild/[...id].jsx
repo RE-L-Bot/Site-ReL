@@ -42,7 +42,7 @@ export default function DashBoardId() {
 			</>
 		)
 	} else {
-		return <h1>Carregando...</h1>
+		return <h3>Carregando...</h3>
 	}
 
 }

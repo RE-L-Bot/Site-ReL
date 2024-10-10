@@ -14,7 +14,7 @@ export default function Error404() {
 
                 <div>
 
-                    <h1>Erro 404 Pagina não encontrada</h1>
+                    <h3>Erro 404 Pagina não encontrada</h3>
 
                     <h3>Está pagina não foi encontrada nos arquivos do site</h3>
 

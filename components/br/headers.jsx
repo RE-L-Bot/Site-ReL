@@ -14,60 +14,60 @@ export default function Header() {
             <div id="headerPcDiv" />
             <div className="headerPC">
 
-                <h1 className="RedirectToIndex headerChangeColor padding3">
+                <h3 className="RedirectToIndex headerChangeColor">
                     <Link href="/">RE=L</Link>
-                </h1>
+                </h3>
 
                 <div className="DivHeaderPc">
 
-                    <div>
+                    <div id="LangP">
 
-                        <div id="LangP">
+                        <div className="headerChangeColor LangS padding3">
 
-                            <div className="headerChangeColor LangS padding3">
+                            <i className="material-symbols-outlined">public</i>
 
-                                <i className="material-symbols-outlined">public</i>
+                            <h3 id="PT-BR">PT-BR</h3>
 
-                                <h1 id="PT-BR">PT-BR</h1>
-
-                                <i className="material-symbols-outlined">stat_minus_1</i>
-
-                            </div>
-
-                            <ul className="SelectLang">
-
-                                <li id="es" onClick={changeLang}>
-                                    <p id="es">ES-ES</p>
-                                </li>
-
-                                <li id="en" onClick={changeLang} >
-                                    <p id="en">EN-US</p>
-                                </li>
-
-                            </ul>
+                            <i className="material-symbols-outlined">stat_minus_1</i>
 
                         </div>
 
+                        <ul className="SelectLang">
+
+                            <li id="es" onClick={changeLang}>
+                                <p id="es">ES-ES</p>
+                            </li>
+
+                            <li id="en" onClick={changeLang} >
+                                <p id="en">EN-US</p>
+                            </li>
+
+                        </ul>
+
                     </div>
 
-                    <h1 className="headerChangeColor padding3">
-                        <Link href="/br/commands/all">Comandos</Link>
-                    </h1>
+                    <Link href="/br/commands/all">
+                        <h3 className="headerChangeColor padding3">
+                            Comandos
+                        </h3>
+                    </Link>
 
-                    <h1 className="headerChangeColor padding3">
-                        <Link href="/br/terms">Termos</Link>
-                    </h1>
+                    <Link href="/br/terms">
+                        <h3 className="headerChangeColor padding3">
+                            Temos
+                        </h3>
+                    </Link>
 
-                    <div className="LoginDiv headerChangeColor padding3">
+                    <div className="LoginDiv headerChangeColor padding3" onClick={redirectLogDash}>
 
                         <img className="imageUser" src="" alt="imageUser" />
-                        <h1>
-                            <p className="login" onClick={redirectLogDash}>Login</p>
-                        </h1>
+                        <h3>
+                            <p className="login">Login</p>
+                        </h3>
 
                     </div>
 
-                    <i className="iconChangeMode material-symbols-outlined padding3 headerChangeColor" onClick={changeMode}>
+                    <i className="iconChangeMode material-symbols-outlined headerChangeColor padding3" onClick={changeMode}>
                         light_mode
                     </i>
 
@@ -81,7 +81,7 @@ export default function Header() {
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-evenly" }}>
 
                     <Link href="/br">
-                        <h3 style={{cursor: "pointer"}}>RE=L</h3>
+                        <h3 style={{ cursor: "pointer" }}>RE=L</h3>
                     </Link>
 
                     <div id="LangP">
