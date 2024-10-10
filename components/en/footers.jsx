@@ -22,7 +22,7 @@ export default function Footer() {
 
                 <div>
 
-                    <h3>
+                    <h3 style={{ margin: 0 }}>
                         Re=L
                     </h3>
 
@@ -57,7 +57,7 @@ export default function Footer() {
 
                 <div>
 
-                    <h3>
+                    <h3 style={{ margin: 0 }}>
                         Important
                     </h3>
 
@@ -73,7 +73,7 @@ export default function Footer() {
 
                 <div>
 
-                    <h3>
+                    <h3 style={{ margin: 0 }}>
                         Outhers links of RE=L
                     </h3>
 

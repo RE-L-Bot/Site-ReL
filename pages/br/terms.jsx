@@ -10,13 +10,13 @@ export default function Terms() {
 
             <div className="DivExplainTerms">
 
-                <h2>Termos De uso & Privacidade</h2>
+                <h2 style={{ margin: 0 }}>Termos De uso & Privacidade</h2>
 
-                <h4>Meus termos de uso são extremamente necessarios ser seguidos</h4>
+                <h4 style={{ margin: 0 }}>Meus termos de uso são extremamente necessarios ser seguidos</h4>
 
-                <h4>Caso seja identificado a quebra de algum desses termos</h4>
+                <h4 style={{ margin: 0 }}>Caso seja identificado a quebra de algum desses termos</h4>
 
-                <h4>Você sera banido do uso do bot e medidas seram tomadas</h4>
+                <h4 style={{ margin: 0 }}>Você sera banido do uso do bot e medidas seram tomadas</h4>
 
                 <div className="DivSuport">
 
@@ -56,7 +56,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>Termos de Serviço & Privacidade</h3>
+                    <h3 style={{ margin: 0 }}>Termos de Serviço & Privacidade</h3>
 
                 </div>
 
@@ -90,7 +90,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>Abuso de bugs</h3>
+                    <h3 style={{ margin: 0 }}>Abuso de bugs</h3>
 
                     <p >
                         Usufruir ou abusar de bugs para tomar vantagens para si mesmo ou para outrem são extremamente proibidos,
@@ -107,7 +107,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>Flood de comandos</h3>
+                    <h3 style={{ margin: 0 }}>Flood de comandos</h3>
 
                     <p >
                         O Flood de comandos para estar tentando derrubar o bot é extremamente
@@ -124,11 +124,11 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>
+                    <h3 style={{ margin: 0 }}>
                         Nsfw
                     </h3>
 
-                    <h3>
+                    <h3 style={{ margin: 0 }}>
                         (Not Safe For Work)
                     </h3>
 
@@ -149,7 +149,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>
+                    <h3 style={{ margin: 0 }}>
                         Uso de contas secundarias
                     </h3>
 
@@ -169,7 +169,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>
+                    <h3 style={{ margin: 0 }}>
                         Comercio de Edinhos
                     </h3>
 
@@ -187,7 +187,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>
+                    <h3 style={{ margin: 0 }}>
                         Tarifas
                     </h3>
 
@@ -218,7 +218,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>
+                    <h3 style={{ margin: 0 }}>
                         Controle de Dados
                     </h3>
 
@@ -237,7 +237,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>
+                    <h3 style={{ margin: 0 }}>
                         Uso do bot
                     </h3>
 
@@ -274,7 +274,7 @@ export default function Terms() {
 
                 <div className=" mb-3">
 
-                    <h3>
+                    <h3 style={{ margin: 0 }}>
                         Tipo de Dados Coletados
                     </h3>
 

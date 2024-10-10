@@ -10,17 +10,17 @@ export default function Terms() {
 
             <div className="DivExplainTerms">
 
-                <h2>Terms of Use & Privacy</h2>
+                <h2 style={{ margin: 0 }}>Terms of Use & Privacy</h2>
 
-                <h4>My terms of use are extremely necessary to follow</h4>
+                <h4 style={{ margin: 0 }}>My terms of use are extremely necessary to follow</h4>
 
-                <h4>If any violation of these terms is identified</h4>
+                <h4 style={{ margin: 0 }}>If any violation of these terms is identified</h4>
 
-                <h4>You will be banned from using the bot, and actions will be taken</h4>
+                <h4 style={{ margin: 0 }}>You will be banned from using the bot, and actions will be taken</h4>
 
                 <div className="DivSuport">
 
-                    <h2>In case of questions:</h2>
+                    <h2 style={{ margin: 0 }}>In case of questions:</h2>
 
                     <button className="ml-5 items-center flex rounded-lg p-3 bg-blue-300" onClick={redirectServidor}>
 
@@ -51,7 +51,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>Terms of Service & Privacy</h3>
+                    <h3 style={{ margin: 0 }}>Terms of Service & Privacy</h3>
 
                 </div>
 
@@ -85,7 +85,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>Bug Exploitation</h3>
+                    <h3 style={{ margin: 0 }}>Bug Exploitation</h3>
 
                     <p >
                         Exploiting or abusing bugs for personal or others' gain is strictly prohibited.
@@ -101,7 +101,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>Command Flood</h3>
+                    <h3 style={{ margin: 0 }}>Command Flood</h3>
 
                     <p >
                         Flooding commands to try to crash the bot is strictly prohibited. If this term is violated, your account and data may be banned and removed from the Re=L database without the possibility of unbanning or recovering lost data.
@@ -115,9 +115,9 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>Nsfw</h3>
+                    <h3 style={{ margin: 0 }}>Nsfw</h3>
 
-                    <h3>(Not Safe For Work)</h3>
+                    <h3 style={{ margin: 0 }}>(Not Safe For Work)</h3>
 
                     <p >
                         Since Re=L is meant to be an SFW (Safe For Work) community bot and does not want to be associated with such content, using Re=L for NSFW purposes is prohibited, including advertisements or servers focused on this theme.
@@ -132,7 +132,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>Use of Secondary Accounts</h3>
+                    <h3 style={{ margin: 0 }}>Use of Secondary Accounts</h3>
 
                     <p >
                         Re=L has an economy system (currently disabled). With this in mind, the use of secondary accounts to gain more "Edinhos" is prohibited.
@@ -147,7 +147,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>Edinhos Trading</h3>
+                    <h3 style={{ margin: 0 }}>Edinhos Trading</h3>
 
                     <p >
                         The buying/selling of Edinhos with third parties and the exchange of monetary value products like Discord Nitro is prohibited, and you will be banned from using Re=L if you engage in such trade.
@@ -163,7 +163,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>Fees</h3>
+                    <h3 style={{ margin: 0 }}>Fees</h3>
 
                     <p >
                         We will not charge any fees for using the basic functionality of the Service.
@@ -184,7 +184,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>Data Control</h3>
+                    <h3 style={{ margin: 0 }}>Data Control</h3>
 
                     <p >
                         All data can only be accessed by Marcelo (Marciel404 — <a className="text-blue-700 underline" href="https://github.com/Marciel404">https://github.com/Marciel404</a>), who agreed not to share/sell/distribute any stored data with third parties.
@@ -198,7 +198,7 @@ export default function Terms() {
 
                 <div>
 
-                    <h3>Bot Usage</h3>
+                    <h3 style={{ margin: 0 }}>Bot Usage</h3>
 
                     <p >
                         2.1 Bot & Servers. Marciel404 reserves the right to remove Re=L from any server at any time. We may remove Re=L from a server for any reason, such as: (a) The server is abusing the bot, causing issues with it. (b) The server is defaming the reputation of Re=L, Marciel404, or any of the project contributors. (c) We do not want our services associated with the server.
@@ -220,7 +220,7 @@ export default function Terms() {
 
                 <div className=" mb-3">
 
-                    <h3>Types of Data Collected</h3>
+                    <h3 style={{ margin: 0 }}>Types of Data Collected</h3>
 
                     <p >
                         1.1a User Data. User Data includes, but is not limited to, User IDs, User IPs, User emails, profile pictures, usernames, and user tags ("discriminator"). Re=L uses Client Data as a means of personalizing the Licensee's experience and assisting them in any way possible. The use may include, but is not limited to, debugging information for commands like "suggestion" or "support" to identify a user, use in message embeds, and logging about the user and command usage.

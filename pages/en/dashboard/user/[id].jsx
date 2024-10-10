@@ -30,6 +30,6 @@ export default function DashBoardId() {
             </>
         )
     } else {
-        return <h3>Carregando...</h3>
+        return <h3 style={{ margin: 0 }}>Carregando...</h3>
     }
 }

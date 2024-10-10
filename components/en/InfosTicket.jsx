@@ -84,7 +84,7 @@ const InfosTicket = ({ selectmenusetter }) => {
                                 🌟
                             </div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Who will send it:
                             </h4>
 
@@ -110,7 +110,7 @@ const InfosTicket = ({ selectmenusetter }) => {
 
                         <div style={{ opacity: "50%" }}>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 If the name and the image there in the message representation changes, don't worry, what counts is what is here
                             </h5>
 
@@ -120,7 +120,7 @@ const InfosTicket = ({ selectmenusetter }) => {
 
                             <div style={{ display: "flex", alignItems: "center" }}>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     WebHook Name
                                 </h4>
 
@@ -130,7 +130,7 @@ const InfosTicket = ({ selectmenusetter }) => {
 
                             <div style={{ display: "flex", alignItems: "center", marginLeft: "10px" }}>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Webhook image link
                                 </h4>
 
@@ -154,7 +154,7 @@ const InfosTicket = ({ selectmenusetter }) => {
                                 🌟
                             </div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Ticket Type:
                             </h4>
 
@@ -180,7 +180,7 @@ const InfosTicket = ({ selectmenusetter }) => {
 
                         <div style={{ display: "flex", alignItems: "center" }}>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 WebHook Name
                             </h4>
 
@@ -190,7 +190,7 @@ const InfosTicket = ({ selectmenusetter }) => {
 
                         <div style={{ display: "flex", alignItems: "center", marginLeft: "10px" }}>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Webhook image link
                             </h4>
 
@@ -206,7 +206,7 @@ const InfosTicket = ({ selectmenusetter }) => {
 
                     <div style={{ display: "block", alignText: "center" }}>
 
-                        <h4>
+                        <h4 style={{ margin: 0 }}>
                             Number of topics
                         </h4>
 
@@ -220,7 +220,7 @@ const InfosTicket = ({ selectmenusetter }) => {
 
                     <div style={{ display: "block", alignText: "center" }}>
 
-                        <h4>
+                        <h4 style={{ margin: 0 }}>
                             Which channel to send the message
                         </h4>
 

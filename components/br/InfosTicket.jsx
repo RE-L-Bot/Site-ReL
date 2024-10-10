@@ -84,7 +84,7 @@ const InfosTicket = ({ selectmenusetter }) => {
                                 🌟
                             </div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Quem enviara:
                             </h4>
 
@@ -109,7 +109,7 @@ const InfosTicket = ({ selectmenusetter }) => {
                     <div className="infosWebHook" id="divInfosWeb">
 
                         <div style={{ opacity: "50%" }}>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 Se o nome e a imagem lá na representação da mensagem mudar, não se preocupe, oq contara é oq está aqui
                             </h5>
                         </div>
@@ -117,14 +117,14 @@ const InfosTicket = ({ selectmenusetter }) => {
                         <div id="ValuesWebhook">
 
                             <div style={{ display: "flex", alignItems: "center" }}>
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Nome do WebHook
                                 </h4>
                                 <input style={{ borderRadius: "5px" }} className="textNameWebhook" type="text" id="nameWebhook" maxLength={32} minLength={1} onChange={(e) => { changeWebName(e) }} />
                             </div>
 
                             <div style={{ display: "flex", alignItems: "center", marginLeft: "10px" }}>
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Link da imagem do webhook
                                 </h4>
                                 <input style={{ borderRadius: "5px" }} className="textNameWebhook" type="text" id="imageWebhook" onChange={(e) => { changeWebImg(e) }} />
@@ -146,7 +146,7 @@ const InfosTicket = ({ selectmenusetter }) => {
                                 🌟
                             </div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Tipo do ticket:
                             </h4>
 
@@ -171,14 +171,14 @@ const InfosTicket = ({ selectmenusetter }) => {
                     <div className="infosWebHook" id="divInfosWeb">
 
                         <div style={{ display: "flex", alignItems: "center" }}>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Nome do WebHook
                             </h4>
                             <input className="textNameWebhook" type="text" id="nameWebhook" maxLength={32} minLength={1} onChange={(e) => { changeWebName(e) }} />
                         </div>
 
                         <div style={{ display: "flex", alignItems: "center", marginLeft: "10px" }}>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Link da imagem do webhook
                             </h4>
                             <input className="textNameWebhook" type="text" id="imageWebhook" onChange={(e) => { changeWebImg(e) }} />
@@ -192,7 +192,7 @@ const InfosTicket = ({ selectmenusetter }) => {
 
                     <div style={{ display: "block", alignText: "center" }}>
 
-                        <h4>
+                        <h4 style={{ margin: 0 }}>
                             Quantidade de topicos
                         </h4>
 
@@ -204,7 +204,7 @@ const InfosTicket = ({ selectmenusetter }) => {
 
                     <div style={{ display: "block", alignText: "center" }}>
 
-                        <h4>
+                        <h4 style={{ margin: 0 }}>
                             Qual canal enviar a mensagem
                         </h4>
 

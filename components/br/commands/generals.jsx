@@ -51,33 +51,33 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Descrição longa:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Envia foto de perfil sua ou do usuario desejado <br />
 								° sendo estando ou não no servidor
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Observações:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Caso o usuario estiver no servidor com uma foto diferente da do perfil<br />
 								° um botão sera adicionado para enviar a foto de usuario
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Argumentos:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Membro: id do usuario a ver o avatar (Opcional)
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Representação do comando:
 							</h4>
 
@@ -131,15 +131,15 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Descrição longa:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Envia algumas informações interessantes sobre o bot
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Representação do comando:
 							</h4>
 
@@ -193,33 +193,33 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Descrição longa:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Envia algumas informações sobre qualquer servidor que a RE esteja <br />
 								° pelo id do servidor
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Observações:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Case você pesquise informações do servidor de origem do comando <br />
 								° a re  enviara um botão junto para ver os cargos existentes no servidor
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Argumentos:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Servidor: Id do servidor a pesquisar (Opcional)
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Representação do comando:
 							</h4>
 
@@ -273,16 +273,16 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Descrição longa:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Envia o meu ping ou seja, quanto tempo destou demorando para <br />
 								° eu receber seu comando e retornar a sua resposta
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Representação do comando:
 							</h4>
 
@@ -336,16 +336,16 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Descrição longa:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Envia alguns dos meus links importantes para que você<br />
 								° não fique entediado de tanto procurar
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Representação do comando:
 							</h4>
 
@@ -399,24 +399,24 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Descrição longa:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Faz a multiplicação de um numero até 10 e envia para você<br />
 								° arrumado bonitinho como se fosse uma tabuada
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Argumentos:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° número: Numero a se multiplicar (Necessário)
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Representação do comando:
 							</h4>
 
@@ -470,24 +470,24 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Descrição longa:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Envia algumas informações de um usuario do discord<br />
 								° estando em um servidor ou não
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Argumentos:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° usuario: Usuario a ver as informações (Opicional)
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Representação do comando:
 							</h4>
 

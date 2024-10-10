@@ -17,13 +17,13 @@ export default function keysPremium() {
 
                 <div style={{ padding: "10px" }}>
 
-                    <h3>Suas Keys Premium</h3>
+                    <h3 style={{ margin: 0 }}>Suas Keys Premium</h3>
 
                     <hr />
 
                     <div id="actvatedPremium" style={{ display: "none" }}>
 
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             Premium ativado
                         </h3>
 

@@ -27,7 +27,7 @@ export default function () {
     return (
         <DiscordMessages>
 
-            <h3>Case 1</h3>
+            <h3 style={{ margin: 0 }}>Case 1</h3>
 
             <hr />
 
@@ -131,7 +131,7 @@ export default function () {
 
             </div>
 
-            <h3>Case 2</h3>
+            <h3 style={{ margin: 0 }}>Case 2</h3>
 
             <hr />
 
@@ -189,7 +189,7 @@ export default function () {
 
             </DiscordMessage>
 
-            <h3>Case 3</h3>
+            <h3 style={{ margin: 0 }}>Case 3</h3>
 
             <hr />
 

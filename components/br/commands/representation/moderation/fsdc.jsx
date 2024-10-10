@@ -9,7 +9,7 @@ export default function () {
     return (
         <DiscordMessages style={{ borderRadius: "5px" }}>
 
-            <h4>
+            <h4 style={{ margin: 0 }}>
                 Caso 1
             </h4>
 
@@ -34,7 +34,7 @@ export default function () {
 
             </DiscordMessage>
 
-            <h4>
+            <h4 style={{ margin: 0 }}>
                 Caso 2
             </h4>
 

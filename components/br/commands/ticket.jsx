@@ -48,15 +48,15 @@ export default function TicketCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Adiciona varios cargos aos overwrites do canal do ticket aberto
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando:
                             </h4>
 
@@ -110,16 +110,16 @@ export default function TicketCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Envia uma mensagem dizendo que o comando foi migrado para <br />
                                 ° a dashboard e um botão para te mandar para a dashboard
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando:
                             </h4>
 

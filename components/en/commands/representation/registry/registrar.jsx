@@ -20,7 +20,7 @@ export default function () {
     return (
         <DiscordMessages style={{ borderRadius: "5px" }}>
 
-            <h4>
+            <h4 style={{ margin: 0 }}>
                 Representation of the registration system
             </h4>
 

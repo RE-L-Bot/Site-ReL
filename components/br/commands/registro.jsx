@@ -45,20 +45,20 @@ export default function RegisterCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Adiciona um cargo a uma categoria dos cargos de <br />
                                 ° registro
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Categoria: Categoria para adicionar o cargo (Necessário) <br />
                                 ° Nome: Nome do que vai aparecer no SelecMenu (Necessário) <br />
                                 ° Categoria: Cargo para adicionar (Necessário)
@@ -112,20 +112,20 @@ export default function RegisterCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Adiciona os cargos que é para adicionar e remover <br />
                                 ° por padrão ao finalizar o registro
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° cargo_final_reg: Cargo para adicionar depois de registrado (Necessário) <br />
                                 ° cargo_default_reg: Cargo para remover depois de registrado (Opcional) <br />
                             </h5>
@@ -178,19 +178,19 @@ export default function RegisterCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Deleta uma categoria categoria de registro existente<br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Categoria: Categoria a deletar (Necessário) <br />
                             </h5>
 
@@ -242,24 +242,24 @@ export default function RegisterCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Registra um membro no seu servidor<br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro a registrar (Necessário) <br />
                                 ° Modo: Se ira adicionar ou remover os cargos (Necessário)
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando:
                             </h4>
 
@@ -313,19 +313,19 @@ export default function RegisterCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Remove um cargo de registro de uma categoria<br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Categoria: Nome da categoria que o cargo esta (Necessário) <br />
                                 ° Nome: Nome do cargo a remover da categoria (Necessário)
                             </h5>

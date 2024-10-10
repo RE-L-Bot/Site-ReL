@@ -49,7 +49,7 @@ export default function Ticket() {
 
                     <div style={{ padding: "20px" }}>
 
-                        <h2>Função Premium</h2>
+                        <h2 style={{ margin: 0 }}>Função Premium</h2>
 
                         <div style={{
                             display: "flex",
@@ -60,15 +60,15 @@ export default function Ticket() {
 
                             <div style={{ maxWidth: "40%" }}>
 
-                                <h4>Bep Bop, Parece que você encontrou uma função premium</h4>
-                                <h5>Adquira premium e desbloqueie essa função e muito mais</h5>
+                                <h4 style={{ margin: 0 }}>Bep Bop, Parece que você encontrou uma função premium</h4>
+                                <h5 style={{ margin: 0 }}>Adquira premium e desbloqueie essa função e muito mais</h5>
 
                                 <p>
                                     Assinando o premim você desbloqueia funcionalidades unicas, melhores
                                     e mais informações, sem contar tambem que você ajuda a me manter on-line
                                 </p>
 
-                                <h3>Algumas funções premium</h3>
+                                <h3 style={{ margin: 0 }}>Algumas funções premium</h3>
 
                                 <ul>
                                     <li>Ticket com WebHook</li>
@@ -95,7 +95,7 @@ export default function Ticket() {
                                     close
                                 </i>
 
-                                <h4>Fechar</h4>
+                                <h4 style={{ margin: 0 }}>Fechar</h4>
 
                             </div>
 
@@ -109,7 +109,7 @@ export default function Ticket() {
                                     store
                                 </i>
 
-                                <h4>Comprar</h4>
+                                <h4 style={{ margin: 0 }}>Comprar</h4>
 
                             </div>
 

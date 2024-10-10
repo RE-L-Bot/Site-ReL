@@ -24,7 +24,7 @@ export default function FormEmbed(opts) {
 
                 <div>
 
-                    <h4>Titulo</h4>
+                    <h4 style={{ margin: 0 }}>Titulo</h4>
 
                     <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcTitleModal")}>Adicionar</button>
 
@@ -46,7 +46,7 @@ export default function FormEmbed(opts) {
 
                 <div>
 
-                    <h4>Descrição</h4>
+                    <h4 style={{ margin: 0 }}>Descrição</h4>
 
                     <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcDescriptionModal")}>Adicionar</button>
 
@@ -69,7 +69,7 @@ export default function FormEmbed(opts) {
 
                 <div>
 
-                    <h4>Thumbnail (URL)</h4>
+                    <h4 style={{ margin: 0 }}>Thumbnail (URL)</h4>
 
                     <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcThumbnailModal")}>Adicionar</button>
 
@@ -98,7 +98,7 @@ export default function FormEmbed(opts) {
 
                 <div>
 
-                    <h4>Nome do Author</h4>
+                    <h4 style={{ margin: 0 }}>Nome do Author</h4>
 
                     <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcNameAuthorModal")}>Adicionar</button>
 
@@ -121,7 +121,7 @@ export default function FormEmbed(opts) {
 
                 <div>
 
-                    <h4>Img do Author (URL)</h4>
+                    <h4 style={{ margin: 0 }}>Img do Author (URL)</h4>
 
                     <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcImgAuthorModal")}>Adicionar</button>
 
@@ -144,7 +144,7 @@ export default function FormEmbed(opts) {
 
                 <div>
 
-                    <h4>Link do Author (URL)</h4>
+                    <h4 style={{ margin: 0 }}>Link do Author (URL)</h4>
 
                     <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcLinkAuthorModal")}>Adicionar</button>
 
@@ -170,7 +170,7 @@ export default function FormEmbed(opts) {
 
                 <div>
 
-                    <h4>Img (URL)</h4>
+                    <h4 style={{ margin: 0 }}>Img (URL)</h4>
 
                     <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcImageModal")}>Adicionar</button>
 
@@ -192,7 +192,7 @@ export default function FormEmbed(opts) {
 
                 <div>
 
-                    <h4>Cor</h4>
+                    <h4 style={{ margin: 0 }}>Cor</h4>
 
                     <button className="styleButton" onClick={(e) => showDialogueBox(e, "AdcCollourModal")}>Adicionar</button>
 

@@ -63,7 +63,7 @@ export default function Header() {
                     <div className="LoginDiv headerChangeColor padding3" onClick={redirectLogDash}>
 
                         <img className="imageUser" src="" alt="imageUser" />
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             <p className="login">Login</p>
                         </h3>
 

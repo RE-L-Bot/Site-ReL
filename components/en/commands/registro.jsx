@@ -45,20 +45,20 @@ export default function RegisterCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Adds a role to a role category of the <br />
                                 ° register
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Category: Category to add the role (Required) <br />
                                 ° Name: Name that will appear in the SelectMenu (Required) <br />
                                 ° Role: Role to add (Required)
@@ -112,20 +112,20 @@ export default function RegisterCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Adds roles to add and remove <br />
                                 ° by default when registration is complete
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° final_reg_role: Role to add after registration (Required) <br />
                                 ° default_reg_role: Role to remove after registration (Optional) <br />
                             </h5>
@@ -178,19 +178,19 @@ export default function RegisterCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Deletes an existing register category<br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Category: Category to delete (Required) <br />
                             </h5>
 
@@ -242,24 +242,24 @@ export default function RegisterCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Registers a member on your server<br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Member: Member to register (Required) <br />
                                 ° Mode: Whether to add or remove roles (Required)
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command representation:
                             </h4>
 
@@ -313,19 +313,19 @@ export default function RegisterCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Removes a register role from a category<br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Category: Name of the category where the role is (Required) <br />
                                 ° Name: Name of the role to remove from the category (Required)
                             </h5>

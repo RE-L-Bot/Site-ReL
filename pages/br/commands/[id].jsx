@@ -42,6 +42,6 @@ export default function DashBoardId() {
 			</div>
 		)
 	} else {
-		return <h3>Carregando...</h3>
+		return <h3 style={{ margin: 0 }}>Carregando...</h3>
 	}
 }

@@ -51,33 +51,33 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Long description:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Sends your profile picture or the desired user’s profile picture <br />
 								° whether they are on the server or not
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Notes:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° If the user is in the server with a different profile picture<br />
 								° a button will be added to send the user's server avatar
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Arguments:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Member: User ID to see the avatar (Optional)
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Command Representation:
 							</h4>
 
@@ -131,15 +131,15 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Long description:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Sends some interesting information about the bot
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Command Representation:
 							</h4>
 
@@ -193,33 +193,33 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Long description:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Sends some information about any server that RE is in <br />
 								° using the server ID
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Notes:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° If you search for the server where the command originated <br />
 								° RE will send a button to view the existing roles on the server
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Arguments:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Server: ID of the server to search (Optional)
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Command Representation:
 							</h4>
 
@@ -273,16 +273,16 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Long description:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Sends my ping, that is, how long it takes for <br />
 								° me to receive your command and respond
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Command Representation:
 							</h4>
 
@@ -336,16 +336,16 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Long description:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Sends some of my important links so you<br />
 								° don't have to search for them
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Command Representation:
 							</h4>
 
@@ -399,23 +399,23 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Long description:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Sends a multiplication table with a number of your choice
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Arguments:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Number: The number to calculate the table (Optional)
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Command Representation:
 							</h4>
 
@@ -469,15 +469,15 @@ export default function GeneralsCommands() {
 
 						<div>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Long description:
 							</h4>
 
-							<h5>
+							<h5 style={{ margin: 0 }}>
 								° Sends some interesting information about the member
 							</h5>
 
-							<h4>
+							<h4 style={{ margin: 0 }}>
 								Command Representation:
 							</h4>
 

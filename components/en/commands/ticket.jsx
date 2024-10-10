@@ -46,15 +46,15 @@ export default function TicketCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long Description:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Adds multiple roles to the overwrites of the opened ticket channel
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command Representation:
                             </h4>
 
@@ -108,16 +108,16 @@ export default function TicketCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long Description:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Sends a message stating that the command has been moved to <br />
                                 ° the dashboard along with a button to redirect you to the dashboard
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command Representation:
                             </h4>
 

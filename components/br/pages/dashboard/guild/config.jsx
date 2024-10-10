@@ -50,11 +50,11 @@ export default function Config() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     Idioma
                                 </h3>
 
-                                <h6 className="descriptionOptions">
+                                <h6 style={{ margin: 0 }} className="descriptionOptions">
                                     Esse é o idioma que o bot falara no servidor
                                     (Não tem nada haver com o idioma do site)
                                 </h6>
@@ -73,11 +73,11 @@ export default function Config() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     Canais permitidos para comandos
                                 </h3>
 
-                                <h6 className="descriptionOptions">
+                                <h6 style={{ margin: 0 }} className="descriptionOptions">
                                     Esses canais serão os que eu poderei responder os comandos executados
                                     (É mais facil listar os que podem do que os que não podem)
                                 </h6>
@@ -106,11 +106,11 @@ export default function Config() {
 
                                 <div>
 
-                                    <h3>
+                                    <h3 style={{ margin: 0 }}>
                                         Mensagem ao usar um comando em um canal não permitido
                                     </h3>
 
-                                    <h6 className="descriptionOptions">
+                                    <h6 style={{ margin: 0 }} className="descriptionOptions">
                                         O bot mostrara esta mensagem quando o usuário executar um comando em um
                                         canal não permitido, caso os canais permitidos tenham sido definidos
                                     </h6>
@@ -150,7 +150,7 @@ export default function Config() {
 
                                 <div>
 
-                                    <h5>Mensagem ao usar um comando em um canal não permitido</h5>
+                                    <h5 style={{ margin: 0 }}>Mensagem ao usar um comando em um canal não permitido</h5>
 
                                     <textarea
                                         id="messageSendNoPerm"

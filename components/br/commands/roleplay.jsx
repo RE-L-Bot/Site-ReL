@@ -68,32 +68,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Abraça um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para abraçar (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -151,32 +151,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Acena para um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para acenar (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -234,32 +234,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Aplaude um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para aplaudir (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -317,32 +317,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Atira em um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para atirar (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -400,32 +400,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Beija um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para beijar (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -483,32 +483,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Brinda com um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para brindar (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -566,32 +566,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Faz um cafuné em um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para fazer um cafuné (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -649,32 +649,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Cutuca um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para cutucar (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -732,24 +732,24 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Manda uma embed de anime dançando e falando que você está dançando <br />
                                 ° com um memnbro
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para dançar (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -807,32 +807,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Estapeia um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para estapear (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -890,32 +890,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Grita com um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para gritar (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -973,32 +973,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Lambe um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para lamber (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -1056,32 +1056,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Manda um beijo para um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para mandar um beijo (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -1139,32 +1139,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Morder um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para estapear (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -1222,32 +1222,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Da uma piscadinha para um membro <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para dar uma piscadinha (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -1305,32 +1305,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Ri da cara de um membro <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para dar rir (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -1388,32 +1388,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Segura a mão de um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para segurar a mão (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -1471,32 +1471,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Faz um highfive em com um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para socar (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -1554,32 +1554,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Sorri para um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para segurar a sorrir (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 
@@ -1637,32 +1637,32 @@ export default function RolePlayCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Faz um highfive em com um membro desejado <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Dependendo do membro mencionado a RE mandara uma mensagem diferente<br />
                                 ° e tera uma resposta
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para bater (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando
                             </h4>
 

@@ -40,29 +40,29 @@ export default function ModerationCommands() {
                 <div className="BodyInformationCommand">
                     <div className="InformationsCommand" id="InformationsCommandbanir">
                         <div>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Bans multiple members from your server at once <br />
                                 ° performing mass bans natively
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Notes:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Re will notify you member by member if she can't ban them <br />
                                 ° before starting the whole banning process to avoid headaches and issues <br />
                                 ° Bans members even if they are no longer in the server <br />
                                 ° Detects when the ID provided is not a user ID
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Reason: The reason for banning the members (Optional)
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command representation:
                             </h4>
                             <Ban />
@@ -98,27 +98,27 @@ export default function ModerationCommands() {
                 <div className="BodyInformationCommand">
                     <div className="InformationsCommand" id="InformationsCommandclear">
                         <div>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Clears a certain amount of messages from a channel on your server
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Notes:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Due to Discord limitations, Re can only delete 100 messages at a time <br />
                                 ° and messages that are less than 14 days old
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° qnt: Number of messages to delete (Required) <br />
                                 ° channel: Channel to delete messages from (Optional)
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command representation:
                             </h4>
                             <Clear />
@@ -155,19 +155,19 @@ export default function ModerationCommands() {
                 <div className="BodyInformationCommand">
                     <div className="InformationsCommand" id="InformationsCommandforce_disconect">
                         <div>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Disconnects a member from a call they are in
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Member: Member to disconnect from the call (Required)
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command representation:
                             </h4>
                             <Fsdc />
@@ -204,20 +204,20 @@ export default function ModerationCommands() {
                 <div className="BodyInformationCommand">
                     <div className="InformationsCommand" id="InformationsCommandforce_move">
                         <div>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Moves a member from one call to another, provided the destination call is not full
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Member: Member to move from the call (Required) <br />
                                 ° Channel: Channel to move the member to (Required)
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command representation:
                             </h4>
                             <Fsmv />
@@ -254,20 +254,20 @@ export default function ModerationCommands() {
                 <div className="BodyInformationCommand">
                     <div className="InformationsCommand" id="InformationsCommandkick">
                         <div>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Kicks multiple members from your server at once <br />
                                 ° performing mass kick natively
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Reason: The reason for kicking the members (Required)
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command representation:
                             </h4>
                             <Kick />
@@ -304,19 +304,19 @@ export default function ModerationCommands() {
                 <div className="BodyInformationCommand">
                     <div className="InformationsCommand" id="InformationsCommandset_language">
                         <div>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Sets Re's language for moderation commands
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Language: The language to set for moderation commands (Required)
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command representation:
                             </h4>
                             <SetLanguage />
@@ -353,19 +353,19 @@ export default function ModerationCommands() {
                 <div className="BodyInformationCommand">
                     <div className="InformationsCommand" id="InformationsCommandset_logs">
                         <div>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Sets the channel where Re will send all moderation logs
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Channel: The channel to set for logging moderation actions (Required)
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command representation:
                             </h4>
                             <SetLogs />
@@ -402,19 +402,19 @@ export default function ModerationCommands() {
                 <div className="BodyInformationCommand">
                     <div className="InformationsCommand" id="InformationsCommanddm_dm_ban">
                         <div>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Bans members from multiple servers simultaneously
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Reason: The reason for banning the members (Required)
                             </h5>
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command representation:
                             </h4>
                             <Dmdmb />

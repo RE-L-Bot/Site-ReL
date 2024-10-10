@@ -55,20 +55,20 @@ export default function ModerationCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Bane varios membros do seu servidor ao mesmo tempo <br />
                                 ° sendo mass ban nativamente
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° A Re ira informar membro por membro caso ela não consiga banir <br />
                                 ° antes de iniciar todo o processo de ban para evitar dor de cabeça <br />
                                 ° e problemas
@@ -76,15 +76,15 @@ export default function ModerationCommands() {
                                 ° Identifica quando o id enviado não é id de um usuario
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Motivo: Motivo de banir os membros (Opcional)
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando:
                             </h4>
 
@@ -140,34 +140,34 @@ export default function ModerationCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Limpa uma certa quantia de mensagens de um canal no seu <br />
                                 ° servidor
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Observações:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Por limitações do discord a Re só é capaz de apagar 100 em 100 <br />
                                 ° mensagens e mensagens com menos de 14 dias <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° qnt: Quantidade de mensagens a limpar (Necessário) <br />
                                 ° canal: Canal para apagar as mensagens (Opcional)
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando:
                             </h4>
 
@@ -223,23 +223,23 @@ export default function ModerationCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Desconecta um membro de uma call que ele esteja <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro a desconectar da call (Necessário)
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando:
                             </h4>
 
@@ -295,25 +295,25 @@ export default function ModerationCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Move um membro de call para outra caso a call não esteja <br />
                                 ° lotada
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro a desconectar da call (Necessário) <br />
                                 ° Canal: Canal para mover o membro (Necessário)
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando:
                             </h4>
 
@@ -369,24 +369,24 @@ export default function ModerationCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Expulsa varios membros do seu servidor ao mesmo tempo <br />
                                 ° sendo mass kick nativamente
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Motivo: Motivo de expulsa os membros (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando:
                             </h4>
 
@@ -442,25 +442,25 @@ export default function ModerationCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Deletas mensagens de um membro expecifico em 1 ou <br />
                                 ° todos os canais do servidor
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Membro: Membro para apagar as mensagens (Necessário) <br />
                                 ° Canal: Canal a apagar as mensagens (Se vazio apaga em todos) (Opcional)
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando:
                             </h4>
 
@@ -516,23 +516,23 @@ export default function ModerationCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Define em qual idioma ser enviadas as mensagens da RE <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Idiomas: Idioma a definir (Necessário) <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando:
                             </h4>
 
@@ -588,24 +588,24 @@ export default function ModerationCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Descrição longa:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Define os chats das logs da RE <br />
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Argumentos:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Log: Log a ser definida (Necessário) <br />
                                 ° Channel: Canal para definir as logs (Se vazio remove a log) - (Opcional)
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Representação do comando:
                             </h4>
 

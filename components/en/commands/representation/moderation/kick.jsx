@@ -51,7 +51,7 @@ export default function () {
 
             </DiscordMessage>
 
-            <h4>
+            <h4 style={{ margin: 0 }}>
                 Case 1
             </h4>
 
@@ -87,7 +87,7 @@ export default function () {
 
             </DiscordMessage>
 
-            <h4>
+            <h4 style={{ margin: 0 }}>
                 Case 2
             </h4>
 

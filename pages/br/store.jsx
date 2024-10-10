@@ -16,9 +16,9 @@ export default function Store() {
 
                 <div>
 
-                    <h2>Me ajude a ficar acordada</h2>
+                    <h2 style={{ margin: 0 }}>Me ajude a ficar acordada</h2>
 
-                    <h4>
+                    <h4 style={{ margin: 0 }}>
                         Sabia que para me manter online tem muitos custos?
                     </h4>
 
@@ -54,13 +54,13 @@ export default function Store() {
 
                 <div>
 
-                    <h2>Politicas de reembolso</h2>
+                    <h2 style={{ margin: 0 }}>Politicas de reembolso</h2>
 
                     <p>
                         Como todos os produtos comprados aqui são produtos digitais nos não oferecemos reembolso
                     </p>
 
-                    <h4>Comprei com um cartão sem permissão</h4>
+                    <h4 style={{ margin: 0 }}>Comprei com um cartão sem permissão</h4>
 
                     <p>
                         Como comprar com cartão de terceiros sem a devida permissão do mesmo se encaixa em fraude <br />
@@ -76,7 +76,7 @@ export default function Store() {
 
                 <div>
 
-                    <h2>Tirando algumas duvidas</h2>
+                    <h2 style={{ margin: 0 }}>Tirando algumas duvidas</h2>
 
                     <ul>
                         <li>
@@ -105,7 +105,7 @@ export default function Store() {
 
             </div>
 
-            <h3>Premium</h3>
+            <h3 style={{ margin: 0 }}>Premium</h3>
 
             <hr />
 
@@ -115,13 +115,13 @@ export default function Store() {
 
                 <div className="ProductPremium">
 
-                    <h2>Basic mensal</h2>
+                    <h2 style={{ margin: 0 }}>Basic mensal</h2>
 
-                    <h4>R$ 15,99</h4>
+                    <h4 style={{ margin: 0 }}>R$ 15,99</h4>
 
                     <div>
 
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             Beneficios
                         </h3>
 
@@ -169,7 +169,7 @@ export default function Store() {
                                     store
                                 </i>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Comprar
                                 </h4>
 
@@ -183,13 +183,13 @@ export default function Store() {
 
                 <div className="ProductPremium">
 
-                    <h2>Basic Semestral</h2>
+                    <h2 style={{ margin: 0 }}>Basic Semestral</h2>
 
-                    <h4>R$ {calculatePercent(15.99, 10, 6)} (10% OFF)</h4>
+                    <h4 style={{ margin: 0 }}>R$ {calculatePercent(15.99, 10, 6)} (10% OFF)</h4>
 
                     <div>
 
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             Beneficios
                         </h3>
 
@@ -237,7 +237,7 @@ export default function Store() {
                                     store
                                 </i>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Comprar
                                 </h4>
 
@@ -251,13 +251,13 @@ export default function Store() {
 
                 <div className="ProductPremium">
 
-                    <h2>Basic Anual</h2>
+                    <h2 style={{ margin: 0 }}>Basic Anual</h2>
 
-                    <h4>R$ {calculatePercent(15.99, 20, 12)} (20% OFF)</h4>
+                    <h4 style={{ margin: 0 }}>R$ {calculatePercent(15.99, 20, 12)} (20% OFF)</h4>
 
                     <div>
 
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             Beneficios
                         </h3>
 
@@ -305,7 +305,7 @@ export default function Store() {
                                     store
                                 </i>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Comprar
                                 </h4>
 
@@ -327,13 +327,13 @@ export default function Store() {
 
                 <div className="ProductPremium">
 
-                    <h2>Medium mensal</h2>
+                    <h2 style={{ margin: 0 }}>Medium mensal</h2>
 
-                    <h4>R$ 30,99</h4>
+                    <h4 style={{ margin: 0 }}>R$ 30,99</h4>
 
                     <div>
 
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             Beneficios
                         </h3>
 
@@ -387,7 +387,7 @@ export default function Store() {
                                     store
                                 </i>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Comprar
                                 </h4>
 
@@ -401,13 +401,13 @@ export default function Store() {
 
                 <div className="ProductPremium">
 
-                    <h2>Medium Semestral</h2>
+                    <h2 style={{ margin: 0 }}>Medium Semestral</h2>
 
-                    <h4>R$ {calculatePercent(30.99, 10, 6)} (10% OFF)</h4>
+                    <h4 style={{ margin: 0 }}>R$ {calculatePercent(30.99, 10, 6)} (10% OFF)</h4>
 
                     <div>
 
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             Beneficios
                         </h3>
 
@@ -461,7 +461,7 @@ export default function Store() {
                                     store
                                 </i>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Comprar
                                 </h4>
 
@@ -475,13 +475,13 @@ export default function Store() {
 
                 <div className="ProductPremium">
 
-                    <h2>Medium Anual</h2>
+                    <h2 style={{ margin: 0 }}>Medium Anual</h2>
 
-                    <h4>R$ {calculatePercent(30.99, 20, 12)} (20% OFF)</h4>
+                    <h4 style={{ margin: 0 }}>R$ {calculatePercent(30.99, 20, 12)} (20% OFF)</h4>
 
                     <div>
 
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             Beneficios
                         </h3>
 
@@ -535,7 +535,7 @@ export default function Store() {
                                     store
                                 </i>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Comprar
                                 </h4>
 
@@ -557,13 +557,13 @@ export default function Store() {
 
                 <div className="ProductPremium">
 
-                    <h2>Master mensal</h2>
+                    <h2 style={{ margin: 0 }}>Master mensal</h2>
 
-                    <h4>R$ 50,99</h4>
+                    <h4 style={{ margin: 0 }}>R$ 50,99</h4>
 
                     <div>
 
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             Beneficios
                         </h3>
 
@@ -619,7 +619,7 @@ export default function Store() {
                                     store
                                 </i>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Comprar
                                 </h4>
 
@@ -633,13 +633,13 @@ export default function Store() {
 
                 <div className="ProductPremium">
 
-                    <h2>Master Semestral</h2>
+                    <h2 style={{ margin: 0 }}>Master Semestral</h2>
 
-                    <h4>R$ {calculatePercent(50.99, 10, 6)} (10% OFF)</h4>
+                    <h4 style={{ margin: 0 }}>R$ {calculatePercent(50.99, 10, 6)} (10% OFF)</h4>
 
                     <div>
 
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             Beneficios
                         </h3>
 
@@ -695,7 +695,7 @@ export default function Store() {
                                     store
                                 </i>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Comprar
                                 </h4>
 
@@ -709,13 +709,13 @@ export default function Store() {
 
                 <div className="ProductPremium">
 
-                    <h2>Master Anual</h2>
+                    <h2 style={{ margin: 0 }}>Master Anual</h2>
 
-                    <h4>R$ {calculatePercent(50.99, 20, 12)} (20% OFF)</h4>
+                    <h4 style={{ margin: 0 }}>R$ {calculatePercent(50.99, 20, 12)} (20% OFF)</h4>
 
                     <div>
 
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             Beneficios
                         </h3>
 
@@ -771,7 +771,7 @@ export default function Store() {
                                     store
                                 </i>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Comprar
                                 </h4>
 
@@ -793,13 +793,13 @@ export default function Store() {
 
                 <div className="ProductPremium">
 
-                    <h2>Basic LifeTime</h2>
+                    <h2 style={{ margin: 0 }}>Basic LifeTime</h2>
 
-                    <h4>R$ {calculatePercent(15.99, 30, 60)} (30% OFF)</h4>
+                    <h4 style={{ margin: 0 }}>R$ {calculatePercent(15.99, 30, 60)} (30% OFF)</h4>
 
                     <div>
 
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             Beneficios
                         </h3>
 
@@ -847,7 +847,7 @@ export default function Store() {
                                     store
                                 </i>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Comprar
                                 </h4>
 
@@ -861,13 +861,13 @@ export default function Store() {
 
                 <div className="ProductPremium">
 
-                    <h2>Medium LifeTime</h2>
+                    <h2 style={{ margin: 0 }}>Medium LifeTime</h2>
 
-                    <h4>R$ {calculatePercent(30.99, 30, 60)} (30% OFF)</h4>
+                    <h4 style={{ margin: 0 }}>R$ {calculatePercent(30.99, 30, 60)} (30% OFF)</h4>
 
                     <div>
 
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             Beneficios
                         </h3>
 
@@ -921,7 +921,7 @@ export default function Store() {
                                     store
                                 </i>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Comprar
                                 </h4>
 
@@ -935,13 +935,13 @@ export default function Store() {
 
                 <div className="ProductPremium">
 
-                    <h2>Master LifeTime</h2>
+                    <h2 style={{ margin: 0 }}>Master LifeTime</h2>
 
-                    <h4>R$ {calculatePercent(50.99, 30, 60)} (30% OFF)</h4>
+                    <h4 style={{ margin: 0 }}>R$ {calculatePercent(50.99, 30, 60)} (30% OFF)</h4>
 
                     <div>
 
-                        <h3>
+                        <h3 style={{ margin: 0 }}>
                             Beneficios
                         </h3>
 
@@ -997,7 +997,7 @@ export default function Store() {
                                     store
                                 </i>
 
-                                <h4>
+                                <h4 style={{ margin: 0 }}>
                                     Comprar
                                 </h4>
 

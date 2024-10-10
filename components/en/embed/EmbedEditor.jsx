@@ -120,7 +120,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                 chevron_right
                             </i>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Author
                             </h4>
 
@@ -143,7 +143,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                             <div style={{ padding: "10px" }}>
 
-                                <h5>Author name {authorName.length}/256</h5>
+                                <h5 style={{ margin: 0 }}>Author name {authorName.length}/256</h5>
 
                                 <textarea
                                     title="authorName"
@@ -165,7 +165,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                                 <div style={{ padding: "10px", width: "50%" }}>
 
-                                    <h5>Author image</h5>
+                                    <h5 style={{ margin: 0 }}>Author image</h5>
 
                                     <textarea
                                         title="authorName"
@@ -185,7 +185,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                                 <div style={{ padding: "10px", width: "50%" }}>
 
-                                    <h5>Author redirect</h5>
+                                    <h5 style={{ margin: 0 }}>Author redirect</h5>
 
                                     <textarea
                                         title="authorName"
@@ -224,7 +224,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                 chevron_right
                             </i>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Body
                             </h4>
 
@@ -247,7 +247,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                             <div style={{ padding: "10px" }}>
 
-                                <h5>Title {title.length}/256</h5>
+                                <h5 style={{ margin: 0 }}>Title {title.length}/256</h5>
 
                                 <textarea
                                     title="tileEmbed"
@@ -267,7 +267,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                             <div style={{ padding: "10px" }}>
 
-                                <h5>Description {(description[0]) ? description[0].length : "0"}/4096</h5>
+                                <h5 style={{ margin: 0 }}>Description {(description[0]) ? description[0].length : "0"}/4096</h5>
 
                                 <textarea
                                     title="descriptionEmbed"
@@ -289,7 +289,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                                 <div style={{ padding: "10px", width: "50%" }}>
 
-                                    <h5>Title Url</h5>
+                                    <h5 style={{ margin: 0 }}>Title Url</h5>
 
                                     <input
                                         type="url"
@@ -310,7 +310,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                                 <div style={{ padding: "10px", width: "50%" }}>
 
-                                    <h5>Color</h5>
+                                    <h5 style={{ margin: 0 }}>Color</h5>
 
                                     <input
                                         type="color"
@@ -349,7 +349,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                 chevron_right
                             </i>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Fields
                             </h4>
 
@@ -391,7 +391,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                                             chevron_right
                                                         </i>
 
-                                                        <h4>
+                                                        <h4 style={{ margin: 0 }}>
                                                             Field {index + 1}
                                                         </h4>
 
@@ -415,7 +415,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
 
                                                         <div>
 
-                                                            <h4>Inline</h4>
+                                                            <h4 style={{ margin: 0 }}>Inline</h4>
 
                                                         </div>
 
@@ -438,7 +438,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                                 >
                                                     <div id={`contentCampo${index}`}>
 
-                                                        <h4>Name {fields[index].name.length}/256</h4>
+                                                        <h4 style={{ margin: 0 }}>Name {fields[index].name.length}/256</h4>
                                                         <textarea
                                                             type="text"
                                                             style={{
@@ -449,7 +449,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                                             onChange={e => handleFieldNameChange(index, e.target.value)}
                                                         />
 
-                                                        <h4>Value {fields[index].value.length}/1024</h4>
+                                                        <h4 style={{ margin: 0 }}>Value {fields[index].value.length}/1024</h4>
                                                         <textarea type="text" style={{
                                                             width: "100%", height: "60px",
                                                             minHeight: "60px", borderRadius: "5px", resize: "vertical"
@@ -488,7 +488,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                 chevron_right
                             </i>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Images
                             </h4>
 
@@ -509,7 +509,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                     >
                         <div id="contentImages">
 
-                            <h5>Image (URL)</h5>
+                            <h5 style={{ margin: 0 }}>Image (URL)</h5>
 
                             <textarea
                                 title="imageUrl"
@@ -524,7 +524,7 @@ const EmbedEditor = ({ onEmbedChange }) => {
                                 className="textAreaeEmbed"
                             />
 
-                            <h5>Thumbnail (URL)</h5>
+                            <h5 style={{ margin: 0 }}>Thumbnail (URL)</h5>
 
                             <textarea
                                 title="thumbnailUrl"

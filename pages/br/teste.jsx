@@ -15,7 +15,7 @@ export default function Teste() {
 
                 <Link href={"/"}>
 
-                    <h4>
+                    <h4 style={{ margin: 0 }}>
                         RE=L
                     </h4>
 

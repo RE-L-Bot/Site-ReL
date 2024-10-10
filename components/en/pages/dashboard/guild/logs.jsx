@@ -33,7 +33,7 @@ export default function Logs() {
                 <div style={{ padding: "20px" }}>
 
                     <h2 className="center">Logs</h2>
-                    <h4>
+                    <h4 style={{ margin: 0 }}>
                         Configure a chat for each log to help you and your <br />
                         team manage your community
                     </h4>
@@ -44,11 +44,11 @@ export default function Logs() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     Deleted Message Logs
                                 </h3>
 
-                                <h6 className="descriptionOptions">
+                                <h6 style={{ margin: 0 }} className="descriptionOptions">
                                     Whenever there is an update on messages, the bot will send <br />
                                     an embed in this channel informing about the message and the <br />
                                     message details
@@ -101,11 +101,11 @@ export default function Logs() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     Microphone/Audio Logs
                                 </h3>
 
-                                <h6 className="descriptionOptions">
+                                <h6 style={{ margin: 0 }} className="descriptionOptions">
                                     When someone makes any changes to their voice state, <br />
                                     whether it’s deafening, undeafening, muting, or unmuting, <br />
                                     the bot will notify in this channel
@@ -158,11 +158,11 @@ export default function Logs() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     Video Logs
                                 </h3>
 
-                                <h6 className="descriptionOptions">
+                                <h6 style={{ margin: 0 }} className="descriptionOptions">
                                     Whenever the user turns on or off the camera, <br />
                                     starts streaming, or stops streaming, the bot will <br />
                                     send a message in this channel
@@ -215,11 +215,11 @@ export default function Logs() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     Call Logs
                                 </h3>
 
-                                <h6 className="descriptionOptions">
+                                <h6 style={{ margin: 0 }} className="descriptionOptions">
                                     Whenever a user joins, leaves, or changes calls, <br />
                                     the bot will send a message in this channel
                                 </h6>
@@ -271,11 +271,11 @@ export default function Logs() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     Ticket Log
                                 </h3>
 
-                                <h6 className="descriptionOptions">
+                                <h6 style={{ margin: 0 }} className="descriptionOptions">
                                     Once a ticket is closed, the bot will send the <br />
                                     transcript to this channel
                                 </h6>
@@ -327,11 +327,11 @@ export default function Logs() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     Registration Logs
                                 </h3>
 
-                                <h6 className="descriptionOptions">
+                                <h6 style={{ margin: 0 }} className="descriptionOptions">
                                     Whenever a member is registered, the bot will send an embed <br />
                                     in this channel stating that the member was registered, <br />
                                     who registered and when it was registered

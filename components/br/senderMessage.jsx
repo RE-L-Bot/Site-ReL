@@ -14,7 +14,7 @@ export default function senderMessage() {
 
                     <div style={{ gap: "5px", height: "0.9375rem", padding: "0.275rem", marginTop: "0.075em", display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#7289da", borderRadius: "5px" }}>
 
-                        <h6>
+                        <h6 style={{ margin: 0 }}>
                             APP
                         </h6>
 
@@ -34,7 +34,7 @@ export default function senderMessage() {
 
                     <div style={{ gap: "5px", height: "0.9375rem", padding: "0.275rem", marginTop: "0.075em", display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#7289da", borderRadius: "5px" }}>
 
-                        <h6>
+                        <h6 style={{ margin: 0 }}>
                             APP
                         </h6>
 

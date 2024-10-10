@@ -14,11 +14,11 @@ export default function Error404() {
 
                 <div>
 
-                    <h3>Error 404 Page Not Found</h3>
+                    <h3 style={{ margin: 0 }}>Error 404 Page Not Found</h3>
 
-                    <h3>This page could not be found in the site's files</h3>
+                    <h3 style={{ margin: 0 }}>This page could not be found in the site's files</h3>
 
-                    <h4>If you believe this is an error, report it on the support server</h4>
+                    <h4 style={{ margin: 0 }}>If you believe this is an error, report it on the support server</h4>
 
                     <div className="DivButtonSuportError">
 

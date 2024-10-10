@@ -66,7 +66,7 @@ export default function HomeBr() {
 
                 <div>
 
-                    <h3>Eleve seu servidor a outro nivel</h3>
+                    <h3 style={{ margin: 0 }}>Eleve seu servidor a outro nivel</h3>
 
                     <p>
                         Servidores focados em interação com membros estão cada vez mais <br />
@@ -80,7 +80,7 @@ export default function HomeBr() {
                         E com funções de moderação e ticket
                     </p>
 
-                    <h5>Tudo a baixo é personalizável, só esta assim para ilustrar</h5>
+                    <h5 style={{ margin: 0 }}>Tudo a baixo é personalizável, só esta assim para ilustrar</h5>
 
                 </div>
 
@@ -100,7 +100,7 @@ export default function HomeBr() {
 
                 <div>
 
-                    <h2>
+                    <h2 style={{ margin: 0 }}>
                         Transforme seus tickets melhores do que nunca e mais bonito
                     </h2>
 

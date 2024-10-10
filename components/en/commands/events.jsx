@@ -44,24 +44,24 @@ export default function EventsCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Adds an "event point" to a member, summing up with <br />
                                 ° the previous points the member already has
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Member: user ID to add the point (Optional)
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command images:
                             </h4>
 
@@ -113,24 +113,24 @@ export default function EventsCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Removes an "event point" from a member, subtracting <br />
                                 ° from the points the member already has
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Member: user ID to remove the point (Optional)
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command images:
                             </h4>
 
@@ -182,23 +182,23 @@ export default function EventsCommands() {
 
                         <div>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Long description:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Shows the total number of event points a member has
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Arguments:
                             </h4>
 
-                            <h5>
+                            <h5 style={{ margin: 0 }}>
                                 ° Member: Member to view event points (Optional)
                             </h5>
 
-                            <h4>
+                            <h4 style={{ margin: 0 }}>
                                 Command images:
                             </h4>
 
