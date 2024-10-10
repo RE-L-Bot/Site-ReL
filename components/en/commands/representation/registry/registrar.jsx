@@ -46,7 +46,7 @@ export default function () {
 
                     <DiscordEmbed
                         authorName="marciel404"
-                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
+                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/8926329a666153f0002db880fb860142.webp?size=2048.webp?size=2048"
                         color="#00008b"
                         authorUrl="/users/485801281621852175"
                         embedTitle="Registration"
@@ -157,7 +157,7 @@ export default function () {
 
                     <DiscordEmbed
                         authorName="marciel404"
-                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
+                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/8926329a666153f0002db880fb860142.webp?size=2048.webp?size=2048"
                         color="#00008b"
                         authorUrl="/users/485801281621852175"
                         embedTitle="Registration"
@@ -260,7 +260,7 @@ export default function () {
 
                     <DiscordEmbed
                         authorName="marciel404"
-                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
+                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/8926329a666153f0002db880fb860142.webp?size=2048.webp?size=2048"
                         color="#00008b"
                         authorUrl="/users/485801281621852175"
                         embedTitle="Registration"
@@ -350,7 +350,7 @@ export default function () {
 
                     <DiscordEmbed
                         authorName="marciel404"
-                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
+                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/8926329a666153f0002db880fb860142.webp?size=2048.webp?size=2048"
                         color="#00008b"
                         authorUrl="/users/485801281621852175"
                         embedTitle="Registration"
@@ -471,7 +471,7 @@ export default function () {
 
                     <DiscordEmbed
                         authorName="marciel404"
-                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
+                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/8926329a666153f0002db880fb860142.webp?size=2048.webp?size=2048"
                         color="#00008b"
                         authorUrl="/users/485801281621852175"
                         embedTitle="Registration"
@@ -562,7 +562,7 @@ export default function () {
 
                     <DiscordEmbed
                         authorName="marciel404"
-                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
+                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/8926329a666153f0002db880fb860142.webp?size=2048.webp?size=2048"
                         color="#00008b"
                         authorUrl="/users/485801281621852175"
                         embedTitle="Registration"
@@ -665,7 +665,7 @@ export default function () {
 
                     <DiscordEmbed
                         authorName="marciel404"
-                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/b842e0d4d688fdcb71eb07d94909273a.webp?size=2048"
+                        authorImage="https://cdn.discordapp.com/avatars/485801281621852175/8926329a666153f0002db880fb860142.webp?size=2048.webp?size=2048"
                         color="#00008b"
                         authorUrl="/users/485801281621852175"
                         embedTitle="Registration"
