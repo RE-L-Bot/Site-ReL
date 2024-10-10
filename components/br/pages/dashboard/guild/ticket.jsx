@@ -63,14 +63,10 @@ export default function Ticket() {
                                 <h4>Bep Bop, Parece que você encontrou uma função premium</h4>
                                 <h5>Adquira premium e desbloqueie essa função e muito mais</h5>
 
-                                <br />
-
                                 <p>
                                     Assinando o premim você desbloqueia funcionalidades unicas, melhores
                                     e mais informações, sem contar tambem que você ajuda a me manter on-line
                                 </p>
-
-                                <br />
 
                                 <h3>Algumas funções premium</h3>
 
@@ -244,8 +240,6 @@ export default function Ticket() {
                     </div>
 
                 </div>
-
-                <br />
 
             </div>
 

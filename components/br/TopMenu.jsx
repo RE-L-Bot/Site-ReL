@@ -28,9 +28,6 @@ const infosGuild = () => {
             nameGuild.innerHTML = infos.name
 
             imgTAG.src = img
-            imgTAG.style.width = "120px"
-            imgTAG.style.height = "120px"
-            imgTAG.style.borderRadius = "120px"
 
         })
 

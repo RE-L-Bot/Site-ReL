@@ -20,8 +20,6 @@ import Punch from "./representation/roleplay/punch";
 import Smile from "./representation/roleplay/smile";
 import Highfive from "./representation/roleplay/highfive";
 
-const nameCatCommand = "roleplay"
-
 export default function RolePlayCommands() {
     return (
         <div className="CommandsList">
@@ -40,11 +38,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     abraçar
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Abraça um membro
                                 </p>
 
@@ -78,8 +76,6 @@ export default function RolePlayCommands() {
                                 ° Abraça um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -89,8 +85,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -98,8 +92,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para abraçar (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -129,11 +121,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     acenar
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Acena para um membro
                                 </p>
 
@@ -167,8 +159,6 @@ export default function RolePlayCommands() {
                                 ° Acena para um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -178,8 +168,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -187,8 +175,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para acenar (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -218,11 +204,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     aplaudir
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Apalude um membro
                                 </p>
 
@@ -256,8 +242,6 @@ export default function RolePlayCommands() {
                                 ° Aplaude um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -267,8 +251,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -276,8 +258,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para aplaudir (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -307,11 +287,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     atirar
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Atira em um membro
                                 </p>
 
@@ -345,8 +325,6 @@ export default function RolePlayCommands() {
                                 ° Atira em um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -356,8 +334,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -365,8 +341,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para atirar (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -396,11 +370,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     beijar
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Beija um membro
                                 </p>
 
@@ -434,8 +408,6 @@ export default function RolePlayCommands() {
                                 ° Beija um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -445,8 +417,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -454,8 +424,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para beijar (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -485,11 +453,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     brindar
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Brinda com um membro
                                 </p>
 
@@ -523,8 +491,6 @@ export default function RolePlayCommands() {
                                 ° Brinda com um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -534,8 +500,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -543,8 +507,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para brindar (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -574,11 +536,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     cafuné
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Faz um cafuné em um membro
                                 </p>
 
@@ -612,8 +574,6 @@ export default function RolePlayCommands() {
                                 ° Faz um cafuné em um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -623,8 +583,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -632,8 +590,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para fazer um cafuné (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -663,11 +619,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     cutucar
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Cutuca um membro
                                 </p>
 
@@ -701,8 +657,6 @@ export default function RolePlayCommands() {
                                 ° Cutuca um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -712,8 +666,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -721,8 +673,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para cutucar (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -752,11 +702,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     dançar
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Dança com um membro
                                 </p>
 
@@ -791,8 +741,6 @@ export default function RolePlayCommands() {
                                 ° com um memnbro
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -800,8 +748,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para dançar (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -831,11 +777,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     estapear
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Estapeia um membro
                                 </p>
 
@@ -869,8 +815,6 @@ export default function RolePlayCommands() {
                                 ° Estapeia um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -880,8 +824,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -889,8 +831,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para estapear (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -920,11 +860,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     gritar
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Grita com um membro
                                 </p>
 
@@ -958,8 +898,6 @@ export default function RolePlayCommands() {
                                 ° Grita com um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -969,8 +907,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -978,8 +914,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para gritar (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -1009,11 +943,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     lamber
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Lambe um membro
                                 </p>
 
@@ -1047,8 +981,6 @@ export default function RolePlayCommands() {
                                 ° Lambe um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -1058,8 +990,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -1067,8 +997,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para lamber (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -1098,11 +1026,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     mandar_beijo
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Manda um beijo
                                 </p>
 
@@ -1136,8 +1064,6 @@ export default function RolePlayCommands() {
                                 ° Manda um beijo para um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -1147,8 +1073,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -1156,8 +1080,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para mandar um beijo (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -1187,11 +1109,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     morder
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Morde um membro
                                 </p>
 
@@ -1225,8 +1147,6 @@ export default function RolePlayCommands() {
                                 ° Morder um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -1236,8 +1156,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -1245,8 +1163,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para estapear (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -1276,11 +1192,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     piscar
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Pisca para um membro
                                 </p>
 
@@ -1314,8 +1230,6 @@ export default function RolePlayCommands() {
                                 ° Da uma piscadinha para um membro <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -1325,8 +1239,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -1334,8 +1246,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para dar uma piscadinha (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -1365,11 +1275,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     rir
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Ri de um membro
                                 </p>
 
@@ -1403,8 +1313,6 @@ export default function RolePlayCommands() {
                                 ° Ri da cara de um membro <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -1414,8 +1322,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -1423,8 +1329,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para dar rir (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -1454,11 +1358,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     segurar_mão
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Segura a mão de um membro
                                 </p>
 
@@ -1492,8 +1396,6 @@ export default function RolePlayCommands() {
                                 ° Segura a mão de um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -1503,8 +1405,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -1512,8 +1412,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para segurar a mão (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -1543,11 +1441,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     socar
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Soca um membro
                                 </p>
 
@@ -1581,8 +1479,6 @@ export default function RolePlayCommands() {
                                 ° Faz um highfive em com um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -1592,8 +1488,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -1601,8 +1495,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para socar (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -1632,11 +1524,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     sorrir
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Sorri para um membro
                                 </p>
 
@@ -1670,8 +1562,6 @@ export default function RolePlayCommands() {
                                 ° Sorri para um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -1681,8 +1571,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -1690,8 +1578,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para segurar a sorrir (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando
@@ -1721,11 +1607,11 @@ export default function RolePlayCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     toca_aqui
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Faz um highfive com um membro
                                 </p>
 
@@ -1759,8 +1645,6 @@ export default function RolePlayCommands() {
                                 ° Faz um highfive em com um membro desejado <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -1770,8 +1654,6 @@ export default function RolePlayCommands() {
                                 ° e tera uma resposta
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -1779,8 +1661,6 @@ export default function RolePlayCommands() {
                             <h5>
                                 ° Membro: Membro para bater (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando

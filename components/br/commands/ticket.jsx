@@ -21,11 +21,11 @@ export default function TicketCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     definir_cargo_ticket
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Adiciona cargos aos overwrites do ticket
                                 </p>
                             </div>
@@ -56,8 +56,6 @@ export default function TicketCommands() {
                                 ° Adiciona varios cargos aos overwrites do canal do ticket aberto
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Representação do comando:
                             </h4>
@@ -85,11 +83,11 @@ export default function TicketCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     setupticket
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Te direciona para a dashboard
                                 </p>
                             </div>
@@ -120,8 +118,6 @@ export default function TicketCommands() {
                                 ° Envia uma mensagem dizendo que o comando foi migrado para <br />
                                 ° a dashboard e um botão para te mandar para a dashboard
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando:

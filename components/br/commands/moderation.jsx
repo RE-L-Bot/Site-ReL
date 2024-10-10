@@ -1,17 +1,4 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
-import {
-    DiscordMessage,
-    DiscordAttachments,
-    DiscordCommand,
-    DiscordEmbed,
-    DiscordEmbedDescription,
-    DiscordActionRow,
-    DiscordButton,
-    DiscordEmbedFields,
-    DiscordEmbedField,
-    DiscordMention,
-    DiscordMessages
-} from "@skyra/discord-components-react";
 import Ban from "./representation/moderation/ban";
 import Clear from "./representation/moderation/clear";
 import Fsdc from "./representation/moderation/fsdc";
@@ -40,11 +27,11 @@ export default function ModerationCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     banir
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Bane membros do seu servidor
                                 </p>
 
@@ -77,8 +64,6 @@ export default function ModerationCommands() {
                                 ° sendo mass ban nativamente
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -87,15 +72,9 @@ export default function ModerationCommands() {
                                 ° A Re ira informar membro por membro caso ela não consiga banir <br />
                                 ° antes de iniciar todo o processo de ban para evitar dor de cabeça <br />
                                 ° e problemas
-                                <br />
-                                <br />
                                 ° Bane membros mesmo o usuario estando fora do servidor
-                                <br />
-                                <br />
                                 ° Identifica quando o id enviado não é id de um usuario
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Argumentos:
@@ -104,8 +83,6 @@ export default function ModerationCommands() {
                             <h5>
                                 ° Motivo: Motivo de banir os membros (Opcional)
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando:
@@ -135,11 +112,11 @@ export default function ModerationCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     clear
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Limpa as mensagens de um chat
                                 </p>
 
@@ -172,8 +149,6 @@ export default function ModerationCommands() {
                                 ° servidor
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Observações:
                             </h4>
@@ -183,8 +158,6 @@ export default function ModerationCommands() {
                                 ° mensagens e mensagens com menos de 14 dias <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -193,8 +166,6 @@ export default function ModerationCommands() {
                                 ° qnt: Quantidade de mensagens a limpar (Necessário) <br />
                                 ° canal: Canal para apagar as mensagens (Opcional)
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando:
@@ -224,11 +195,11 @@ export default function ModerationCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     force_disconect
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Disconecta um membro de uma call
                                 </p>
 
@@ -260,8 +231,6 @@ export default function ModerationCommands() {
                                 ° Desconecta um membro de uma call que ele esteja <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -269,8 +238,6 @@ export default function ModerationCommands() {
                             <h5>
                                 ° Membro: Membro a desconectar da call (Necessário)
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando:
@@ -300,11 +267,11 @@ export default function ModerationCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     force_move
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Move um membro para outra call
                                 </p>
 
@@ -337,8 +304,6 @@ export default function ModerationCommands() {
                                 ° lotada
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -347,8 +312,6 @@ export default function ModerationCommands() {
                                 ° Membro: Membro a desconectar da call (Necessário) <br />
                                 ° Canal: Canal para mover o membro (Necessário)
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando:
@@ -378,11 +341,11 @@ export default function ModerationCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     expulsar
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Expulsa membros do servidor
                                 </p>
 
@@ -415,8 +378,6 @@ export default function ModerationCommands() {
                                 ° sendo mass kick nativamente
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -424,8 +385,6 @@ export default function ModerationCommands() {
                             <h5>
                                 ° Motivo: Motivo de expulsa os membros (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando:
@@ -455,11 +414,11 @@ export default function ModerationCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     deletar_mensagens_de_membro
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Deleta as mensagens de um membro
                                 </p>
 
@@ -492,8 +451,6 @@ export default function ModerationCommands() {
                                 ° todos os canais do servidor
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -502,8 +459,6 @@ export default function ModerationCommands() {
                                 ° Membro: Membro para apagar as mensagens (Necessário) <br />
                                 ° Canal: Canal a apagar as mensagens (Se vazio apaga em todos) (Opcional)
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando:
@@ -533,11 +488,11 @@ export default function ModerationCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     definir_idioma
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Define qual idioma sera enviado as mensagens do bot
                                 </p>
 
@@ -569,8 +524,6 @@ export default function ModerationCommands() {
                                 ° Define em qual idioma ser enviadas as mensagens da RE <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -578,8 +531,6 @@ export default function ModerationCommands() {
                             <h5>
                                 ° Idiomas: Idioma a definir (Necessário) <br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando:
@@ -609,11 +560,11 @@ export default function ModerationCommands() {
 
                             <div>
 
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     set_logs
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Define as logs do bot
                                 </p>
 
@@ -645,8 +596,6 @@ export default function ModerationCommands() {
                                 ° Define os chats das logs da RE <br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -655,8 +604,6 @@ export default function ModerationCommands() {
                                 ° Log: Log a ser definida (Necessário) <br />
                                 ° Channel: Canal para definir as logs (Se vazio remove a log) - (Opcional)
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando:

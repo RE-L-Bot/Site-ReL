@@ -28,11 +28,11 @@ export default function HomeBr() {
 
                     <div>
 
-                        <h3>Re=L Bot</h3>
+                        <h3 style={{ margin: 0 }}>Re=L Bot</h3>
 
-                        <h3>A discord bot to assist your server</h3>
+                        <h3 style={{ margin: 0 }}>A discord bot to assist your server</h3>
 
-                        <p>Turning the difficult into the easy</p>
+                        <p style={{ margin: 0 }}>Turning the difficult into the easy</p>
 
                     </div>
 
@@ -68,12 +68,9 @@ export default function HomeBr() {
 
                     <h3>Take your server to the next level</h3>
 
-                    <br />
-
                     <p>
                         Servers focused on interaction with members are increasingly <br />
                         going through the same things and the same problems. <br />
-                        <br />
 
                         New members like interaction and enjoy roles <br />
                         representative, and because members want positions that's where RE=L <br />
@@ -81,10 +78,6 @@ export default function HomeBr() {
                         a function of "registering" members, RE automates the process <br />
                         of having to assign multiple positions at once and better and standard positions <br />
                         And with moderation and ticket functions
-
-                        <br />
-                        <br />
-
                     </p>
 
                     <h5>Everything below is customizable, only this one to illustrate</h5>
@@ -110,8 +103,6 @@ export default function HomeBr() {
                     <h2>
                         Turn your tickets better than ever and more beautiful
                     </h2>
-
-                    <br />
 
                     <p>
                         With a great functionality of being able to be using webhooks <br />

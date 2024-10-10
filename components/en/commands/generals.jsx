@@ -24,11 +24,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									avatar
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Send a member's avatar
 								</p>
 							</div>
@@ -60,8 +60,6 @@ export default function GeneralsCommands() {
 								° whether they are on the server or not
 							</h5>
 
-							<br />
-
 							<h4>
 								Notes:
 							</h4>
@@ -71,8 +69,6 @@ export default function GeneralsCommands() {
 								° a button will be added to send the user's server avatar
 							</h5>
 
-							<br />
-
 							<h4>
 								Arguments:
 							</h4>
@@ -80,8 +76,6 @@ export default function GeneralsCommands() {
 							<h5>
 								° Member: User ID to see the avatar (Optional)
 							</h5>
-
-							<br />
 
 							<h4>
 								Command Representation:
@@ -110,11 +104,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									botinfo
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Sends some of my information
 								</p>
 							</div>
@@ -145,8 +139,6 @@ export default function GeneralsCommands() {
 								° Sends some interesting information about the bot
 							</h5>
 
-							<br />
-
 							<h4>
 								Command Representation:
 							</h4>
@@ -174,11 +166,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									serverinfo
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Sends some information about a server
 								</p>
 							</div>
@@ -210,8 +202,6 @@ export default function GeneralsCommands() {
 								° using the server ID
 							</h5>
 
-							<br />
-
 							<h4>
 								Notes:
 							</h4>
@@ -221,8 +211,6 @@ export default function GeneralsCommands() {
 								° RE will send a button to view the existing roles on the server
 							</h5>
 
-							<br />
-
 							<h4>
 								Arguments:
 							</h4>
@@ -230,8 +218,6 @@ export default function GeneralsCommands() {
 							<h5>
 								° Server: ID of the server to search (Optional)
 							</h5>
-
-							<br />
 
 							<h4>
 								Command Representation:
@@ -260,11 +246,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									ping
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Sends my ping
 								</p>
 							</div>
@@ -296,8 +282,6 @@ export default function GeneralsCommands() {
 								° me to receive your command and respond
 							</h5>
 
-							<br />
-
 							<h4>
 								Command Representation:
 							</h4>
@@ -325,11 +309,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									links
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Sends my important links
 								</p>
 							</div>
@@ -361,8 +345,6 @@ export default function GeneralsCommands() {
 								° don't have to search for them
 							</h5>
 
-							<br />
-
 							<h4>
 								Command Representation:
 							</h4>
@@ -390,11 +372,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									multiplication_table
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Sends a multiplication table
 								</p>
 							</div>
@@ -425,8 +407,6 @@ export default function GeneralsCommands() {
 								° Sends a multiplication table with a number of your choice
 							</h5>
 
-							<br />
-
 							<h4>
 								Arguments:
 							</h4>
@@ -434,8 +414,6 @@ export default function GeneralsCommands() {
 							<h5>
 								° Number: The number to calculate the table (Optional)
 							</h5>
-
-							<br />
 
 							<h4>
 								Command Representation:
@@ -464,11 +442,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									userinfo
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Sends a member's information
 								</p>
 							</div>
@@ -498,8 +476,6 @@ export default function GeneralsCommands() {
 							<h5>
 								° Sends some interesting information about the member
 							</h5>
-
-							<br />
 
 							<h4>
 								Command Representation:

@@ -24,11 +24,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									avatar
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Envia o avatar de um membro
 								</p>
 							</div>
@@ -60,8 +60,6 @@ export default function GeneralsCommands() {
 								° sendo estando ou não no servidor
 							</h5>
 
-							<br />
-
 							<h4>
 								Observações:
 							</h4>
@@ -71,8 +69,6 @@ export default function GeneralsCommands() {
 								° um botão sera adicionado para enviar a foto de usuario
 							</h5>
 
-							<br />
-
 							<h4>
 								Argumentos:
 							</h4>
@@ -80,8 +76,6 @@ export default function GeneralsCommands() {
 							<h5>
 								° Membro: id do usuario a ver o avatar (Opcional)
 							</h5>
-
-							<br />
 
 							<h4>
 								Representação do comando:
@@ -110,11 +104,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									botinfo
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Envia algumas informações minhas
 								</p>
 							</div>
@@ -145,8 +139,6 @@ export default function GeneralsCommands() {
 								° Envia algumas informações interessantes sobre o bot
 							</h5>
 
-							<br />
-
 							<h4>
 								Representação do comando:
 							</h4>
@@ -174,11 +166,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									serverinfo
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Envia algumas informações de um servidor
 								</p>
 							</div>
@@ -210,8 +202,6 @@ export default function GeneralsCommands() {
 								° pelo id do servidor
 							</h5>
 
-							<br />
-
 							<h4>
 								Observações:
 							</h4>
@@ -221,8 +211,6 @@ export default function GeneralsCommands() {
 								° a re  enviara um botão junto para ver os cargos existentes no servidor
 							</h5>
 
-							<br />
-
 							<h4>
 								Argumentos:
 							</h4>
@@ -230,8 +218,6 @@ export default function GeneralsCommands() {
 							<h5>
 								° Servidor: Id do servidor a pesquisar (Opcional)
 							</h5>
-
-							<br />
 
 							<h4>
 								Representação do comando:
@@ -260,11 +246,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									ping
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Envia meu ping
 								</p>
 							</div>
@@ -296,8 +282,6 @@ export default function GeneralsCommands() {
 								° eu receber seu comando e retornar a sua resposta
 							</h5>
 
-							<br />
-
 							<h4>
 								Representação do comando:
 							</h4>
@@ -325,11 +309,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									links
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Envia meus links importantes
 								</p>
 							</div>
@@ -361,8 +345,6 @@ export default function GeneralsCommands() {
 								° não fique entediado de tanto procurar
 							</h5>
 
-							<br />
-
 							<h4>
 								Representação do comando:
 							</h4>
@@ -390,11 +372,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									tabuada
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Envia a tabuada de um numero até 10
 								</p>
 							</div>
@@ -426,8 +408,6 @@ export default function GeneralsCommands() {
 								° arrumado bonitinho como se fosse uma tabuada
 							</h5>
 
-							<br />
-
 							<h4>
 								Argumentos:
 							</h4>
@@ -435,8 +415,6 @@ export default function GeneralsCommands() {
 							<h5>
 								° número: Numero a se multiplicar (Necessário)
 							</h5>
-
-							<br />
 
 							<h4>
 								Representação do comando:
@@ -465,11 +443,11 @@ export default function GeneralsCommands() {
 							</i>
 
 							<div>
-								<h3>
+								<h3 style={{ margin: 0 }}>
 									userinfo
 								</h3>
 
-								<p>
+								<p style={{ margin: 0 }}>
 									Envia as informações de um usuario
 								</p>
 							</div>
@@ -501,8 +479,6 @@ export default function GeneralsCommands() {
 								° estando em um servidor ou não
 							</h5>
 
-							<br />
-
 							<h4>
 								Argumentos:
 							</h4>
@@ -510,8 +486,6 @@ export default function GeneralsCommands() {
 							<h5>
 								° usuario: Usuario a ver as informações (Opicional)
 							</h5>
-
-							<br />
 
 							<h4>
 								Representação do comando:

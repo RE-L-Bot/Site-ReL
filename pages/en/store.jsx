@@ -29,15 +29,11 @@ export default function Store() {
                         and technologies for you, the user.
                     </p>
 
-                    <br />
-
                     <p>
                         Want to help me stay online? <br />
                         Great! You can buy one of our premium plans <br />
                         or even the famous "Edinhos" (my currency).
                     </p>
-
-                    <br />
 
                     <p>
                         Don't worry if you can't buy any of these things, <br />
@@ -61,17 +57,11 @@ export default function Store() {
 
                     <h2>Refund Policy</h2>
 
-                    <br />
-
                     <p>
                         Since all products sold here are digital products, we do not offer refunds.
                     </p>
 
-                    <br />
-
                     <h4>I purchased with a card without permission</h4>
-
-                    <br />
 
                     <p>
                         Purchasing with someone else's card without their proper permission is considered fraud <br />
@@ -140,23 +130,13 @@ export default function Store() {
 
                         <p>100,000 Edinhos</p>
 
-                        <br />
-
                         <p>5 ticket categories</p>
-
-                        <br />
 
                         <p>Special role on the server</p>
 
-                        <br />
-
                         <p>10 registration categories</p>
 
-                        <br />
-
                         <p>10 roles per registration category</p>
-
-                        <br />
 
                         <button onClick={() => {
                             window.alert("To buy contact my creator in support server")
@@ -197,23 +177,13 @@ export default function Store() {
 
                         <p>100,000 Edinhos + 15% (Total: {calculatePercent(100000, 15, 1, false)})</p>
 
-                        <br />
-
                         <p>5 ticket categories</p>
-
-                        <br />
 
                         <p>Special role on the server</p>
 
-                        <br />
-
                         <p>10 registration categories</p>
 
-                        <br />
-
                         <p>10 roles per registration category</p>
-
-                        <br />
 
                         <button onClick={() => {
                             window.alert("To buy contact my creator in support server")
@@ -254,23 +224,13 @@ export default function Store() {
 
                         <p>100,000 Edinhos + 25% (Total: {calculatePercent(100000, 25, 1, false)})</p>
 
-                        <br />
-
                         <p>5 ticket categories</p>
-
-                        <br />
 
                         <p>Special role on the server</p>
 
-                        <br />
-
                         <p>10 registration categories</p>
 
-                        <br />
-
                         <p>10 roles per registration category</p>
-
-                        <br />
 
                         <button onClick={() => {
                             window.alert("To buy contact my creator in support server")
@@ -297,8 +257,6 @@ export default function Store() {
 
             </div>
 
-            <br />
-
             <h3 style={{ textAlign: "center" }}>Premium Medium</h3>
 
             <div className="DivProductsStore">
@@ -319,31 +277,17 @@ export default function Store() {
 
                         <p>200,000 Edinhos</p>
 
-                        <br />
-
                         <p>10 ticket categories</p>
-
-                        <br />
 
                         <p>Special role on the server</p>
 
-                        <br />
-
                         <p>15 registration categories</p>
-
-                        <br />
 
                         <p>15 roles per registration category</p>
 
-                        <br />
-
                         <p>Open Ticket via thread</p>
 
-                        <br />
-
                         <p>Early access to bot information</p>
-
-                        <br />
 
                         <p>1 custom role on the support server</p>
 
@@ -386,31 +330,17 @@ export default function Store() {
 
                         <p>200,000 Edinhos + 15% (Total: {calculatePercent(200000, 15, 1, false)})</p>
 
-                        <br />
-
                         <p>10 ticket categories</p>
-
-                        <br />
 
                         <p>Special role on the server</p>
 
-                        <br />
-
                         <p>15 registration categories</p>
-
-                        <br />
 
                         <p>15 roles per registration category</p>
 
-                        <br />
-
                         <p>Open Ticket via thread</p>
 
-                        <br />
-
                         <p>Early access to bot information</p>
-
-                        <br />
 
                         <p>1 custom role on the support server</p>
 
@@ -453,31 +383,17 @@ export default function Store() {
 
                         <p>200,000 Edinhos + 25% (Total: {calculatePercent(200000, 25, 1, false)})</p>
 
-                        <br />
-
                         <p>10 ticket categories</p>
-
-                        <br />
 
                         <p>Special role on the server</p>
 
-                        <br />
-
                         <p>15 registration categories</p>
-
-                        <br />
 
                         <p>15 roles per registration category</p>
 
-                        <br />
-
                         <p>Open Ticket via thread</p>
 
-                        <br />
-
                         <p>Early access to bot information</p>
-
-                        <br />
 
                         <p>1 custom role on the support server</p>
 
@@ -506,8 +422,6 @@ export default function Store() {
 
             </div>
 
-            <br />
-
             <h3 style={{ textAlign: "center" }}>Premium Master</h3>
 
             <div className="DivProductsStore">
@@ -528,35 +442,19 @@ export default function Store() {
 
                         <p>300,000 Edinhos</p>
 
-                        <br />
-
                         <p>20 ticket categories</p>
-
-                        <br />
 
                         <p>Special role on the server</p>
 
-                        <br />
-
                         <p>25 registration categories</p>
-
-                        <br />
 
                         <p>23 roles per registration category</p>
 
-                        <br />
-
                         <p>Open Ticket via thread</p>
-
-                        <br />
 
                         <p>Use Webhook for ticket messages</p>
 
-                        <br />
-
                         <p>Early access to bot information</p>
-
-                        <br />
 
                         <p>2 custom roles on the support server</p>
 
@@ -599,35 +497,19 @@ export default function Store() {
 
                         <p>300,000 Edinhos + 15% (Total: {calculatePercent(300000, 15, 1, false)})</p>
 
-                        <br />
-
                         <p>20 ticket categories</p>
-
-                        <br />
 
                         <p>Special role on the server</p>
 
-                        <br />
-
                         <p>25 registration categories</p>
-
-                        <br />
 
                         <p>23 roles per registration category</p>
 
-                        <br />
-
                         <p>Open Ticket via thread</p>
-
-                        <br />
 
                         <p>Use Webhook for ticket messages</p>
 
-                        <br />
-
                         <p>Early access to bot information</p>
-
-                        <br />
 
                         <p>2 custom roles on the support server</p>
 
@@ -670,35 +552,19 @@ export default function Store() {
 
                         <p>300,000 Edinhos + 25% (Total: {calculatePercent(300000, 25, 1, false)})</p>
 
-                        <br />
-
                         <p>20 ticket categories</p>
-
-                        <br />
 
                         <p>Special role on the server</p>
 
-                        <br />
-
                         <p>25 registration categories</p>
-
-                        <br />
 
                         <p>23 roles per registration category</p>
 
-                        <br />
-
                         <p>Open Ticket via thread</p>
-
-                        <br />
 
                         <p>Use Webhook for ticket messages</p>
 
-                        <br />
-
                         <p>Early access to bot information</p>
-
-                        <br />
 
                         <p>2 custom roles on the support server</p>
 
@@ -727,8 +593,6 @@ export default function Store() {
 
             </div>
 
-            <br />
-
             <h3 style={{ textAlign: "center" }}>Premiuns LifeTime</h3>
 
             <div className="DivProductsStore">
@@ -749,23 +613,13 @@ export default function Store() {
 
                         <p>100,000 Edinhos + 35% (Total: {calculatePercent(100000, 35, 1, false)})</p>
 
-                        <br />
-
                         <p>5 ticket categories</p>
-
-                        <br />
 
                         <p>Special role on the server</p>
 
-                        <br />
-
                         <p>10 registration categories</p>
 
-                        <br />
-
                         <p>10 roles per registration category</p>
-
-                        <br />
 
                         <button onClick={() => {
                             window.alert("To buy contact my creator in support server")
@@ -806,31 +660,17 @@ export default function Store() {
 
                         <p>200,000 Edinhos + 35% (Total: {calculatePercent(200000, 35, 1, false)})</p>
 
-                        <br />
-
                         <p>10 ticket categories</p>
-
-                        <br />
 
                         <p>Special role on the server</p>
 
-                        <br />
-
                         <p>15 registration categories</p>
-
-                        <br />
 
                         <p>15 roles per registration category</p>
 
-                        <br />
-
                         <p>Open Ticket via thread</p>
 
-                        <br />
-
                         <p>Early access to bot information</p>
-
-                        <br />
 
                         <p>1 custom role on the support server</p>
 
@@ -873,35 +713,19 @@ export default function Store() {
 
                         <p>300,000 Edinhos + 35% (Total: {calculatePercent(300000, 35, 1, false)})</p>
 
-                        <br />
-
                         <p>20 ticket categories</p>
-
-                        <br />
 
                         <p>Special role on the server</p>
 
-                        <br />
-
                         <p>25 registration categories</p>
-
-                        <br />
 
                         <p>23 roles per registration category</p>
 
-                        <br />
-
                         <p>Open Ticket via thread</p>
-
-                        <br />
 
                         <p>Use Webhook for ticket messages</p>
 
-                        <br />
-
                         <p>Early access to bot information</p>
-
-                        <br />
 
                         <p>2 custom roles on the support server</p>
 

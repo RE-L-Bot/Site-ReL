@@ -184,7 +184,7 @@ function addGuilds(obj) {
                 button.id = `${g.id}`;
                 button.textContent = langs[langP]["configure"];
 
-                imgElement.className = "imgGuild";
+                imgElement.className = "imgGuildDashboard";
                 imgElement.src = img
 
                 div.className = "divGuilds";

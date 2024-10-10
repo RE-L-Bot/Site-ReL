@@ -1,7 +1,5 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
 
-const nameCatCommand = "event"
-
 export default function EventsCommands() {
     return (
         <>
@@ -20,11 +18,11 @@ export default function EventsCommands() {
                                 </i>
 
                                 <div>
-                                    <h3>
+                                    <h3 style={{ margin: 0 }}>
                                         adicionar_ponto_evento
                                     </h3>
 
-                                    <p>
+                                    <p style={{ margin: 0 }}>
                                         Adiciona um ponto de evento a um membro
                                     </p>
                                 </div>
@@ -56,8 +54,6 @@ export default function EventsCommands() {
                                     ° anteriores que o membro possui
                                 </h5>
 
-                                <br />
-
                                 <h4>
                                     Argumentos:
                                 </h4>
@@ -66,13 +62,9 @@ export default function EventsCommands() {
                                     ° Membro: id do usuario adicionar o ponto (Opcional)
                                 </h5>
 
-                                <br />
-
                                 <h4>
                                     Imagens do comando:
                                 </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -95,11 +87,11 @@ export default function EventsCommands() {
                                 </i>
 
                                 <div>
-                                    <h3>
+                                    <h3 style={{ margin: 0 }}>
                                         remover_pontos_evento
                                     </h3>
 
-                                    <p>
+                                    <p style={{ margin: 0 }}>
                                         Remove um "ponto" de evento de um membro
                                     </p>
                                 </div>
@@ -131,8 +123,6 @@ export default function EventsCommands() {
                                     ° anteriores que o membro possui
                                 </h5>
 
-                                <br />
-
                                 <h4>
                                     Argumentos:
                                 </h4>
@@ -141,13 +131,9 @@ export default function EventsCommands() {
                                     ° Membro: id do usuario remover o ponto (Opcional)
                                 </h5>
 
-                                <br />
-
                                 <h4>
                                     Imagem do comando:
                                 </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}//img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 
@@ -170,11 +156,11 @@ export default function EventsCommands() {
                                 </i>
 
                                 <div>
-                                    <h3>
+                                    <h3 style={{ margin: 0 }}>
                                         ver_pontos_evento
                                     </h3>
 
-                                    <p>
+                                    <p style={{ margin: 0 }}>
                                         Mostra os "pontos" de evento de um membro
                                     </p>
                                 </div>
@@ -205,8 +191,6 @@ export default function EventsCommands() {
                                     ° Mostra quantos pontos de evento um membro possui no total
                                 </h5>
 
-                                <br />
-
                                 <h4>
                                     Argumentos:
                                 </h4>
@@ -215,13 +199,9 @@ export default function EventsCommands() {
                                     ° Membro: Membro a ver os pontos de evento (Opcional)
                                 </h5>
 
-                                <br />
-
                                 <h4>
                                     Imagem do comando:
                                 </h4>
-
-                                <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                             </div>
 

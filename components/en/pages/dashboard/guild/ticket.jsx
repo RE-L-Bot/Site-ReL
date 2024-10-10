@@ -63,14 +63,10 @@ export default function Ticket() {
                                 <h4>Bep Bop, Looks like you've found a premium function</h4>
                                 <h5>Purchase premium and unlock this function and more</h5>
 
-                                <br />
-
                                 <p>
                                     By subscribing to premim you unlock unique, better features
                                     and more information, not to mention that you help keep me online
                                 </p>
-
-                                <br />
 
                                 <h3>Some premium features</h3>
 
@@ -244,10 +240,6 @@ export default function Ticket() {
                     </div>
 
                 </div>
-
-                <br />
-
-                <br />
 
             </div>
 

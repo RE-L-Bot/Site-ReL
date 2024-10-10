@@ -28,11 +28,11 @@ export default function HomeBr() {
 
                     <div>
 
-                        <h3>Re=L Bot</h3>
+                        <h3 style={{ margin: 0 }}>Re=L Bot</h3>
 
-                        <h3>Um bot de discord para auxiliar seu servidor</h3>
+                        <h3 style={{ margin: 0 }}>Um bot de discord para auxiliar seu servidor</h3>
 
-                        <p>Transformando o difícil no fácil</p>
+                        <p style={{ margin: 0 }}>Transformando o difícil no fácil</p>
 
                     </div>
 
@@ -68,12 +68,9 @@ export default function HomeBr() {
 
                     <h3>Eleve seu servidor a outro nivel</h3>
 
-                    <br />
-
                     <p>
                         Servidores focados em interação com membros estão cada vez mais <br />
                         passando pelas mesmas coisas e os mesmos problemas. <br />
-                        <br />
 
                         Novos membros gostam de interação e gostam de cargos <br />
                         representativos, e por membros quererem cargos é ai que a RE=L <br />
@@ -81,10 +78,6 @@ export default function HomeBr() {
                         uma função de "registrar" os membros, a RE automatiza o processo <br />
                         de ter que atribuir vários cargos de uma vez e melhor e cargos padrões <br />
                         E com funções de moderação e ticket
-
-                        <br />
-                        <br />
-
                     </p>
 
                     <h5>Tudo a baixo é personalizável, só esta assim para ilustrar</h5>
@@ -110,8 +103,6 @@ export default function HomeBr() {
                     <h2>
                         Transforme seus tickets melhores do que nunca e mais bonito
                     </h2>
-
-                    <br />
 
                     <p>
                         Com uma otima funcionalidade de poder estar usando webhooks <br />

@@ -60,7 +60,7 @@ export default function Terms() {
 
                 </div>
 
-                <div className="mt-5">
+                <div >
 
                     <p>
                         Estes termos de serviço que incluem a politica de privacidade em {configData.url}/terms são um acordo legal entre ("Re=L Bot" ou "nós") e você
@@ -86,13 +86,13 @@ export default function Terms() {
 
             </div>
 
-            <div className="mt-5">
+            <div >
 
                 <div>
 
                     <h3>Abuso de bugs</h3>
 
-                    <p className="mt-5">
+                    <p >
                         Usufruir ou abusar de bugs para tomar vantagens para si mesmo ou para outrem são extremamente proibidos,
                         sendo descoberto algum bug ou falha em algum sistema ou da Re=L (o Bot) ou deste site é necessario
                         estar reportando para os desenvolvedores da equipe, caso seja descoberta a quebra deste termo sua conta e dados
@@ -103,13 +103,13 @@ export default function Terms() {
 
             </div>
 
-            <div className="mt-5">
+            <div >
 
                 <div>
 
                     <h3>Flood de comandos</h3>
 
-                    <p className="mt-5">
+                    <p >
                         O Flood de comandos para estar tentando derrubar o bot é extremamente
                         proibido, caso seja identificada a quebra deste termo sua conta e dados
                         estão sujeitos a serem banidos e excluidos da database da Re=L sem forma
@@ -120,7 +120,7 @@ export default function Terms() {
 
             </div>
 
-            <div className="mt-5">
+            <div >
 
                 <div>
 
@@ -132,7 +132,7 @@ export default function Terms() {
                         (Not Safe For Work)
                     </h3>
 
-                    <p className="mt-5">
+                    <p >
                         Tendo em vista que a Re=L é para ser um bot de comunidades sfw (Safe For Work) e não
                         querendo ser atribuído a este tipo de conteúdos fica proibido o uso dos serviços da Re=L
                         para fins de NSFW seja eles anúncios ou até mesmo servidores focados neste tema, caso
@@ -145,7 +145,7 @@ export default function Terms() {
 
             </div>
 
-            <div className="mt-5">
+            <div >
 
                 <div>
 
@@ -153,7 +153,7 @@ export default function Terms() {
                         Uso de contas secundarias
                     </h3>
 
-                    <p className="mt-5">
+                    <p >
                         A Re=L possue seu sistema de economia (porem esta desabilitado no momento) tendo isto em
                         em mente, fica proibido o uso de contas secundarias para conseguir mais "Edinhos", caso
                         seja identificado a utilização de mais de uma conta para farm de "Edinhos" sua conta e dados
@@ -165,7 +165,7 @@ export default function Terms() {
 
             </div>
 
-            <div className="mt-5">
+            <div >
 
                 <div>
 
@@ -173,7 +173,7 @@ export default function Terms() {
                         Comercio de Edinhos
                     </h3>
 
-                    <p className="mt-5">
+                    <p >
                         A compra/venda de Edinhos com terceiros e a troca de produtos de valor monetário, como Discord Nitro, é proibida e você será banido de usar a Re=L caso comercialize algo assim.
                         Muitos vendedores desse ramo usam cartões clonados, não colabore com o crime de lavagem de dinheiro desses irresponsáveis!
                         Se você deseja comprar Edinhos de uma forma segura que ainda por cima ajuda a Re=L ficar online, visite a nossa loja de Edinhos clicando aqui
@@ -183,7 +183,7 @@ export default function Terms() {
 
             </div>
 
-            <div className="mt-5">
+            <div >
 
                 <div>
 
@@ -191,7 +191,7 @@ export default function Terms() {
                         Tarifas
                     </h3>
 
-                    <p className="mt-5">
+                    <p >
                         Não cobraremos nenhuma taxa para usar a funcionalidade básica do Serviço.
                         No entanto, você poderá ter que pagar uma taxa para usar determinados recursos
                         do Serviço ou para obter Moeda Virtual ou Bens Virtuais
@@ -214,7 +214,7 @@ export default function Terms() {
 
             </div>
 
-            <div className="mt-5">
+            <div >
 
                 <div>
 
@@ -222,7 +222,7 @@ export default function Terms() {
                         Controle de Dados
                     </h3>
 
-                    <p className="mt-5">
+                    <p >
                         Todos os dados só podem ser acessados pelo Marcelo
                         (Marciel404 — <a className="text-blue-700 underline" href="https://github.com/Marciel404">https://github.com/Marciel404</a>),
                         que concordou em não compartilhar/vender/distribuir
@@ -233,7 +233,7 @@ export default function Terms() {
 
             </div>
 
-            <div className="mt-5">
+            <div >
 
                 <div>
 
@@ -241,7 +241,7 @@ export default function Terms() {
                         Uso do bot
                     </h3>
 
-                    <p className="mt-5">
+                    <p >
                         2.1 Bot & Servidores. Marciel404 reserva-se o direito de remover Re=L de qualquer
                         servidor a qualquer momento. Podemos remover Re=L de um servidor por qualquer
                         motivo, como: (a) A servidor está abusando do bot, causando problemas com ele.
@@ -250,14 +250,14 @@ export default function Terms() {
                         ao servidor.
                     </p>
 
-                    <p className="mt-5">
+                    <p >
                         2.2 Banimentos Oficiais de Servidores. Se você for banido de qualquer servidor
                         relacionada ao Marciel404 e/ou Re=L por qualquer motivo,
                         poderemos aplicar um banimento e ser colocado na lista negra de qualquer um de
                         nossos outros servidores e serviços.
                     </p>
 
-                    <p className="mt-5">
+                    <p >
                         2.3 Spam e abuso de bots. Se você enviar spam para comandos ou abusar de qualquer
                         um de nossos serviços de alguma forma, você será colocado na lista negra e banido
                         de qualquer um de nossos serviços. Também adicionaremos você às listas de banimento
@@ -270,7 +270,7 @@ export default function Terms() {
 
             </div>
 
-            <div className="mt-5">
+            <div >
 
                 <div className=" mb-3">
 
@@ -278,7 +278,7 @@ export default function Terms() {
                         Tipo de Dados Coletados
                     </h3>
 
-                    <p className="mt-5">
+                    <p >
                         1.1a Dados do Usuário. Os Dados do Usuário incluem, entre outros, IDs de Usuário,
                         IPs de Usuário, e-mails de Usuário, fotos de perfil, nomes de usuário e tags de
                         usuário (“discriminador”). A Re=L usa Dados do Cliente como um meio de
@@ -288,7 +288,7 @@ export default function Terms() {
                         incorporações de mensagens, registro sobre o usuário e uso de comandos.
                     </p>
 
-                    <p className="mt-5">
+                    <p >
                         1.1b Dados do servidor. Os Dados do servidor incluem, entre outros, IDs do servidor,
                         ícones do servidor, nomes do servidor, contagem de Membros, Funções, Canais e Funções
                         possuídas por um Membro. Os Dados do servidor são um meio de personalizar ainda mais
@@ -302,7 +302,7 @@ export default function Terms() {
                         ou determinar se a servidor está abusando de algum de nossos bots.
                     </p>
 
-                    <p className="mt-5" style={{ marginBottom: "40px" }}>
+                    <p  style={{ marginBottom: "40px" }}>
                         1.2 Uso e Armazenamento de Dados do Usuário e Dados do servidor.
                         O Marciel404 reserva-se o direito de usar e armazenar Dados do Cliente e Dados do
                         servidor de qualquer forma necessária para a funcionalidade dos nossos bots.

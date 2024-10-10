@@ -1,8 +1,6 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
 import Registrar from "./representation/registry/registrar";
 
-const nameCatCommand = "registro"
-
 export default function RegisterCommands() {
     return (
         <div className="CommandsList">
@@ -20,11 +18,11 @@ export default function RegisterCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     adicionar_cargo_registro
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Adiciona um cargo ao registro
                                 </p>
                             </div>
@@ -55,8 +53,6 @@ export default function RegisterCommands() {
                                 ° Adiciona um cargo a uma categoria dos cargos de <br />
                                 ° registro
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Argumentos:
@@ -89,11 +85,11 @@ export default function RegisterCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     cargos_defaults
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Adiciona os cargos defaults do registro
                                 </p>
                             </div>
@@ -125,8 +121,6 @@ export default function RegisterCommands() {
                                 ° por padrão ao finalizar o registro
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -157,11 +151,11 @@ export default function RegisterCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     deletar_categoria_registro
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Deleta uma categoria do registro
                                 </p>
                             </div>
@@ -192,8 +186,6 @@ export default function RegisterCommands() {
                                 ° Deleta uma categoria categoria de registro existente<br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -223,11 +215,11 @@ export default function RegisterCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     registrar
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Registra um membro
                                 </p>
                             </div>
@@ -258,8 +250,6 @@ export default function RegisterCommands() {
                                 ° Registra um membro no seu servidor<br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Argumentos:
                             </h4>
@@ -268,8 +258,6 @@ export default function RegisterCommands() {
                                 ° Membro: Membro a registrar (Necessário) <br />
                                 ° Modo: Se ira adicionar ou remover os cargos (Necessário)
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Representação do comando:
@@ -298,11 +286,11 @@ export default function RegisterCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     remover_cargo_registro
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Remove um cargo de uma categoria do registro
                                 </p>
                             </div>
@@ -332,8 +320,6 @@ export default function RegisterCommands() {
                             <h5>
                                 ° Remove um cargo de registro de uma categoria<br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Argumentos:

@@ -19,11 +19,11 @@ export default function TicketCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     set_role_ticket
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Adds roles to ticket overwrites
                                 </p>
                             </div>
@@ -54,8 +54,6 @@ export default function TicketCommands() {
                                 ° Adds multiple roles to the overwrites of the opened ticket channel
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Command Representation:
                             </h4>
@@ -83,11 +81,11 @@ export default function TicketCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     setupticket
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Redirects you to the dashboard
                                 </p>
                             </div>
@@ -118,8 +116,6 @@ export default function TicketCommands() {
                                 ° Sends a message stating that the command has been moved to <br />
                                 ° the dashboard along with a button to redirect you to the dashboard
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Command Representation:

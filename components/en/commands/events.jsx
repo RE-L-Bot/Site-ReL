@@ -1,7 +1,5 @@
 import { changeDisplayNoneToAndResetAll } from "@/scripts/changes";
 
-const nameCatCommand = "event";
-
 export default function EventsCommands() {
     return (
         <div className="CommandsList">
@@ -19,11 +17,11 @@ export default function EventsCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     add_event_point
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Adds an event point to a member
                                 </p>
                             </div>
@@ -55,8 +53,6 @@ export default function EventsCommands() {
                                 ° the previous points the member already has
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Arguments:
                             </h4>
@@ -65,13 +61,9 @@ export default function EventsCommands() {
                                 ° Member: user ID to add the point (Optional)
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Command images:
                             </h4>
-
-                            <img src={`/images/commands/${nameCatCommand}/${window.location.pathname.split("/")[1]}/img.png`} alt="imageCommand" style={{ width: "60%" }} />
 
                         </div>
 
@@ -94,11 +86,11 @@ export default function EventsCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     remove_event_points
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Removes an "event point" from a member
                                 </p>
                             </div>
@@ -130,8 +122,6 @@ export default function EventsCommands() {
                                 ° from the points the member already has
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Arguments:
                             </h4>
@@ -140,13 +130,9 @@ export default function EventsCommands() {
                                 ° Member: user ID to remove the point (Optional)
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Command images:
                             </h4>
-
-
 
                         </div>
 
@@ -169,11 +155,11 @@ export default function EventsCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     view_event_points
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Shows a member's "event points"
                                 </p>
                             </div>
@@ -204,8 +190,6 @@ export default function EventsCommands() {
                                 ° Shows the total number of event points a member has
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Arguments:
                             </h4>
@@ -213,8 +197,6 @@ export default function EventsCommands() {
                             <h5>
                                 ° Member: Member to view event points (Optional)
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Command images:

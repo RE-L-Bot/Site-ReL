@@ -28,15 +28,11 @@ export default function Store() {
                         e tecnologias para você usuario
                     </p>
 
-                    <br />
-
                     <p>
                         Quer me ajudar a ficar online? <br />
                         Que maravilha, você pode comprar algum dos nosos planos premiums <br />
                         ou até mesmo os famosos edinhos (minha moeda corrente)
                     </p>
-
-                    <br />
 
                     <p>
                         Não se preocupe se não puder comprar algumas destas coisas, <br />
@@ -60,17 +56,11 @@ export default function Store() {
 
                     <h2>Politicas de reembolso</h2>
 
-                    <br />
-
                     <p>
                         Como todos os produtos comprados aqui são produtos digitais nos não oferecemos reembolso
                     </p>
 
-                    <br />
-
                     <h4>Comprei com um cartão sem permissão</h4>
-
-                    <br />
 
                     <p>
                         Como comprar com cartão de terceiros sem a devida permissão do mesmo se encaixa em fraude <br />
@@ -139,23 +129,13 @@ export default function Store() {
 
                         <p>100.000 Edinhos</p>
 
-                        <br />
-
                         <p>5 categorias de ticket</p>
-
-                        <br />
 
                         <p>Cargo especial no servidor</p>
 
-                        <br />
-
                         <p>10 Categorias de registro</p>
 
-                        <br />
-
                         <p>10 Cargos por cartegoria de registro</p>
-
-                        <br />
 
                         <button onClick={() => {
 
@@ -217,23 +197,13 @@ export default function Store() {
 
                         <p>100.000 Edinhos + 15% (Total: {calculatePercent(100000, 15, 1, false)})</p>
 
-                        <br />
-
                         <p>5 categorias de ticket</p>
-
-                        <br />
 
                         <p>Cargo especial no servidor</p>
 
-                        <br />
-
                         <p>10 Categorias de registro</p>
 
-                        <br />
-
                         <p>10 Cargos por cartegoria de registro</p>
-
-                        <br />
 
                         <button onClick={() => {
 
@@ -295,23 +265,13 @@ export default function Store() {
 
                         <p>100.000 Edinhos + 25% (Total: {calculatePercent(100000, 25, 1, false)})</p>
 
-                        <br />
-
                         <p>5 categorias de ticket</p>
-
-                        <br />
 
                         <p>Cargo especial no servidor</p>
 
-                        <br />
-
                         <p>10 Categorias de registro</p>
 
-                        <br />
-
                         <p>10 Cargos por cartegoria de registro</p>
-
-                        <br />
 
                         <button onClick={() => {
 
@@ -381,31 +341,17 @@ export default function Store() {
 
                         <p>200.000 Edinhos</p>
 
-                        <br />
-
                         <p>10 categorias de ticket</p>
-
-                        <br />
 
                         <p>Cargo especial no servidor</p>
 
-                        <br />
-
                         <p>15 Categorias de registro</p>
-
-                        <br />
 
                         <p>15 Cargos por cartegoria de registro</p>
 
-                        <br />
-
                         <p>Abrir Ticket por thread</p>
 
-                        <br />
-
                         <p>Acesso antecipado a informações do bot</p>
-
-                        <br />
 
                         <p>1 cargo personalizado no servidor de suporte</p>
 
@@ -469,31 +415,17 @@ export default function Store() {
 
                         <p>200.000 Edinhos + 15% (Total: {calculatePercent(200000, 15, 1, false)})</p>
 
-                        <br />
-
                         <p>10 categorias de ticket</p>
-
-                        <br />
 
                         <p>Cargo especial no servidor</p>
 
-                        <br />
-
                         <p>15 Categorias de registro</p>
-
-                        <br />
 
                         <p>15 Cargos por cartegoria de registro</p>
 
-                        <br />
-
                         <p>Abrir Ticket por thread</p>
 
-                        <br />
-
                         <p>Acesso antecipado a informações do bot</p>
-
-                        <br />
 
                         <p>1 cargo personalizado no servidor de suporte</p>
 
@@ -557,31 +489,17 @@ export default function Store() {
 
                         <p>200.000 Edinhos + 25% (Total: {calculatePercent(200000, 25, 1, false)})</p>
 
-                        <br />
-
                         <p>10 categorias de ticket</p>
-
-                        <br />
 
                         <p>Cargo especial no servidor</p>
 
-                        <br />
-
                         <p>15 Categorias de registro</p>
-
-                        <br />
 
                         <p>15 Cargos por cartegoria de registro</p>
 
-                        <br />
-
                         <p>Abrir Ticket por thread</p>
 
-                        <br />
-
                         <p>Acesso antecipado a informações do bot</p>
-
-                        <br />
 
                         <p>1 cargo personalizado no servidor de suporte</p>
 
@@ -653,35 +571,19 @@ export default function Store() {
 
                         <p>300.000 Edinhos</p>
 
-                        <br />
-
                         <p>20 categorias de ticket</p>
-
-                        <br />
 
                         <p>Cargo especial no servidor</p>
 
-                        <br />
-
                         <p>25 Categorias de registro</p>
-
-                        <br />
 
                         <p>23 Cargos por cartegoria de registro</p>
 
-                        <br />
-
                         <p>Abrir Ticket por thread</p>
-
-                        <br />
 
                         <p>Usar Webhook para mensagem do ticket</p>
 
-                        <br />
-
                         <p>Acesso antecipado a informações do bot</p>
-
-                        <br />
 
                         <p>2 cargo personalizado no servidor de suporte</p>
 
@@ -745,35 +647,19 @@ export default function Store() {
 
                         <p>300.000 Edinhos + 15% (Total: {calculatePercent(300000, 15, 1, false)})</p>
 
-                        <br />
-
                         <p>20 categorias de ticket</p>
-
-                        <br />
 
                         <p>Cargo especial no servidor</p>
 
-                        <br />
-
                         <p>25 Categorias de registro</p>
-
-                        <br />
 
                         <p>23 Cargos por cartegoria de registro</p>
 
-                        <br />
-
                         <p>Abrir Ticket por thread</p>
-
-                        <br />
 
                         <p>Usar Webhook para mensagem do ticket</p>
 
-                        <br />
-
                         <p>Acesso antecipado a informações do bot</p>
-
-                        <br />
 
                         <p>2 cargo personalizado no servidor de suporte</p>
 
@@ -837,35 +723,19 @@ export default function Store() {
 
                         <p>300.000 Edinhos + 25% (Total: {calculatePercent(300000, 25, 1, false)})</p>
 
-                        <br />
-
                         <p>20 categorias de ticket</p>
-
-                        <br />
 
                         <p>Cargo especial no servidor</p>
 
-                        <br />
-
                         <p>25 Categorias de registro</p>
-
-                        <br />
 
                         <p>23 Cargos por cartegoria de registro</p>
 
-                        <br />
-
                         <p>Abrir Ticket por thread</p>
-
-                        <br />
 
                         <p>Usar Webhook para mensagem do ticket</p>
 
-                        <br />
-
                         <p>Acesso antecipado a informações do bot</p>
-
-                        <br />
 
                         <p>2 cargo personalizado no servidor de suporte</p>
 
@@ -937,23 +807,13 @@ export default function Store() {
 
                         <p>100.000 Edinhos + 35% (Total: {calculatePercent(100000, 35, 1, false)})</p>
 
-                        <br />
-
                         <p>5 categorias de ticket</p>
-
-                        <br />
 
                         <p>Cargo especial no servidor</p>
 
-                        <br />
-
                         <p>10 Categorias de registro</p>
 
-                        <br />
-
                         <p>10 Cargos por cartegoria de registro</p>
-
-                        <br />
 
                         <button onClick={() => {
 
@@ -1015,31 +875,17 @@ export default function Store() {
 
                         <p>200.000 Edinhos + 35% (Total: {calculatePercent(200000, 35, 1, false)})</p>
 
-                        <br />
-
                         <p>10 categorias de ticket</p>
-
-                        <br />
 
                         <p>Cargo especial no servidor</p>
 
-                        <br />
-
                         <p>15 Categorias de registro</p>
-
-                        <br />
 
                         <p>15 Cargos por cartegoria de registro</p>
 
-                        <br />
-
                         <p>Abrir Ticket por thread</p>
 
-                        <br />
-
                         <p>Acesso antecipado a informações do bot</p>
-
-                        <br />
 
                         <p>1 cargo personalizado no servidor de suporte</p>
 
@@ -1103,35 +949,19 @@ export default function Store() {
 
                         <p>300.000 Edinhos + 35% (Total: {calculatePercent(300000, 35, 1, false)})</p>
 
-                        <br />
-
                         <p>20 categorias de ticket</p>
-
-                        <br />
 
                         <p>Cargo especial no servidor</p>
 
-                        <br />
-
                         <p>25 Categorias de registro</p>
-
-                        <br />
 
                         <p>23 Cargos por cartegoria de registro</p>
 
-                        <br />
-
                         <p>Abrir Ticket por thread</p>
-
-                        <br />
 
                         <p>Usar Webhook para mensagem do ticket</p>
 
-                        <br />
-
                         <p>Acesso antecipado a informações do bot</p>
-
-                        <br />
 
                         <p>2 cargo personalizado no servidor de suporte</p>
 

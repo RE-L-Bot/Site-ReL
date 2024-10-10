@@ -18,11 +18,11 @@ export default function RegisterCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     add_role_register
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Adds a role to the register
                                 </p>
                             </div>
@@ -53,8 +53,6 @@ export default function RegisterCommands() {
                                 ° Adds a role to a role category of the <br />
                                 ° register
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Arguments:
@@ -87,11 +85,11 @@ export default function RegisterCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     default_roles
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Adds the default register roles
                                 </p>
                             </div>
@@ -123,8 +121,6 @@ export default function RegisterCommands() {
                                 ° by default when registration is complete
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Arguments:
                             </h4>
@@ -155,11 +151,11 @@ export default function RegisterCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     delete_register_category
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Deletes a category from the register
                                 </p>
                             </div>
@@ -190,8 +186,6 @@ export default function RegisterCommands() {
                                 ° Deletes an existing register category<br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Arguments:
                             </h4>
@@ -221,11 +215,11 @@ export default function RegisterCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     register
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Registers a member
                                 </p>
                             </div>
@@ -256,8 +250,6 @@ export default function RegisterCommands() {
                                 ° Registers a member on your server<br />
                             </h5>
 
-                            <br />
-
                             <h4>
                                 Arguments:
                             </h4>
@@ -266,8 +258,6 @@ export default function RegisterCommands() {
                                 ° Member: Member to register (Required) <br />
                                 ° Mode: Whether to add or remove roles (Required)
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Command representation:
@@ -296,11 +286,11 @@ export default function RegisterCommands() {
                             </i>
 
                             <div>
-                                <h3>
+                                <h3 style={{ margin: 0 }}>
                                     remove_register_role
                                 </h3>
 
-                                <p>
+                                <p style={{ margin: 0 }}>
                                     Removes a role from a register category
                                 </p>
                             </div>
@@ -330,8 +320,6 @@ export default function RegisterCommands() {
                             <h5>
                                 ° Removes a register role from a category<br />
                             </h5>
-
-                            <br />
 
                             <h4>
                                 Arguments:

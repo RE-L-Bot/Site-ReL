@@ -89,7 +89,7 @@ export default function () {
 
                     <DiscordAttachments slot="components">
 
-                        <DiscordStringSelectMenu >
+                        <DiscordStringSelectMenu placeholder="Escolha sua Categoria">
 
                             <DiscordStringSelectMenuOption
                                 label="Call's"
