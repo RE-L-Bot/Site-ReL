@@ -89,12 +89,16 @@ class RequesterManager {
                 endpoint: "verifyinguild",
                 method: "POST"
             }
-        }        
+        }
 
         this.headers = obj["headers"] ?? null
+
         this.endpoint = obj["endpoint"] ?? ""
+
         this.method = (obj["method"]) ? obj["method"].toUpperCase() : "GET"
+
         this.APIENDPOINT = obj["APIENDPOINT"] ?? obj["APIENDPOINTS"]["thisAPI"]
+
         this.body = obj["body"] ?? null
 
         if (this.endpoints[this.endpoint]) {
@@ -172,7 +176,7 @@ class RequesterManager {
                 returnedResponse = response
             })
             .catch((error) => {
-                returnedResponse = { status: error.response.data.status, response: error.response.data.error}
+                returnedResponse = { status: error.response.data.status, response: error.response.data.error }
             })
 
         return returnedResponse
@@ -228,9 +232,7 @@ class RequesterManager {
     }
 
     async request() {
-
         return await this[this.method]()
-
     }
 
 }
@@ -258,9 +260,28 @@ export default class RequestApi {
     }
 
     /**
-     *  @param { "activeKey" | "cPayment" | "dGuildDb" | "gChannelsPermUse" | "gChannelsGuild" | "gGuildsDash" | "gKeyGuild" | "gKeysUser" | "gLanguage" | "gLog" | "gMessageChannelNoPerm" | "gPaymentMp" | "gPremium" | "gRolesTicket" | "login" | "messageTicket" | "upChannelPermUse" | "upLanguage" | "upLog" | "upMessageChannelNoPerm" | "vInGuild"
-}
- request 
+     *  @param { "activeKey" |
+     * "cPayment" |
+     * "dGuildDb" |
+     * "gChannelsPermUse" |
+     * "gChannelsGuild" |
+     * "gGuildsDash" |
+     * "gKeyGuild" |
+     * "gKeysUser" |
+     * "gLanguage" |
+     * "gLog" |
+     * "gMessageChannelNoPerm" |
+     * "gPaymentMp" |
+     * "gPremium" |
+     * "gRolesTicket" |
+     * "login" |
+     * "messageTicket" |
+     * "upChannelPermUse" |
+     * "upLanguage" |
+     * "upLog" |
+     * "upMessageChannelNoPerm" |
+     * "vInGuild"
+     * } request 
      */
     setEndPoint(request) {
         this.endpoint = request
@@ -268,7 +289,12 @@ export default class RequestApi {
     }
 
     /**
-     * @param {"GET"| "PUT"| "POST"| "PATCH"| "DELETE"} method 
+     * @param {"GET" |
+     * "PUT" |
+     * "POST" |
+     * "PATCH" |
+     * "DELETE"
+     * } method 
      */
     setMethod(method) {
         this.method = method
@@ -280,7 +306,7 @@ export default class RequestApi {
      */
     setApiEndPoint(apiEndPoint) {
 
-        if (this.APIENDPOINTS[apiEndPoint]){
+        if (this.APIENDPOINTS[apiEndPoint]) {
             this.APIENDPOINT = this.APIENDPOINTS[apiEndPoint]
             return this
         }
@@ -292,7 +318,7 @@ export default class RequestApi {
      * 
      * @param {Object} body 
      */
-    setBody(body){
+    setBody(body) {
         this.body = body
         return this
     }

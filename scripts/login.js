@@ -22,14 +22,8 @@ export default async function Login() {
 
                 const [code, state, guild] = [urlParams.get('code'), urlParams.get('state'), urlParams.get('guild_id')];
 
-                if (
-                    state && !sessionStorage.getItem('oauth-state') ||
-                    state && state != sessionStorage.getItem('oauth-state')
-                ) {
-
+                if (state && !sessionStorage.getItem('oauth-state') || state && state != sessionStorage.getItem('oauth-state'))
                     redirectLogDash()
-
-                }
 
                 await new RequestApi()
                     .setBody({
@@ -80,8 +74,8 @@ export default async function Login() {
                 if (
                     !sessionStorage.getItem("USERINFO") ||
                     sessionStorage.getItem("REFRESHGETUSERINFO") &&
-                    dayjs(new Date()).diff(sessionStorage.getItem("REFRESHGETUSERINFO"), "seconds") > 20) {
-
+                    dayjs(new Date()).diff(sessionStorage.getItem("REFRESHGETUSERINFO"), "seconds") > 30
+                )
                     await new RequestApi()
                         .setApiEndPoint("thisAPI")
                         .setEndPoint("getuserinfo")
@@ -91,46 +85,41 @@ export default async function Login() {
                         .request()
                         .then(response => {
 
-                            sessionStorage.setItem(`USERINFO`, JSON.stringify(response))
-                            sessionStorage.setItem("REFRESHGETUSERINFO", new Date())
-                            sessionStorage.setItem("idUser", response.id)
+                            if (response.status !== 429) {
 
-                        })
-                        .catch(e => {
+                                sessionStorage.setItem(`USERINFO`, JSON.stringify(response))
 
-                            if (window.location.href.indexOf("dashboard") >= 0) {
-                                redirectLogDash()
+                                sessionStorage.setItem("REFRESHGETUSERINFO", new Date())
+
+                                sessionStorage.setItem("idUser", response.id)
+
                             }
 
                         })
+                        .catch(() => {
 
-                }
+                            if (window.location.href.indexOf("dashboard") >= 0)
+                                redirectLogDash()
+
+                        })
 
                 const userInfo = JSON.parse(sessionStorage.getItem(`USERINFO`))
 
                 for (const l of doclogin) {
-
                     l.innerHTML = userInfo.username;
-
                 }
 
                 for (const img of docimage) {
-
                     img.src = `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}`
-
                     img.style.display = "block"
-
                 }
 
-            } else {
-
-                if (window.location.href.indexOf("dashboard") >= 0) {
-
-                    redirectLogDash()
-
-                }
+                return
 
             }
+
+            if (window.location.href.indexOf("dashboard") >= 0)
+                redirectLogDash()
 
         })()
 
