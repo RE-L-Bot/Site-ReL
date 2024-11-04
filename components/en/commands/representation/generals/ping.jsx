@@ -16,7 +16,7 @@ export default function () {
                 ephemeral
             >
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     command="generals ping"
                     profile="marciel404"

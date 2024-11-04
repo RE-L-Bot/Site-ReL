@@ -37,7 +37,7 @@ export default function () {
                 >
 
                     <DiscordCommand
-                        style={{ marginLeft: "56px" }}
+                        
                         slot="reply"
                         command="register"
                         profile="marciel404"
@@ -45,6 +45,7 @@ export default function () {
                     </DiscordCommand>
 
                     <DiscordEmbed
+                        slot="embeds"
                         authorName="marciel404"
                         authorImage="https://cdn.discordapp.com/avatars/485801281621852175/8926329a666153f0002db880fb860142.webp?size=2048.webp?size=2048"
                         color="#00008b"
@@ -148,7 +149,7 @@ export default function () {
                 >
 
                     <DiscordCommand
-                        style={{ marginLeft: "56px" }}
+                        
                         slot="reply"
                         command="register"
                         profile="marciel404"
@@ -251,7 +252,7 @@ export default function () {
                 >
 
                     <DiscordCommand
-                        style={{ marginLeft: "56px" }}
+                        
                         slot="reply"
                         command="register"
                         profile="marciel404"
@@ -341,7 +342,7 @@ export default function () {
                 >
 
                     <DiscordCommand
-                        style={{ marginLeft: "56px" }}
+                        
                         slot="reply"
                         command="register"
                         profile="marciel404"
@@ -462,7 +463,7 @@ export default function () {
                 >
 
                     <DiscordCommand
-                        style={{ marginLeft: "56px" }}
+                        
                         slot="reply"
                         command="register"
                         profile="marciel404"
@@ -553,7 +554,7 @@ export default function () {
                 >
 
                     <DiscordCommand
-                        style={{ marginLeft: "56px" }}
+                        
                         slot="reply"
                         command="register"
                         profile="marciel404"
@@ -656,7 +657,7 @@ export default function () {
                 >
 
                     <DiscordCommand
-                        style={{ marginLeft: "56px" }}
+                        
                         slot="reply"
                         command="register"
                         profile="marciel404"
@@ -742,7 +743,7 @@ export default function () {
 
                     <DiscordReply
                         slot="reply"
-                        style={{ marginLeft: "56px" }}
+                        
                         deleted
                     >
                     </DiscordReply>

@@ -16,7 +16,7 @@ export default function () {
                 timestamp="30/08/2024 13:00"
             >
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     profile="marciel404"
                     slot="reply"
                     command="gerais tabuada"

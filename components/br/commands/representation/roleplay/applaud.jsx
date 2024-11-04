@@ -37,7 +37,7 @@ export default function () {
             >
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay aplaudir"
@@ -108,7 +108,7 @@ export default function () {
                 >
 
                     <DiscordReply
-                        style={{ marginLeft: "56px" }}
+                        
                         slot="reply"
                         profile="RELBOT"
                         command
@@ -145,7 +145,7 @@ export default function () {
             >
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay aplaudir"
@@ -192,7 +192,7 @@ export default function () {
             >
 
                 <DiscordReply
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="RELBOT"
                     command
@@ -232,7 +232,7 @@ export default function () {
                 <span>Se apladiu, mas pq???</span>
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay aplaudir"

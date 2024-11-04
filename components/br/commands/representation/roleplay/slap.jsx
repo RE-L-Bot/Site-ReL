@@ -37,7 +37,7 @@ export default function () {
             >
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay estapear"
@@ -108,7 +108,7 @@ export default function () {
                 >
 
                     <DiscordReply
-                        style={{ marginLeft: "56px" }}
+                        
                         slot="reply"
                         profile="RELBOT"
                         command
@@ -145,7 +145,7 @@ export default function () {
             >
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay estapear"
@@ -200,7 +200,7 @@ export default function () {
                 <span>Estapeou a si mesmo??<br />Isso não é normal não</span>
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay estapear"

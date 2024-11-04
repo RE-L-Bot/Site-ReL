@@ -22,7 +22,7 @@ export default function () {
             >
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="force_disconect"
@@ -47,7 +47,7 @@ export default function () {
             >
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="force_disconect"

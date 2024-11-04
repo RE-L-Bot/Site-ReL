@@ -37,7 +37,7 @@ export default function () {
             >
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay wave"
@@ -106,7 +106,7 @@ export default function () {
                 >
 
                     <DiscordReply
-                        style={{ marginLeft: "56px" }}
+                        
                         slot="reply"
                         profile="RELBOT"
                         command
@@ -141,7 +141,7 @@ export default function () {
             >
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay wave"
@@ -186,7 +186,7 @@ export default function () {
             >
 
                 <DiscordReply
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="RELBOT"
                     command
@@ -223,7 +223,7 @@ export default function () {
                 <span>Did you wave to yourself in the mirror?</span>
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay wave"

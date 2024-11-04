@@ -24,7 +24,7 @@ export default function () {
                 timestamp="30/08/2024 13:00"
             >
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="gerais avatar"
@@ -63,7 +63,7 @@ export default function () {
                 timestamp="30/08/2024 13:00"
             >
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="gerais avatar"
@@ -114,7 +114,7 @@ export default function () {
                     dismissMessageClicked={() => document.getElementById("message-ephemeral-avatar").style.display = "none"}
                 >
                     <DiscordReply
-                        style={{ marginLeft: "56px" }}
+                        
                         slot="reply"
                         command
                         profile="RELBOT"

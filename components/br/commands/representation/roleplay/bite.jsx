@@ -37,7 +37,7 @@ export default function () {
             >
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay morder"
@@ -108,7 +108,7 @@ export default function () {
                 >
 
                     <DiscordReply
-                        style={{ marginLeft: "56px" }}
+                        
                         slot="reply"
                         profile="RELBOT"
                         command
@@ -145,7 +145,7 @@ export default function () {
             >
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="RELBOT"
                     command="roleplay morder"
@@ -168,7 +168,7 @@ export default function () {
                 <span>Agora endoidou de vez, esta se mordendo</span>
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay morder"

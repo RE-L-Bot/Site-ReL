@@ -1,4 +1,6 @@
+import { generateRandomString } from "@/scripts/enc";
 import { calculateInlineIndex } from "@/scripts/outhers";
+import { toHTML } from "@odiffey/discord-markdown";
 import {
     DiscordEmbedField,
     DiscordEmbedFields
@@ -16,9 +18,8 @@ const FieldsBuilder = ({ fields }) => {
         const fieldInline = fields[i]["inline"]
 
         p.push(
-            <DiscordEmbedField fieldTitle={fieldName} inline={fieldInline} inlineIndex={calculateInlineIndex(fields, Number(i))}>
-                {' '}
-                {fieldValue}{' '}
+            <DiscordEmbedField key={`${fieldName}-${fieldValue}`} fieldTitle={fieldName} inline={fieldInline} inlineIndex={calculateInlineIndex(fields, Number(i))}>
+                <div className="fieldValueEmbed" dangerouslySetInnerHTML={{ __html: toHTML(fieldValue) }}></div>
             </DiscordEmbedField>
         )
 
@@ -38,7 +39,7 @@ const FieldsBuilder = ({ fields }) => {
 
     if (p.length > 0) {
         fieldArray.push(
-            <DiscordEmbedFields slot="fields">
+            <DiscordEmbedFields key={generateRandomString(10)} slot="fields">
                 {p}
             </DiscordEmbedFields>
         )

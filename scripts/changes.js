@@ -494,10 +494,6 @@ export function showDialogueBox(e, id) {
 
     modal.style.position = "fixed"
 
-    modal.style.top = "50%"
-
-    modal.style.left = "50%"
-
     modal.style.borderRadius = "10px"
 
     modal.style.transform = "translate(-50%, -50%)"

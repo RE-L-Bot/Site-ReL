@@ -1,4 +1,3 @@
-import { usePathname } from "next/navigation";
 import RequestApi from "./ManagerRequest";
 
 export function range(start, stop, step) {
@@ -75,4 +74,23 @@ export function calculateInlineIndex(fields, currentFieldIndex) {
     }
 
     return (currentFieldIndex % 3) + 1;
+
+}
+
+export function mapCaracters(stringToCheck, caracterToCheck) {
+
+    let caracters = []
+
+    for (const w of stringToCheck) {
+
+        if (w === caracterToCheck) {
+
+            caracters.push(caracterToCheck)
+
+        }
+
+    }
+
+    return caracters
+
 }

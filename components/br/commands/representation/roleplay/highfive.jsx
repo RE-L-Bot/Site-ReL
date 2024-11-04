@@ -37,7 +37,7 @@ export default function () {
             >
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay toca_aqui"
@@ -108,7 +108,7 @@ export default function () {
                 >
 
                     <DiscordReply
-                        style={{ marginLeft: "56px" }}
+                        
                         slot="reply"
                         profile="RELBOT"
                         command
@@ -145,7 +145,7 @@ export default function () {
             >
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay toca_aqui"
@@ -175,7 +175,7 @@ export default function () {
             >
 
                 <DiscordReply
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="RELBOT"
                     command
@@ -214,7 +214,7 @@ export default function () {
                 <span>Fez um toca aqui consigo mesmo?</span>
 
                 <DiscordCommand
-                    style={{ marginLeft: "56px" }}
+                    
                     slot="reply"
                     profile="marciel404"
                     command="roleplay toca_aqui"

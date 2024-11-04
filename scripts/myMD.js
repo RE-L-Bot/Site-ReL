@@ -51,14 +51,11 @@ export default function (value) {
 
     return (
         <div>
-
             {(arrayP.map((value, index) => (
-
                 <div key={index}>
                     {value}
                 </div>
             )))}
-
         </div>
     )
 }

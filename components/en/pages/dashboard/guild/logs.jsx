@@ -45,7 +45,7 @@ export default function Logs() {
                             <div>
 
                                 <h3 style={{ margin: 0 }}>
-                                    Deleted Message Logs
+                                    Messages Logs
                                 </h3>
 
                                 <h6 style={{ margin: 0 }} className="descriptionOptions">

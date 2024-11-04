@@ -37,7 +37,7 @@ export default function () {
     >
 
         <DiscordCommand
-            style={{ marginLeft: "56px" }}
+            
             slot="reply"
             profile="marciel404"
             command="roleplay dance"
@@ -106,7 +106,7 @@ export default function () {
         >
 
             <DiscordReply
-                style={{ marginLeft: "56px" }}
+                
                 slot="reply"
                 profile="RELBOT"
                 command
@@ -141,7 +141,7 @@ export default function () {
     >
 
         <DiscordCommand
-            style={{ marginLeft: "56px" }}
+            
             slot="reply"
             profile="marciel404"
             command="roleplay dance"
@@ -164,7 +164,7 @@ export default function () {
         <span>Dancing alone, be careful, or people will think you're crazy</span>
 
         <DiscordCommand
-            style={{ marginLeft: "56px" }}
+            
             slot="reply"
             profile="marciel404"
             command="roleplay dance"

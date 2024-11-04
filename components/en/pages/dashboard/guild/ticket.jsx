@@ -158,7 +158,7 @@ export default function Ticket() {
                                             >
 
                                                 <DiscordReply
-                                                    style={{ marginLeft: "56px" }}
+                                                    
                                                     author="IVM (Ticket Express)"
                                                     avatar="https://images-ext-1.discordapp.net/external/nNVuKLahkkEPMoXf9_lDrbEyiSWImKzczdDsqsBnUwM/https/cdn.discordapp.com/icons/1101694285839077537/0572af3a3447d536d63f58ede8827dd9.webp?format=webp"
                                                     bot
@@ -179,7 +179,7 @@ export default function Ticket() {
                                             >
 
                                                 <DiscordReply
-                                                    style={{ marginLeft: "56px" }}
+                                                    
                                                     author="IVM (Ticket Express)"
                                                     avatar="https://images-ext-1.discordapp.net/external/nNVuKLahkkEPMoXf9_lDrbEyiSWImKzczdDsqsBnUwM/https/cdn.discordapp.com/icons/1101694285839077537/0572af3a3447d536d63f58ede8827dd9.webp?format=webp"
                                                     bot

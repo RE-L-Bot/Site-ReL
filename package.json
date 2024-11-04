@@ -10,8 +10,9 @@
         "build-start": "next build && next start -p 80"
     },
     "dependencies": {
-        "@skyra/discord-components-core": "^3.6.1",
-        "@skyra/discord-components-react": "^4.0.0-alpha.33",
+        "@odiffey/discord-markdown": "^3.3.0",
+        "@skyra/discord-components-core": "^4.0.0-alpha.37",
+        "@skyra/discord-components-react": "^4.0.0-alpha.37",
         "axios": "^1.6.7",
         "dayjs": "^1.11.11",
         "discord-bitfield-calculator": "^1.2.0",

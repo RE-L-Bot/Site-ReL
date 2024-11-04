@@ -18,7 +18,7 @@ export default function Logs() {
             </Head>
 
             <dialog id="savemodal" style={{ background: "none", color: "whitesmoke", border: "none" }}>
-                <form method="dialog" style={{ textAlign: "center" }}>
+                <form method="dialog">
                     <img src="/svgs/RELCHIBI.svg" alt="RELCHIBI" />
                     <p>Salvando</p>
                 </form>
@@ -45,7 +45,7 @@ export default function Logs() {
                             <div>
 
                                 <h3 style={{ margin: 0 }}>
-                                    Logs de mensagem deletada
+                                    Logs de mensagens
                                 </h3>
 
                                 <h6 style={{ margin: 0 }} className="descriptionOptions">
